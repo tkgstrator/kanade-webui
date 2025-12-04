@@ -13,6 +13,6 @@ export const Route = createFileRoute("/search/")({
 })
 
 function Page() {
-  const search = Route.useSearch()
-  return <SearchResults term={search.term} />
+  const { term } = Route.useSearch()
+  return <SearchResults term={term} />
 }
