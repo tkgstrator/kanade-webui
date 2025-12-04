@@ -65,7 +65,7 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
         <p className="hidden md:block text-sm font-medium text-muted-foreground uppercase">
           {attributes.isSingle ? "シングル" : "アルバム"}
         </p>
-        <h1 className="text-3xl font-bold text-foreground text-center md:text-left md:text-4xl">{attributes.name}</h1>
+        <h1 className="text-2xl text-foreground text-center md:text-left md:text-4xl">{attributes.name}</h1>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <Link
             className="font-medium text-foreground hover:underline"
@@ -91,15 +91,15 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
         {attributes.copyright && (
           <p className="hidden md:block mt-4 text-xs text-muted-foreground">{attributes.copyright}</p>
         )}
-        <div className="mt-4 flex gap-3">
+        <div className="mt-4 flex gap-4">
           <Button
-            className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 text-sm rounded-sm"
+            className="flex-1 md:flex-none bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-[127px] text-sm rounded-sm gap-2"
             onClick={() => mutate()}
           >
             <Download className="size-4" />
             ダウンロード
           </Button>
-          <Button className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 text-sm rounded-sm">
+          <Button className="flex-1 md:flex-none bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-[127px] text-sm rounded-sm gap-2">
             <Shuffle className="size-4" />
             シャッフル
           </Button>
@@ -177,10 +177,10 @@ function TrackList({ tracks }: { tracks: SongsDatum[] }) {
 function AlbumSkeleton() {
   return (
     <div className="flex flex-col gap-8 p-6">
-      <div className="flex flex-col gap-6 md:flex-row">
+      <div className="flex flex-col items-center gap-6 md:flex-row md:items-start">
         <Skeleton className="aspect-square w-full max-w-[270px] rounded-lg" />
-        <div className="flex flex-col justify-end gap-2">
-          <Skeleton className="h-4 w-16" />
+        <div className="flex flex-col items-center justify-end gap-2 md:items-start">
+          <Skeleton className="hidden md:block h-4 w-16" />
           <Skeleton className="h-10 w-64" />
           <Skeleton className="h-4 w-48" />
         </div>
