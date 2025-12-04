@@ -3,6 +3,7 @@
 import { useSuspenseQuery } from "@tanstack/react-query"
 import { Link } from "@tanstack/react-router"
 import { type JSX, Suspense } from "react"
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
 import { type AlbumsDatum, client } from "@/lib/client"
 
 function formatDuration(ms: number): string {
@@ -67,7 +68,7 @@ function AlbumListItem({ album }: { album: AlbumsDatum }) {
       </Link>
       <div className="min-w-0">
         <Link
-          className="block truncate text-sm text-foreground hover:underline"
+          className="block truncate text-xs md:text-sm text-foreground hover:underline"
           params={{ album_id: album.id }}
           to="/albums/$album_id"
         >
@@ -90,16 +91,39 @@ function AlbumListItem({ album }: { album: AlbumsDatum }) {
 
 function AlbumList({ albums }: { albums: AlbumsDatum[] }) {
   return (
-    <div
-      className="grid gap-3"
-      style={{
-        gridTemplateColumns: "repeat(auto-fit, minmax(max(144px, calc((100% - 5 * 0.75rem) / 6)), 1fr))",
-      }}
-    >
-      {albums.map((album) => (
-        <AlbumListItem album={album} key={album.id} />
-      ))}
-    </div>
+    <>
+      {/* モバイル: カルーセル */}
+      <div className="md:hidden -mx-6">
+        <Carousel
+          opts={{
+            align: "start",
+            containScroll: "trimSnaps",
+            loop: true,
+            // dragFree: true,
+            skipSnaps: true,
+          }}
+        >
+          <CarouselContent className="ml-6">
+            {albums.map((album) => (
+              <CarouselItem className="basis-36 pl-3" key={album.id}>
+                <AlbumListItem album={album} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
+      {/* デスクトップ: グリッド */}
+      <div
+        className="hidden md:grid gap-3"
+        style={{
+          gridTemplateColumns: "repeat(auto-fit, minmax(max(144px, calc((100% - 5 * 0.75rem) / 6)), 1fr))",
+        }}
+      >
+        {albums.map((album) => (
+          <AlbumListItem album={album} key={album.id} />
+        ))}
+      </div>
+    </>
   )
 }
 
