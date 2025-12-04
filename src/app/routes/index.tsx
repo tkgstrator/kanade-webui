@@ -53,8 +53,12 @@ function AlbumCard({ album, rank }: { album: ChartAlbum; rank: number }) {
         </div>
       </div>
       <div className="flex flex-col px-1">
-        <span className="truncate text-sm font-medium text-foreground group-hover:underline">{attributes.name}</span>
-        <span className="truncate text-xs text-muted-foreground">{attributes.artistName}</span>
+        <Link to="/">
+          <span className="truncate text-sm font-medium text-foreground group-hover:underline">{attributes.name}</span>
+        </Link>
+        <Link to="/">
+          <span className="truncate text-xs text-muted-foreground">{attributes.artistName}</span>
+        </Link>
       </div>
     </Link>
   )

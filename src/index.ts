@@ -7,7 +7,7 @@ import { timeout } from "hono/timeout"
 import type { ContentfulStatusCode } from "hono/utils/http-status"
 import { isTokenExpired, signToken } from "./lib/token"
 import { AlbumSearchParamSchema, AlbumSearchSchema } from "./schemas/album.dto"
-import { ChartQuerySchema, ChartSchema } from "./schemas/charts.dto"
+import { ChartQuerySchema, ChartSchema } from "./schemas/chart.dto"
 import { QueueSchema } from "./schemas/queue.dto"
 import { SearchQuerySchema, SearchSchema } from "./schemas/search.dto"
 import type { Env } from "./utils/binding"
@@ -86,6 +86,51 @@ app.openapi(
     method: "get",
     middleware: [],
     path: "/api/albums/:album_id",
+    request: {
+      params: AlbumSearchParamSchema,
+    },
+    responses: {
+      200: {
+        content: {
+          "application/json": {
+            schema: AlbumSearchSchema,
+          },
+        },
+        description: "Successful response with album details",
+      },
+    },
+    summary: "Get album details by ID",
+    tags: ["Albums"],
+  }),
+  async (c) => {
+    const { album_id } = c.req.valid("param")
+    const url: URL = new URL(`https://api.music.apple.com/v1/catalog/jp/albums/${album_id}`)
+    url.searchParams.append("include", "tracks")
+    const response = await fetch(url.href, {
+      headers: {
+        Authorization: `Bearer ${c.get("MUSIC_TOKEN")}`,
+      },
+    })
+    if (!response.ok) {
+      throw new HTTPException(response.status as ContentfulStatusCode, {
+        message: response.statusText,
+      })
+    }
+    const object = await response.json()
+    const result = AlbumSearchSchema.safeParse(object)
+    if (!result.success) {
+      console.error(object, result.error)
+      throw new HTTPException(502, { message: result.error.message })
+    }
+    return c.json(result.data)
+  },
+)
+app.openapi(
+  createRoute({
+    description: "Retrieves detailed information about a specific album by its ID.",
+    method: "get",
+    middleware: [],
+    path: "/api/artists/:artist_id",
     request: {
       params: AlbumSearchParamSchema,
     },
