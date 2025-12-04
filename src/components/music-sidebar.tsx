@@ -74,7 +74,7 @@ export function MusicSidebar() {
   }
 
   return (
-    <Sidebar className="border-r border-sidebar-border select-none">
+    <Sidebar className="border-r border-sidebar-border select-none" collapsible="icon" variant="sidebar">
       <SidebarHeader className="px-4 py-3">
         <Link to="/">
           <div className="flex items-center gap-2">

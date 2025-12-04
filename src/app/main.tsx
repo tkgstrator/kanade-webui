@@ -69,9 +69,7 @@ if (!rootElement.innerHTML) {
         }}
       >
         <ThemeProvider>
-          <main className="flex-1 min-w-0 overflow-auto">
-            <RouterProvider router={router} />
-          </main>
+          <RouterProvider router={router} />
           <Toaster />
         </ThemeProvider>
       </PersistQueryClientProvider>
