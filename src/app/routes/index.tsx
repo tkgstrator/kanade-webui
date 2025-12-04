@@ -76,7 +76,10 @@ function ChartSection({ title, albums }: { title: string; albums: ChartAlbum[] }
       >
         <CarouselContent className="-ml-3">
           {albums.map((album, index) => (
-            <CarouselItem className="basis-1/2 pl-3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6" key={album.id}>
+            <CarouselItem
+              className={cn("basis-1/2 pl-3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6", "max-w-[220px]")}
+              key={album.id}
+            >
               <AlbumCard album={album} rank={index + 1} />
             </CarouselItem>
           ))}
@@ -93,10 +96,11 @@ function HeroSection({ album }: { album: ChartAlbum }) {
 
   return (
     <Link
-      className={cn(
-        "relative flex h-64 w-full overflow-hidden rounded-xl md:h-80",
-        "bg-linear-to-r from-pink-500/20 to-purple-500/20 dark:from-pink-900/30 dark:to-purple-900/30",
-      )}
+      className="w-full h-64 overflow-hidden"
+      // className={cn(
+      //   "relative flex h-64 w-full overflow-hidden rounded-xl md:h-80",
+      //   "bg-linear-to-r from-pink-500/20 to-purple-500/20 dark:from-pink-900/30 dark:to-purple-900/30",
+      // )}
       params={{ album_id: Number(album.id) }}
       to="/albums/$album_id"
     >
@@ -148,7 +152,7 @@ function Page() {
 
   return (
     <div className="flex flex-col gap-8 p-4 md:p-6 lg:p-8">
-      <HeroSection album={topAlbum} />
+      {/* <HeroSection album={topAlbum} /> */}
       <ChartSection albums={topChartAlbums} title="トップチャート" />
       {newReleases.length > 0 && <ChartSection albums={newReleases} title="注目のアルバム" />}
     </div>
