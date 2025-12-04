@@ -87,7 +87,7 @@
   "private": true,
   "scripts": {
     "build": "tsc -b && vite build --mode ${CLOUDFLARE_ENV:-dev}",
-    "deploy": "wrangler deploy --env ${CLOUDFLARE_ENV:-dev}",
+    "deploy": "wrangler deploy --env ${CLOUDFLARE_ENV:-dev} --keep-vars",
     "dev": "bun --bunx vite --host",
     "generate": "bun run scripts/index.ts && bunx openapi-zod-client@1.18.3 scripts/openapi.json --template default.hbs --export-schemas --export-types --strict-objects --no-with-alias --with-docs --api-client-name client --output src/lib/client.ts",
     "predeploy": "vite build --mode ${CLOUDFLARE_ENV:-dev}"

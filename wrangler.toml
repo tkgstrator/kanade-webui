@@ -11,8 +11,11 @@ binding = "assets"
 # [vars]
 # PROXY_URL = "http://backend:5000"
 
-# [env.prod.vars]
-# PROXY_URL = "http://backend:5000"
+[env.prod.vars]
+APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"
+APPLE_MUSIC_KEY_ID = "68B6NWM78Z"
+CF_ACCESS_CLIENT_ID = "cfdfd7d6e420692d0d5a04db0872e875.access"
+PROXY_URL = "https://music-backend.tkgstrator.work"
 
 # [env.dev.vars]
 # PROXY_URL = "http://backend:5000"

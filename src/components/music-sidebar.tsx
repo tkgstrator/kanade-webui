@@ -1,6 +1,6 @@
 "use client"
 
-import { useNavigate } from "@tanstack/react-router"
+import { Link, useNavigate } from "@tanstack/react-router"
 import { Disc3, History, Home, Library, ListMusic, Mic2, Music2, Radio, Search } from "lucide-react"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"
 import {
@@ -71,9 +71,11 @@ export function MusicSidebar() {
   return (
     <Sidebar className="border-r border-sidebar-border select-none">
       <SidebarHeader className="px-4 py-3">
-        <div className="flex items-center gap-2">
-          <span className="font-semibold text-2xl">Music</span>
-        </div>
+        <Link to="/">
+          <div className="flex items-center gap-2">
+            <span className="font-semibold text-2xl">Music</span>
+          </div>
+        </Link>
       </SidebarHeader>
 
       <SidebarContent className="overflow-x-hidden">
