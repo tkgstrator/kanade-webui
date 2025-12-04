@@ -1,0 +1,45 @@
+name = "musickit-app"
+compatibility_date = "2025-07-12"
+compatibility_flags = ["nodejs_compat_v2"]
+main = "src/index.ts"
+
+[assets]
+directory = "dist"
+not_found_handling = "single-page-application"
+binding = "assets"
+
+# [vars]
+# PROXY_URL = "http://backend:5000"
+
+# [env.prod.vars]
+# PROXY_URL = "http://backend:5000"
+
+# [env.dev.vars]
+# PROXY_URL = "http://backend:5000"
+
+[env.prod]
+name = "musickit-app-prod"
+workers_dev = false
+preview_urls = false
+routes = [{ pattern = "music.tkgstrator.work", custom_domain = true }]
+
+[env.dev]
+name = "musickit-app-dev"
+workers_dev = true
+preview_urls = true
+routes = [{ pattern = "music-dev.tkgstrator.work", custom_domain = true }]
+
+[env.prod.assets]
+directory = "dist"
+not_found_handling = "single-page-application"
+binding = "assets"
+
+[env.dev.assets]
+directory = "dist"
+not_found_handling = "single-page-application"
+binding = "assets"
+
+[dev]
+ip = "0.0.0.0"
+port = 8787
+inspector_port = 9229

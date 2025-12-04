@@ -1,0 +1,1067 @@
+{
+  "info": {
+    "description": "API documentation for MusicKit",
+    "title": "MusicKit API",
+    "version": "1.0.0"
+  },
+  "openapi": "3.1.0",
+  "components": {
+    "schemas": {
+      "MetaResults": {
+        "type": "object",
+        "properties": {
+          "order": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rawOrder": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "order",
+          "rawOrder"
+        ]
+      },
+      "Meta": {
+        "type": "object",
+        "properties": {
+          "results": {
+            "$ref": "#/components/schemas/MetaResults"
+          }
+        },
+        "required": [
+          "results"
+        ]
+      },
+      "Artwork": {
+        "type": "object",
+        "properties": {
+          "bgColor": {
+            "type": "string"
+          },
+          "height": {
+            "type": "number"
+          },
+          "textColor1": {
+            "type": "string"
+          },
+          "textColor2": {
+            "type": "string"
+          },
+          "textColor3": {
+            "type": "string"
+          },
+          "textColor4": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "width": {
+            "type": "integer",
+            "exclusiveMinimum": 0
+          }
+        },
+        "required": [
+          "bgColor",
+          "height",
+          "textColor1",
+          "textColor2",
+          "textColor3",
+          "textColor4",
+          "url",
+          "width"
+        ]
+      },
+      "EditorialNotes": {
+        "type": "object",
+        "properties": {
+          "standard": {
+            "type": "string"
+          }
+        }
+      },
+      "PlayParams": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "exclusiveMinimum": 0
+          },
+          "kind": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind"
+        ]
+      },
+      "Preview": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ]
+      },
+      "AlbumAttributes": {
+        "type": "object",
+        "properties": {
+          "albumName": {
+            "type": "string"
+          },
+          "artistName": {
+            "type": "string"
+          },
+          "artwork": {
+            "$ref": "#/components/schemas/Artwork"
+          },
+          "composerName": {
+            "type": "string"
+          },
+          "contentRating": {
+            "type": "string"
+          },
+          "copyright": {
+            "type": "string"
+          },
+          "discNumber": {
+            "type": "number"
+          },
+          "durationInMillis": {
+            "type": "number"
+          },
+          "editorialNotes": {
+            "$ref": "#/components/schemas/EditorialNotes"
+          },
+          "genreNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "hasLyrics": {
+            "type": "boolean"
+          },
+          "isAppleDigitalMaster": {
+            "type": "boolean"
+          },
+          "isCompilation": {
+            "type": "boolean"
+          },
+          "isComplete": {
+            "type": "boolean"
+          },
+          "isMasteredForItunes": {
+            "type": "boolean"
+          },
+          "isrc": {
+            "type": "string"
+          },
+          "isSingle": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "playParams": {
+            "$ref": "#/components/schemas/PlayParams"
+          },
+          "previews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Preview"
+            }
+          },
+          "recordLabel": {
+            "type": "string"
+          },
+          "releaseDate": {
+            "type": "string"
+          },
+          "trackCount": {
+            "type": "number"
+          },
+          "trackNumber": {
+            "type": "number"
+          },
+          "upc": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "artistName",
+          "artwork",
+          "genreNames",
+          "name",
+          "playParams",
+          "releaseDate",
+          "url"
+        ]
+      },
+      "SongsDatum": {
+        "type": "object",
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer",
+            "exclusiveMinimum": 0
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "href",
+          "id",
+          "type"
+        ]
+      },
+      "AlbumsDatum": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/SongsDatum"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "attributes": {
+                "$ref": "#/components/schemas/AlbumAttributes"
+              }
+            },
+            "required": [
+              "attributes"
+            ]
+          }
+        ]
+      },
+      "Albums": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AlbumsDatum"
+            }
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data",
+          "href"
+        ]
+      },
+      "ArtistAttributes": {
+        "type": "object",
+        "properties": {
+          "artwork": {
+            "$ref": "#/components/schemas/Artwork"
+          },
+          "genreNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "genreNames",
+          "name",
+          "url"
+        ]
+      },
+      "Songs": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "#/components/schemas/SongsDatum"
+                },
+                {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/SongsDatum"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "attributes": {
+                          "$ref": "#/components/schemas/AlbumAttributes"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "href": {
+            "type": "string"
+          },
+          "next": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data",
+          "href"
+        ]
+      },
+      "Relationships": {
+        "type": "object",
+        "properties": {
+          "albums": {
+            "$ref": "#/components/schemas/Songs"
+          }
+        },
+        "required": [
+          "albums"
+        ]
+      },
+      "ArtistsDatum": {
+        "type": "object",
+        "properties": {
+          "attributes": {
+            "$ref": "#/components/schemas/ArtistAttributes"
+          },
+          "href": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer",
+            "exclusiveMinimum": 0
+          },
+          "relationships": {
+            "$ref": "#/components/schemas/Relationships"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "attributes",
+          "href",
+          "id",
+          "relationships",
+          "type"
+        ]
+      },
+      "Artists": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ArtistsDatum"
+            }
+          },
+          "href": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data",
+          "href"
+        ]
+      },
+      "ResultResults": {
+        "type": "object",
+        "properties": {
+          "albums": {
+            "$ref": "#/components/schemas/Albums"
+          },
+          "artists": {
+            "$ref": "#/components/schemas/Artists"
+          },
+          "songs": {
+            "$ref": "#/components/schemas/Songs"
+          }
+        }
+      },
+      "Search": {
+        "type": "object",
+        "properties": {
+          "meta": {
+            "$ref": "#/components/schemas/Meta"
+          },
+          "results": {
+            "$ref": "#/components/schemas/ResultResults"
+          }
+        },
+        "required": [
+          "meta",
+          "results"
+        ]
+      }
+    },
+    "parameters": {}
+  },
+  "paths": {
+    "/api/search": {
+      "get": {
+        "description": "Searches the Apple Music catalog for songs, albums, artists, and playlists matching the query parameter 'q'.",
+        "summary": "Search the Apple Music catalog",
+        "tags": [
+          "Search"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The search query string."
+            },
+            "required": true,
+            "description": "The search query string.",
+            "name": "q",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with search results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Search"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/albums/:album_id": {
+      "get": {
+        "description": "Retrieves detailed information about a specific album by its ID.",
+        "summary": "Get album details by ID",
+        "tags": [
+          "Albums"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "The unique identifier for the album."
+            },
+            "required": false,
+            "description": "The unique identifier for the album.",
+            "name": "album_id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with album details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "attributes": {
+                            "type": "object",
+                            "properties": {
+                              "artistName": {
+                                "type": "string"
+                              },
+                              "artwork": {
+                                "type": "object",
+                                "properties": {
+                                  "bgColor": {
+                                    "type": "string"
+                                  },
+                                  "height": {
+                                    "type": "number"
+                                  },
+                                  "textColor1": {
+                                    "type": "string"
+                                  },
+                                  "textColor2": {
+                                    "type": "string"
+                                  },
+                                  "textColor3": {
+                                    "type": "string"
+                                  },
+                                  "textColor4": {
+                                    "type": "string"
+                                  },
+                                  "url": {
+                                    "type": "string"
+                                  },
+                                  "width": {
+                                    "type": "integer",
+                                    "exclusiveMinimum": 0
+                                  }
+                                },
+                                "required": [
+                                  "bgColor",
+                                  "height",
+                                  "textColor1",
+                                  "textColor2",
+                                  "textColor3",
+                                  "textColor4",
+                                  "url",
+                                  "width"
+                                ]
+                              },
+                              "copyright": {
+                                "type": "string"
+                              },
+                              "genreNames": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "isCompilation": {
+                                "type": "boolean"
+                              },
+                              "isComplete": {
+                                "type": "boolean"
+                              },
+                              "isMasteredForItunes": {
+                                "type": "boolean"
+                              },
+                              "isSingle": {
+                                "type": "boolean"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "playParams": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "integer",
+                                    "exclusiveMinimum": 0
+                                  },
+                                  "kind": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "id",
+                                  "kind"
+                                ]
+                              },
+                              "recordLabel": {
+                                "type": "string"
+                              },
+                              "releaseDate": {
+                                "type": "string"
+                              },
+                              "trackCount": {
+                                "type": "number"
+                              },
+                              "upc": {
+                                "type": "string"
+                              },
+                              "url": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "artistName",
+                              "artwork",
+                              "copyright",
+                              "genreNames",
+                              "isCompilation",
+                              "isComplete",
+                              "isMasteredForItunes",
+                              "isSingle",
+                              "name",
+                              "playParams",
+                              "recordLabel",
+                              "releaseDate",
+                              "trackCount",
+                              "upc",
+                              "url"
+                            ]
+                          },
+                          "href": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0
+                          },
+                          "relationships": {
+                            "type": "object",
+                            "properties": {
+                              "artists": {
+                                "type": "object",
+                                "properties": {
+                                  "data": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "attributes": {
+                                          "type": "object",
+                                          "properties": {
+                                            "albumName": {
+                                              "type": "string"
+                                            },
+                                            "artistName": {
+                                              "type": "string"
+                                            },
+                                            "artwork": {
+                                              "type": "object",
+                                              "properties": {
+                                                "bgColor": {
+                                                  "type": "string"
+                                                },
+                                                "height": {
+                                                  "type": "number"
+                                                },
+                                                "textColor1": {
+                                                  "type": "string"
+                                                },
+                                                "textColor2": {
+                                                  "type": "string"
+                                                },
+                                                "textColor3": {
+                                                  "type": "string"
+                                                },
+                                                "textColor4": {
+                                                  "type": "string"
+                                                },
+                                                "url": {
+                                                  "type": "string"
+                                                },
+                                                "width": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                }
+                                              },
+                                              "required": [
+                                                "bgColor",
+                                                "height",
+                                                "textColor1",
+                                                "textColor2",
+                                                "textColor3",
+                                                "textColor4",
+                                                "url",
+                                                "width"
+                                              ]
+                                            },
+                                            "composerName": {
+                                              "type": "string"
+                                            },
+                                            "discNumber": {
+                                              "type": "number"
+                                            },
+                                            "durationInMillis": {
+                                              "type": "number"
+                                            },
+                                            "genreNames": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "hasLyrics": {
+                                              "type": "boolean"
+                                            },
+                                            "isAppleDigitalMaster": {
+                                              "type": "boolean"
+                                            },
+                                            "isrc": {
+                                              "type": "string"
+                                            },
+                                            "name": {
+                                              "type": "string"
+                                            },
+                                            "playParams": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "kind": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "id",
+                                                "kind"
+                                              ]
+                                            },
+                                            "previews": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "url": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "url"
+                                                ]
+                                              }
+                                            },
+                                            "releaseDate": {
+                                              "type": "string"
+                                            },
+                                            "trackNumber": {
+                                              "type": "number"
+                                            },
+                                            "url": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "albumName",
+                                            "artistName",
+                                            "artwork",
+                                            "composerName",
+                                            "discNumber",
+                                            "durationInMillis",
+                                            "genreNames",
+                                            "hasLyrics",
+                                            "isAppleDigitalMaster",
+                                            "isrc",
+                                            "name",
+                                            "playParams",
+                                            "previews",
+                                            "releaseDate",
+                                            "trackNumber",
+                                            "url"
+                                          ]
+                                        },
+                                        "href": {
+                                          "type": "string"
+                                        },
+                                        "id": {
+                                          "type": "integer",
+                                          "exclusiveMinimum": 0
+                                        },
+                                        "type": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "href",
+                                        "id",
+                                        "type"
+                                      ]
+                                    }
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "data",
+                                  "href"
+                                ]
+                              },
+                              "tracks": {
+                                "type": "object",
+                                "properties": {
+                                  "data": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "attributes": {
+                                          "type": "object",
+                                          "properties": {
+                                            "albumName": {
+                                              "type": "string"
+                                            },
+                                            "artistName": {
+                                              "type": "string"
+                                            },
+                                            "artwork": {
+                                              "type": "object",
+                                              "properties": {
+                                                "bgColor": {
+                                                  "type": "string"
+                                                },
+                                                "height": {
+                                                  "type": "number"
+                                                },
+                                                "textColor1": {
+                                                  "type": "string"
+                                                },
+                                                "textColor2": {
+                                                  "type": "string"
+                                                },
+                                                "textColor3": {
+                                                  "type": "string"
+                                                },
+                                                "textColor4": {
+                                                  "type": "string"
+                                                },
+                                                "url": {
+                                                  "type": "string"
+                                                },
+                                                "width": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                }
+                                              },
+                                              "required": [
+                                                "bgColor",
+                                                "height",
+                                                "textColor1",
+                                                "textColor2",
+                                                "textColor3",
+                                                "textColor4",
+                                                "url",
+                                                "width"
+                                              ]
+                                            },
+                                            "composerName": {
+                                              "type": "string"
+                                            },
+                                            "discNumber": {
+                                              "type": "number"
+                                            },
+                                            "durationInMillis": {
+                                              "type": "number"
+                                            },
+                                            "genreNames": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "hasLyrics": {
+                                              "type": "boolean"
+                                            },
+                                            "isAppleDigitalMaster": {
+                                              "type": "boolean"
+                                            },
+                                            "isrc": {
+                                              "type": "string"
+                                            },
+                                            "name": {
+                                              "type": "string"
+                                            },
+                                            "playParams": {
+                                              "type": "object",
+                                              "properties": {
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "kind": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "id",
+                                                "kind"
+                                              ]
+                                            },
+                                            "previews": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "url": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "url"
+                                                ]
+                                              }
+                                            },
+                                            "releaseDate": {
+                                              "type": "string"
+                                            },
+                                            "trackNumber": {
+                                              "type": "number"
+                                            },
+                                            "url": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "albumName",
+                                            "artistName",
+                                            "artwork",
+                                            "composerName",
+                                            "discNumber",
+                                            "durationInMillis",
+                                            "genreNames",
+                                            "hasLyrics",
+                                            "isAppleDigitalMaster",
+                                            "isrc",
+                                            "name",
+                                            "playParams",
+                                            "previews",
+                                            "releaseDate",
+                                            "trackNumber",
+                                            "url"
+                                          ]
+                                        },
+                                        "href": {
+                                          "type": "string"
+                                        },
+                                        "id": {
+                                          "type": "integer",
+                                          "exclusiveMinimum": 0
+                                        },
+                                        "type": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "href",
+                                        "id",
+                                        "type"
+                                      ]
+                                    }
+                                  },
+                                  "href": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "data",
+                                  "href"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "artists",
+                              "tracks"
+                            ]
+                          },
+                          "type": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "attributes",
+                          "href",
+                          "id",
+                          "relationships",
+                          "type"
+                        ]
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/queues/:album_id": {
+      "get": {
+        "description": "Retrieves detailed information about a specific album by its ID.",
+        "summary": "Add A Download Album Queue to Redis",
+        "tags": [
+          "Albums"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "The unique identifier for the album."
+            },
+            "required": false,
+            "description": "The unique identifier for the album.",
+            "name": "album_id",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful response with album details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "url": {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      },
+                      "required": [
+                        "url"
+                      ]
+                    },
+                    "id": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0
+                    },
+                    "timestamp": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "id",
+                    "timestamp"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "webhooks": {}
+}
