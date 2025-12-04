@@ -50,7 +50,7 @@ export const FluffyAttributesSchema = z.object({
   albumName: z.string(),
   artistName: z.string(),
   artwork: ArtworkSchema,
-  composerName: z.string(),
+  composerName: z.string().optional(),
   discNumber: z.number(),
   durationInMillis: z.number(),
   genreNames: z.array(z.string()),
