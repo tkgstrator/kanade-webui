@@ -7,6 +7,7 @@ import { timeout } from "hono/timeout"
 import type { ContentfulStatusCode } from "hono/utils/http-status"
 import { isTokenExpired, signToken } from "./lib/token"
 import { AlbumSearchParamSchema, AlbumSearchSchema } from "./schemas/album.dto"
+import { ChartQuerySchema, ChartSchema } from "./schemas/charts.dto"
 import { QueueSchema } from "./schemas/queue.dto"
 import { SearchQuerySchema, SearchSchema } from "./schemas/search.dto"
 import type { Env } from "./utils/binding"
@@ -117,6 +118,53 @@ app.openapi(
     }
     const object = await response.json()
     const result = AlbumSearchSchema.safeParse(object)
+    if (!result.success) {
+      console.error(object, result.error)
+      throw new HTTPException(502, { message: result.error.message })
+    }
+    return c.json(result.data)
+  },
+)
+app.openapi(
+  createRoute({
+    description: "",
+    method: "get",
+    middleware: [],
+    path: "/api/charts",
+    request: {
+      query: ChartQuerySchema,
+    },
+    responses: {
+      200: {
+        content: {
+          "application/json": {
+            schema: ChartSchema,
+          },
+        },
+        description: "Successful response with album details",
+      },
+    },
+    summary: "",
+    tags: ["Charts"],
+  }),
+  async (c) => {
+    const { types, genre, limit } = c.req.valid("query")
+    const url: URL = new URL("https://api.music.apple.com/v1/catalog/jp/charts")
+    url.searchParams.append("types", types)
+    url.searchParams.append("genre", genre.toString())
+    url.searchParams.append("limit", limit.toString())
+    const response = await fetch(url.href, {
+      headers: {
+        Authorization: `Bearer ${c.get("MUSIC_TOKEN")}`,
+      },
+    })
+    if (!response.ok) {
+      throw new HTTPException(response.status as ContentfulStatusCode, {
+        message: response.statusText,
+      })
+    }
+    const object = await response.json()
+    const result = ChartSchema.safeParse(object)
     if (!result.success) {
       console.error(object, result.error)
       throw new HTTPException(502, { message: result.error.message })
