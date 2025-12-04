@@ -91,9 +91,10 @@ WORKDIR /app
 RUN uv pip install --system \
   "gamdl==${GAMDL_VERSION}" \
   bullmq \
+  gunicorn \
   flask \
   flask_cors
 
-COPY . .
+COPY ./src ./src
 
-CMD ["python", "main.py"]
+CMD ["python", "src/main.py"]

@@ -38,8 +38,6 @@ services:
     environment:
       REDIS_HOST: redis
       REDIS_PORT: 6379
-    ports:
-      - 8000:9181
     depends_on:
       redis:
         condition: service_healthy
