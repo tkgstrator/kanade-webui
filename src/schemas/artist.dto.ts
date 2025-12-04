@@ -1,7 +1,7 @@
 import z from "zod"
 
 export const ArtistParamSchema = z.object({
-  artist_id: z.number().int().positive(),
+  artist_id: z.coerce.number().int().positive(),
 })
 
 export const ArtworkSchema = z.object({
