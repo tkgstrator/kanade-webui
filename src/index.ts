@@ -7,6 +7,7 @@ import { timeout } from "hono/timeout"
 import type { ContentfulStatusCode } from "hono/utils/http-status"
 import { isTokenExpired, signToken } from "./lib/token"
 import { AlbumSearchParamSchema, AlbumSearchSchema } from "./schemas/album.dto"
+import { ArtistParamSchema, ArtistSchema } from "./schemas/artist.dto"
 import { ChartQuerySchema, ChartSchema } from "./schemas/chart.dto"
 import { QueueSchema } from "./schemas/queue.dto"
 import { SearchQuerySchema, SearchSchema } from "./schemas/search.dto"
@@ -132,13 +133,13 @@ app.openapi(
     middleware: [],
     path: "/api/artists/:artist_id",
     request: {
-      params: AlbumSearchParamSchema,
+      params: ArtistParamSchema,
     },
     responses: {
       200: {
         content: {
           "application/json": {
-            schema: AlbumSearchSchema,
+            schema: ArtistSchema,
           },
         },
         description: "Successful response with album details",
@@ -148,9 +149,9 @@ app.openapi(
     tags: ["Albums"],
   }),
   async (c) => {
-    const { album_id } = c.req.valid("param")
-    const url: URL = new URL(`https://api.music.apple.com/v1/catalog/jp/albums/${album_id}`)
-    url.searchParams.append("include", "tracks")
+    const { artist_id } = c.req.valid("param")
+    const url: URL = new URL(`https://api.music.apple.com/v1/catalog/jp/artists/${artist_id}`)
+    url.searchParams.append("include", "albums,music-videos,station")
     const response = await fetch(url.href, {
       headers: {
         Authorization: `Bearer ${c.get("MUSIC_TOKEN")}`,
@@ -162,7 +163,7 @@ app.openapi(
       })
     }
     const object = await response.json()
-    const result = AlbumSearchSchema.safeParse(object)
+    const result = ArtistSchema.safeParse(object)
     if (!result.success) {
       console.error(object, result.error)
       throw new HTTPException(502, { message: result.error.message })

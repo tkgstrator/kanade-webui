@@ -41,7 +41,7 @@ function formatDuration(ms: number): string {
 }
 
 function AlbumHeader({ album }: { album: AlbumsDatum }) {
-  const { attributes } = album
+  const { attributes, relationships } = album
 
   const { mutate } = useMutation({
     mutationFn: async () =>
@@ -72,7 +72,7 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
           <h1 className="text-3xl text-foreground text-center lg:text-left font-semibold">{attributes.name}</h1>
           <Link
             className="font-medium text-foreground hover:underline text-2xl"
-            params={{ artist_id: album.id }}
+            params={{ artist_id: relationships.artists.data[0].id }}
             to="/artists/$artist_id"
           >
             {attributes.artistName}
