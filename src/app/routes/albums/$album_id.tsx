@@ -54,7 +54,7 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
   })
 
   return (
-    <div className="flex flex-col items-center gap-6 md:flex-row md:items-start w-full">
+    <div className="flex flex-col items-center gap-6 md:flex-row md:items-center w-full">
       <img
         alt={attributes.name}
         className="aspect-square w-full max-w-[270px] rounded-lg object-cover shadow-lg"
@@ -65,7 +65,7 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
         <p className="hidden md:block text-sm font-medium text-muted-foreground uppercase">
           {attributes.isSingle ? "シングル" : "アルバム"}
         </p>
-        <h1 className="text-2xl text-foreground text-center md:text-left md:text-4xl">{attributes.name}</h1>
+        <h1 className="text-2xl text-foreground text-center md:text-left md:text-3xl">{attributes.name}</h1>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <Link
             className="font-medium text-foreground hover:underline"

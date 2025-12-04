@@ -754,15 +754,12 @@
                                             "artistName",
                                             "artwork",
                                             "discNumber",
-                                            "durationInMillis",
                                             "genreNames",
                                             "hasLyrics",
                                             "isAppleDigitalMaster",
                                             "isrc",
                                             "name",
-                                            "playParams",
                                             "previews",
-                                            "releaseDate",
                                             "trackNumber",
                                             "url"
                                           ]
@@ -923,15 +920,12 @@
                                             "artistName",
                                             "artwork",
                                             "discNumber",
-                                            "durationInMillis",
                                             "genreNames",
                                             "hasLyrics",
                                             "isAppleDigitalMaster",
                                             "isrc",
                                             "name",
-                                            "playParams",
                                             "previews",
-                                            "releaseDate",
                                             "trackNumber",
                                             "url"
                                           ]
