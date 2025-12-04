@@ -55,16 +55,17 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
   })
 
   return (
-    <div className="flex flex-col items-center gap-6 lg:flex-row md:items-center w-full">
+    <div className="flex flex-col items-center gap-6 lg:grid lg:grid-cols-[auto_1fr] w-full">
       <img
         alt={attributes.name}
         className="aspect-square w-full max-w-[270px] rounded-lg object-cover shadow-lg"
         draggable={false}
         src={getArtworkUrl(attributes.artwork.url, 600)}
       />
-      <div className="flex flex-1 flex-col items-center justify-end lg:items-start">
-        <h1 className="text-3xl text-foreground text-center md:text-left font-semibold">{attributes.name}</h1>
-        <div className="flex flex-col items-center lg:items-start text-sm text-muted-foreground">
+      <div className="flex flex-col items-center lg:items-start lg:justify-between lg:h-full gap-4">
+        <div />
+        <div className="flex flex-col items-center lg:items-start">
+          <h1 className="text-3xl text-foreground text-center lg:text-left font-semibold">{attributes.name}</h1>
           <Link
             className="font-medium text-foreground hover:underline text-2xl"
             params={{ artist_id: album.id }}
@@ -72,25 +73,19 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
           >
             {attributes.artistName}
           </Link>
-          <span>{dayjs(attributes.releaseDate).format("YYYY/MM/DD")}</span>
+          <span className="text-sm text-muted-foreground">
+            {attributes.isSingle ? "シングル" : "アルバム"} · {dayjs(attributes.releaseDate).format("YYYY年M月D日")}
+          </span>
         </div>
-        {attributes.editorialNotes?.standard && (
-          <p className="hidden md:block mt-2 text-sm text-muted-foreground text-center md:text-left line-clamp-3">
-            {attributes.editorialNotes.standard}
-          </p>
-        )}
-        {attributes.copyright && (
-          <p className="hidden md:block mt-4 text-xs text-muted-foreground">{attributes.copyright}</p>
-        )}
-        <div className="mt-4 flex gap-4">
+        <div className="flex gap-4">
           <Button
-            className="flex-1 md:flex-none bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-[127px] text-sm rounded-sm gap-2"
+            className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-[127px] text-sm rounded-sm gap-2"
             onClick={() => mutate()}
           >
             <Download className="size-4" />
             ダウンロード
           </Button>
-          <Button className="flex-1 md:flex-none bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-[127px] text-sm rounded-sm gap-2">
+          <Button className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-[127px] text-sm rounded-sm gap-2">
             <Shuffle className="size-4" />
             シャッフル
           </Button>
