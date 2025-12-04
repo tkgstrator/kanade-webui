@@ -14,6 +14,7 @@
     "ignoreUnknown": true,
     "includes": [
       "src/**/*.{ts,tsx}",
+      "__tests__/**/*.{ts,tsx}",
       "*.json",
       "!src/components/ui/*.tsx",
       "!src/app/routeTree.gen.ts",
@@ -30,6 +31,7 @@
   "javascript": {
     "formatter": {
       "enabled": true,
+      "quoteStyle": "single",
       "semicolons": "asNeeded"
     }
   },

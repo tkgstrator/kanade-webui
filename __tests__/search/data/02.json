@@ -1,0 +1,3585 @@
+{
+    "results": {
+        "albums": {
+            "href": "/v1/catalog/jp/search?limit=25&term=%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA&types=albums",
+            "next": "/v1/catalog/jp/search?offset=25&term=%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA&types=albums",
+            "data": [
+                {
+                    "id": "1530888841",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1530888841",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "f2b8a0",
+                            "height": 3000,
+                            "textColor1": "2e181a",
+                            "textColor2": "381f22",
+                            "textColor3": "553835",
+                            "textColor4": "5d3d3b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9b/61/9c/9b619ca2-2eda-4938-e885-7a3ad1f00d20/4547366474442.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2020 Sony Music Labels Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "glory days (movie ver.) - Single",
+                        "playParams": {
+                            "id": "1530888841",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2020-09-23",
+                        "trackCount": 1,
+                        "upc": "4547366474442",
+                        "url": "https://music.apple.com/jp/album/glory-days-movie-version-single/1530888841"
+                    }
+                },
+                {
+                    "id": "1538287218",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538287218",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ffffff",
+                            "height": 3000,
+                            "textColor1": "2d2322",
+                            "textColor2": "3c2e29",
+                            "textColor3": "574f4e",
+                            "textColor4": "635854",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/53/45/6d/53456d2a-3d44-cf78-0924-e476bdee3e43/jacket_VVXX00483B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2019 Sony Music Labels Inc.",
+                        "editorialNotes": {
+                            "short": "人気アニメシリーズのテーマソングをまとめて収録。集大成となる劇場版主題歌も。"
+                        },
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": true,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "glory days",
+                        "playParams": {
+                            "id": "1538287218",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2019-10-23",
+                        "trackCount": 8,
+                        "upc": "4547366429381",
+                        "url": "https://music.apple.com/jp/album/glory-days/1538287218"
+                    }
+                },
+                {
+                    "id": "1538262252",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538262252",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b0ca97",
+                            "height": 3000,
+                            "textColor1": "1f1915",
+                            "textColor2": "201c19",
+                            "textColor3": "3c3c2f",
+                            "textColor4": "3d3f32",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bb/ed/c5/bbedc57d-7df2-5e7a-87c9-548b347d5b24/jacket_SEXX00616B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "copyright": "℗ 2013 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "OVERSKY",
+                        "playParams": {
+                            "id": "1538262252",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2013-08-28",
+                        "trackCount": 12,
+                        "upc": "4547557018851",
+                        "url": "https://music.apple.com/jp/album/oversky/1538262252"
+                    }
+                },
+                {
+                    "id": "1621917841",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1621917841",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "231917",
+                            "height": 3000,
+                            "textColor1": "eab57f",
+                            "textColor2": "de9f71",
+                            "textColor3": "c2966a",
+                            "textColor4": "b9845f",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/68/6b/fe/686bfe40-4a8a-69ac-79a7-043ac890ad66/859758164416_cover.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2022 Luna Haruna",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "BLUE ROSE - Single",
+                        "playParams": {
+                            "id": "1621917841",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Luna Haruna",
+                        "releaseDate": "2022-05-02",
+                        "trackCount": 1,
+                        "upc": "859758164416",
+                        "url": "https://music.apple.com/jp/album/blue-rose-single/1621917841"
+                    }
+                },
+                {
+                    "id": "1537907623",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537907623",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "e9cee1",
+                            "height": 3000,
+                            "textColor1": "2e221e",
+                            "textColor2": "3c1a25",
+                            "textColor3": "534445",
+                            "textColor4": "5e3e4b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/75/d3/50/75d3500e-5240-385a-7a6b-de7b9078b8e6/jacket_VVXX00301B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3377
+                        },
+                        "copyright": "℗ 2018 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "桃色タイフーン - Single",
+                        "playParams": {
+                            "id": "1537907623",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2018-07-28",
+                        "trackCount": 1,
+                        "upc": "4547366371833",
+                        "url": "https://music.apple.com/jp/album/%E6%A1%83%E8%89%B2%E3%82%BF%E3%82%A4%E3%83%95%E3%83%BC%E3%83%B3-single/1537907623"
+                    }
+                },
+                {
+                    "id": "1538262776",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538262776",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "fded00",
+                            "height": 1648,
+                            "textColor1": "1d050a",
+                            "textColor2": "5b141a",
+                            "textColor3": "4a3408",
+                            "textColor4": "7c3f15",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e8/b8/51/e8b851a6-75ce-6480-8ce9-d5e85355dff8/jacket_SEXX00984B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 1661
+                        },
+                        "copyright": "℗ 2015 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": true,
+                        "isSingle": false,
+                        "name": "Candy Lips",
+                        "playParams": {
+                            "id": "1538262776",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2015-03-25",
+                        "trackCount": 13,
+                        "upc": "4547557038101",
+                        "url": "https://music.apple.com/jp/album/candy-lips/1538262776"
+                    }
+                },
+                {
+                    "id": "1538286747",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538286747",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "264e8f",
+                            "height": 3000,
+                            "textColor1": "fff1f2",
+                            "textColor2": "f1c6ce",
+                            "textColor3": "d3d0de",
+                            "textColor4": "c8aec1",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/b7/5d/c5b75dc7-8074-f52a-cdc5-c56da1e7931d/jacket_VVXX00344B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2018 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": true,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "LUNA JOULE (Extra Edition)",
+                        "playParams": {
+                            "id": "1538286747",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2018-11-07",
+                        "trackCount": 17,
+                        "upc": "4547366383638",
+                        "url": "https://music.apple.com/jp/album/luna-joule-extra-edition/1538286747"
+                    }
+                },
+                {
+                    "id": "1538285637",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538285637",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "3baae2",
+                            "height": 3000,
+                            "textColor1": "11100e",
+                            "textColor2": "1a1715",
+                            "textColor3": "192e39",
+                            "textColor4": "21343e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/90/ca/45/90ca45ad-f68b-ed91-52e6-06202835d9d0/jacket_VVCL01060B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "copyright": "℗ 2017 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "LUNARIUM",
+                        "playParams": {
+                            "id": "1538285637",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2017-06-21",
+                        "trackCount": 13,
+                        "upc": "4547366317138",
+                        "url": "https://music.apple.com/jp/album/lunarium/1538285637"
+                    }
+                },
+                {
+                    "id": "1537908643",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537908643",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "14141a",
+                            "height": 3000,
+                            "textColor1": "e3e3e9",
+                            "textColor2": "06afd8",
+                            "textColor3": "bababf",
+                            "textColor4": "0990b2",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b8/b9/03/b8b903fa-5c7d-3ad6-5ebd-046aa2f48a84/jacket_VVXX00426B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2019 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "ルパとアリエス - Single",
+                        "playParams": {
+                            "id": "1537908643",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2019-06-07",
+                        "trackCount": 1,
+                        "upc": "4547366411591",
+                        "url": "https://music.apple.com/jp/album/%E3%83%AB%E3%83%91%E3%81%A8%E3%82%A2%E3%83%AA%E3%82%A8%E3%82%B9-single/1537908643"
+                    }
+                },
+                {
+                    "id": "1537907301",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537907301",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "bab2a6",
+                            "height": 3000,
+                            "textColor1": "161e1f",
+                            "textColor2": "3c1017",
+                            "textColor3": "373c3a",
+                            "textColor4": "553033",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/e2/f9/ffe2f921-ff42-19d8-2d42-b6a12fbbf719/jacket_VVXX00278B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2018 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "JUSTICE - Single",
+                        "playParams": {
+                            "id": "1537907301",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2018-06-07",
+                        "trackCount": 1,
+                        "upc": "4547366362374",
+                        "url": "https://music.apple.com/jp/album/justice-single/1537907301"
+                    }
+                },
+                {
+                    "id": "1537262851",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537262851",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "a4211f",
+                            "height": 3000,
+                            "textColor1": "feffff",
+                            "textColor2": "e6dced",
+                            "textColor3": "ecd2d2",
+                            "textColor4": "d9b7c4",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/68/d9/4b/68d94b19-fc08-a051-bd7e-dec274fc799b/jacket_SEXX00599B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "copyright": "℗ 2013 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "アイヲウタエ - EP",
+                        "playParams": {
+                            "id": "1537262851",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2013-07-17",
+                        "trackCount": 4,
+                        "upc": "4547557018301",
+                        "url": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%83%B2%E3%82%A6%E3%82%BF%E3%82%A8-ep/1537262851"
+                    }
+                },
+                {
+                    "id": "1575345719",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1575345719",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "f9f9fb",
+                            "height": 3000,
+                            "textColor1": "312825",
+                            "textColor2": "3b2d2c",
+                            "textColor3": "595150",
+                            "textColor4": "615655",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/df/10/f4/df10f46c-025f-b09d-b45a-2ccc14daa62c/4547366521801.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2012(1,2),2013(3,4,6),2014(7,8),2015(9,10),2016(11,12),2017(13,15),2018(16,17),2019(18,19,20),2020(21),2021(5,14) Sony Music Labels Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": true,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "HARUNA LUNA BEST 2012-2020",
+                        "playParams": {
+                            "id": "1575345719",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2021-07-21",
+                        "trackCount": 21,
+                        "upc": "4547366521801",
+                        "url": "https://music.apple.com/jp/album/haruna-luna-best-2012-2020/1575345719"
+                    }
+                },
+                {
+                    "id": "1537253152",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537253152",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b9afa4",
+                            "height": 3000,
+                            "textColor1": "110c08",
+                            "textColor2": "1d150f",
+                            "textColor3": "322c27",
+                            "textColor4": "3c332d",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/67/b2/96/67b2965a-f6ab-b837-9a79-40c18554de76/jacket_SECL01634B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "copyright": "℗ 2015 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "君色シグナル - EP",
+                        "playParams": {
+                            "id": "1537253152",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2015-01-28",
+                        "trackCount": 4,
+                        "upc": "4547557037173",
+                        "url": "https://music.apple.com/jp/album/%E5%90%9B%E8%89%B2%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB-ep/1537253152"
+                    }
+                },
+                {
+                    "id": "1538259064",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538259064",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "adc4c2",
+                            "height": 3000,
+                            "textColor1": "090c08",
+                            "textColor2": "0e1c14",
+                            "textColor3": "2a312e",
+                            "textColor4": "2e3e37",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5a/04/6f/5a046f57-96b3-746d-c441-5bb5d1f6ee21/jacket_SECL02115B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "copyright": "℗ 2017 Sony Music Entertainment (Japan) Inc.",
+                        "editorialNotes": {
+                            "short": "気鋭のアニソン歌姫が5種のコラボレーション曲で、さらなる魅力を開花。"
+                        },
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "S×W EP",
+                        "playParams": {
+                            "id": "1538259064",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2017-02-22",
+                        "trackCount": 5,
+                        "upc": "4547366299359",
+                        "url": "https://music.apple.com/jp/album/s-w-ep/1538259064"
+                    }
+                },
+                {
+                    "id": "1537250946",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537250946",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "94d3f2",
+                            "height": 3000,
+                            "textColor1": "2b211c",
+                            "textColor2": "372c28",
+                            "textColor3": "404447",
+                            "textColor4": "4a4d50",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/93/9d/bb/939dbb9a-2094-c7cb-da3a-163c65e90bde/jacket_SECL01222B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "copyright": "℗ 2012 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "Overfly - EP",
+                        "playParams": {
+                            "id": "1537250946",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2012-11-28",
+                        "trackCount": 4,
+                        "upc": "4547557014549",
+                        "url": "https://music.apple.com/jp/album/overfly-ep/1537250946"
+                    }
+                },
+                {
+                    "id": "1537909388",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537909388",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "141007",
+                            "height": 3000,
+                            "textColor1": "fad3b1",
+                            "textColor2": "e2c12a",
+                            "textColor3": "ccac8f",
+                            "textColor4": "b89d23",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/08/ee/66/08ee6677-8a80-e2dd-13b2-07c24de22e05/jacket_VVXX00456B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2019 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "回転木馬 - Single",
+                        "playParams": {
+                            "id": "1537909388",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2019-08-02",
+                        "trackCount": 1,
+                        "upc": "4547366420784",
+                        "url": "https://music.apple.com/jp/album/%E5%9B%9E%E8%BB%A2%E6%9C%A8%E9%A6%AC-single/1537909388"
+                    }
+                },
+                {
+                    "id": "1538285558",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538285558",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b7daf6",
+                            "height": 3000,
+                            "textColor1": "281e1c",
+                            "textColor2": "302b31",
+                            "textColor3": "444448",
+                            "textColor4": "4b4e58",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2d/04/65/2d046554-8f86-4468-4b84-2fd709cad49c/jacket_VVCL01016B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "copyright": "℗ 2017 Sony Music Entertainment (Japan) Inc.",
+                        "editorialNotes": {
+                            "short": "アニソンシンガー、自らが作詞を手掛けたさわやかなポップチューンほか。"
+                        },
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "ステラブリーズ - EP",
+                        "playParams": {
+                            "id": "1538285558",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2017-05-03",
+                        "trackCount": 4,
+                        "upc": "4547366309751",
+                        "url": "https://music.apple.com/jp/album/%E3%82%B9%E3%83%86%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC%E3%82%BA-ep/1538285558"
+                    }
+                },
+                {
+                    "id": "1537249715",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537249715",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "a1a7ba",
+                            "height": 1400,
+                            "textColor1": "0c0b0c",
+                            "textColor2": "0f0f11",
+                            "textColor3": "292a2f",
+                            "textColor4": "2c2d33",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/75/52/91/75529108-b40c-cc6e-e7ca-2103a2c78806/jacket_SECL01130B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 1412
+                        },
+                        "copyright": "℗ 2012 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "空は高く風は歌う - EP",
+                        "playParams": {
+                            "id": "1537249715",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2012-05-02",
+                        "trackCount": 4,
+                        "upc": "4547557027631",
+                        "url": "https://music.apple.com/jp/album/%E7%A9%BA%E3%81%AF%E9%AB%98%E3%81%8F%E9%A2%A8%E3%81%AF%E6%AD%8C%E3%81%86-ep/1537249715"
+                    }
+                },
+                {
+                    "id": "1537252798",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537252798",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "163178",
+                            "height": 3000,
+                            "textColor1": "e8e4e4",
+                            "textColor2": "b1b3e1",
+                            "textColor3": "bec0ce",
+                            "textColor4": "9299cc",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9c/3f/aa/9c3faa38-6bbd-a1d1-55df-f08dd9e3d901/jacket_SECL01559B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3027
+                        },
+                        "copyright": "℗ 2014 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "Startear - EP",
+                        "playParams": {
+                            "id": "1537252798",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2014-08-20",
+                        "trackCount": 4,
+                        "upc": "4547557035254",
+                        "url": "https://music.apple.com/jp/album/startear-ep/1537252798"
+                    }
+                },
+                {
+                    "id": "1537264514",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537264514",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "534948",
+                            "height": 3000,
+                            "textColor1": "f4d4c3",
+                            "textColor2": "dccfc4",
+                            "textColor3": "d3b8aa",
+                            "textColor4": "c0b4ab",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4c/d1/30/4cd130e2-1278-6f25-8033-16ac6ca30b7c/jacket_SEXX00756B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "copyright": "℗ 2013 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "snowdrop - EP",
+                        "playParams": {
+                            "id": "1537264514",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2013-12-11",
+                        "trackCount": 5,
+                        "upc": "4547557031591",
+                        "url": "https://music.apple.com/jp/album/snowdrop-ep/1537264514"
+                    }
+                },
+                {
+                    "id": "1670328429",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1670328429",
+                    "attributes": {
+                        "artistName": "オーイシマサヨシ(OxT)/KISHOW(GRANRODEO)/鈴木このみ、茅原実里/TRUE/DRAMATIC STARS(アイドルマスター SideM)/中島 愛/南條愛乃(fripSide)/羽多野 渉/春奈るな/Pyxis/早見沙織/Machico/Minami/三森すずこ/ミルキィホームズ/ZAQ",
+                        "artwork": {
+                            "bgColor": "66512e",
+                            "height": 1420,
+                            "textColor1": "fbcfd1",
+                            "textColor2": "fdc0b0",
+                            "textColor3": "ddb6b1",
+                            "textColor4": "deaa96",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cc/3c/63/cc3c633e-9d3f-8503-eec7-970106842087/PA00075887_0_91427_jacket.jpg/{w}x{h}bb.jpg",
+                            "width": 1429
+                        },
+                        "copyright": "℗ Animelo Summer Live 2017",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "Playing The World - Animelo Summer Live 2017 -THE CARD- テーマソング - Single",
+                        "playParams": {
+                            "id": "1670328429",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Animelo Summer Live",
+                        "releaseDate": "2017-05-17",
+                        "trackCount": 1,
+                        "upc": "4571463153672",
+                        "url": "https://music.apple.com/jp/album/playing-the-world-animelo-summer-live-2017-the/1670328429"
+                    }
+                },
+                {
+                    "id": "1537255175",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537255175",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "dce3d8",
+                            "height": 3000,
+                            "textColor1": "032355",
+                            "textColor2": "372c20",
+                            "textColor3": "2e496f",
+                            "textColor4": "585145",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3c/64/66/3c6466f2-f646-a331-b841-c8bd62e1604a/jacket_SECL01907B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3026
+                        },
+                        "copyright": "℗ 2016 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "Ripple Effect - EP",
+                        "playParams": {
+                            "id": "1537255175",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2016-05-25",
+                        "trackCount": 4,
+                        "upc": "4547557045048",
+                        "url": "https://music.apple.com/jp/album/ripple-effect-ep/1537255175"
+                    }
+                },
+                {
+                    "id": "1537254086",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537254086",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "efdec9",
+                            "height": 3000,
+                            "textColor1": "1b0e0d",
+                            "textColor2": "2c180e",
+                            "textColor3": "463732",
+                            "textColor4": "534034",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b6/d0/94/b6d094c3-09ca-15bc-b05e-eb9a09d3fa06/jacket_SECL01810B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "copyright": "℗ 2015 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "Dreamer - EP",
+                        "playParams": {
+                            "id": "1537254086",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2015-11-11",
+                        "trackCount": 5,
+                        "upc": "4547557041828",
+                        "url": "https://music.apple.com/jp/album/dreamer-ep/1537254086"
+                    }
+                },
+                {
+                    "id": "1537255916",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537255916",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ccd3d3",
+                            "height": 3000,
+                            "textColor1": "040606",
+                            "textColor2": "110f0d",
+                            "textColor3": "2c2f2f",
+                            "textColor4": "363635",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/21/dd/7e21dd6e-7b4f-1834-5b8e-5e2015b9d350/jacket_SECL01995B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2016 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "Windia - EP",
+                        "playParams": {
+                            "id": "1537255916",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2016-10-11",
+                        "trackCount": 4,
+                        "upc": "4547366279498",
+                        "url": "https://music.apple.com/jp/album/windia-ep/1537255916"
+                    }
+                },
+                {
+                    "id": "1537269026",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1537269026",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "d6dacb",
+                            "height": 3000,
+                            "textColor1": "291b15",
+                            "textColor2": "012255",
+                            "textColor3": "4c4139",
+                            "textColor4": "2c476d",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/16/a9/e7/16a9e7f7-e132-203f-e496-277d5ea456b0/jacket_SEXX01206B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2016 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "Ripple Effect (TV Size) - Single",
+                        "playParams": {
+                            "id": "1537269026",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2016-04-17",
+                        "trackCount": 1,
+                        "upc": "4547557044454",
+                        "url": "https://music.apple.com/jp/album/ripple-effect-tv-size-single/1537269026"
+                    }
+                }
+            ]
+        },
+        "artists": {
+            "href": "/v1/catalog/jp/search?limit=25&term=%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA&types=artists",
+            "data": [
+                {
+                    "id": "570031182",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/570031182",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "e8e8ed",
+                            "height": 2290,
+                            "textColor1": "1a110f",
+                            "textColor2": "2e2421",
+                            "textColor3": "443c3b",
+                            "textColor4": "534b4a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/33/08/32/3308327d-d4b7-5c45-8c21-aca2e1fcbba8/ami-identity-1b8955c5c833a466c0901a223596b808-2025-04-27T16-10-21.962Z_cropped.png/{w}x{h}bb.jpg",
+                            "width": 2290
+                        },
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "name": "春奈るな",
+                        "url": "https://music.apple.com/jp/artist/%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA/570031182"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/570031182/albums",
+                            "next": "/v1/catalog/jp/artists/570031182/albums?offset=25",
+                            "data": [
+                                {
+                                    "id": "1538287218",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1538287218"
+                                },
+                                {
+                                    "id": "1530888841",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1530888841"
+                                },
+                                {
+                                    "id": "1537907623",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537907623"
+                                },
+                                {
+                                    "id": "1621917841",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621917841"
+                                },
+                                {
+                                    "id": "1538262252",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1538262252"
+                                },
+                                {
+                                    "id": "1538262776",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1538262776"
+                                },
+                                {
+                                    "id": "1538286747",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1538286747"
+                                },
+                                {
+                                    "id": "1537908643",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537908643"
+                                },
+                                {
+                                    "id": "1538285637",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1538285637"
+                                },
+                                {
+                                    "id": "1537907301",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537907301"
+                                },
+                                {
+                                    "id": "1537262851",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537262851"
+                                },
+                                {
+                                    "id": "1575345719",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1575345719"
+                                },
+                                {
+                                    "id": "1537253152",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537253152"
+                                },
+                                {
+                                    "id": "1538259064",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1538259064"
+                                },
+                                {
+                                    "id": "1537250946",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537250946"
+                                },
+                                {
+                                    "id": "1537909388",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537909388"
+                                },
+                                {
+                                    "id": "1538285558",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1538285558"
+                                },
+                                {
+                                    "id": "1537249715",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537249715"
+                                },
+                                {
+                                    "id": "1537252798",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537252798"
+                                },
+                                {
+                                    "id": "1537264514",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537264514"
+                                },
+                                {
+                                    "id": "1670328429",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1670328429"
+                                },
+                                {
+                                    "id": "1537255175",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537255175"
+                                },
+                                {
+                                    "id": "1537254086",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537254086"
+                                },
+                                {
+                                    "id": "1537255916",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537255916"
+                                },
+                                {
+                                    "id": "1537269026",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537269026"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": "1723456496",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/1723456496",
+                    "attributes": {
+                        "genreNames": [],
+                        "name": "春奈るな",
+                        "url": "https://music.apple.com/jp/artist/%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA/1723456496"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/1723456496/albums",
+                            "data": []
+                        }
+                    }
+                },
+                {
+                    "id": "1553167114",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/1553167114",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "6a5a52",
+                            "height": 3000,
+                            "textColor1": "f7f6f0",
+                            "textColor2": "f1bc9e",
+                            "textColor3": "dbd7d0",
+                            "textColor4": "d6a98f",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9a/c7/60/9ac760ba-8de9-66d3-4b97-357a6d4293a5/jacket_SEXX00745B00Z_550.jpg/{w}x{h}ac.jpg",
+                            "width": 3024
+                        },
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "name": "春奈るな×河野マリナ",
+                        "url": "https://music.apple.com/jp/artist/%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA-%E6%B2%B3%E9%87%8E%E3%83%9E%E3%83%AA%E3%83%8A/1553167114"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/1553167114/albums",
+                            "data": [
+                                {
+                                    "id": "1537264428",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1537264428"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": "1740473481",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/1740473481",
+                    "attributes": {
+                        "genreNames": [
+                            "ポップ"
+                        ],
+                        "name": "ルル(Singer : 春奈るな)",
+                        "url": "https://music.apple.com/jp/artist/%E3%83%AB%E3%83%AB-singer-%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA/1740473481"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/1740473481/albums",
+                            "data": []
+                        }
+                    }
+                },
+                {
+                    "id": "80486557",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/80486557",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "8c9195",
+                            "height": 2400,
+                            "textColor1": "060505",
+                            "textColor2": "0e0e0f",
+                            "textColor3": "212122",
+                            "textColor4": "27282a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/c0/a9/f3/c0a9f352-a176-b136-8c94-9132ae218d72/c6ac2d02-78ef-4035-962d-b55fb0fbd673_ami-identity-702d4ae27e3230979a2404e5de53ad5a-2024-09-13T18-16-33.065Z_cropped.png/{w}x{h}bb.jpg",
+                            "width": 2400
+                        },
+                        "genreNames": [
+                            "ロック"
+                        ],
+                        "name": "L'Arc〜en〜Ciel",
+                        "url": "https://music.apple.com/jp/artist/larc-en-ciel/80486557"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/80486557/albums",
+                            "next": "/v1/catalog/jp/artists/80486557/albums?offset=25",
+                            "data": [
+                                {
+                                    "id": "1536367610",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536367610"
+                                },
+                                {
+                                    "id": "1536503830",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536503830"
+                                },
+                                {
+                                    "id": "1536362472",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536362472"
+                                },
+                                {
+                                    "id": "1536474848",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536474848"
+                                },
+                                {
+                                    "id": "1536362441",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536362441"
+                                },
+                                {
+                                    "id": "1536473363",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536473363"
+                                },
+                                {
+                                    "id": "1536473794",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536473794"
+                                },
+                                {
+                                    "id": "1621979496",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621979496"
+                                },
+                                {
+                                    "id": "1536358664",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536358664"
+                                },
+                                {
+                                    "id": "1536473175",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536473175"
+                                },
+                                {
+                                    "id": "1621983200",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621983200"
+                                },
+                                {
+                                    "id": "1536473843",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536473843"
+                                },
+                                {
+                                    "id": "1621981237",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621981237"
+                                },
+                                {
+                                    "id": "1621980293",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621980293"
+                                },
+                                {
+                                    "id": "1621980802",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621980802"
+                                },
+                                {
+                                    "id": "1536370834",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536370834"
+                                },
+                                {
+                                    "id": "1536387241",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536387241"
+                                },
+                                {
+                                    "id": "1536357548",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536357548"
+                                },
+                                {
+                                    "id": "1621981908",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621981908"
+                                },
+                                {
+                                    "id": "1536367594",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536367594"
+                                },
+                                {
+                                    "id": "1621982581",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621982581"
+                                },
+                                {
+                                    "id": "1621981576",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621981576"
+                                },
+                                {
+                                    "id": "1621977664",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621977664"
+                                },
+                                {
+                                    "id": "1536357560",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1536357560"
+                                },
+                                {
+                                    "id": "1621978440",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1621978440"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "music-videos": {
+            "href": "/v1/catalog/jp/search?limit=25&term=%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA&types=music-videos",
+            "data": [
+                {
+                    "id": "1538680977",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538680977",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "0c2424",
+                            "height": 1080,
+                            "textColor1": "e8e0d6",
+                            "textColor2": "ddcfa0",
+                            "textColor3": "bcbab3",
+                            "textColor4": "b3ac87",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/72/03/7d/72037dd7-1f9a-f780-ff1f-13ced1a7b490/VVXY00375201A.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 293310,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981903097",
+                        "name": "glory days",
+                        "playParams": {
+                            "id": "1538680977",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "afb7b5",
+                                    "height": 1080,
+                                    "textColor1": "081411",
+                                    "textColor2": "0b1511",
+                                    "textColor3": "293431",
+                                    "textColor4": "2c3531",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/e6/ea/0a/e6ea0a06-dea9-1ae1-46f2-1a94567a3446/Job3e098bb7-ee23-45e4-8401-ea1f251ac2f6-109352213-PreviewImage_preview_image_0_video_sdr-Time1613115779574.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538680977&id=231271106&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video114/v4/b2/c6/38/b2c638e2-842c-808a-6dd0-65cb0e07ae19/mzvf_15742894187829910010.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2019-10-23",
+                        "url": "https://music.apple.com/jp/music-video/glory-days/1538680977"
+                    }
+                },
+                {
+                    "id": "1538634687",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538634687",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "bdb3b2",
+                            "height": 1078,
+                            "textColor1": "130d0c",
+                            "textColor2": "141616",
+                            "textColor3": "352e2d",
+                            "textColor4": "363635",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/56/d8/ac/56d8ac2f-96b8-05b3-82b9-04ae4c78e90c/dj.qwthmbeb.jpg/{w}x{h}mv.jpg",
+                            "width": 1898
+                        },
+                        "durationInMillis": 274985,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981201402",
+                        "name": "Overfly",
+                        "playParams": {
+                            "id": "1538634687",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1078,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/ee/5c/55/ee5c5581-2c07-a96f-b864-c5a95d3d43de/Jobfc35c9fa-3d1b-4159-93d6-ad4e25ff1768-104298672-PreviewImage_preview_image_0_video_sdr-Time1571603607686.png/{w}x{h}bb.jpg",
+                                    "width": 1898
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538634687&id=62380750&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video113/v4/8b/85/f1/8b85f114-3b2d-1bd4-69d0-1ac7a2517969/mzvf_10566577068499929703.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2013-03-07",
+                        "url": "https://music.apple.com/jp/music-video/overfly/1538634687"
+                    }
+                },
+                {
+                    "id": "1538635488",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538635488",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "565769",
+                            "height": 1080,
+                            "textColor1": "e7e6ef",
+                            "textColor2": "e4d8e5",
+                            "textColor3": "cac9d4",
+                            "textColor4": "c7becc",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/65/28/77/65287736-5df7-4d6c-3ecc-aff1b4a4256f/dj.xxpkwzgt.jpg/{w}x{h}mv.jpg",
+                            "width": 1916
+                        },
+                        "durationInMillis": 262163,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981300821",
+                        "name": "アイヲウタエ",
+                        "playParams": {
+                            "id": "1538635488",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/63/1c/fd/631cfdf4-9e05-42f3-379d-8499cbf21eab/Job2e5d4e9f-1192-4c0e-b919-04528e6c8a21-104415836-PreviewImage_preview_image_0_video_sdr-Time1572707881394.png/{w}x{h}bb.jpg",
+                                    "width": 1916
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538635488&id=62681164&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video113/v4/18/88/2c/18882cc8-0cd4-98df-67da-a759cdc1031d/mzvf_8122804622196841283.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2013-08-08",
+                        "url": "https://music.apple.com/jp/music-video/%E3%82%A2%E3%82%A4%E3%83%B2%E3%82%A6%E3%82%BF%E3%82%A8/1538635488"
+                    }
+                },
+                {
+                    "id": "1538638193",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538638193",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "efe5e4",
+                            "height": 1080,
+                            "textColor1": "0f0a0a",
+                            "textColor2": "1d1011",
+                            "textColor3": "3c3635",
+                            "textColor4": "473b3b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/f3/3e/27/f33e27e1-fd11-0fa0-65ce-c5df6b58343f/dj.kzxephob.jpg/{w}x{h}mv.jpg",
+                            "width": 1900
+                        },
+                        "durationInMillis": 293012,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981402274",
+                        "name": "君色シグナル",
+                        "playParams": {
+                            "id": "1538638193",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/e8/c5/f2/e8c5f2c1-bb80-95df-bbe8-8e35db21cdc9/Job9d7b4a23-d665-4f4d-8406-4d5988f9f8c6-104366489-PreviewImage_preview_image_0_video_sdr-Time1572270781835.png/{w}x{h}bb.jpg",
+                                    "width": 1900
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538638193&id=62548965&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video113/v4/3f/b7/da/3fb7dabb-85a5-1f1f-5048-20248f084cd4/mzvf_4899139728574834418.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2015-01-28",
+                        "url": "https://music.apple.com/jp/music-video/%E5%90%9B%E8%89%B2%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB/1538638193"
+                    }
+                },
+                {
+                    "id": "1538681035",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538681035",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ff94b6",
+                            "height": 1080,
+                            "textColor1": "0d0202",
+                            "textColor2": "24171a",
+                            "textColor3": "3e1f26",
+                            "textColor4": "4f3039",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/c8/5b/62/c85b62e6-d8fd-257a-c4ac-164208ceba5a/VVXY00455201A.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 254120,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU982006315",
+                        "name": "PEACE!!!",
+                        "playParams": {
+                            "id": "1538681035",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video114/v4/15/42/45/154245bf-133b-a2c7-4c29-6b35687e52d0/Job755203f7-ce74-46d9-a121-89855db1097b-109352266-PreviewImage_preview_image_0_video_sdr-Time1613115990750.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538681035&id=231273559&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video124/v4/78/50/7e/78507ed0-21b2-d78b-9c2b-aadca7b1e9a4/mzvf_5350927046652191476.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2020-03-18",
+                        "url": "https://music.apple.com/jp/music-video/peace/1538681035"
+                    }
+                },
+                {
+                    "id": "1538633650",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538633650",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "000e0a",
+                            "height": 480,
+                            "textColor1": "d7ae8d",
+                            "textColor2": "cda884",
+                            "textColor3": "ac8e73",
+                            "textColor4": "a4896c",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/1e/f8/f4/1ef8f412-c1ff-6b36-e864-cee09228a043/dj.ljpyxxkq.jpg/{w}x{h}mv.jpg",
+                            "width": 836
+                        },
+                        "durationInMillis": 275968,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981200402",
+                        "name": "空は高く風は歌う",
+                        "playParams": {
+                            "id": "1538633650",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 476,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/d4/24/ec/d424ecfe-6e6e-d5f5-f02b-1a7feddf03e7/Job8d90c303-f786-4df4-8526-6974b8b4d873-208698998-PreviewImage_preview_image_0_video_sdr-Time1763165072068.png/{w}x{h}bb.jpg",
+                                    "width": 831
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538633650&id=1216384023&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video211/v4/05/9e/6a/059e6a2d-8c87-fa3e-f577-053b5b393375/mzvf_14400075972281679866.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2012-04-25",
+                        "url": "https://music.apple.com/jp/music-video/%E7%A9%BA%E3%81%AF%E9%AB%98%E3%81%8F%E9%A2%A8%E3%81%AF%E6%AD%8C%E3%81%86/1538633650"
+                    }
+                },
+                {
+                    "id": "1538677647",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538677647",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "472d30",
+                            "height": 1080,
+                            "textColor1": "faecf5",
+                            "textColor2": "ebe4ed",
+                            "textColor3": "d6c6ce",
+                            "textColor4": "cabfc7",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/21/c6/d3/21c6d3a7-df9d-e462-230d-699576ea2152/dj.bgluwand.jpg/{w}x{h}mv.jpg",
+                            "width": 1916
+                        },
+                        "durationInMillis": 257598,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981700957",
+                        "name": "ステラブリーズ",
+                        "playParams": {
+                            "id": "1538677647",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video114/v4/9d/e1/c2/9de1c23e-b1b7-6c2d-9588-c69181b52b0b/Jobfc92a2c4-713f-4e81-aff7-d716efc7ef06-109350489-PreviewImage_preview_image_0_video_sdr-Time1613112241341.png/{w}x{h}bb.jpg",
+                                    "width": 1916
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538677647&id=231265759&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video124/v4/17/4c/73/174c732c-5db9-b526-b6e2-c53e66a1997d/mzvf_14741340488370314615.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2017-05-10",
+                        "url": "https://music.apple.com/jp/music-video/%E3%82%B9%E3%83%86%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC%E3%82%BA/1538677647"
+                    }
+                },
+                {
+                    "id": "1538637554",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538637554",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "151618",
+                            "height": 1078,
+                            "textColor1": "fbdbc7",
+                            "textColor2": "edceba",
+                            "textColor3": "cdb4a4",
+                            "textColor4": "c2a999",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/92/d2/f0/92d2f026-67e1-be81-dca2-c574ea6672a2/dj.lpjtumwj.jpg/{w}x{h}mv.jpg",
+                            "width": 1898
+                        },
+                        "durationInMillis": 314025,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981400408",
+                        "name": "Startear",
+                        "playParams": {
+                            "id": "1538637554",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "0a0a0a",
+                                    "height": 1078,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e6e6e6",
+                                    "textColor3": "c4c4c4",
+                                    "textColor4": "bababa",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video114/v4/46/b5/6b/46b56be9-abbf-b324-77f0-e4ed8a4caf66/Job9e1048a7-9775-4493-8bb8-51257dac8d97-109348444-PreviewImage_preview_image_0_video_sdr-Time1613105343995.png/{w}x{h}bb.jpg",
+                                    "width": 1898
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538637554&id=231256161&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video124/v4/a5/0b/90/a50b908d-af1d-589a-7ad7-4ff7160a85a7/mzvf_3514602011662291538.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2014-08-20",
+                        "url": "https://music.apple.com/jp/music-video/startear/1538637554"
+                    }
+                },
+                {
+                    "id": "1538635771",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538635771",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "37101c",
+                            "height": 480,
+                            "textColor1": "fcffff",
+                            "textColor2": "f0e8f7",
+                            "textColor3": "d4cfd1",
+                            "textColor4": "cbbdcb",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/37/4e/a7/374ea735-06df-eb20-f4a2-60f2dfb1800b/dj.omxabhsr.jpg/{w}x{h}mv.jpg",
+                            "width": 836
+                        },
+                        "durationInMillis": 312299,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981301079",
+                        "name": "snowdrop",
+                        "playParams": {
+                            "id": "1538635771",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 476,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/bf/24/a0/bf24a096-08a5-b49b-9957-2f252441ee96/Job64cd838e-67b1-4f48-8b5b-c2e609da2e31-208704250-PreviewImage_preview_image_0_video_sdr-Time1763170261770.png/{w}x{h}bb.jpg",
+                                    "width": 831
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538635771&id=1216406789&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video221/v4/22/da/65/22da6545-0dd8-6e89-1482-168ce95e2bb4/mzvf_6592704372330669591.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2013-12-20",
+                        "url": "https://music.apple.com/jp/music-video/snowdrop/1538635771"
+                    }
+                },
+                {
+                    "id": "1538640124",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538640124",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "132016",
+                            "height": 1080,
+                            "textColor1": "e7cebe",
+                            "textColor2": "d6b2a9",
+                            "textColor3": "bdab9c",
+                            "textColor4": "af958c",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/f8/de/f4/f8def46f-c54f-158c-d4d3-efe4f0f38761/dj.bypteftk.jpg/{w}x{h}mv.jpg",
+                            "width": 1916
+                        },
+                        "durationInMillis": 252607,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981601469",
+                        "name": "Ripple Effect",
+                        "playParams": {
+                            "id": "1538640124",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "bbccb8",
+                                    "height": 1080,
+                                    "textColor1": "0e0400",
+                                    "textColor2": "1e2829",
+                                    "textColor3": "312c24",
+                                    "textColor4": "3d4946",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video125/v4/2e/9b/c4/2e9bc417-2f93-03b3-dcd3-918793219fe0/Job99ad9053-d2a9-49a3-8ac3-0d8f5083f94d-117425844-PreviewImage_preview_image_66000_video_sdr-Time1626442343072.png/{w}x{h}bb.jpg",
+                                    "width": 1916
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538640124&id=308728246&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video125/v4/8a/e6/0c/8ae60c1a-c409-3300-1f46-9fac8ec1ae90/mzvf_16629997559361712245.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2016-06-08",
+                        "url": "https://music.apple.com/jp/music-video/ripple-effect/1538640124"
+                    }
+                },
+                {
+                    "id": "1538634967",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538634967",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "eed7dd",
+                            "height": 1080,
+                            "textColor1": "070908",
+                            "textColor2": "080909",
+                            "textColor3": "353232",
+                            "textColor4": "363233",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/3d/fe/79/3dfe79a9-1ccf-c1f0-3a59-ff3f1b3d3b7b/dj.ditqtzci.jpg/{w}x{h}mv.jpg",
+                            "width": 1914
+                        },
+                        "durationInMillis": 317652,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981300561",
+                        "name": "君がくれた世界",
+                        "playParams": {
+                            "id": "1538634967",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/57/41/a8/5741a845-af4f-b22d-31de-ee47dacf0791/Jobc89219f9-6f7f-4633-aed4-e5452758db7c-104295664-PreviewImage_preview_image_0_video_sdr-Time1571541986049.png/{w}x{h}bb.jpg",
+                                    "width": 1914
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538634967&id=62374847&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video123/v4/c8/1b/db/c81bdb23-6833-0165-e253-f0368134a725/mzvf_13561096746586031297.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2013-04-30",
+                        "url": "https://music.apple.com/jp/music-video/%E5%90%9B%E3%81%8C%E3%81%8F%E3%82%8C%E3%81%9F%E4%B8%96%E7%95%8C/1538634967"
+                    }
+                },
+                {
+                    "id": "1591036822",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1591036822",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "10060d",
+                            "height": 1080,
+                            "textColor1": "f8d8de",
+                            "textColor2": "e897bb",
+                            "textColor3": "caaeb5",
+                            "textColor4": "bc7a98",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video115/v4/18/f5/d6/18f5d6ba-f0dd-cfcd-a534-d6d41a2e69c2/45473665247100101.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 375785,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981802045",
+                        "name": "桃色タイフーン",
+                        "playParams": {
+                            "id": "1591036822",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "ed5ba9",
+                                    "height": 1080,
+                                    "textColor1": "14040b",
+                                    "textColor2": "241220",
+                                    "textColor3": "3f152b",
+                                    "textColor4": "4c213b",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/9f/f9/5f/9ff95f43-17ff-5454-e58c-24b2d6dbb6d4/Jobfbc9588c-2aad-4c31-b63e-0c8834cedd36-125211474-PreviewImage_preview_image_130000_video_sdr-Time1635149535303.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1591036822&id=359661716&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/cf/61/86/cf6186e1-161f-14ee-8eb5-6b934d7e58bf/mzvf_329798475499401481.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2018-08-22",
+                        "url": "https://music.apple.com/jp/music-video/%E6%A1%83%E8%89%B2%E3%82%BF%E3%82%A4%E3%83%95%E3%83%BC%E3%83%B3/1591036822"
+                    }
+                },
+                {
+                    "id": "1538639489",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538639489",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "65392c",
+                            "height": 1080,
+                            "textColor1": "e9c3c0",
+                            "textColor2": "e9c2ad",
+                            "textColor3": "cea7a3",
+                            "textColor4": "cfa793",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/71/b2/4c/71b24c6d-037b-477f-ccb6-3766c2cc6918/dj.jkpwhrtj.jpg/{w}x{h}mv.jpg",
+                            "width": 1916
+                        },
+                        "durationInMillis": 276627,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981502772",
+                        "name": "Sweet Fantasy",
+                        "playParams": {
+                            "id": "1538639489",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "3f2d1f",
+                                    "height": 1080,
+                                    "textColor1": "d6cfcc",
+                                    "textColor2": "d0b4b1",
+                                    "textColor3": "b7afaa",
+                                    "textColor4": "b39994",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video115/v4/05/00/58/05005844-2bc9-2c96-b01f-c6c873e862c3/Job6765ba39-aeba-4910-9f1f-a7f8a17af5fb-117374272-PreviewImage_preview_image_72000_video_sdr-Time1626382963494.png/{w}x{h}bb.jpg",
+                                    "width": 1916
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538639489&id=308455841&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video115/v4/e6/08/fe/e608fea5-abcd-f3ef-2d0c-d414ab55a0f2/mzvf_17298937430143272861.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2015-11-11",
+                        "url": "https://music.apple.com/jp/music-video/sweet-fantasy/1538639489"
+                    }
+                },
+                {
+                    "id": "1590974688",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1590974688",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "000000",
+                            "height": 1080,
+                            "textColor1": "d3a6c7",
+                            "textColor2": "bc9bd3",
+                            "textColor3": "a9859f",
+                            "textColor4": "967ca9",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video125/v4/b9/bd/b8/b9bdb83c-782b-c112-9360-f3005928a8e7/45473665245430101.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 302635,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU982103143",
+                        "name": "回転木馬",
+                        "playParams": {
+                            "id": "1590974688",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "e6e7f5",
+                                    "height": 1080,
+                                    "textColor1": "0f0d0f",
+                                    "textColor2": "0f0d0e",
+                                    "textColor3": "3a393d",
+                                    "textColor4": "3a393c",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/b6/3f/53/b63f5310-d4a8-4e79-167b-1198a7e079d7/Job9b483d2a-dc30-4111-88c1-7c2fb10e520b-150939816-PreviewImage_preview_image_98000_video_sdr-Time1685742877852.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1590974688&id=586900921&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/b6/c5/b9/b6c5b994-5c16-a51c-9fff-dd979f8c9da6/mzvf_804405778357131763.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2019-08-02",
+                        "url": "https://music.apple.com/jp/music-video/%E5%9B%9E%E8%BB%A2%E6%9C%A8%E9%A6%AC/1590974688"
+                    }
+                },
+                {
+                    "id": "1538640971",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538640971",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "0c2d5a",
+                            "height": 812,
+                            "textColor1": "f4e6de",
+                            "textColor2": "f4ccc9",
+                            "textColor3": "c6c1c4",
+                            "textColor4": "c6acb3",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/59/98/4d/59984dd5-fbcc-c1c0-507e-ffc3a020d14f/dj.omwjjrew.jpg/{w}x{h}mv.jpg",
+                            "width": 1914
+                        },
+                        "durationInMillis": 272617,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981602508",
+                        "name": "Windia",
+                        "playParams": {
+                            "id": "1538640971",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "005524",
+                                    "height": 812,
+                                    "textColor1": "f5faf1",
+                                    "textColor2": "14c9e9",
+                                    "textColor3": "c4d9c8",
+                                    "textColor4": "10b1c2",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video115/v4/51/b6/4c/51b64c59-d62e-fde6-fe64-dd4866b8842a/Job6a857a39-e64a-4bce-a5b9-ce0b426b4f08-117341484-PreviewImage_preview_image_68000_video_sdr-Time1626334176780.png/{w}x{h}bb.jpg",
+                                    "width": 1914
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538640971&id=308331130&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video125/v4/84/99/5b/84995b52-d533-53c4-73ec-9b70db9cd1e2/mzvf_8526964193435129323.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2015-07-01",
+                        "url": "https://music.apple.com/jp/music-video/windia/1538640971"
+                    }
+                },
+                {
+                    "id": "1591036760",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1591036760",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "305064",
+                            "height": 820,
+                            "textColor1": "efe7dc",
+                            "textColor2": "ddc8bc",
+                            "textColor3": "c8c9c4",
+                            "textColor4": "bab0aa",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video125/v4/d4/79/f5/d479f5de-f5e8-4039-a316-ea7aa9b62f11/45473665247270101.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 284287,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981802748",
+                        "name": "JUSTICE",
+                        "playParams": {
+                            "id": "1591036760",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "0c2539",
+                                    "height": 820,
+                                    "textColor1": "d3c5c2",
+                                    "textColor2": "d5b6ab",
+                                    "textColor3": "aba5a6",
+                                    "textColor4": "ac9994",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/00/a3/c7/00a3c79a-7f58-13e4-c290-7335fe98cf18/Jobb7d403dc-8252-4996-aff8-5eaa3d0df7a1-125211473-PreviewImage_preview_image_44000_video_sdr-Time1635149503676.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1591036760&id=359661391&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/7a/ce/f2/7acef27d-897a-9feb-d5bc-a32ed12b6c85/mzvf_13210713413433402358.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2018-06-07",
+                        "url": "https://music.apple.com/jp/music-video/justice/1591036760"
+                    }
+                },
+                {
+                    "id": "1538638573",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538638573",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "f2bf40",
+                            "height": 1080,
+                            "textColor1": "070605",
+                            "textColor2": "391013",
+                            "textColor3": "362b11",
+                            "textColor4": "5e331c",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/7d/43/df/7d43dfd6-555e-5363-4157-f1fb85165848/dj.eseemuuf.jpg/{w}x{h}mv.jpg",
+                            "width": 1910
+                        },
+                        "durationInMillis": 294013,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981500683",
+                        "name": "みんな絶対キミが好き",
+                        "playParams": {
+                            "id": "1538638573",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/64/e4/76/64e476d4-c64c-1961-8000-02ff87526301/Jobefac2bd1-45a3-4e34-b7a9-5669882fcbe8-104363086-PreviewImage_preview_image_0_video_sdr-Time1572234873493.png/{w}x{h}bb.jpg",
+                                    "width": 1910
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538638573&id=62540989&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video113/v4/bb/41/3b/bb413b48-7f7a-713e-1b6a-2e0f4ca1cf27/mzvf_4912168226953665415.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2015-02-25",
+                        "url": "https://music.apple.com/jp/music-video/%E3%81%BF%E3%82%93%E3%81%AA%E7%B5%B6%E5%AF%BE%E3%82%AD%E3%83%9F%E3%81%8C%E5%A5%BD%E3%81%8D/1538638573"
+                    }
+                },
+                {
+                    "id": "1538678214",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538678214",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "faf5f1",
+                            "height": 1080,
+                            "textColor1": "120b0c",
+                            "textColor2": "56130a",
+                            "textColor3": "403a3a",
+                            "textColor4": "774038",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/2c/cf/c4/2ccfc4ae-50ef-d94f-9b5a-49b94092c3e3/dj.jrndevgy.jpg/{w}x{h}mv.jpg",
+                            "width": 1916
+                        },
+                        "durationInMillis": 229567,
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981702667",
+                        "name": "KIRAMEKI☆ライフライン",
+                        "playParams": {
+                            "id": "1538678214",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video114/v4/f3/01/e6/f301e677-1ac2-4e00-1c2b-9ff4e2728a64/Joba00d0718-6956-463c-a1d8-adb0f57c82af-109350664-PreviewImage_preview_image_0_video_sdr-Time1613112492678.png/{w}x{h}bb.jpg",
+                                    "width": 1916
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538678214&id=231266075&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video114/v4/19/5e/2d/195e2dd4-d7a1-8ea1-abf3-ebb91c21b09b/mzvf_8728574517250909177.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2015-07-01",
+                        "url": "https://music.apple.com/jp/music-video/kirameki-%E3%83%A9%E3%82%A4%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3/1538678214"
+                    }
+                },
+                {
+                    "id": "1826508363",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1826508363",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "000000",
+                            "height": 1080,
+                            "textColor1": "f2f2f2",
+                            "textColor2": "e5e5e5",
+                            "textColor3": "c1c1c1",
+                            "textColor4": "b7b7b7",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/5d/79/57/5d79575a-5e8b-8592-b0d5-2f9d075bf6cb/Job4ea023e5-4378-4117-a64d-2b9df6fa2db1-197410227-PreviewImage_preview_image_10000_video_sdr-Time1752489606295.png/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 237568,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPZ992500332",
+                        "name": "raison d'etre (LIVE 2025)",
+                        "playParams": {
+                            "id": "1826508363",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/f7/0a/1c/f70a1cf8-43a5-ea94-183f-71af77c4396c/Jobbb40eb48-4ad8-4a59-8b97-8b29787745e7-200539157-PreviewImage_preview_image_10000_video_sdr-Time1755557600666.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1826508363&id=1169547288&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video211/v4/43/74/0e/43740eab-6124-fab7-5932-d712b5a615b4/mzvf_13709222564659601170.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2025-08-13",
+                        "url": "https://music.apple.com/jp/music-video/raison-detre-live-2025/1826508363"
+                    }
+                },
+                {
+                    "id": "1826506873",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1826506873",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "010202",
+                            "height": 1080,
+                            "textColor1": "facf89",
+                            "textColor2": "d9bff1",
+                            "textColor3": "c8a66e",
+                            "textColor4": "ae99c1",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/35/b2/60/35b26041-16b3-fc25-bbd8-5b3f3ca66951/Jobc7ceec7b-d767-4afe-b705-5e1d5c45cebc-197409875-PreviewImage_preview_image_10000_video_sdr-Time1752489522979.png/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 216555,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPZ992500331",
+                        "name": "謳歌せよ人生 (LIVE 2025)",
+                        "playParams": {
+                            "id": "1826506873",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "010202",
+                                    "height": 1080,
+                                    "textColor1": "9ea5ed",
+                                    "textColor2": "88a4ef",
+                                    "textColor3": "7f85be",
+                                    "textColor4": "6d84c0",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/23/4d/00/234d00c8-01f9-7a88-d59a-d530d7844c15/Jobf0aba369-5321-4713-addf-462cb45643b7-200540032-PreviewImage_preview_image_10000_video_sdr-Time1755558333715.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1826506873&id=1169556883&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video221/v4/b9/c2/8f/b9c28f7f-e70e-3950-ffc0-eb386116bae8/mzvf_5193321741169115679.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2025-08-13",
+                        "url": "https://music.apple.com/jp/music-video/%E8%AC%B3%E6%AD%8C%E3%81%9B%E3%82%88%E4%BA%BA%E7%94%9F-live-2025/1826506873"
+                    }
+                },
+                {
+                    "id": "1826506652",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1826506652",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "020303",
+                            "height": 1080,
+                            "textColor1": "dacdcd",
+                            "textColor2": "dbc09c",
+                            "textColor3": "afa5a5",
+                            "textColor4": "b09a7d",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/08/0d/20/080d20b2-3fa0-9b1e-2374-6a9cb71e6ef2/Job96f891d2-cd8a-40b2-be65-942d64ef4723-197410241-PreviewImage_preview_image_10000_video_sdr-Time1752489758112.png/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 205398,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPZ992500329",
+                        "name": "鏡面の彗星 (LIVE 2025)",
+                        "playParams": {
+                            "id": "1826506652",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "020304",
+                                    "height": 1080,
+                                    "textColor1": "ee8d6e",
+                                    "textColor2": "f08c57",
+                                    "textColor3": "bf7159",
+                                    "textColor4": "c07047",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/c5/51/1d/c5511dc6-3da2-e3d5-fd05-96feddb1d7ed/Jobc7a71d66-e738-42a0-ab97-55f361cf44f8-200538974-PreviewImage_preview_image_10000_video_sdr-Time1755557532125.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1826506652&id=1169548397&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video211/v4/b7/50/af/b750af4f-6d3a-6936-7c5a-f7befbf196e7/mzvf_17901682233683477246.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2025-08-13",
+                        "url": "https://music.apple.com/jp/music-video/%E9%8F%A1%E9%9D%A2%E3%81%AE%E5%BD%97%E6%98%9F-live-2025/1826506652"
+                    }
+                },
+                {
+                    "id": "1826507409",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1826507409",
+                    "attributes": {
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "020203",
+                            "height": 1080,
+                            "textColor1": "f2f2f2",
+                            "textColor2": "e5e5e5",
+                            "textColor3": "c2c2c2",
+                            "textColor4": "b8b8b8",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/f1/9c/0d/f19c0dae-11fc-c999-6495-499294228258/Jobb0261d3e-0e11-4330-8924-46aa5dce9f83-197409910-PreviewImage_preview_image_10000_video_sdr-Time1752489547299.png/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 262059,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPZ992500330",
+                        "name": "幽幻廻廊 (LIVE 2025)",
+                        "playParams": {
+                            "id": "1826507409",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "020203",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c2c2c2",
+                                    "textColor4": "b8b8b8",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/84/86/c9/8486c95d-d2bf-1b7c-dada-ff0029d7e918/Job77ff4a2b-fb6d-4668-ba1e-6b3a709705c7-200540267-PreviewImage_preview_image_10000_video_sdr-Time1755558907803.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1826507409&id=1169554791&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video211/v4/f5/47/9a/f5479a07-6ba1-b365-dcb8-060227244f48/mzvf_13823788453082245095.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2025-08-13",
+                        "url": "https://music.apple.com/jp/music-video/%E5%B9%BD%E5%B9%BB%E5%BB%BB%E5%BB%8A-live-2025/1826507409"
+                    }
+                }
+            ]
+        },
+        "playlists": {
+            "href": "/v1/catalog/jp/search?limit=25&term=%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA&types=playlists",
+            "data": [
+                {
+                    "id": "pl.2bade93730544e9d90dce22d59f99a33",
+                    "type": "playlists",
+                    "href": "/v1/catalog/jp/playlists/pl.2bade93730544e9d90dce22d59f99a33",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "e8e8ed",
+                            "height": 1080,
+                            "textColor1": "1a110f",
+                            "textColor2": "2e2421",
+                            "textColor3": "443c3b",
+                            "textColor4": "534b4a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/33/08/32/3308327d-d4b7-5c45-8c21-aca2e1fcbba8/ami-identity-1b8955c5c833a466c0901a223596b808-2025-04-27T16-10-21.962Z_cropped.png/{w}x{h}SC.FPESS04.jpg?l=ja-JP",
+                            "width": 1080
+                        },
+                        "curatorName": "Apple Music アニメ",
+                        "description": {
+                            "short": "歌声にキュートさと切なさ、儚さを併せ持つアニソンシンガー、春奈るなの必聴曲プレイリスト。",
+                            "standard": "テレビアニメのEDテーマに起用された \"空は高く風は歌う\" で鮮烈なデビューを飾った彼女は、その後も数々の人気アニメ作品の主題歌を担当。曲調もデビュー曲のように壮大なものから、キュートなものや切なさを含んだものまで、年々そのフィールドを広げ続けている。主題歌を担当するのみならず、自身もアニメやゲームなどのいわゆる二次元コンテンツをこよなく愛する彼女。そんな自らのファンタジーを投影したような楽曲もキャリアを重ねるなかで発表し、表現の幅を広げ続けている。"
+                        },
+                        "isChart": false,
+                        "lastModifiedDate": "2024-10-11T01:07:03Z",
+                        "name": "はじめての 春奈るな",
+                        "playParams": {
+                            "id": "pl.2bade93730544e9d90dce22d59f99a33",
+                            "kind": "playlist",
+                            "versionHash": "4934c1ab8f304631ba0e332954b50c9db7cb569878824c5622b6b2cc16cab3b6"
+                        },
+                        "playlistType": "editorial",
+                        "url": "https://music.apple.com/jp/playlist/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE-%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA/pl.2bade93730544e9d90dce22d59f99a33"
+                    }
+                },
+                {
+                    "id": "pl.427ead50d75c404a9ed67ab9b00907d2",
+                    "type": "playlists",
+                    "href": "/v1/catalog/jp/playlists/pl.427ead50d75c404a9ed67ab9b00907d2",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "e8e8ed",
+                            "height": 1080,
+                            "textColor1": "1a110f",
+                            "textColor2": "2e2421",
+                            "textColor3": "443c3b",
+                            "textColor4": "534b4a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/33/08/32/3308327d-d4b7-5c45-8c21-aca2e1fcbba8/ami-identity-1b8955c5c833a466c0901a223596b808-2025-04-27T16-10-21.962Z_cropped.png/{w}x{h}SC.FPSL02.jpg?l=ja-JP",
+                            "width": 1080
+                        },
+                        "curatorName": "Apple Music アニメ",
+                        "isChart": false,
+                        "lastModifiedDate": "2025-09-18T07:36:19Z",
+                        "name": "セットリスト：春奈るな『BirthLight』公演",
+                        "playParams": {
+                            "id": "pl.427ead50d75c404a9ed67ab9b00907d2",
+                            "kind": "playlist",
+                            "versionHash": "fd04fbcbbe7f27c2ca7160c7f67fb7417fb6c0214cf20366dae8ce35217db728"
+                        },
+                        "playlistType": "editorial",
+                        "url": "https://music.apple.com/jp/playlist/%E3%82%BB%E3%83%83%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88-%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA-birthlight-%E5%85%AC%E6%BC%94/pl.427ead50d75c404a9ed67ab9b00907d2"
+                    }
+                },
+                {
+                    "id": "pl.a15a108a8e534956844bb667fddd038e",
+                    "type": "playlists",
+                    "href": "/v1/catalog/jp/playlists/pl.a15a108a8e534956844bb667fddd038e",
+                    "attributes": {
+                        "artwork": {
+                            "height": 2400,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/SG-MQ-US-032-Image000001/v4/14/76/5a/14765a9e-8da8-a70f-70db-40bf3baf580c/image/{w}x{h}bb.jpg",
+                            "width": 2400
+                        },
+                        "curatorName": "Filtr",
+                        "isChart": false,
+                        "lastModifiedDate": "2022-10-28T08:35:31Z",
+                        "name": "ソードアート・オンライン (sword art online)",
+                        "playParams": {
+                            "id": "pl.a15a108a8e534956844bb667fddd038e",
+                            "kind": "playlist",
+                            "versionHash": "51df46037f5141af08d74f72ff660d84e031b4232d7f29f7c68a62c0d69dc522"
+                        },
+                        "playlistType": "external",
+                        "url": "https://music.apple.com/jp/playlist/%E3%82%BD%E3%83%BC%E3%83%89%E3%82%A2%E3%83%BC%E3%83%88-%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3-sword-art-online/pl.a15a108a8e534956844bb667fddd038e"
+                    }
+                },
+                {
+                    "id": "pl.34f1f2b9f52a4fa182b2373a468bcc4e",
+                    "type": "playlists",
+                    "href": "/v1/catalog/jp/playlists/pl.34f1f2b9f52a4fa182b2373a468bcc4e",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "8c9195",
+                            "height": 1080,
+                            "textColor1": "060505",
+                            "textColor2": "0e0e0f",
+                            "textColor3": "212122",
+                            "textColor4": "27282a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/c0/a9/f3/c0a9f352-a176-b136-8c94-9132ae218d72/c6ac2d02-78ef-4035-962d-b55fb0fbd673_ami-identity-702d4ae27e3230979a2404e5de53ad5a-2024-09-13T18-16-33.065Z_cropped.png/{w}x{h}SC.FPESS04.jpg?l=ja-JP",
+                            "width": 1080
+                        },
+                        "curatorName": "Apple Music J-ロック",
+                        "description": {
+                            "short": "ロックミュージックを開拓し続けるモンスターバンド。その遊び心の軌跡。",
+                            "standard": "1991年に結成したロックバンド、L’Arc~en~Ciel。1996年の通算4作目となるアルバム「True」が初のミリオンセラーとなり、翌年のシングル曲\"虹\"でその人気を不動のものとし初の東京ドーム公演を行なった。1998年より現体制となり、hyde、ken、tetsuya、yukihiroのメンバー4人がコンポーザーとして楽曲を制作。耽美で幻想的なバラードから、緻密なアレンジがさえる味わい深いロックやドライブ感あふれる曲、エレクトロを大胆に取り入れた曲など音楽は実に幅広く、変名でパンキッシュなアレンジやアコースティックのアレンジでも楽しんだりと遊び心に富んでいる。キャリアを重ねながら、新しい要素を飲み込みサウンドスケープを広げていく彼らの姿が、後に続くバンドやアーティストに与える影響も大きい。ソロプロジェクトも盛んで、個々のディープな音楽的探求がまたバンドでの制作に刺激を与え続けている。"
+                        },
+                        "isChart": false,
+                        "lastModifiedDate": "2024-10-25T01:05:42Z",
+                        "name": "はじめての L'Arc～en～Ciel",
+                        "playParams": {
+                            "id": "pl.34f1f2b9f52a4fa182b2373a468bcc4e",
+                            "kind": "playlist",
+                            "versionHash": "9c77882e183c1a292ebafe9cbef1e14e547f7249b1a77091912d73aaea12b368"
+                        },
+                        "playlistType": "editorial",
+                        "url": "https://music.apple.com/jp/playlist/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE-larc-en-ciel/pl.34f1f2b9f52a4fa182b2373a468bcc4e"
+                    }
+                }
+            ]
+        },
+        "songs": {
+            "href": "/v1/catalog/jp/search?limit=25&term=%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA&types=songs",
+            "next": "/v1/catalog/jp/search?offset=25&term=%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA&types=songs",
+            "data": [
+                {
+                    "id": "1537250947",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1537250947",
+                    "attributes": {
+                        "albumName": "Overfly - EP",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "94d3f2",
+                            "height": 3000,
+                            "textColor1": "2b211c",
+                            "textColor2": "372c28",
+                            "textColor3": "404447",
+                            "textColor4": "4a4d50",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/93/9d/bb/939dbb9a-2094-c7cb-da3a-163c65e90bde/jacket_SECL01222B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "composerName": "Saku",
+                        "discNumber": 1,
+                        "durationInMillis": 270360,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901201281",
+                        "name": "Overfly",
+                        "playParams": {
+                            "id": "1537250947",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/22/86/92/228692ff-3b01-5a0e-003e-4244aa249159/mzaf_9724634368814928150.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2012-11-28",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/overfly/1537250946?i=1537250947"
+                    }
+                },
+                {
+                    "id": "1537253153",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1537253153",
+                    "attributes": {
+                        "albumName": "君色シグナル - EP",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b9afa4",
+                            "height": 3000,
+                            "textColor1": "110c08",
+                            "textColor2": "1d150f",
+                            "textColor3": "322c27",
+                            "textColor4": "3c332d",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/67/b2/96/67b2965a-f6ab-b837-9a79-40c18554de76/jacket_SECL01634B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "増谷賢",
+                        "discNumber": 1,
+                        "durationInMillis": 285187,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901402355",
+                        "name": "君色シグナル",
+                        "playParams": {
+                            "id": "1537253153",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/80/03/e2/8003e2d4-5972-9028-a212-176e2668d7bd/mzaf_13703090551841456499.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2015-01-28",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E5%90%9B%E8%89%B2%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB/1537253152?i=1537253153"
+                    }
+                },
+                {
+                    "id": "1537252799",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1537252799",
+                    "attributes": {
+                        "albumName": "Startear - EP",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "163178",
+                            "height": 3000,
+                            "textColor1": "e8e4e4",
+                            "textColor2": "b1b3e1",
+                            "textColor3": "bec0ce",
+                            "textColor4": "9299cc",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9c/3f/aa/9c3faa38-6bbd-a1d1-55df-f08dd9e3d901/jacket_SECL01559B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3027
+                        },
+                        "composerName": "Saku",
+                        "discNumber": 1,
+                        "durationInMillis": 302787,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901400726",
+                        "name": "Startear",
+                        "playParams": {
+                            "id": "1537252799",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a5/44/33/a54433ca-6554-b75b-c808-00859dca02f6/mzaf_10344785326948931551.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2014-08-20",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/startear/1537252798?i=1537252799"
+                    }
+                },
+                {
+                    "id": "1535798244",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1535798244",
+                    "attributes": {
+                        "albumName": "歌物語 Special Edition",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ffffff",
+                            "height": 3000,
+                            "textColor1": "241f20",
+                            "textColor2": "412328",
+                            "textColor3": "504c4d",
+                            "textColor4": "674f53",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/55/3f/f1/553ff15f-c6f5-9a37-cec0-5b7f5b0137e6/jacket_ANXX00880B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "じん",
+                        "discNumber": 1,
+                        "durationInMillis": 252720,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901300941",
+                        "name": "アイヲウタエ",
+                        "playParams": {
+                            "id": "1535798244",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f8/6b/80/f86b80c0-4e0e-82aa-9328-854747385599/mzaf_15080347751010051968.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2013-07-24",
+                        "trackNumber": 15,
+                        "url": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%83%B2%E3%82%A6%E3%82%BF%E3%82%A8/1535798229?i=1535798244"
+                    }
+                },
+                {
+                    "id": "1538262263",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538262263",
+                    "attributes": {
+                        "albumName": "OVERSKY",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b0ca97",
+                            "height": 3000,
+                            "textColor1": "1f1915",
+                            "textColor2": "201c19",
+                            "textColor3": "3c3c2f",
+                            "textColor4": "3d3f32",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bb/ed/c5/bbedc57d-7df2-5e7a-87c9-548b347d5b24/jacket_SEXX00616B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "梶浦由記",
+                        "discNumber": 1,
+                        "durationInMillis": 270720,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901200525",
+                        "name": "空は高く風は歌う",
+                        "playParams": {
+                            "id": "1538262263",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/9c/22/ae/9c22ae32-6cc0-3484-c01e-819255baecb4/mzaf_1758354016991136019.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2012-05-02",
+                        "trackNumber": 11,
+                        "url": "https://music.apple.com/jp/album/%E7%A9%BA%E3%81%AF%E9%AB%98%E3%81%8F%E9%A2%A8%E3%81%AF%E6%AD%8C%E3%81%86/1538262252?i=1538262263"
+                    }
+                },
+                {
+                    "id": "1538287219",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538287219",
+                    "attributes": {
+                        "albumName": "glory days",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ffffff",
+                            "height": 3000,
+                            "textColor1": "2d2322",
+                            "textColor2": "3c2e29",
+                            "textColor3": "574f4e",
+                            "textColor4": "635854",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/53/45/6d/53456d2a-3d44-cf78-0924-e476bdee3e43/jacket_VVXX00483B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "沢井 美空",
+                        "discNumber": 1,
+                        "durationInMillis": 293400,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901902447",
+                        "name": "glory days",
+                        "playParams": {
+                            "id": "1538287219",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0e/e8/0f/0ee80f89-bbc3-7cc6-809d-21b2cc4f1876/mzaf_17436640561186040965.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2019-10-23",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/glory-days/1538287218?i=1538287219"
+                    }
+                },
+                {
+                    "id": "1538285560",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538285560",
+                    "attributes": {
+                        "albumName": "ステラブリーズ - EP",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b7daf6",
+                            "height": 3000,
+                            "textColor1": "281e1c",
+                            "textColor2": "302b31",
+                            "textColor3": "444448",
+                            "textColor4": "4b4e58",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2d/04/65/2d046554-8f86-4468-4b84-2fd709cad49c/jacket_VVCL01016B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "composerName": "杉坂天汰 & ツカダタカシゲ",
+                        "discNumber": 1,
+                        "durationInMillis": 246093,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901701070",
+                        "name": "ステラブリーズ",
+                        "playParams": {
+                            "id": "1538285560",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2c/19/37/2c193707-b15b-7bca-0b1d-3bd910c8704b/mzaf_7445212375350084801.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2017-05-03",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E3%82%B9%E3%83%86%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC%E3%82%BA/1538285558?i=1538285560"
+                    }
+                },
+                {
+                    "id": "1621917997",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1621917997",
+                    "attributes": {
+                        "albumName": "BLUE ROSE - Single",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "2c1a10",
+                            "height": 3000,
+                            "textColor1": "e7ab75",
+                            "textColor2": "da9161",
+                            "textColor3": "c18e61",
+                            "textColor4": "b77951",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/68/6b/fe/686bfe40-4a8a-69ac-79a7-043ac890ad66/859758164416_cover.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "株式会社バンク・オブ・イノベーション",
+                        "discNumber": 1,
+                        "durationInMillis": 221143,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "TCJPR2258329",
+                        "name": "BLUE ROSE",
+                        "playParams": {
+                            "id": "1621917997",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/41/28/f0/4128f0f4-8a99-ed4c-5b40-6011c00c545a/mzaf_2123029229155739138.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2022-05-02",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/blue-rose/1621917841?i=1621917997"
+                    }
+                },
+                {
+                    "id": "1538285641",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538285641",
+                    "attributes": {
+                        "albumName": "LUNARIUM",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "3baae2",
+                            "height": 3000,
+                            "textColor1": "11100e",
+                            "textColor2": "1a1715",
+                            "textColor3": "192e39",
+                            "textColor4": "21343e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/90/ca/45/90ca45ad-f68b-ed91-52e6-06202835d9d0/jacket_VVCL01060B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "composerName": "ZAQ",
+                        "discNumber": 1,
+                        "durationInMillis": 243453,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901601190",
+                        "name": "Ripple Effect",
+                        "playParams": {
+                            "id": "1538285641",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/06/07/7a/06077a29-88e6-d1f9-7cbc-1fafd1da953b/mzaf_3650349950251188312.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2016-05-25",
+                        "trackNumber": 4,
+                        "url": "https://music.apple.com/jp/album/ripple-effect/1538285637?i=1538285641"
+                    }
+                },
+                {
+                    "id": "1538262254",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538262254",
+                    "attributes": {
+                        "albumName": "OVERSKY",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b0ca97",
+                            "height": 3000,
+                            "textColor1": "1f1915",
+                            "textColor2": "201c19",
+                            "textColor3": "3c3c2f",
+                            "textColor4": "3d3f32",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bb/ed/c5/bbedc57d-7df2-5e7a-87c9-548b347d5b24/jacket_SEXX00616B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "Saku",
+                        "discNumber": 1,
+                        "durationInMillis": 267507,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901201281",
+                        "name": "Overfly",
+                        "playParams": {
+                            "id": "1538262254",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ef/01/90/ef019075-5f87-c3d0-673d-d9c8b0b7a608/mzaf_18406350038240689738.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2012-11-28",
+                        "trackNumber": 2,
+                        "url": "https://music.apple.com/jp/album/overfly/1538262252?i=1538262254"
+                    }
+                },
+                {
+                    "id": "1538263059",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538263059",
+                    "attributes": {
+                        "albumName": "Candy Lips",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "fded00",
+                            "height": 1648,
+                            "textColor1": "1d050a",
+                            "textColor2": "5b141a",
+                            "textColor3": "4a3408",
+                            "textColor4": "7c3f15",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e8/b8/51/e8b851a6-75ce-6480-8ce9-d5e85355dff8/jacket_SEXX00984B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 1661
+                        },
+                        "composerName": "安永龍平",
+                        "discNumber": 1,
+                        "durationInMillis": 281360,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": true,
+                        "isrc": "JPU901500577",
+                        "name": "夜の虹を越えて",
+                        "playParams": {
+                            "id": "1538263059",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/96/f0/7f/96f07f34-d793-9f29-99eb-d3c5d2b2d516/mzaf_10799619041426633982.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2015-03-11",
+                        "trackNumber": 12,
+                        "url": "https://music.apple.com/jp/album/%E5%A4%9C%E3%81%AE%E8%99%B9%E3%82%92%E8%B6%8A%E3%81%88%E3%81%A6/1538262776?i=1538263059"
+                    }
+                },
+                {
+                    "id": "1538262778",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538262778",
+                    "attributes": {
+                        "albumName": "Candy Lips",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "fded00",
+                            "height": 1648,
+                            "textColor1": "1d050a",
+                            "textColor2": "5b141a",
+                            "textColor3": "4a3408",
+                            "textColor4": "7c3f15",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e8/b8/51/e8b851a6-75ce-6480-8ce9-d5e85355dff8/jacket_SEXX00984B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 1661
+                        },
+                        "composerName": "増谷賢",
+                        "discNumber": 1,
+                        "durationInMillis": 282587,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": true,
+                        "isrc": "JPU901402355",
+                        "name": "君色シグナル",
+                        "playParams": {
+                            "id": "1538262778",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3d/88/d6/3d88d6de-b0ba-edec-38f5-c059830ca545/mzaf_1735960015055005698.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2015-01-28",
+                        "trackNumber": 2,
+                        "url": "https://music.apple.com/jp/album/%E5%90%9B%E8%89%B2%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB/1538262776?i=1538262778"
+                    }
+                },
+                {
+                    "id": "1538287225",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538287225",
+                    "attributes": {
+                        "albumName": "glory days",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ffffff",
+                            "height": 3000,
+                            "textColor1": "2d2322",
+                            "textColor2": "3c2e29",
+                            "textColor3": "574f4e",
+                            "textColor4": "635854",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/53/45/6d/53456d2a-3d44-cf78-0924-e476bdee3e43/jacket_VVXX00483B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "沢井 美空",
+                        "discNumber": 1,
+                        "durationInMillis": 258720,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901902451",
+                        "name": "カラフル。 -Instrumental-",
+                        "playParams": {
+                            "id": "1538287225",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/d2/39/add23931-5f8e-5174-90ed-fa717aec433c/mzaf_5240180170161322806.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2019-10-23",
+                        "trackNumber": 7,
+                        "url": "https://music.apple.com/jp/album/%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB-instrumental/1538287218?i=1538287225"
+                    }
+                },
+                {
+                    "id": "1535798252",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1535798252",
+                    "attributes": {
+                        "albumName": "歌物語 Special Edition",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ffffff",
+                            "height": 3000,
+                            "textColor1": "241f20",
+                            "textColor2": "412328",
+                            "textColor3": "504c4d",
+                            "textColor4": "674f53",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/55/3f/f1/553ff15f-c6f5-9a37-cec0-5b7f5b0137e6/jacket_ANXX00880B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "田中秀和",
+                        "discNumber": 1,
+                        "durationInMillis": 309093,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901301282",
+                        "name": "snowdrop -春奈るな×河野マリナver.-",
+                        "playParams": {
+                            "id": "1535798252",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/84/fe/00/84fe00c0-6648-e2d8-2430-0cc98e53297b/mzaf_15024078686676208042.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2016-01-06",
+                        "trackNumber": 23,
+                        "url": "https://music.apple.com/jp/album/snowdrop-%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA-%E6%B2%B3%E9%87%8E%E3%83%9E%E3%83%AA%E3%83%8Aver/1535798229?i=1535798252"
+                    }
+                },
+                {
+                    "id": "1148681976",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1148681976",
+                    "attributes": {
+                        "albumName": "MEKAKUCITY M’s 2 ~メカクシティアクターズ・ヴォーカル&サウンド コレクション~",
+                        "artistName": "じん feat. 春奈るな",
+                        "artwork": {
+                            "bgColor": "efecd9",
+                            "height": 1493,
+                            "textColor1": "05050c",
+                            "textColor2": "111525",
+                            "textColor3": "343335",
+                            "textColor4": "3d4049",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/67/dc/c1/67dcc184-6816-e260-c391-220746774b46/JK_MekakucityMs2_FIX_JK_1.jpg/{w}x{h}bb.jpg",
+                            "width": 1493
+                        },
+                        "composerName": "じん",
+                        "discNumber": 1,
+                        "durationInMillis": 247780,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "サウンドトラック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPQ941500012",
+                        "name": "如月アテンション (feat. 春奈るな)",
+                        "playParams": {
+                            "id": "1148681976",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4a/36/6f/4a366f29-8975-fe6a-06b2-8d3c9b44240a/mzaf_2584601624605999109.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2015-06-03",
+                        "trackNumber": 2,
+                        "url": "https://music.apple.com/jp/album/%E5%A6%82%E6%9C%88%E3%82%A2%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3-feat-%E6%98%A5%E5%A5%88%E3%82%8B%E3%81%AA/1148681842?i=1148681976"
+                    }
+                },
+                {
+                    "id": "1538262260",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538262260",
+                    "attributes": {
+                        "albumName": "OVERSKY",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b0ca97",
+                            "height": 3000,
+                            "textColor1": "1f1915",
+                            "textColor2": "201c19",
+                            "textColor3": "3c3c2f",
+                            "textColor4": "3d3f32",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bb/ed/c5/bbedc57d-7df2-5e7a-87c9-548b347d5b24/jacket_SEXX00616B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "Saku",
+                        "discNumber": 1,
+                        "durationInMillis": 323960,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901301126",
+                        "name": "狂想リフレイン",
+                        "playParams": {
+                            "id": "1538262260",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/13/69/3c/13693c3c-f8eb-0e91-2036-3a720532d96a/mzaf_18147792505472628398.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2013-08-20",
+                        "trackNumber": 8,
+                        "url": "https://music.apple.com/jp/album/%E7%8B%82%E6%83%B3%E3%83%AA%E3%83%95%E3%83%AC%E3%82%A4%E3%83%B3/1538262252?i=1538262260"
+                    }
+                },
+                {
+                    "id": "1537907624",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1537907624",
+                    "attributes": {
+                        "albumName": "桃色タイフーン - Single",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "e9cee1",
+                            "height": 3000,
+                            "textColor1": "2e221e",
+                            "textColor2": "3c1a25",
+                            "textColor3": "534445",
+                            "textColor4": "5e3e4b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/75/d3/50/75d3500e-5240-385a-7a6b-de7b9078b8e6/jacket_VVXX00301B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3377
+                        },
+                        "composerName": "藤井万利子",
+                        "discNumber": 1,
+                        "durationInMillis": 257300,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901802254",
+                        "name": "桃色タイフーン",
+                        "playParams": {
+                            "id": "1537907624",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e9/93/08/e99308bb-b314-fb4e-118e-0efc4544c216/mzaf_17101849028334738288.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2018-08-22",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E6%A1%83%E8%89%B2%E3%82%BF%E3%82%A4%E3%83%95%E3%83%BC%E3%83%B3/1537907623?i=1537907624"
+                    }
+                },
+                {
+                    "id": "1575346845",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1575346845",
+                    "attributes": {
+                        "albumName": "HARUNA LUNA BEST 2012-2020",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "f9f9fb",
+                            "height": 3000,
+                            "textColor1": "312825",
+                            "textColor2": "3b2d2c",
+                            "textColor3": "595150",
+                            "textColor4": "615655",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/df/10/f4/df10f46c-025f-b09d-b45a-2ccc14daa62c/4547366521801.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "沢井 美空",
+                        "discNumber": 1,
+                        "durationInMillis": 293400,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901902447",
+                        "name": "glory days",
+                        "playParams": {
+                            "id": "1575346845",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/1c/c1/72/1cc172e9-8a53-0910-3d4c-d76280a1da4c/mzaf_14477582662193492592.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2019-10-23",
+                        "trackNumber": 20,
+                        "url": "https://music.apple.com/jp/album/glory-days/1575345719?i=1575346845"
+                    }
+                },
+                {
+                    "id": "1538287222",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538287222",
+                    "attributes": {
+                        "albumName": "glory days",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "ffffff",
+                            "height": 3000,
+                            "textColor1": "2d2322",
+                            "textColor2": "3c2e29",
+                            "textColor3": "574f4e",
+                            "textColor4": "635854",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/53/45/6d/53456d2a-3d44-cf78-0924-e476bdee3e43/jacket_VVXX00483B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "沢井 美空",
+                        "discNumber": 1,
+                        "durationInMillis": 258720,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901902448",
+                        "name": "カラフル。",
+                        "playParams": {
+                            "id": "1538287222",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/97/6f/06976fce-cac3-0c32-c906-3ee3ac83aecb/mzaf_5771047278643031323.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2019-09-28",
+                        "trackNumber": 4,
+                        "url": "https://music.apple.com/jp/album/%E3%82%AB%E3%83%A9%E3%83%95%E3%83%AB/1538287218?i=1538287222"
+                    }
+                },
+                {
+                    "id": "1538262780",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538262780",
+                    "attributes": {
+                        "albumName": "Candy Lips",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "fded00",
+                            "height": 1648,
+                            "textColor1": "1d050a",
+                            "textColor2": "5b141a",
+                            "textColor3": "4a3408",
+                            "textColor4": "7c3f15",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e8/b8/51/e8b851a6-75ce-6480-8ce9-d5e85355dff8/jacket_SEXX00984B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 1661
+                        },
+                        "composerName": "Saku",
+                        "discNumber": 1,
+                        "durationInMillis": 302813,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": true,
+                        "isrc": "JPU901400726",
+                        "name": "Startear",
+                        "playParams": {
+                            "id": "1538262780",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9b/2b/0f/9b2b0fb6-ff87-15ca-66c4-6d32245fdb78/mzaf_10917427680263072668.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2014-08-20",
+                        "trackNumber": 4,
+                        "url": "https://music.apple.com/jp/album/startear/1538262776?i=1538262780"
+                    }
+                },
+                {
+                    "id": "1537262855",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1537262855",
+                    "attributes": {
+                        "albumName": "アイヲウタエ - EP",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "a4211f",
+                            "height": 3000,
+                            "textColor1": "feffff",
+                            "textColor2": "e6dced",
+                            "textColor3": "ecd2d2",
+                            "textColor4": "d9b7c4",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/68/d9/4b/68d94b19-fc08-a051-bd7e-dec274fc799b/jacket_SEXX00599B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "じん",
+                        "discNumber": 1,
+                        "durationInMillis": 248373,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901300944",
+                        "name": "アイヲウタエ -instrumental-",
+                        "playParams": {
+                            "id": "1537262855",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/11/4c/21114c77-4f55-2b7e-d8ff-7a5a21f4d5a2/mzaf_3719527090673565282.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2013-07-17",
+                        "trackNumber": 4,
+                        "url": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%83%B2%E3%82%A6%E3%82%BF%E3%82%A8-instrumental/1537262851?i=1537262855"
+                    }
+                },
+                {
+                    "id": "1530888843",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1530888843",
+                    "attributes": {
+                        "albumName": "glory days (movie ver.) - Single",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "f2b8a0",
+                            "height": 3000,
+                            "textColor1": "2e181a",
+                            "textColor2": "381f22",
+                            "textColor3": "553835",
+                            "textColor4": "5d3d3b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9b/61/9c/9b619ca2-2eda-4938-e885-7a3ad1f00d20/4547366474442.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "沢井 美空",
+                        "discNumber": 1,
+                        "durationInMillis": 306241,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU902002173",
+                        "name": "glory days (movie ver.)",
+                        "playParams": {
+                            "id": "1530888843",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/73/37/d7/7337d79d-ad7d-b198-cd62-d26e9cfbd194/mzaf_3266648535641563962.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2020-09-23",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/glory-days-movie-ver/1530888841?i=1530888843"
+                    }
+                },
+                {
+                    "id": "1538262259",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538262259",
+                    "attributes": {
+                        "albumName": "OVERSKY",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "b0ca97",
+                            "height": 3000,
+                            "textColor1": "1f1915",
+                            "textColor2": "201c19",
+                            "textColor3": "3c3c2f",
+                            "textColor4": "3d3f32",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bb/ed/c5/bbedc57d-7df2-5e7a-87c9-548b347d5b24/jacket_SEXX00616B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "じん",
+                        "discNumber": 1,
+                        "durationInMillis": 249720,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901300941",
+                        "name": "アイヲウタエ",
+                        "playParams": {
+                            "id": "1538262259",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/d4/8e/40/d48e40d1-ffd1-c3a9-ab34-b41033c59db4/mzaf_16996468664946787226.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2013-07-24",
+                        "trackNumber": 7,
+                        "url": "https://music.apple.com/jp/album/%E3%82%A2%E3%82%A4%E3%83%B2%E3%82%A6%E3%82%BF%E3%82%A8/1538262252?i=1538262259"
+                    }
+                },
+                {
+                    "id": "1537249929",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1537249929",
+                    "attributes": {
+                        "albumName": "空は高く風は歌う - EP",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "a1a7ba",
+                            "height": 1400,
+                            "textColor1": "0c0b0c",
+                            "textColor2": "0f0f11",
+                            "textColor3": "292a2f",
+                            "textColor4": "2c2d33",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/75/52/91/75529108-b40c-cc6e-e7ca-2103a2c78806/jacket_SECL01130B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 1412
+                        },
+                        "composerName": "梶浦由記",
+                        "discNumber": 1,
+                        "durationInMillis": 267867,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901200528",
+                        "name": "空は高く風は歌う(Instrumental)",
+                        "playParams": {
+                            "id": "1537249929",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bd/2b/64/bd2b64da-b86f-2edb-0067-b5869f3656ec/mzaf_12528345385342451624.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2012-05-02",
+                        "trackNumber": 4,
+                        "url": "https://music.apple.com/jp/album/%E7%A9%BA%E3%81%AF%E9%AB%98%E3%81%8F%E9%A2%A8%E3%81%AF%E6%AD%8C%E3%81%86-instrumental/1537249715?i=1537249929"
+                    }
+                },
+                {
+                    "id": "1538285639",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538285639",
+                    "attributes": {
+                        "albumName": "LUNARIUM",
+                        "artistName": "春奈るな",
+                        "artwork": {
+                            "bgColor": "3baae2",
+                            "height": 3000,
+                            "textColor1": "11100e",
+                            "textColor2": "1a1715",
+                            "textColor3": "192e39",
+                            "textColor4": "21343e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/90/ca/45/90ca45ad-f68b-ed91-52e6-06202835d9d0/jacket_VVCL01060B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3024
+                        },
+                        "composerName": "杉坂天汰 & ツカダタカシゲ",
+                        "discNumber": 1,
+                        "durationInMillis": 246107,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901701070",
+                        "name": "ステラブリーズ",
+                        "playParams": {
+                            "id": "1538285639",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/82/b2/0b/82b20b1a-2f04-4879-5a51-98eb305c0def/mzaf_3187284697101038804.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2017-05-03",
+                        "trackNumber": 2,
+                        "url": "https://music.apple.com/jp/album/%E3%82%B9%E3%83%86%E3%83%A9%E3%83%96%E3%83%AA%E3%83%BC%E3%82%BA/1538285637?i=1538285639"
+                    }
+                }
+            ]
+        }
+    },
+    "meta": {
+        "results": {
+            "order": [
+                "songs",
+                "albums",
+                "playlists",
+                "music-videos",
+                "artists"
+            ],
+            "rawOrder": [
+                "songs",
+                "albums",
+                "playlists",
+                "music-videos",
+                "artists"
+            ]
+        }
+    }
+}

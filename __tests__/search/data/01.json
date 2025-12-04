@@ -1,0 +1,2589 @@
+{
+    "results": {
+        "albums": {
+            "href": "/v1/catalog/jp/search?limit=25&term=choucho&types=albums",
+            "next": "/v1/catalog/jp/search?offset=26&term=choucho&types=albums",
+            "data": [
+                {
+                    "id": "1538258768",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1538258768",
+                    "attributes": {
+                        "artistName": "Aimer",
+                        "artwork": {
+                            "bgColor": "e3e9e1",
+                            "height": 3000,
+                            "textColor1": "111110",
+                            "textColor2": "2f2c2a",
+                            "textColor3": "3b3c3a",
+                            "textColor4": "53514f",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/62/8e/a7/628ea70a-4680-2579-b0a9-d6fd3c73a5e9/jacket_SECL01969B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "copyright": "℗ 2016 Sony Music Entertainment (Japan) Inc.",
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "蝶々結び - Single",
+                        "playParams": {
+                            "id": "1538258768",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Sony Music Labels Inc.",
+                        "releaseDate": "2016-08-17",
+                        "trackCount": 3,
+                        "upc": "4547557046595",
+                        "url": "https://music.apple.com/jp/album/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3-single/1538258768"
+                    }
+                },
+                {
+                    "id": "272693549",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/272693549",
+                    "attributes": {
+                        "artistName": "ベベチオ",
+                        "artwork": {
+                            "bgColor": "f3eedb",
+                            "height": 600,
+                            "textColor1": "00000b",
+                            "textColor2": "0c121d",
+                            "textColor3": "303034",
+                            "textColor4": "3a3e43",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/3c/f7/f4/mzi.wkhchkvn.jpg/{w}x{h}bb.jpg",
+                            "width": 676
+                        },
+                        "copyright": "℗ 2008 In The Garden Records",
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック",
+                            "ポップ"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "272693549",
+                            "kind": "album"
+                        },
+                        "recordLabel": "In The Garden Records",
+                        "releaseDate": "2008-02-13",
+                        "trackCount": 11,
+                        "upc": "4525853000879",
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/272693549"
+                    }
+                },
+                {
+                    "id": "1753055565",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1753055565",
+                    "attributes": {
+                        "artistName": "クマーバチャンネル",
+                        "artwork": {
+                            "bgColor": "fce1ec",
+                            "height": 3000,
+                            "textColor1": "110505",
+                            "textColor2": "0c0b09",
+                            "textColor3": "403133",
+                            "textColor4": "3c3537",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f4/ef/95/f4ef9598-2e94-5079-b275-fa5769dfa0e1/0198448545549_cover.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2024 Kumarba Channel",
+                        "genreNames": [
+                            "チルドレン・ミュージック",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "ちょうちょ - Single",
+                        "playParams": {
+                            "id": "1753055565",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Kumarba Channel",
+                        "releaseDate": "2024-06-28",
+                        "trackCount": 1,
+                        "upc": "0198448545549",
+                        "url": "https://music.apple.com/jp/album/choucho-single/1753055565"
+                    }
+                },
+                {
+                    "id": "1501622300",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1501622300",
+                    "attributes": {
+                        "artistName": "Various Artists",
+                        "artwork": {
+                            "bgColor": "e4e5e3",
+                            "height": 1417,
+                            "textColor1": "0d1921",
+                            "textColor2": "232328",
+                            "textColor3": "384248",
+                            "textColor4": "4a4a4d",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/de/89/3e/de893ed7-f815-7c88-1877-3ba2610b3c71/045194_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1417
+                        },
+                        "copyright": "℗ ランティス",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "isCompilation": true,
+                        "isComplete": false,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "音楽道、はじめました! - EP",
+                        "playParams": {
+                            "id": "1501622300",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2016-03-16",
+                        "trackCount": 5,
+                        "upc": "4540774155415",
+                        "url": "https://music.apple.com/jp/album/%E9%9F%B3%E6%A5%BD%E9%81%93-%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F-ep/1501622300"
+                    }
+                },
+                {
+                    "id": "1748746341",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1748746341",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "a4ac9e",
+                            "height": 3000,
+                            "textColor1": "131409",
+                            "textColor2": "191b1b",
+                            "textColor3": "303227",
+                            "textColor4": "353835",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/41/ac/cd41ac3b-cb4d-c3bb-ea22-80f7d8970490/4562409333272.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2020 Earkth / HS Record",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "灰色のサーガ - Single",
+                        "playParams": {
+                            "id": "1748746341",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Earkth / HS Record",
+                        "releaseDate": "2020-10-28",
+                        "trackCount": 2,
+                        "upc": "4562409333272",
+                        "url": "https://music.apple.com/jp/album/%E7%81%B0%E8%89%B2%E3%81%AE%E3%82%B5%E3%83%BC%E3%82%AC-single/1748746341"
+                    }
+                },
+                {
+                    "id": "1692362677",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1692362677",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "4d4184",
+                            "height": 3000,
+                            "textColor1": "f1dae6",
+                            "textColor2": "f9c1ca",
+                            "textColor3": "d0bcd3",
+                            "textColor4": "d6a8bc",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ea/25/db/ea25dbc6-0cf5-9c41-e87f-b9892f8fe0ed/195533014102.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2023 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "twilight little star - Single",
+                        "playParams": {
+                            "id": "1692362677",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2023-07-03",
+                        "trackCount": 1,
+                        "upc": "195533014102",
+                        "url": "https://music.apple.com/jp/album/twilight-little-star-single/1692362677"
+                    }
+                },
+                {
+                    "id": "1656375525",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1656375525",
+                    "attributes": {
+                        "artistName": "ちゃんげろソニック, Gero, ARAKI, あるふぁきゅん。, un:c, __(アンダーバー), Clear, nero, ぐるたみん, こうへい, ASK, コゲ犬, that, ぽこた, 湯毛, 超学生, ChouCho, ナノ, VALSHE, ピコ, あさまる, 亜夢, 蛇足, みーちゃん, MARiA, YURiCa/花たん, らっぷびと & luz",
+                        "artwork": {
+                            "bgColor": "d1cbc9",
+                            "height": 4000,
+                            "textColor1": "190a1d",
+                            "textColor2": "23172b",
+                            "textColor3": "3d303f",
+                            "textColor4": "463b4b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/37/f2/20/37f22065-93fc-dddb-8667-6b52d66a940d/859759001475_cover.jpg/{w}x{h}bb.jpg",
+                            "width": 4000
+                        },
+                        "copyright": "℗ 2022 Chan-Gero Sonic, Gero, Araki, +α/Alfakyun., Un:C, __ (Underbar), Clear, Nero, Glutamine, Kouhey, Ask, Kogeinu, That, Pokota, Yuge, Chogakusei, ChouCho, Nano, Valshe, Piko, Asamaru, Amu, Dasoku, Michan, MARiA, YURiCa/Hanatan, Rapbit & Luz",
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック",
+                            "アニメ"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "人生に拍手喝采を - Single",
+                        "playParams": {
+                            "id": "1656375525",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Chan-Gero Sonic, Gero, Araki, +α/Alfakyun., Un:C, __ (Underbar), Clear, Nero, Glutamine, Kouhey, Ask, Kogeinu, That, Pokota, Yuge, Chogakusei, ChouCho, Nano, Valshe, Piko, Asamaru, Amu, Dasoku, Michan, MARiA, YURiCa/Hanatan, Rapbit & Luz",
+                        "releaseDate": "2022-11-27",
+                        "trackCount": 1,
+                        "upc": "859759001475",
+                        "url": "https://music.apple.com/jp/album/applaud-our-life-single/1656375525"
+                    }
+                },
+                {
+                    "id": "1749446184",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1749446184",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "3c322c",
+                            "height": 3000,
+                            "textColor1": "e3ede1",
+                            "textColor2": "ddd3cc",
+                            "textColor3": "c1c7bd",
+                            "textColor4": "bdb3ac",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/fe/60/6bfe60d3-ad28-e434-f0cd-3c1de41d97d6/4562409332688.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2015 Earkth / HS Record",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "piece of youth - Single",
+                        "playParams": {
+                            "id": "1749446184",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Earkth / HS Record",
+                        "releaseDate": "2015-11-25",
+                        "trackCount": 2,
+                        "upc": "4562409332688",
+                        "url": "https://music.apple.com/jp/album/piece-of-youth-single/1749446184"
+                    }
+                },
+                {
+                    "id": "1501621379",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1501621379",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "06101f",
+                            "height": 1410,
+                            "textColor1": "7fc3dd",
+                            "textColor2": "6cb5d3",
+                            "textColor3": "679fb7",
+                            "textColor4": "5794af",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a6/b2/31/a6b23108-d4e3-3991-cec1-939ba398eb0e/055914_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1429
+                        },
+                        "copyright": "℗ ランティス",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "ロック",
+                            "J-Pop"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": false,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "kaleidoscope / 薄紅の月 - Single",
+                        "playParams": {
+                            "id": "1501621379",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2017-08-26",
+                        "trackCount": 2,
+                        "upc": "4540774146567",
+                        "url": "https://music.apple.com/jp/album/kaleidoscope-%E8%96%84%E7%B4%85%E3%81%AE%E6%9C%88-single/1501621379"
+                    }
+                },
+                {
+                    "id": "1723487160",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1723487160",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "1a3914",
+                            "height": 3000,
+                            "textColor1": "33f123",
+                            "textColor2": "9cdc2c",
+                            "textColor3": "2ecc20",
+                            "textColor4": "82bc27",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/58/64/28/5864284d-970f-62aa-c89a-8d453e7dd336/195533019978.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2024 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "Green jade - Single",
+                        "playParams": {
+                            "id": "1723487160",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2024-01-13",
+                        "trackCount": 1,
+                        "upc": "195533019978",
+                        "url": "https://music.apple.com/jp/album/green-jade-single/1723487160"
+                    }
+                },
+                {
+                    "id": "1122399213",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1122399213",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "faecca",
+                            "height": 1400,
+                            "textColor1": "110911",
+                            "textColor2": "3c282f",
+                            "textColor3": "403736",
+                            "textColor4": "624f4e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music30/v4/72/ed/a8/72eda8b1-151e-f56d-838c-f3208b986775/VEATP-33556.jpg/{w}x{h}bb.jpg",
+                            "width": 1400
+                        },
+                        "copyright": "℗ Victor Entertainment",
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "Everlasting - Single",
+                        "playParams": {
+                            "id": "1122399213",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Victor",
+                        "releaseDate": "2016-06-22",
+                        "trackCount": 1,
+                        "upc": "4988002720194",
+                        "url": "https://music.apple.com/jp/album/everlasting-single/1122399213"
+                    }
+                },
+                {
+                    "id": "1616685716",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1616685716",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "bdb09c",
+                            "height": 3000,
+                            "textColor1": "1f1a21",
+                            "textColor2": "251a24",
+                            "textColor3": "3f3839",
+                            "textColor4": "44383c",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/2e/41/25/2e4125db-82f4-91fd-852d-c7f2218a9d0e/195533005612.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2022 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "灯火セレナード - Single",
+                        "playParams": {
+                            "id": "1616685716",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2022-04-09",
+                        "trackCount": 1,
+                        "upc": "195533005612",
+                        "url": "https://music.apple.com/jp/album/tomoshibi-serenade-single/1616685716"
+                    }
+                },
+                {
+                    "id": "1698734529",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1698734529",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "faf3ec",
+                            "height": 3000,
+                            "textColor1": "080a08",
+                            "textColor2": "0a0a0a",
+                            "textColor3": "393835",
+                            "textColor4": "3a3937",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/17/0b/f3/170bf3b8-8716-cd02-9294-752380eaceca/195533014003.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2023 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "星屑ダイアリー - Single",
+                        "playParams": {
+                            "id": "1698734529",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2023-08-08",
+                        "trackCount": 1,
+                        "upc": "195533014003",
+                        "url": "https://music.apple.com/jp/album/stardust-diary-single/1698734529"
+                    }
+                },
+                {
+                    "id": "1820168760",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1820168760",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "c6b0ab",
+                            "height": 3000,
+                            "textColor1": "17181c",
+                            "textColor2": "202842",
+                            "textColor3": "3a3639",
+                            "textColor4": "414357",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/1f/50/dc1f5024-15bf-78bd-3059-f50279162c14/4540774745012.png/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2025 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "光射す扉 - Single",
+                        "playParams": {
+                            "id": "1820168760",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2025-07-11",
+                        "trackCount": 1,
+                        "upc": "4540774745012",
+                        "url": "https://music.apple.com/jp/album/%E5%85%89%E5%B0%84%E3%81%99%E6%89%89-single/1820168760"
+                    }
+                },
+                {
+                    "id": "1499482005",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1499482005",
+                    "attributes": {
+                        "artistName": "aiko",
+                        "artwork": {
+                            "bgColor": "a6c9a7",
+                            "height": 2400,
+                            "textColor1": "111c21",
+                            "textColor2": "222827",
+                            "textColor3": "2f3e3c",
+                            "textColor4": "3c4841",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/75/d7/ab/75d7ab61-fddd-4c45-c779-fe7c4d10234c/PCCA_01896.jpg/{w}x{h}bb.jpg",
+                            "width": 2400
+                        },
+                        "copyright": "℗ 2003 PONY CANYON INC.",
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": true,
+                        "isSingle": false,
+                        "name": "蝶々結び - EP",
+                        "playParams": {
+                            "id": "1499482005",
+                            "kind": "album"
+                        },
+                        "recordLabel": "ポニーキャニオン",
+                        "releaseDate": "2003-04-23",
+                        "trackCount": 4,
+                        "upc": "4988013498303",
+                        "url": "https://music.apple.com/jp/album/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3-ep/1499482005"
+                    }
+                },
+                {
+                    "id": "1618519816",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1618519816",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "022037",
+                            "height": 3000,
+                            "textColor1": "b3b6d1",
+                            "textColor2": "56baeb",
+                            "textColor3": "9098b2",
+                            "textColor4": "459bc7",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ef/05/b5/ef05b5c5-5af7-de4d-5322-7ede4acccff9/195533005605.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2022 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "reincarnation - Single",
+                        "playParams": {
+                            "id": "1618519816",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2022-04-20",
+                        "trackCount": 1,
+                        "upc": "195533005605",
+                        "url": "https://music.apple.com/jp/album/reincarnation-single/1618519816"
+                    }
+                },
+                {
+                    "id": "1751173210",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1751173210",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "eef6fc",
+                            "height": 3000,
+                            "textColor1": "142222",
+                            "textColor2": "2a2e2f",
+                            "textColor3": "404c4d",
+                            "textColor4": "515658",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/15/2a/21/152a2176-3005-b9f2-5839-18d24248632e/4562409330646.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2019 Earkth / HS Record",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "ChouCho Acoustic Album \"naked garden\"",
+                        "playParams": {
+                            "id": "1751173210",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Earkth / HS Record",
+                        "releaseDate": "2019-11-27",
+                        "trackCount": 10,
+                        "upc": "4562409330646",
+                        "url": "https://music.apple.com/jp/album/choucho-acoustic-album-naked-garden/1751173210"
+                    }
+                },
+                {
+                    "id": "1549776649",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1549776649",
+                    "attributes": {
+                        "artistName": "AstroNoteS",
+                        "artwork": {
+                            "bgColor": "474b70",
+                            "height": 1411,
+                            "textColor1": "e0f4fa",
+                            "textColor2": "a6d3e5",
+                            "textColor3": "c2d2de",
+                            "textColor4": "93b8ce",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cf/4d/68/cf4d684f-4ac8-2021-8b4c-2f2d061b5db6/095163_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1429
+                        },
+                        "copyright": "℗ Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "サウンドトラック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": false,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "TVアニメ『魔女の旅々』Original Soundtrack",
+                        "playParams": {
+                            "id": "1549776649",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2021-01-27",
+                        "trackCount": 41,
+                        "upc": "4540774908080",
+                        "url": "https://music.apple.com/jp/album/tv%E3%82%A2%E3%83%8B%E3%83%A1-%E9%AD%94%E5%A5%B3%E3%81%AE%E6%97%85%E3%80%85-original-soundtrack/1549776649"
+                    }
+                },
+                {
+                    "id": "1750214243",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1750214243",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "abd579",
+                            "height": 3000,
+                            "textColor1": "341f19",
+                            "textColor2": "382016",
+                            "textColor3": "4b442c",
+                            "textColor4": "4f442a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/29/12/332912fd-4001-a83c-0a2d-01e5df2b16e3/4562409330127.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2012 Earkth / HS Record",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "ワールド "
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "flyleaf",
+                        "playParams": {
+                            "id": "1750214243",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Earkth / HS Record",
+                        "releaseDate": "2012-08-08",
+                        "trackCount": 14,
+                        "upc": "4562409330127",
+                        "url": "https://music.apple.com/jp/album/flyleaf/1750214243"
+                    }
+                },
+                {
+                    "id": "1822750211",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1822750211",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "e7d1e4",
+                            "height": 3000,
+                            "textColor1": "282625",
+                            "textColor2": "313139",
+                            "textColor3": "4e484b",
+                            "textColor4": "56515b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/bb/ab/33bbab54-bd2b-37f3-8ba3-d37da38a6736/4540774244362.png/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2023 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "Never Say Goodbye - EP",
+                        "playParams": {
+                            "id": "1822750211",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2023-10-04",
+                        "trackCount": 4,
+                        "upc": "4540774244362",
+                        "url": "https://music.apple.com/jp/album/never-say-goodbye-ep/1822750211"
+                    }
+                },
+                {
+                    "id": "1748963768",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1748963768",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "f3fbfd",
+                            "height": 3000,
+                            "textColor1": "272942",
+                            "textColor2": "323343",
+                            "textColor3": "505367",
+                            "textColor4": "585b68",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0a/b5/04/0ab50471-a9b2-b170-d521-6723acb7229b/4562409334699.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2018 Earkth / HS Record",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "風のソルフェ - Single",
+                        "playParams": {
+                            "id": "1748963768",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Earkth / HS Record",
+                        "releaseDate": "2018-12-25",
+                        "trackCount": 1,
+                        "upc": "4562409334699",
+                        "url": "https://music.apple.com/jp/album/%E9%A2%A8%E3%81%AE%E3%82%BD%E3%83%AB%E3%83%95%E3%82%A7-single/1748963768"
+                    }
+                },
+                {
+                    "id": "1846498740",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1846498740",
+                    "attributes": {
+                        "artistName": "ChouCho & 佐咲紗花",
+                        "artwork": {
+                            "bgColor": "fffefd",
+                            "height": 3000,
+                            "textColor1": "0a0d0f",
+                            "textColor2": "191d22",
+                            "textColor3": "3b3d3e",
+                            "textColor4": "474a4e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3a/08/5c/3a085cba-8103-12c8-8975-090e4eb923f9/4540774746828.png/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "copyright": "℗ 2025 Lantis",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "有彩コンチェルト / Check Make Mate - Single",
+                        "playParams": {
+                            "id": "1846498740",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2025-11-15",
+                        "trackCount": 2,
+                        "upc": "4540774746828",
+                        "url": "https://music.apple.com/jp/album/%E6%9C%89%E5%BD%A9%E3%82%B3%E3%83%B3%E3%83%81%E3%82%A7%E3%83%AB%E3%83%88-check-make-mate-single/1846498740"
+                    }
+                },
+                {
+                    "id": "1501625590",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1501625590",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "0f121f",
+                            "height": 1654,
+                            "textColor1": "f8deef",
+                            "textColor2": "e6b3e3",
+                            "textColor3": "c9b5c5",
+                            "textColor4": "bb92bc",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cb/a4/a1/cba4a1a1-709c-328a-8bc4-f3e1abc18f70/049297_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1654
+                        },
+                        "copyright": "℗ ランティス",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": false,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "starlog - Single",
+                        "playParams": {
+                            "id": "1501625590",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Lantis",
+                        "releaseDate": "2013-07-31",
+                        "trackCount": 2,
+                        "upc": "4540774141166",
+                        "url": "https://music.apple.com/jp/album/starlog-single/1501625590"
+                    }
+                },
+                {
+                    "id": "1501623283",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1501623283",
+                    "attributes": {
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "fffffe",
+                            "height": 1654,
+                            "textColor1": "2f2721",
+                            "textColor2": "2c3539",
+                            "textColor3": "58524d",
+                            "textColor4": "565d60",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/48/b6/bd/48b6bd9c-b668-1dbe-bd8e-042449f8afa4/049304_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1654
+                        },
+                        "copyright": "℗ ランティス",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": false,
+                        "isMasteredForItunes": false,
+                        "isSingle": false,
+                        "name": "カワルミライ - Single",
+                        "playParams": {
+                            "id": "1501623283",
+                            "kind": "album"
+                        },
+                        "recordLabel": "GloryHeaven",
+                        "releaseDate": "2011-07-27",
+                        "trackCount": 2,
+                        "upc": "4540774602186",
+                        "url": "https://music.apple.com/jp/album/%E3%82%AB%E3%83%AF%E3%83%AB%E3%83%9F%E3%83%A9%E3%82%A4-single/1501623283"
+                    }
+                },
+                {
+                    "id": "1670520632",
+                    "type": "albums",
+                    "href": "/v1/catalog/jp/albums/1670520632",
+                    "attributes": {
+                        "artistName": "ALI PROJECT/ChouCho/Gero/GRANRODEO/i☆Ris/May'n/nano.RIPE/OLDCODEX/Ray/ZAQ/Zwei/アフィリア・サー/いとうかなこ/上坂すみれ/小倉唯/喜多村英梨/串田アキラ/栗林みな実/黒崎真音/小松未可子/サイキックラバー/鈴木このみ/鈴村健一/竹達彩奈/田村ゆかり/茅原実里/富永TOMMY弘明/中島 愛/七森中☆ごらく部/南里侑香/野水いおり/日笠陽子/藤田麻衣子/三澤紗千香/水樹奈々/ゆいかおり(小倉唯&石原夏織)",
+                        "artwork": {
+                            "bgColor": "ac2f08",
+                            "height": 1400,
+                            "textColor1": "ffffff",
+                            "textColor2": "fad76e",
+                            "textColor3": "eed5cd",
+                            "textColor4": "eab55a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/12/ec/4f/12ec4f8d-2b3c-1d91-8fb0-81656af29a5e/PA00076296_0_91810_jacket.jpg/{w}x{h}bb.jpg",
+                            "width": 1400
+                        },
+                        "copyright": "℗ Animelo Summer Live 2013",
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "isCompilation": false,
+                        "isComplete": true,
+                        "isMasteredForItunes": false,
+                        "isSingle": true,
+                        "name": "The Galaxy Express 999 - Animelo Summer Live 2013 - FLAG NINE - テーマソング - Single",
+                        "playParams": {
+                            "id": "1670520632",
+                            "kind": "album"
+                        },
+                        "recordLabel": "Animelo Summer Live",
+                        "releaseDate": "2013-05-16",
+                        "trackCount": 1,
+                        "upc": "4589686437288",
+                        "url": "https://music.apple.com/jp/album/the-galaxy-express-999-animelo-summer-live-2013-flag/1670520632"
+                    }
+                }
+            ]
+        },
+        "artists": {
+            "href": "/v1/catalog/jp/search?limit=25&term=choucho&types=artists",
+            "data": [
+                {
+                    "id": "516843072",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/516843072",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "b9cfe8",
+                            "height": 2400,
+                            "textColor1": "131115",
+                            "textColor2": "13151a",
+                            "textColor3": "34373f",
+                            "textColor4": "343a43",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/97/42/16/974216e3-6496-aa6d-db09-b9d83a757d1e/mzl.oudqpuyo.jpg/{w}x{h}bb.jpg",
+                            "width": 2400
+                        },
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "name": "ChouCho",
+                        "url": "https://music.apple.com/jp/artist/choucho/516843072"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/516843072/albums",
+                            "next": "/v1/catalog/jp/artists/516843072/albums?offset=25",
+                            "data": [
+                                {
+                                    "id": "1501622300",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1501622300"
+                                },
+                                {
+                                    "id": "1748746341",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1748746341"
+                                },
+                                {
+                                    "id": "1692362677",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1692362677"
+                                },
+                                {
+                                    "id": "1656375525",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1656375525"
+                                },
+                                {
+                                    "id": "1749446184",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1749446184"
+                                },
+                                {
+                                    "id": "1501621379",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1501621379"
+                                },
+                                {
+                                    "id": "1723487160",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1723487160"
+                                },
+                                {
+                                    "id": "1122399213",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1122399213"
+                                },
+                                {
+                                    "id": "1616685716",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1616685716"
+                                },
+                                {
+                                    "id": "1698734529",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1698734529"
+                                },
+                                {
+                                    "id": "1618519816",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1618519816"
+                                },
+                                {
+                                    "id": "1820168760",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1820168760"
+                                },
+                                {
+                                    "id": "1751173210",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1751173210"
+                                },
+                                {
+                                    "id": "1750214243",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1750214243"
+                                },
+                                {
+                                    "id": "1549776649",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1549776649"
+                                },
+                                {
+                                    "id": "1822750211",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1822750211"
+                                },
+                                {
+                                    "id": "1748963768",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1748963768"
+                                },
+                                {
+                                    "id": "1846498740",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1846498740"
+                                },
+                                {
+                                    "id": "1501625590",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1501625590"
+                                },
+                                {
+                                    "id": "1501623283",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1501623283"
+                                },
+                                {
+                                    "id": "1670520632",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1670520632"
+                                },
+                                {
+                                    "id": "1748751853",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1748751853"
+                                },
+                                {
+                                    "id": "1748746067",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1748746067"
+                                },
+                                {
+                                    "id": "1623373023",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1623373023"
+                                },
+                                {
+                                    "id": "1748751671",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1748751671"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": "1028966599",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/1028966599",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "eae5dc",
+                            "height": 3000,
+                            "textColor1": "0b0d10",
+                            "textColor2": "2e2a35",
+                            "textColor3": "373838",
+                            "textColor4": "544f56",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6b/f7/17/6bf717c4-099a-1555-aa36-4a553d7633b3/4540774153206.jpg/{w}x{h}ac.jpg",
+                            "width": 3000
+                        },
+                        "genreNames": [
+                            "アニメ"
+                        ],
+                        "name": "宮尾美也 (CV.桐谷蝶々)",
+                        "url": "https://music.apple.com/jp/artist/%E5%AE%AE%E5%B0%BE%E7%BE%8E%E4%B9%9F-cv-%E6%A1%90%E8%B0%B7%E8%9D%B6%E3%80%85/1028966599"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/1028966599/albums",
+                            "data": [
+                                {
+                                    "id": "1718726348",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1718726348"
+                                },
+                                {
+                                    "id": "1717733146",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1717733146"
+                                },
+                                {
+                                    "id": "1776830408",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1776830408"
+                                },
+                                {
+                                    "id": "1834710445",
+                                    "type": "albums",
+                                    "href": "/v1/catalog/jp/albums/1834710445"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": "1018804736",
+                    "type": "artists",
+                    "href": "/v1/catalog/jp/artists/1018804736",
+                    "attributes": {
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "name": "蝶々P",
+                        "url": "https://music.apple.com/jp/artist/%E8%9D%B6%E3%80%85p/1018804736"
+                    },
+                    "relationships": {
+                        "albums": {
+                            "href": "/v1/catalog/jp/artists/1018804736/albums",
+                            "data": []
+                        }
+                    }
+                }
+            ]
+        },
+        "music-videos": {
+            "href": "/v1/catalog/jp/search?limit=25&term=choucho&types=music-videos",
+            "data": [
+                {
+                    "id": "1592982573",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1592982573",
+                    "attributes": {
+                        "albumName": "クマーバ 童謡ベスト Vol.1",
+                        "artistName": "クマーバチャンネル",
+                        "artwork": {
+                            "bgColor": "97d4e7",
+                            "height": 1080,
+                            "textColor1": "0f0900",
+                            "textColor2": "372e28",
+                            "textColor3": "2a322e",
+                            "textColor4": "4a4f4e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/fa/87/27/fa87272c-aba0-1daf-a8f2-9e580a3b103d/859757478101.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "discNumber": 1,
+                        "durationInMillis": 83625,
+                        "genreNames": [
+                            "チルドレン・ミュージック"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "TCJPQ2101637",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "1592982573",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "53b3f3",
+                                    "height": 1080,
+                                    "textColor1": "110a00",
+                                    "textColor2": "00241f",
+                                    "textColor3": "1e2c30",
+                                    "textColor4": "104149",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/e4/6f/b3/e46fb3c3-e22b-cfa8-004b-529fa18831d0/Job7ea4761a-6e4a-4894-b99a-76090b2231fa-125446453-PreviewImage_preview_image_45000_video_sdr-Time1635763564429.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1592982573&id=360799973&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/8f/af/82/8faf82ea-74e5-4f31-962f-ba5383865744/mzvf_7654332780628768231.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2021-11-12",
+                        "trackNumber": 12,
+                        "url": "https://music.apple.com/jp/music-video/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/1592982573"
+                    }
+                },
+                {
+                    "id": "1831681559",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1831681559",
+                    "attributes": {
+                        "albumName": "人気キッズソングアルバムVol.4",
+                        "artistName": "クマーバチャンネル",
+                        "artwork": {
+                            "bgColor": "f6d7e4",
+                            "height": 1080,
+                            "textColor1": "060609",
+                            "textColor2": "2b1e1f",
+                            "textColor3": "363035",
+                            "textColor4": "534347",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/4f/d8/7a/4fd87a84-bd28-70bd-4484-727d26e3f04a/4550711254415.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "discNumber": 1,
+                        "durationInMillis": 86059,
+                        "genreNames": [
+                            "チルドレン・ミュージック"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "TCJPA2486759",
+                        "name": "ちょうちょ (2025 Ver.)",
+                        "playParams": {
+                            "id": "1831681559",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "56b6ef",
+                                    "height": 1080,
+                                    "textColor1": "0b0e0e",
+                                    "textColor2": "38202a",
+                                    "textColor3": "1a303b",
+                                    "textColor4": "3e3e51",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/ed/b6/33/edb63361-cba1-0984-7af4-1e0c1e4cbf6f/Job1dff27f7-83ff-45b9-a490-4372d21a2d86-199485667-PreviewImage_preview_image_45000_video_sdr-Time1754548106122.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1831681559&id=1164387732&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video221/v4/6d/ed/8b/6ded8be9-a28d-755b-385c-55a1cd9acc43/mzvf_8028255263300727742.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2025-08-05",
+                        "trackNumber": 7,
+                        "url": "https://music.apple.com/jp/music-video/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87-2025-ver/1831681559"
+                    }
+                },
+                {
+                    "id": "1499314439",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1499314439",
+                    "attributes": {
+                        "artistName": "aiko",
+                        "artwork": {
+                            "bgColor": "aba17e",
+                            "height": 1080,
+                            "textColor1": "110c0b",
+                            "textColor2": "1b1411",
+                            "textColor3": "2f2922",
+                            "textColor4": "383027",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video114/v4/87/51/e7/8751e70e-4e1e-3f04-d795-32be1f23d58c/PCCA_01896_0101_capture.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 317332,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPPC80300194",
+                        "name": "蝶々結び",
+                        "playParams": {
+                            "id": "1499314439",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000700",
+                                    "height": 362,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e6e5",
+                                    "textColor3": "c1c3c1",
+                                    "textColor4": "b7b9b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/76/22/0a/76220a4f-44c4-3a2a-a3f2-a8ccf344cea8/Job63c12395-741c-44da-b25d-a0e640ce2fbb-105515242-PreviewImage_preview_image_91000_video_sdr-Time1582184253056.png/{w}x{h}bb.jpg",
+                                    "width": 636
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1499314439&id=64348013&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video124/v4/26/8d/18/268d18a4-7730-a3c5-3fc4-ebff8260bfe4/mzvf_1013494011630256455.640x362.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2003-04-23",
+                        "url": "https://music.apple.com/jp/music-video/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3/1499314439"
+                    }
+                },
+                {
+                    "id": "1591582424",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1591582424",
+                    "attributes": {
+                        "artistName": "クマーバチャンネル",
+                        "artwork": {
+                            "bgColor": "97d4e7",
+                            "height": 1080,
+                            "textColor1": "0f0900",
+                            "textColor2": "372e28",
+                            "textColor3": "2a322e",
+                            "textColor4": "4a4f4e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/5d/7d/d3/5d7dd37b-dee8-da91-9bc3-b6a803d57666/859757478101.jpg/{w}x{h}mv.jpg",
+                            "width": 1920
+                        },
+                        "durationInMillis": 83625,
+                        "genreNames": [
+                            "チルドレン・ミュージック"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "TCJPQ2101637",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "1591582424",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "e7f1fd",
+                                    "height": 1080,
+                                    "textColor1": "141312",
+                                    "textColor2": "161314",
+                                    "textColor3": "3e3f41",
+                                    "textColor4": "403f42",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/a1/26/5f/a1265ffc-78cb-053b-11e1-b78694149f0c/Jobd42632c0-63c0-44c9-9aeb-7419d8b61b65-125148097-PreviewImage_preview_image_4000_video_sdr-Time1634893757502.png/{w}x{h}bb.jpg",
+                                    "width": 1920
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1591582424&id=359351759&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video116/v4/64/9a/4a/649a4ae8-051f-9f98-3f0c-ab5731b5ae24/mzvf_1379831867946125515.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2021-06-05",
+                        "url": "https://music.apple.com/jp/music-video/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/1591582424"
+                    }
+                },
+                {
+                    "id": "1538640861",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538640861",
+                    "attributes": {
+                        "artistName": "Aimer",
+                        "artwork": {
+                            "bgColor": "1b1519",
+                            "height": 360,
+                            "textColor1": "f2e7ed",
+                            "textColor2": "d0acae",
+                            "textColor3": "c7bdc3",
+                            "textColor4": "ac8e90",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video52/v4/b0/fe/b1/b0feb107-1bf8-54bd-0898-068823c73f23/SEXY01380201A.jpg/{w}x{h}mv.jpg",
+                            "width": 640
+                        },
+                        "durationInMillis": 364698,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPU981602020",
+                        "name": "蝶々結び",
+                        "playParams": {
+                            "id": "1538640861",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 360,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video124/v4/6f/56/96/6f56965c-66b7-9d9a-a9be-8151cf51f2dc/Joba17aba3d-c514-40be-b873-4a770e164adb-109349025-PreviewImage_preview_image_0_video_sdr-Time1613107376133.png/{w}x{h}bb.jpg",
+                                    "width": 640
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538640861&id=231258299&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video114/v4/07/c8/83/07c88322-678a-de89-4f89-87960bcb83b0/mzvf_14186463063054056940.640x360.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2016-08-17",
+                        "url": "https://music.apple.com/jp/music-video/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3/1538640861"
+                    }
+                },
+                {
+                    "id": "1538608697",
+                    "type": "music-videos",
+                    "href": "/v1/catalog/jp/music-videos/1538608697",
+                    "attributes": {
+                        "artistName": "Chara",
+                        "artwork": {
+                            "bgColor": "1e1613",
+                            "height": 1080,
+                            "textColor1": "cdb29d",
+                            "textColor2": "d3a78d",
+                            "textColor3": "aa9381",
+                            "textColor4": "af8a75",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/4d/26/ef/4d26efb4-080b-193c-2e08-539c8f64d25b/dj.vvbpmttj.jpg/{w}x{h}mv.jpg",
+                            "width": 1916
+                        },
+                        "durationInMillis": 356692,
+                        "genreNames": [
+                            "J-Pop"
+                        ],
+                        "has4K": false,
+                        "hasHDR": false,
+                        "isrc": "JPKS81201902",
+                        "name": "蝶々結び",
+                        "playParams": {
+                            "id": "1538608697",
+                            "kind": "musicVideo"
+                        },
+                        "previews": [
+                            {
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 1080,
+                                    "textColor1": "f2f2f2",
+                                    "textColor2": "e5e5e5",
+                                    "textColor3": "c1c1c1",
+                                    "textColor4": "b7b7b7",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/ab/c4/30/abc430a0-2e3a-affb-e5d8-c18be794cea6/Jobf92a0148-8113-43a5-95bc-ec02b085f33f-104392925-PreviewImage_preview_image_0_video_sdr-Time1572516726042.png/{w}x{h}bb.jpg",
+                                    "width": 1916
+                                },
+                                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1538608697&id=62615730&aec=HD&l=ja",
+                                "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video123/v4/d2/4e/aa/d24eaa14-7bd5-7260-4c97-ce35207ecd09/mzvf_7531753420435853717.720w.h264lc.U.p.m4v"
+                            }
+                        ],
+                        "releaseDate": "2012-09-24",
+                        "url": "https://music.apple.com/jp/music-video/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3/1538608697"
+                    }
+                }
+            ]
+        },
+        "playlists": {
+            "href": "/v1/catalog/jp/search?limit=25&term=choucho&types=playlists",
+            "data": [
+                {
+                    "id": "pl.d5dfb96feca84ed9b7bd34f1d28a7974",
+                    "type": "playlists",
+                    "href": "/v1/catalog/jp/playlists/pl.d5dfb96feca84ed9b7bd34f1d28a7974",
+                    "attributes": {
+                        "artwork": {
+                            "bgColor": "b9cfe8",
+                            "height": 1080,
+                            "textColor1": "131115",
+                            "textColor2": "13151a",
+                            "textColor3": "34373f",
+                            "textColor4": "343a43",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/97/42/16/974216e3-6496-aa6d-db09-b9d83a757d1e/mzl.oudqpuyo.jpg/{w}x{h}SC.FPESS04.jpg?l=ja-JP",
+                            "width": 1080
+                        },
+                        "curatorName": "Apple Music アニメ",
+                        "description": {
+                            "short": "アニメのテーマソングを多数担当。美しく澄んだ歌声が魅力の女性ヴォーカリスト。",
+                            "standard": "動画投稿サイトで人気を博し、2011年にアニメ『神様のメモ帳』のオープニングテーマ \"カワルミライ\" でデビューした ChouCho（ちょうちょ）。その後も、人気アニメ『ガールズ＆パンツァー』のオープニングテーマをはじめ、注目アニメのテーマソングなどを次々に担当。美しく澄んだみずみずしいヴォーカルで、リスナーを魅了する。"
+                        },
+                        "isChart": false,
+                        "lastModifiedDate": "2024-02-28T09:33:26Z",
+                        "name": "はじめての ChouCho",
+                        "playParams": {
+                            "id": "pl.d5dfb96feca84ed9b7bd34f1d28a7974",
+                            "kind": "playlist",
+                            "versionHash": "b1e09f2cfd01661e0f0bb4af0541a24b28dbd698878cbaf2111ed2d9a9422b53"
+                        },
+                        "playlistType": "editorial",
+                        "url": "https://music.apple.com/jp/playlist/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE-choucho/pl.d5dfb96feca84ed9b7bd34f1d28a7974"
+                    }
+                }
+            ]
+        },
+        "songs": {
+            "href": "/v1/catalog/jp/search?limit=25&term=choucho&types=songs",
+            "next": "/v1/catalog/jp/search?offset=25&term=choucho&types=songs",
+            "data": [
+                {
+                    "id": "1748751675",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1748751675",
+                    "attributes": {
+                        "albumName": "優しさの理由 - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "fdfdfd",
+                            "height": 3000,
+                            "textColor1": "090c09",
+                            "textColor2": "0c0b09",
+                            "textColor3": "3a3c3a",
+                            "textColor4": "3c3b3a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/59/56/7e/59567e43-8f9a-c167-0315-14c3afa05d2b/4562409334118.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "こだまさおり & 宮崎誠",
+                        "discNumber": 1,
+                        "durationInMillis": 255120,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101200600",
+                        "name": "優しさの理由",
+                        "playParams": {
+                            "id": "1748751675",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/05/cf/0105cf8f-1419-2563-71ce-39e857100b20/mzaf_336458077984831063.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2012-05-02",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E5%84%AA%E3%81%97%E3%81%95%E3%81%AE%E7%90%86%E7%94%B1/1748751671?i=1748751675"
+                    }
+                },
+                {
+                    "id": "1748746652",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1748746652",
+                    "attributes": {
+                        "albumName": "DreamRiser - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "f8f8f8",
+                            "height": 3000,
+                            "textColor1": "352825",
+                            "textColor2": "312e2d",
+                            "textColor3": "5c514f",
+                            "textColor4": "585655",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ab/11/dc/ab11dca4-b18a-8188-658c-6c7a12230936/4562409332169.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "こだまさおり & RINO",
+                        "discNumber": 1,
+                        "durationInMillis": 238973,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101202264",
+                        "name": "DreamRiser",
+                        "playParams": {
+                            "id": "1748746652",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/da/16/69da168f-10a0-9ae6-e1ae-f8b6c389e653/mzaf_10055526648268478622.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2012-10-24",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/dreamriser/1748746643?i=1748746652"
+                    }
+                },
+                {
+                    "id": "1501625592",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1501625592",
+                    "attributes": {
+                        "albumName": "starlog - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "0f121f",
+                            "height": 1654,
+                            "textColor1": "f8deef",
+                            "textColor2": "e6b3e3",
+                            "textColor3": "c9b5c5",
+                            "textColor4": "bb92bc",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cb/a4/a1/cba4a1a1-709c-328a-8bc4-f3e1abc18f70/049297_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1654
+                        },
+                        "composerName": "川本 新",
+                        "discNumber": 1,
+                        "durationInMillis": 301173,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101301552",
+                        "name": "starlog",
+                        "playParams": {
+                            "id": "1501625592",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/45/65/7f/45657fe5-bc11-5a64-6170-a7a901a8325f/mzaf_8909878001678210587.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2013-07-31",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/starlog/1501625590?i=1501625592"
+                    }
+                },
+                {
+                    "id": "1501623284",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1501623284",
+                    "attributes": {
+                        "albumName": "カワルミライ - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "fffffe",
+                            "height": 1654,
+                            "textColor1": "2f2721",
+                            "textColor2": "2c3539",
+                            "textColor3": "58524d",
+                            "textColor4": "565d60",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/48/b6/bd/48b6bd9c-b668-1dbe-bd8e-042449f8afa4/049304_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1654
+                        },
+                        "composerName": "中山真斗",
+                        "discNumber": 1,
+                        "durationInMillis": 245867,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101101253",
+                        "name": "カワルミライ",
+                        "playParams": {
+                            "id": "1501623284",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/aa/f1/be/aaf1beb2-7d25-4409-eddf-ed1db6f66904/mzaf_8806211153305075177.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2011-07-27",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E3%82%AB%E3%83%AF%E3%83%AB%E3%83%9F%E3%83%A9%E3%82%A4/1501623283?i=1501623284"
+                    }
+                },
+                {
+                    "id": "1501621380",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1501621380",
+                    "attributes": {
+                        "albumName": "kaleidoscope / 薄紅の月 - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "06101f",
+                            "height": 1410,
+                            "textColor1": "7fc3dd",
+                            "textColor2": "6cb5d3",
+                            "textColor3": "679fb7",
+                            "textColor4": "5794af",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a6/b2/31/a6b23108-d4e3-3991-cec1-939ba398eb0e/055914_J.jpg/{w}x{h}bb.jpg",
+                            "width": 1429
+                        },
+                        "composerName": "ChouCho",
+                        "discNumber": 1,
+                        "durationInMillis": 240520,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101701555",
+                        "name": "kaleidoscope",
+                        "playParams": {
+                            "id": "1501621380",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4d/a9/b2/4da9b2ab-1cc9-82e5-b027-71572ecfc89a/mzaf_5806910439758812596.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2017-08-26",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/kaleidoscope/1501621379?i=1501621380"
+                    }
+                },
+                {
+                    "id": "1748746531",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1748746531",
+                    "attributes": {
+                        "albumName": "明日の君さえいればいい。 - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "f6f7f8",
+                            "height": 3000,
+                            "textColor1": "222533",
+                            "textColor2": "2c2c2c",
+                            "textColor3": "4c4f5a",
+                            "textColor4": "545454",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f2/30/cb/f230cbb0-d672-9bdb-c48b-82c7f691121c/4562409332985.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "松井洋平 & 和賀裕希",
+                        "discNumber": 1,
+                        "durationInMillis": 304507,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101702226",
+                        "name": "明日の君さえいればいい。",
+                        "playParams": {
+                            "id": "1748746531",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/29/b4/9b29b4bb-d0a8-26d1-81cb-6bf9b8d3ad24/mzaf_3446635762733499300.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2017-10-25",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E6%98%8E%E6%97%A5%E3%81%AE%E5%90%9B%E3%81%95%E3%81%88%E3%81%84%E3%82%8C%E3%81%B0%E3%81%84%E3%81%84/1748746267?i=1748746531"
+                    }
+                },
+                {
+                    "id": "1822750213",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1822750213",
+                    "attributes": {
+                        "albumName": "Never Say Goodbye - EP",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "e7d1e4",
+                            "height": 3000,
+                            "textColor1": "282625",
+                            "textColor2": "313139",
+                            "textColor3": "4e484b",
+                            "textColor4": "56515b",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/bb/ab/33bbab54-bd2b-37f3-8ba3-d37da38a6736/4540774244362.png/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "ChouCho",
+                        "discNumber": 1,
+                        "durationInMillis": 259227,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI102302067",
+                        "name": "Never Say Goodbye",
+                        "playParams": {
+                            "id": "1822750213",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/a0/22/dba02273-7761-f636-7c6c-703816ddde71/mzaf_9243605328624690883.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2023-10-04",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/never-say-goodbye/1822750211?i=1822750213"
+                    }
+                },
+                {
+                    "id": "1748752102",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1748752102",
+                    "attributes": {
+                        "albumName": "Authentic symphony - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "e8e7d8",
+                            "height": 3000,
+                            "textColor1": "110403",
+                            "textColor2": "100509",
+                            "textColor3": "3c312e",
+                            "textColor4": "3b3233",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8e/b0/16/8eb01698-90d6-ff67-ca35-84d7dfc5ab63/4562409334040.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "こだまさおり & 虹音",
+                        "discNumber": 1,
+                        "durationInMillis": 272933,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101102103",
+                        "name": "Authentic symphony",
+                        "playParams": {
+                            "id": "1748752102",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/e3/d1/cae3d15a-2474-dff0-f420-f65682f513da/mzaf_5483719285229413562.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2011-10-26",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/authentic-symphony/1748751853?i=1748752102"
+                    }
+                },
+                {
+                    "id": "1749446304",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1749446304",
+                    "attributes": {
+                        "albumName": "Elemental World - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "dceff8",
+                            "height": 3000,
+                            "textColor1": "272144",
+                            "textColor2": "192940",
+                            "textColor3": "4b4a68",
+                            "textColor4": "405065",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cf/c8/3c/cfc83cdf-203c-29ed-e6d8-72f2c34b4e6e/4562409332893.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "ChouCho & AstroNoteS",
+                        "discNumber": 1,
+                        "durationInMillis": 283587,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101700067",
+                        "name": "Elemental World",
+                        "playParams": {
+                            "id": "1749446304",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bc/4a/24/bc4a244b-c602-bb86-a009-c6f97976a24a/mzaf_5047559740979487056.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2017-02-15",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/elemental-world/1749446301?i=1749446304"
+                    }
+                },
+                {
+                    "id": "1538258769",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538258769",
+                    "attributes": {
+                        "albumName": "蝶々結び - Single",
+                        "artistName": "Aimer",
+                        "artwork": {
+                            "bgColor": "e3e9e1",
+                            "height": 3000,
+                            "textColor1": "111110",
+                            "textColor2": "2f2c2a",
+                            "textColor3": "3b3c3a",
+                            "textColor4": "53514f",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/62/8e/a7/628ea70a-4680-2579-b0a9-d6fd3c73a5e9/jacket_SECL01969B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "野田洋次郎",
+                        "discNumber": 1,
+                        "durationInMillis": 307320,
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901601797",
+                        "name": "蝶々結び",
+                        "playParams": {
+                            "id": "1538258769",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/d8/12/d1d812a2-db9a-5472-afe9-2fb2588d98d0/mzaf_12464527886902082873.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2016-08-17",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3/1538258768?i=1538258769"
+                    }
+                },
+                {
+                    "id": "379387140",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/379387140",
+                    "attributes": {
+                        "albumName": "かわいいこどものうた",
+                        "artistName": "どんぐりクラブ合唱団",
+                        "artwork": {
+                            "bgColor": "d0cecd",
+                            "height": 1200,
+                            "textColor1": "281d19",
+                            "textColor2": "382f29",
+                            "textColor3": "49403d",
+                            "textColor4": "564e4a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a7/53/5a/a7535ac3-986d-a739-677a-6c9593901534/mzi.gaocvipk.jpg/{w}x{h}bb.jpg",
+                            "width": 1200
+                        },
+                        "composerName": "スペイン民謡",
+                        "discNumber": 1,
+                        "durationInMillis": 96840,
+                        "genreNames": [
+                            "チルドレン・ミュージック",
+                            "ミュージック",
+                            "ワールド "
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPB891000613",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "379387140",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/96/55/23/965523b8-8c9a-bd30-fa4a-88bed11280cb/mzaf_13729045716876858639.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2010-06-21",
+                        "trackNumber": 3,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/379387128?i=379387140"
+                    }
+                },
+                {
+                    "id": "1620091717",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1620091717",
+                    "attributes": {
+                        "albumName": "保育で使うピアノ伴奏3月のうた ピアノ伴奏カラオケとお手本歌唱つき",
+                        "artistName": "うたスタ",
+                        "artwork": {
+                            "bgColor": "084d98",
+                            "height": 3000,
+                            "textColor1": "feffff",
+                            "textColor2": "dfd1ca",
+                            "textColor3": "ccdbea",
+                            "textColor4": "b4b7c0",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/d6/a8/64d6a836-3d76-0dbd-2426-7927dcd8ca36/859758123512_cover.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "作者不明",
+                        "discNumber": 1,
+                        "durationInMillis": 86000,
+                        "genreNames": [
+                            "チルドレン・ミュージック",
+                            "ミュージック",
+                            "J-Pop"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "TCJPR2269638",
+                        "name": "ちょうちょ (キッズソングカバー) [「NHK教育テレビ Eテレ おかあさんといっしょ」より]",
+                        "playParams": {
+                            "id": "1620091717",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8c/4a/af/8c4aaf9f-2f82-7f40-b638-376d2a5733a3/mzaf_1049080621993506837.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2022-04-21",
+                        "trackNumber": 21,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87-%E3%82%AD%E3%83%83%E3%82%BA%E3%82%BD%E3%83%B3%E3%82%B0%E3%82%AB%E3%83%90%E3%83%BC-nhk%E6%95%99%E8%82%B2%E3%83%86%E3%83%AC%E3%83%93-e%E3%83%86%E3%83%AC-%E3%81%8A%E3%81%8B%E3%81%82%E3%81%95%E3%82%93%E3%81%A8%E3%81%84%E3%81%A3%E3%81%97%E3%82%87-%E3%82%88%E3%82%8A/1620091215?i=1620091717"
+                    }
+                },
+                {
+                    "id": "1537340242",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1537340242",
+                    "attributes": {
+                        "albumName": "UFO",
+                        "artistName": "電気グルーヴ",
+                        "artwork": {
+                            "bgColor": "b4b0b5",
+                            "height": 1400,
+                            "textColor1": "0f0e09",
+                            "textColor2": "1b1911",
+                            "textColor3": "302e2b",
+                            "textColor4": "3a3732",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/65/4e/5b/654e5b24-068f-ebba-036e-93fb61d31c10/jacket_SRCL02245B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 1419
+                        },
+                        "composerName": "ピエール瀧",
+                        "discNumber": 1,
+                        "durationInMillis": 297373,
+                        "genreNames": [
+                            "エレクトロニカ",
+                            "ミュージック",
+                            "エレクトロニック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPSR09181379",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "1537340242",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/49/a1/f2/49a1f243-38c7-94d0-911e-c2a508101666/mzaf_13934028400554489958.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "1994-03-21",
+                        "trackNumber": 7,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/1537340234?i=1537340242"
+                    }
+                },
+                {
+                    "id": "1753055824",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1753055824",
+                    "attributes": {
+                        "albumName": "ちょうちょ - Single",
+                        "artistName": "クマーバチャンネル",
+                        "artwork": {
+                            "bgColor": "fce1ec",
+                            "height": 3000,
+                            "textColor1": "110505",
+                            "textColor2": "0c0b09",
+                            "textColor3": "403133",
+                            "textColor4": "3c3537",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f4/ef/95/f4ef9598-2e94-5079-b275-fa5769dfa0e1/0198448545549_cover.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "discNumber": 1,
+                        "durationInMillis": 82837,
+                        "genreNames": [
+                            "チルドレン・ミュージック",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "TCJPA2486759",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "1753055824",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/34/d6/3b34d6f9-2826-7df9-edb0-00a03a432857/mzaf_1006841674941341148.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2024-06-28",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/1753055565?i=1753055824"
+                    }
+                },
+                {
+                    "id": "1073502665",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1073502665",
+                    "attributes": {
+                        "albumName": "みんなの童謡 オルゴール作品集 VOL-23",
+                        "artistName": "オルゴールサウンド J-POP",
+                        "artwork": {
+                            "bgColor": "e0e5e8",
+                            "height": 3000,
+                            "textColor1": "131319",
+                            "textColor2": "313036",
+                            "textColor3": "3c3d42",
+                            "textColor4": "54545a",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/78/5d/9b/785d9ba0-5aa8-f22b-578d-9089e732ea3f/4538182604977_cov.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "Traditional",
+                        "discNumber": 1,
+                        "durationInMillis": 109093,
+                        "genreNames": [
+                            "イージーリスニング",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPF541680805",
+                        "name": "ちょうちょう～蝶々蝶々菜の葉に止れ～ (オルゴール)",
+                        "playParams": {
+                            "id": "1073502665",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d9/66/19/d9661913-c002-60a6-d8d1-f6acf7dc0979/mzaf_16353398088368651799.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2016-02-03",
+                        "trackNumber": 5,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87%E3%81%86-%E8%9D%B6%E3%80%85%E8%9D%B6%E3%80%85%E8%8F%9C%E3%81%AE%E8%91%89%E3%81%AB%E6%AD%A2%E3%82%8C-%E3%82%AA%E3%83%AB%E3%82%B4%E3%83%BC%E3%83%AB/1073502650?i=1073502665"
+                    }
+                },
+                {
+                    "id": "75696676",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/75696676",
+                    "attributes": {
+                        "albumName": "N.S.P FIRST (Live)",
+                        "artistName": "NSP",
+                        "artwork": {
+                            "bgColor": "000101",
+                            "height": 938,
+                            "textColor1": "e28369",
+                            "textColor2": "ea6e4b",
+                            "textColor3": "b46954",
+                            "textColor4": "bb583c",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m07/d19/h21/s05.twatnnsf.tif/{w}x{h}bb.jpg",
+                            "width": 938
+                        },
+                        "discNumber": 1,
+                        "durationInMillis": 235133,
+                        "genreNames": [
+                            "ポップ",
+                            "ミュージック",
+                            "シンガーソングライター",
+                            "ワールド "
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPPC07300240",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "75696676",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/8c/71/f3/8c71f3f3-53e7-6aa4-3390-60b6585e050d/mzaf_7102510703545890341.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "1973-10-10",
+                        "trackNumber": 6,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/75697488?i=75696676"
+                    }
+                },
+                {
+                    "id": "1709326764",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1709326764",
+                    "attributes": {
+                        "albumName": "ロマンティック",
+                        "artistName": "MIDORINOMARU",
+                        "artwork": {
+                            "bgColor": "feb5ea",
+                            "height": 1400,
+                            "textColor1": "070a09",
+                            "textColor2": "070b05",
+                            "textColor3": "382c36",
+                            "textColor4": "382d32",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/13/00/16/13001633-c9f8-63b8-f9cb-e4dde7cd1600/4525853467597.jpg/{w}x{h}bb.jpg",
+                            "width": 1400
+                        },
+                        "composerName": "PB",
+                        "discNumber": 1,
+                        "durationInMillis": 216370,
+                        "genreNames": [
+                            "ジャズ",
+                            "ミュージック",
+                            "ポップ"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPG102301403",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "1709326764",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/fc/a4/17/fca4172b-b9c0-03be-8ad4-6ef376afe4ff/mzaf_15027889485105355175.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2023-10-08",
+                        "trackNumber": 3,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/1709326761?i=1709326764"
+                    }
+                },
+                {
+                    "id": "1538259003",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538259003",
+                    "attributes": {
+                        "albumName": "daydream",
+                        "artistName": "Aimer",
+                        "artwork": {
+                            "bgColor": "fafbfc",
+                            "height": 3000,
+                            "textColor1": "090a0a",
+                            "textColor2": "2d302c",
+                            "textColor3": "393a3a",
+                            "textColor4": "565955",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/4a/84/464a843d-14cc-e5e2-a9d6-763eb558e104/4547366270358.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "野田洋次郎",
+                        "discNumber": 1,
+                        "durationInMillis": 305333,
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901601797",
+                        "name": "蝶々結び",
+                        "playParams": {
+                            "id": "1538259003",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ba/79/69/ba796922-c78e-bf29-9b36-843ecf0c5ea0/mzaf_6693332588467847728.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2016-08-17",
+                        "trackNumber": 6,
+                        "url": "https://music.apple.com/jp/album/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3/1538258997?i=1538259003"
+                    }
+                },
+                {
+                    "id": "1749446196",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1749446196",
+                    "attributes": {
+                        "albumName": "piece of youth - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "3c322c",
+                            "height": 3000,
+                            "textColor1": "e3ede1",
+                            "textColor2": "ddd3cc",
+                            "textColor3": "c1c7bd",
+                            "textColor4": "bdb3ac",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/fe/60/6bfe60d3-ad28-e434-f0cd-3c1de41d97d6/4562409332688.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "ChouCho & 酒井陽一",
+                        "discNumber": 1,
+                        "durationInMillis": 325507,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI101502034",
+                        "name": "piece of youth",
+                        "playParams": {
+                            "id": "1749446196",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/42/40/154240df-f57e-f72e-00ba-a5f40cf136fd/mzaf_14079796465317463021.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2015-11-25",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/piece-of-youth/1749446184?i=1749446196"
+                    }
+                },
+                {
+                    "id": "1538258771",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1538258771",
+                    "attributes": {
+                        "albumName": "蝶々結び - Single",
+                        "artistName": "Aimer",
+                        "artwork": {
+                            "bgColor": "e3e9e1",
+                            "height": 3000,
+                            "textColor1": "111110",
+                            "textColor2": "2f2c2a",
+                            "textColor3": "3b3c3a",
+                            "textColor4": "53514f",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/62/8e/a7/628ea70a-4680-2579-b0a9-d6fd3c73a5e9/jacket_SECL01969B00Z_550.jpg/{w}x{h}bb.jpg",
+                            "width": 3025
+                        },
+                        "composerName": "野田洋次郎",
+                        "discNumber": 1,
+                        "durationInMillis": 302960,
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPU901601798",
+                        "name": "セプテンバーさん",
+                        "playParams": {
+                            "id": "1538258771",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/c4/38/84c43878-df48-b7f7-a90d-47b9c28e2ab8/mzaf_8211593246866570429.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2016-08-17",
+                        "trackNumber": 3,
+                        "url": "https://music.apple.com/jp/album/%E3%82%BB%E3%83%97%E3%83%86%E3%83%B3%E3%83%90%E3%83%BC%E3%81%95%E3%82%93/1538258768?i=1538258771"
+                    }
+                },
+                {
+                    "id": "1775417828",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1775417828",
+                    "attributes": {
+                        "albumName": "ほいくえん・ようちえんでうたうおうた",
+                        "artistName": "クマーバチャンネル",
+                        "artwork": {
+                            "bgColor": "ec858d",
+                            "height": 3000,
+                            "textColor1": "1a1514",
+                            "textColor2": "222121",
+                            "textColor3": "442b2c",
+                            "textColor4": "4a3537",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/b9/8e/8bb98e9c-0983-7e83-ab28-96f59f9b84e1/4571640310454_cover.png/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "discNumber": 1,
+                        "durationInMillis": 82837,
+                        "genreNames": [
+                            "チルドレン・ミュージック",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "TCJPA2486759",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "1775417828",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/b4/0f/59b40f86-320d-5863-9ef4-2b1a7e319b94/mzaf_6622941124060089172.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2024-06-28",
+                        "trackNumber": 26,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/1775417270?i=1775417828"
+                    }
+                },
+                {
+                    "id": "389317402",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/389317402",
+                    "attributes": {
+                        "albumName": "たのしいこどものうた",
+                        "artistName": "どんぐりクラブ合唱団",
+                        "artwork": {
+                            "bgColor": "d0cece",
+                            "height": 1200,
+                            "textColor1": "090806",
+                            "textColor2": "090908",
+                            "textColor3": "31302e",
+                            "textColor4": "313030",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/d1/8d/11/mzi.gzssosoz.jpg/{w}x{h}bb.jpg",
+                            "width": 1200
+                        },
+                        "composerName": "スペイン民謡",
+                        "discNumber": 1,
+                        "durationInMillis": 96840,
+                        "genreNames": [
+                            "チルドレン・ミュージック",
+                            "ミュージック",
+                            "ワールド "
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPB891000711",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "389317402",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/31/07/3d/31073dd0-e308-f3df-31f3-ebebfae73d89/mzaf_11644446945906889444.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2010-06-21",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/389317400?i=389317402"
+                    }
+                },
+                {
+                    "id": "1748746357",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1748746357",
+                    "attributes": {
+                        "albumName": "灰色のサーガ - Single",
+                        "artistName": "ChouCho",
+                        "artwork": {
+                            "bgColor": "b3b9ad",
+                            "height": 3000,
+                            "textColor1": "150805",
+                            "textColor2": "151e0e",
+                            "textColor3": "352b27",
+                            "textColor4": "353d2e",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/41/ac/cd41ac3b-cb4d-c3bb-ea22-80f7d8970490/4562409333272.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "ChouCho",
+                        "discNumber": 1,
+                        "durationInMillis": 212653,
+                        "genreNames": [
+                            "アニメ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPI102001231",
+                        "name": "灰色のサーガ",
+                        "playParams": {
+                            "id": "1748746357",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/ec/59/d6ec5910-e61c-0d88-6470-f77f50e79a69/mzaf_11722177613476285740.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2020-10-28",
+                        "trackNumber": 1,
+                        "url": "https://music.apple.com/jp/album/%E7%81%B0%E8%89%B2%E3%81%AE%E3%82%B5%E3%83%BC%E3%82%AC/1748746341?i=1748746357"
+                    }
+                },
+                {
+                    "id": "1604485894",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1604485894",
+                    "attributes": {
+                        "albumName": "さっこおねえさんといっしょ",
+                        "artistName": "しゅうさえこ",
+                        "artwork": {
+                            "bgColor": "dbdf72",
+                            "height": 3000,
+                            "textColor1": "090c0d",
+                            "textColor2": "3f2a20",
+                            "textColor3": "333621",
+                            "textColor4": "5e4e31",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/33/b8/c5/33b8c50d-323e-d842-b9c5-374f2c7e2034/21UM1IM58539.rgb.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "かしわ哲",
+                        "discNumber": 1,
+                        "durationInMillis": 183127,
+                        "genreNames": [
+                            "J-Pop",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": false,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "JPTO08330670",
+                        "name": "ちょうちょ",
+                        "playParams": {
+                            "id": "1604485894",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/bb/ca/ca/bbcaca32-a01c-94b5-46c1-1f6e837eed81/mzaf_11316319657898565997.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "1983-09-21",
+                        "trackNumber": 8,
+                        "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87%E3%81%86%E3%81%A1%E3%82%87/1604485880?i=1604485894"
+                    }
+                },
+                {
+                    "id": "1661528934",
+                    "type": "songs",
+                    "href": "/v1/catalog/jp/songs/1661528934",
+                    "attributes": {
+                        "albumName": "マジックアワー - Single",
+                        "artistName": "SKECHER's",
+                        "artwork": {
+                            "bgColor": "808fa2",
+                            "height": 3000,
+                            "textColor1": "040403",
+                            "textColor2": "040403",
+                            "textColor3": "1c1f23",
+                            "textColor4": "1d2023",
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/43/fb/90/43fb903e-8263-7740-09fa-8f31b42492f0/859759128707_cover.jpg/{w}x{h}bb.jpg",
+                            "width": 3000
+                        },
+                        "composerName": "TDrive",
+                        "contentRating": "explicit",
+                        "discNumber": 1,
+                        "durationInMillis": 164996,
+                        "genreNames": [
+                            "ヒップホップ／ラップ",
+                            "ミュージック"
+                        ],
+                        "hasLyrics": true,
+                        "isAppleDigitalMaster": false,
+                        "isrc": "TCJPU2222310",
+                        "name": "蝶々",
+                        "playParams": {
+                            "id": "1661528934",
+                            "kind": "song"
+                        },
+                        "previews": [
+                            {
+                                "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/ab/ee/fb/abeefba4-c058-f637-9b96-d71ff3bc1af6/mzaf_3280714079572469792.plus.aac.p.m4a"
+                            }
+                        ],
+                        "releaseDate": "2021-05-30",
+                        "trackNumber": 2,
+                        "url": "https://music.apple.com/jp/album/%E8%9D%B6%E3%80%85/1661528929?i=1661528934"
+                    }
+                }
+            ]
+        }
+    },
+    "meta": {
+        "results": {
+            "order": [
+                "songs",
+                "albums",
+                "playlists",
+                "music-videos",
+                "artists"
+            ],
+            "rawOrder": [
+                "songs",
+                "albums",
+                "playlists",
+                "music-videos",
+                "artists"
+            ]
+        }
+    }
+}
