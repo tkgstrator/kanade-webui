@@ -54,18 +54,18 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
   })
 
   return (
-    <div className="flex flex-col gap-6 md:flex-row w-full">
+    <div className="flex flex-col items-center gap-6 md:flex-row md:items-start w-full">
       <img
         alt={attributes.name}
         className="aspect-square w-full max-w-[270px] rounded-lg object-cover shadow-lg"
         draggable={false}
         src={getArtworkUrl(attributes.artwork.url, 600)}
       />
-      <div className="flex flex-1 flex-col justify-end gap-2">
-        <p className="text-sm font-medium text-muted-foreground uppercase">
+      <div className="flex flex-1 flex-col items-center justify-end md:gap-2 md:items-start">
+        <p className="hidden md:block text-sm font-medium text-muted-foreground uppercase">
           {attributes.isSingle ? "シングル" : "アルバム"}
         </p>
-        <h1 className="text-3xl font-bold text-foreground md:text-4xl">{attributes.name}</h1>
+        <h1 className="text-3xl font-bold text-foreground text-center md:text-left md:text-4xl">{attributes.name}</h1>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <Link
             className="font-medium text-foreground hover:underline"
@@ -84,9 +84,13 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
           )}
         </div>
         {attributes.editorialNotes?.standard && (
-          <p className="mt-2 text-sm text-muted-foreground line-clamp-3">{attributes.editorialNotes.standard}</p>
+          <p className="hidden md:block mt-2 text-sm text-muted-foreground text-center md:text-left line-clamp-3">
+            {attributes.editorialNotes.standard}
+          </p>
         )}
-        {attributes.copyright && <p className="mt-4 text-xs text-muted-foreground">{attributes.copyright}</p>}
+        {attributes.copyright && (
+          <p className="hidden md:block mt-4 text-xs text-muted-foreground">{attributes.copyright}</p>
+        )}
         <div className="mt-4 flex gap-3">
           <Button
             className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 text-sm rounded-sm"
