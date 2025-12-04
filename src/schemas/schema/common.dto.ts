@@ -1,6 +1,18 @@
 import { z } from '@hono/zod-openapi'
 import { ArtistAttributes } from '@/lib/client'
 
+export const TypeSchema = z.enum([
+  'activities',
+  'albums',
+  'apple-curators',
+  'artists',
+  'curators',
+  'music-videos',
+  'playlists',
+  'songs',
+  'stations',
+])
+
 export const MetaSchema = z.object({})
 
 export const RelationshipSchema = z.object({
@@ -45,24 +57,12 @@ export const ResourceSchema: z.ZodType<Resource> = z.object({
   href: z.string().nonempty().optional(),
   // id: z.coerce.number().int().positive(),
   meta: MetaSchema.optional(),
-  relationships: z.record(SearchCatalogResources.TypeSchema, RelationshipSchema).optional(),
+  relationships: z.record(TypeSchema, RelationshipSchema.optional()).optional(),
   type: z.string().nonempty(),
   views: z.lazy(() => z.array(ViewSchema)).optional(),
 })
 
 export namespace SearchCatalogResources {
-  export const TypeSchema = z.enum([
-    'activities',
-    'albums',
-    'apple-curators',
-    'artists',
-    'curators',
-    'music-videos',
-    'playlists',
-    'songs',
-    'stations',
-  ])
-
   export const ParamSchema = z.object({
     storefront: z.enum(['jp']),
   })
