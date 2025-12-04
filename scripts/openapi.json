@@ -1218,18 +1218,10 @@
                                           "required": [
                                             "artistName",
                                             "artwork",
-                                            "copyright",
                                             "genreNames",
-                                            "isCompilation",
-                                            "isComplete",
-                                            "isMasteredForItunes",
-                                            "isSingle",
                                             "name",
                                             "playParams",
-                                            "recordLabel",
                                             "releaseDate",
-                                            "trackCount",
-                                            "upc",
                                             "url"
                                           ]
                                         },
@@ -1388,18 +1380,10 @@
                                           "required": [
                                             "artistName",
                                             "artwork",
-                                            "copyright",
                                             "genreNames",
-                                            "isCompilation",
-                                            "isComplete",
-                                            "isMasteredForItunes",
-                                            "isSingle",
                                             "name",
                                             "playParams",
-                                            "recordLabel",
                                             "releaseDate",
-                                            "trackCount",
-                                            "upc",
                                             "url"
                                           ]
                                         },
