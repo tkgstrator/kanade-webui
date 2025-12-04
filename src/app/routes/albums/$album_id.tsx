@@ -42,7 +42,6 @@ function formatDuration(ms: number): string {
 
 function AlbumHeader({ album }: { album: AlbumsDatum }) {
   const { attributes } = album
-  console.log(album)
 
   const { mutate } = useMutation({
     mutationFn: async () =>
