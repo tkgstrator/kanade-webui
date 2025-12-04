@@ -3,6 +3,8 @@
 import { useMutation, useSuspenseQuery } from "@tanstack/react-query"
 import { createFileRoute, Link } from "@tanstack/react-router"
 import dayjs from "dayjs"
+import localizedFormat from "dayjs/plugin/localizedFormat"
+import "dayjs/locale/ja"
 import { Download, Shuffle } from "lucide-react"
 import { type JSX, Suspense, useState } from "react"
 import { toast } from "sonner"
@@ -11,6 +13,9 @@ import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
 import { type AlbumsDatum, client, type SongsDatum } from "@/lib/client"
 import { cn } from "@/lib/utils"
+
+dayjs.extend(localizedFormat)
+dayjs.locale("ja")
 
 export const Route = createFileRoute("/albums/$album_id")({
   component: Page,
@@ -73,9 +78,7 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
           >
             {attributes.artistName}
           </Link>
-          <span className="text-sm text-muted-foreground">
-            {attributes.isSingle ? "シングル" : "アルバム"} · {dayjs(attributes.releaseDate).format("YYYY年M月D日")}
-          </span>
+          <span className="text-sm text-muted-foreground">{dayjs(attributes.releaseDate).format("LL")}</span>
         </div>
         <div className="flex gap-4">
           <Button
