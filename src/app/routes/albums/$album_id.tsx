@@ -2,6 +2,7 @@
 
 import { useMutation, useSuspenseQuery } from "@tanstack/react-query"
 import { createFileRoute, Link } from "@tanstack/react-router"
+import dayjs from "dayjs"
 import { Download, Shuffle } from "lucide-react"
 import { type JSX, Suspense, useState } from "react"
 import { toast } from "sonner"
@@ -54,34 +55,24 @@ function AlbumHeader({ album }: { album: AlbumsDatum }) {
   })
 
   return (
-    <div className="flex flex-col items-center gap-6 md:flex-row md:items-center w-full">
+    <div className="flex flex-col items-center gap-6 lg:flex-row md:items-center w-full">
       <img
         alt={attributes.name}
         className="aspect-square w-full max-w-[270px] rounded-lg object-cover shadow-lg"
         draggable={false}
         src={getArtworkUrl(attributes.artwork.url, 600)}
       />
-      <div className="flex flex-1 flex-col items-center justify-end md:gap-2 md:items-start">
-        <p className="hidden md:block text-sm font-medium text-muted-foreground uppercase">
-          {attributes.isSingle ? "シングル" : "アルバム"}
-        </p>
-        <h1 className="text-2xl text-foreground text-center md:text-left md:text-3xl">{attributes.name}</h1>
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+      <div className="flex flex-1 flex-col items-center justify-end lg:items-start">
+        <h1 className="text-3xl text-foreground text-center md:text-left font-semibold">{attributes.name}</h1>
+        <div className="flex flex-col items-center lg:items-start text-sm text-muted-foreground">
           <Link
-            className="font-medium text-foreground hover:underline"
+            className="font-medium text-foreground hover:underline text-2xl"
             params={{ artist_id: album.id }}
             to="/artists/$artist_id"
           >
             {attributes.artistName}
           </Link>
-          <span>•</span>
-          <span>{attributes.releaseDate.split("-")[0]}</span>
-          {attributes.trackCount && (
-            <>
-              <span>•</span>
-              <span>{attributes.trackCount}曲</span>
-            </>
-          )}
+          <span>{dayjs(attributes.releaseDate).format("YYYY/MM/DD")}</span>
         </div>
         {attributes.editorialNotes?.standard && (
           <p className="hidden md:block mt-2 text-sm text-muted-foreground text-center md:text-left line-clamp-3">
@@ -127,32 +118,33 @@ function TrackListItem({
   const { attributes } = track
 
   return (
-    <div
+    <button
       className={cn(
-        "group flex items-center gap-4 rounded-md px-4 py-2 transition-colors cursor-pointer",
+        "group flex items-center gap-4 rounded-md px-4 py-2 h-12 transition-colors w-full text-left",
         isSelected
           ? "bg-blue-500 dark:bg-blue-600 text-white"
           : cn(index % 2 === 0 ? "bg-transparent" : "bg-muted/40", "hover:bg-muted"),
       )}
       onClick={onSelect}
+      type="button"
     >
-      <span className={cn("w-6 text-center text-sm tabular-nums", isSelected ? "text-white" : "text-muted-foreground")}>
+      <span
+        className={cn(
+          "w-6 text-center text-sm tabular-nums self-start mt-1",
+          isSelected ? "text-white" : "text-muted-foreground",
+        )}
+      >
         {attributes.trackNumber ?? index + 1}
       </span>
       <div className="min-w-0 flex-1">
-        <p className={cn("truncate font-medium", isSelected ? "text-white" : "text-foreground")}>{attributes.name}</p>
-        {attributes.artistName && (
-          <p className={cn("truncate text-sm", isSelected ? "text-white/80" : "text-muted-foreground")}>
-            {attributes.artistName}
-          </p>
-        )}
+        <p className={cn("truncate text-md", isSelected ? "text-white" : "text-foreground")}>{attributes.name}</p>
       </div>
       {attributes.durationInMillis && (
         <span className={cn("text-sm tabular-nums", isSelected ? "text-white/80" : "text-muted-foreground")}>
           {formatDuration(attributes.durationInMillis)}
         </span>
       )}
-    </div>
+    </button>
   )
 }
 
