@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
     },
     envPrefix: "VITE_", // VITE_で始まる環境変数を自動で読み込む
     esbuild: {
-      drop: mode === "production" ? ["console", "debugger"] : [],
+      // drop: mode === "production" ? ["console", "debugger"] : [],
     },
     plugins: [
       tanstackRouter({
