@@ -14,6 +14,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarSeparator,
+  useSidebar,
 } from "@/components/ui/sidebar"
 
 const mainMenuItems = [
@@ -58,12 +59,16 @@ const playlists = ["お気に入りミックス", "Chill Vibes", "ワークア�
 
 export function MusicSidebar() {
   const navigate = useNavigate({ from: "/" })
+  const { isMobile, setOpenMobile } = useSidebar()
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && !e.nativeEvent.isComposing) {
       const value = e.currentTarget.value
       if (value.trim()) {
         navigate({ search: { term: value.trim() }, to: "/search" })
+        if (isMobile) {
+          setOpenMobile(false)
+        }
       }
     }
   }
@@ -73,7 +78,7 @@ export function MusicSidebar() {
       <SidebarHeader className="px-4 py-3">
         <Link to="/">
           <div className="flex items-center gap-2">
-            <span className="font-semibold text-2xl">Music</span>
+            <span className="font-semibold text-2xl">Music Kit</span>
           </div>
         </Link>
       </SidebarHeader>
@@ -83,7 +88,7 @@ export function MusicSidebar() {
           <div className="px-2 pb-2 min-w-0">
             <InputGroup>
               <InputGroupAddon>
-                <Search className="size-4" />
+                <Search className="size-5" />
               </InputGroupAddon>
               <InputGroupInput onKeyDown={handleKeyDown} placeholder="検索" />
             </InputGroup>
@@ -92,10 +97,10 @@ export function MusicSidebar() {
             {mainMenuItems.map((item) => (
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton
-                  className="hover:bg-red-500/10 hover:text-red-500 dark:hover:bg-red-500/20 dark:hover:text-red-400"
+                  className="text-base! hover:bg-red-500/10 hover:text-red-500 dark:hover:bg-red-500/20 dark:hover:text-red-400"
                   tooltip={item.title}
                 >
-                  <item.icon className="size-4" />
+                  <item.icon className="size-5" />
                   <span>{item.title}</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -106,8 +111,8 @@ export function MusicSidebar() {
         <SidebarSeparator />
 
         <SidebarGroup>
-          <SidebarGroupLabel className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-            <Library className="mr-2 size-4" />
+          <SidebarGroupLabel className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+            <Library className="mr-2 size-5" />
             ライブラリ
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -115,10 +120,10 @@ export function MusicSidebar() {
               {libraryItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton
-                    className="hover:bg-red-500/10 hover:text-red-500 dark:hover:bg-red-500/20 dark:hover:text-red-400"
+                    className="text-base! hover:bg-red-500/10 hover:text-red-500 dark:hover:bg-red-500/20 dark:hover:text-red-400"
                     tooltip={item.title}
                   >
-                    <item.icon className="size-4" />
+                    <item.icon className="size-5" />
                     <span>{item.title}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -130,8 +135,8 @@ export function MusicSidebar() {
         <SidebarSeparator />
 
         <SidebarGroup>
-          <SidebarGroupLabel className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-            <ListMusic className="mr-2 size-4" />
+          <SidebarGroupLabel className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+            <ListMusic className="mr-2 size-5" />
             プレイリスト
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -139,7 +144,7 @@ export function MusicSidebar() {
               {playlists.map((playlist) => (
                 <SidebarMenuItem key={playlist}>
                   <SidebarMenuButton
-                    className="hover:bg-red-500/10 hover:text-red-500 dark:hover:bg-red-500/20 dark:hover:text-red-400"
+                    className="text-base! hover:bg-red-500/10 hover:text-red-500 dark:hover:bg-red-500/20 dark:hover:text-red-400"
                     tooltip={playlist}
                   >
                     <span className="text-muted-foreground">♪</span>

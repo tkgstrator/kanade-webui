@@ -18,8 +18,6 @@ import { routeTree } from "./routeTree.gen"
 
 import "./styles.css"
 import { QueryClient } from "@tanstack/react-query"
-import { MusicSidebar } from "@/components/music-sidebar"
-import { SidebarProvider } from "@/components/ui/sidebar"
 
 const router = createRouter({ routeTree })
 
