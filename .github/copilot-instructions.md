@@ -8,6 +8,7 @@ Please follow these instructions:
 - Do not edit components/ui/*.tsx files
 - To change style of ui, edit `className` props where the component is used
 - Migrate `className` to use `cn` utility from `lib/utils.ts` if multiple classes are used
+- Do not use `Date` object directly, use `dayjs` library instead
 
 This repository uses the following technologies:
 - TypeScript
