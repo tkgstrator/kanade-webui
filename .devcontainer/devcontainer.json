@@ -76,6 +76,9 @@
   "name": "Gamdl WebUI",
   "postAttachCommand": "/bin/sh .devcontainer/postAttachCommand.sh",
   "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
+  "remoteEnv": {
+    "WAKATIME_API_KEY": "${localEnv:WAKATIME_API_KEY}"
+  },
   "remoteUser": "vscode",
   "service": "app",
   "shutdownAction": "stopCompose",
