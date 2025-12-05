@@ -37,15 +37,14 @@ export function AlbumHeader({ album }: { album: AlbumsDatum }) {
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
-      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 lg:flex-row lg:items-end lg:gap-8 lg:px-8 lg:pt-12">
+      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 lg:flex-row lg:items-center lg:gap-8 lg:px-8 lg:pt-12">
         <img
           alt={attributes.name}
           className="aspect-square w-full max-w-[270px] rounded-lg object-cover shadow-lg"
           draggable={false}
           src={getArtworkUrl(attributes.artwork.url, 600)}
         />
-        <div className="flex flex-col items-center lg:items-start lg:justify-between lg:h-full gap-4">
-          <div />
+        <div className="flex flex-col items-center lg:items-start gap-4">
           <div className="flex flex-col items-center lg:items-start">
             <h1 className="text-3xl text-foreground text-center lg:text-left font-semibold">{attributes.name}</h1>
             <Link
