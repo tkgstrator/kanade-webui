@@ -158,8 +158,13 @@ app.openapi(
   }),
   async (c) => {
     const { id, storefront } = c.req.valid('param')
+    const { include } = c.req.valid('query')
+    console.log(include)
     const response = await c.var.CLIENT.get('/v1/catalog/:storefront/artists/:id', {
       params: { id, storefront },
+      queries: {
+        include: ['albums'],
+      },
     })
     return c.json(response)
   },

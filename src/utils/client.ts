@@ -38,7 +38,12 @@ const definition = makeApi([
       },
       {
         name: 'include',
-        schema: z.array(z.string()).nonempty().optional(),
+        schema: z
+          .array(z.string())
+          .nonempty()
+          .optional()
+          .transform((v) => (v === undefined ? undefined : v.join(',')))
+          .pipe(z.string().optional()),
         type: 'Query',
       },
     ],

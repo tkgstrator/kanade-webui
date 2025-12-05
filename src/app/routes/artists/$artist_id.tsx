@@ -26,6 +26,7 @@ const Content = (): JSX.Element => {
     queryFn: async () => {
       return await client.get('/api/artists/:id', {
         params: { id: artist_id },
+        queries: { include: ['albums', 'music-videos'] },
       })
     },
     queryKey: ['artist', artist_id],
