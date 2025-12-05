@@ -1,0 +1,1683 @@
+{
+    "data": [
+        {
+            "id": "1688539273",
+            "type": "artists",
+            "href": "/v1/catalog/jp/artists/1688539273",
+            "attributes": {
+                "artwork": {
+                    "bgColor": "fff100",
+                    "height": 3000,
+                    "textColor1": "232224",
+                    "textColor2": "313031",
+                    "textColor3": "4f4b1d",
+                    "textColor4": "5a5727",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/8a/c8/0c/8ac80c48-008b-bd2d-6461-25b443b56e9f/mzl.omlhztph.jpg/{w}x{h}bb.jpg",
+                    "width": 3000
+                },
+                "genreNames": [
+                    "アニメ"
+                ],
+                "name": "トゲナシトゲアリ",
+                "url": "https://music.apple.com/jp/artist/%E3%83%88%E3%82%B2%E3%83%8A%E3%82%B7%E3%83%88%E3%82%B2%E3%82%A2%E3%83%AA/1688539273"
+            },
+            "relationships": {
+                "albums": {
+                    "href": "/v1/catalog/jp/artists/1688539273/albums",
+                    "next": "/v1/catalog/jp/artists/1688539273/albums?offset=25",
+                    "data": [
+                        {
+                            "id": "1737841888",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1737841888",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "cfcdc7",
+                                    "height": 3000,
+                                    "textColor1": "1e1f25",
+                                    "textColor2": "222f35",
+                                    "textColor3": "414145",
+                                    "textColor4": "444e52",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/42/4f/b2/424fb29f-e511-839c-c31f-23d48ecf68a3/24UMGIM21411.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "雑踏、僕らの街 - Single",
+                                "playParams": {
+                                    "id": "1737841888",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-04-06",
+                                "trackCount": 1,
+                                "upc": "00602465353723",
+                                "url": "https://music.apple.com/jp/album/wrong-world-single/1737841888"
+                            }
+                        },
+                        {
+                            "id": "1737948435",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1737948435",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "cfcdc7",
+                                    "height": 3000,
+                                    "textColor1": "121a26",
+                                    "textColor2": "11213b",
+                                    "textColor3": "383e46",
+                                    "textColor4": "374357",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/d4/39/36d4394c-995c-7195-2345-47fe55e30774/24UMGIM25049.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "空の箱 (井芹仁菜、河原木桃香) - Single",
+                                "playParams": {
+                                    "id": "1737948435",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-04-06",
+                                "trackCount": 1,
+                                "upc": "00602465382594",
+                                "url": "https://music.apple.com/jp/album/void-nina-iseri-momoka-kawaragi-single/1737948435"
+                            }
+                        },
+                        {
+                            "id": "1763003779",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1763003779",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "5a4e43",
+                                    "height": 3000,
+                                    "textColor1": "dbf2ef",
+                                    "textColor2": "c7e8dd",
+                                    "textColor3": "c2d1cc",
+                                    "textColor4": "b1c9be",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ce/d3/86/ced3864e-5082-93a0-7006-20144cfdea0c/24UMGIM86991.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "editorialNotes": {
+                                    "short": "人気アニメ発の劇中バンドの2ndアルバム。アニメ主題歌に加え新曲も収録。",
+                                    "tagline": "おすすめアルバム"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": true,
+                                "isSingle": false,
+                                "name": "棘ナシ",
+                                "playParams": {
+                                    "id": "1763003779",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-08-28",
+                                "trackCount": 12,
+                                "upc": "00602468077985",
+                                "url": "https://music.apple.com/jp/album/togenashi/1763003779"
+                            }
+                        },
+                        {
+                            "id": "1749426258",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1749426258",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "232833",
+                                    "height": 3000,
+                                    "textColor1": "d6ccb6",
+                                    "textColor2": "9fb1ca",
+                                    "textColor3": "b2ab9b",
+                                    "textColor4": "8696ac",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/30/59/6f/30596f78-3028-6708-d931-e03d6ffb9e8c/24UMGIM59226.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "空白とカタルシス - Single",
+                                "playParams": {
+                                    "id": "1749426258",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-06-15",
+                                "trackCount": 1,
+                                "upc": "00602465873559",
+                                "url": "https://music.apple.com/jp/album/emptiness-and-catharsis-single/1749426258"
+                            }
+                        },
+                        {
+                            "id": "1740874673",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1740874673",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "d3d0bd",
+                                    "height": 3000,
+                                    "textColor1": "321a1e",
+                                    "textColor2": "3a2f25",
+                                    "textColor3": "523e3e",
+                                    "textColor4": "584f43",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/0f/62/360f628c-b042-e755-95f5-4b6e08c8c367/24UMGIM27973.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": true,
+                                "isSingle": false,
+                                "name": "棘アリ",
+                                "playParams": {
+                                    "id": "1740874673",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-04-24",
+                                "trackCount": 10,
+                                "upc": "00602465544640",
+                                "url": "https://music.apple.com/jp/album/togeari/1740874673"
+                            }
+                        },
+                        {
+                            "id": "1854041379",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1854041379",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/8f/c6/388fc685-b884-666a-df22-9990ff25a66d/25UM1IM82883.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "もう何もいらない未来 - Single",
+                                "playParams": {
+                                    "id": "1854041379",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2025-11-21",
+                                "trackCount": 1,
+                                "upc": "00602488217460",
+                                "url": "https://music.apple.com/jp/album/against-all-answers-single/1854041379"
+                            }
+                        },
+                        {
+                            "id": "1742492070",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1742492070",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "adacae",
+                                    "height": 3000,
+                                    "textColor1": "1d1a18",
+                                    "textColor2": "161b1c",
+                                    "textColor3": "393736",
+                                    "textColor4": "343839",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5e/23/df/5e23df18-f169-232a-e13a-426accb05052/24UMGIM43541.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "視界の隅 朽ちる音 (新川崎(仮)) - Single",
+                                "playParams": {
+                                    "id": "1742492070",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-05-04",
+                                "trackCount": 1,
+                                "upc": "00602465677836",
+                                "url": "https://music.apple.com/jp/album/what-to-raise-shin-kawasaki-temporary-single/1742492070"
+                            }
+                        },
+                        {
+                            "id": "1751202174",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1751202174",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "232833",
+                                    "height": 3000,
+                                    "textColor1": "d6ccb6",
+                                    "textColor2": "b7c0ca",
+                                    "textColor3": "b2ab9b",
+                                    "textColor4": "99a1ac",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/41/88/f9/4188f97b-3765-a8ae-3b4a-e7446f71199f/24UMGIM59227.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "運命の華 - Single",
+                                "playParams": {
+                                    "id": "1751202174",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-06-29",
+                                "trackCount": 1,
+                                "upc": "00602465873573",
+                                "url": "https://music.apple.com/jp/album/im-here-single/1751202174"
+                            }
+                        },
+                        {
+                            "id": "1799841911",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1799841911",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 3000,
+                                    "textColor1": "0e0e0e",
+                                    "textColor2": "2b2b2b",
+                                    "textColor3": "3e3e3e",
+                                    "textColor4": "555555",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/d8/fe/b7d8fefc-e479-f989-d97d-4b91af1b40e7/25UMGIM08536.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "ダレモ - Single",
+                                "playParams": {
+                                    "id": "1799841911",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2025-03-12",
+                                "trackCount": 1,
+                                "upc": "00602475909385",
+                                "url": "https://music.apple.com/jp/album/no-one-single/1799841911"
+                            }
+                        },
+                        {
+                            "id": "1739541095",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1739541095",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "cada7e",
+                                    "height": 3000,
+                                    "textColor1": "080809",
+                                    "textColor2": "35222c",
+                                    "textColor3": "2f3220",
+                                    "textColor4": "52463c",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/26/a9/af/26a9afe8-6f46-7ed7-2831-fc25fb698da3/24UMGIM25070.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "声なき魚 (新川崎(仮)) - Single",
+                                "playParams": {
+                                    "id": "1739541095",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-04-20",
+                                "trackCount": 1,
+                                "upc": "00602465513035",
+                                "url": "https://music.apple.com/jp/album/voiceless-fish-shin-kawasaki-temporary-single/1739541095"
+                            }
+                        },
+                        {
+                            "id": "1739005099",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1739005099",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "cada7e",
+                                    "height": 3000,
+                                    "textColor1": "080809",
+                                    "textColor2": "35222c",
+                                    "textColor3": "2f3220",
+                                    "textColor4": "52463c",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f1/44/10/f14410e4-8254-37e9-97b6-a47cd1f5075e/24UMGIM25058.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "誰にもなれない私だから - Single",
+                                "playParams": {
+                                    "id": "1739005099",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-04-13",
+                                "trackCount": 1,
+                                "upc": "00602465382822",
+                                "url": "https://music.apple.com/jp/album/im-nobody-single/1739005099"
+                            }
+                        },
+                        {
+                            "id": "1701923796",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1701923796",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "fbf8f9",
+                                    "height": 3000,
+                                    "textColor1": "2e312e",
+                                    "textColor2": "313231",
+                                    "textColor3": "575956",
+                                    "textColor4": "5a5959",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/71/c5/4e/71c54e2c-54a2-49cb-6f90-50b86fc71758/23UMGIM84998.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "爆ぜて咲く - Single",
+                                "playParams": {
+                                    "id": "1701923796",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-08-28",
+                                "trackCount": 1,
+                                "upc": "00602458323832",
+                                "url": "https://music.apple.com/jp/album/bleeding-hearts-single/1701923796"
+                            }
+                        },
+                        {
+                            "id": "1842282674",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1842282674",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": true,
+                                "isSingle": false,
+                                "name": "小指立てませんか",
+                                "playParams": {
+                                    "id": "1842282674",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2025-11-14",
+                                "trackCount": 7,
+                                "upc": "00602488072670",
+                                "url": "https://music.apple.com/jp/album/lets-give-them-the-pinky-finger/1842282674"
+                            }
+                        },
+                        {
+                            "id": "1807680744",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1807680744",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "001432",
+                                    "height": 3000,
+                                    "textColor1": "e5eae3",
+                                    "textColor2": "deb4b5",
+                                    "textColor3": "b7bfc0",
+                                    "textColor4": "b2949a",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/b6/5f/7ab65f6d-ffe2-8990-753d-9500944d8622/25UMGIM08539.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                                "editorialNotes": {
+                                    "short": "劇場版総集編も決定したアニメ作品発のバンド。心の葛藤を描くロックナンバー。"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "飛べない蝶は夢を見る - Single",
+                                "playParams": {
+                                    "id": "1807680744",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2025-04-28",
+                                "trackCount": 1,
+                                "upc": "00602475909422",
+                                "url": "https://music.apple.com/jp/album/belle-papillon-single/1807680744"
+                            }
+                        },
+                        {
+                            "id": "1688539265",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1688539265",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "f7edef",
+                                    "height": 3000,
+                                    "textColor1": "47192d",
+                                    "textColor2": "43202e",
+                                    "textColor3": "6a4354",
+                                    "textColor4": "674954",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/56/72/1c/56721c24-3d03-af99-eb13-e510bef5e105/23UMGIM56969.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "J-Pop",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "名もなき何もかも - Single",
+                                "playParams": {
+                                    "id": "1688539265",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-05-29",
+                                "trackCount": 1,
+                                "upc": "00602455775764",
+                                "url": "https://music.apple.com/jp/album/nameless-name-single/1688539265"
+                            }
+                        },
+                        {
+                            "id": "1832904914",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1832904914",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "1a1b1f",
+                                    "height": 3000,
+                                    "textColor1": "d4c4c6",
+                                    "textColor2": "cea0a7",
+                                    "textColor3": "afa2a5",
+                                    "textColor4": "aa858b",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/30/68/5d3068bb-8ee9-de0c-bc20-29b79cbce54f/25UM1IM06575.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                                "editorialNotes": {
+                                    "short": "切実な思いをエモーショナルに歌う、疾走感あふれるロック。Fushi作詞作曲。"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "蜃気楼ニ問フ - Single",
+                                "playParams": {
+                                    "id": "1832904914",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2025-08-25",
+                                "trackCount": 1,
+                                "upc": "00602478856334",
+                                "url": "https://music.apple.com/jp/album/mirage-of-the-mind-single/1832904914"
+                            }
+                        },
+                        {
+                            "id": "1742492269",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1742492269",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "adacae",
+                                    "height": 3000,
+                                    "textColor1": "1c1917",
+                                    "textColor2": "161b1c",
+                                    "textColor3": "393635",
+                                    "textColor4": "343839",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6d/c6/de/6dc6dea2-4c0d-b5b3-49dd-4fb48c8736e0/24UMGIM43542.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "心象的フラクタル (beni-shouga) - Single",
+                                "playParams": {
+                                    "id": "1742492269",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-05-11",
+                                "trackCount": 1,
+                                "upc": "00602465677874",
+                                "url": "https://music.apple.com/jp/album/mind-playing-fractal-beni-shouga-single/1742492269"
+                            }
+                        },
+                        {
+                            "id": "1820118990",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1820118990",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "1f1e1e",
+                                    "height": 3000,
+                                    "textColor1": "60f3e8",
+                                    "textColor2": "41f3ef",
+                                    "textColor3": "53c9c0",
+                                    "textColor4": "3ac8c5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/dd/d6/7fddd69b-65b1-f744-dee1-1a55533b8143/25UMGIM79471.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                                "editorialNotes": {
+                                    "short": "砕けそうな心を抱いて走る、切実な衝動を刻んだギターロックナンバー。"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "薄采ディスプレイ - Single",
+                                "playParams": {
+                                    "id": "1820118990",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2025-06-23",
+                                "trackCount": 1,
+                                "upc": "00602478529375",
+                                "url": "https://music.apple.com/jp/album/fragile-violet-single/1820118990"
+                            }
+                        },
+                        {
+                            "id": "1710596219",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1710596219",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "aeaeae",
+                                    "height": 3000,
+                                    "textColor1": "111214",
+                                    "textColor2": "262326",
+                                    "textColor3": "303133",
+                                    "textColor4": "413f41",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6e/e1/70/6ee170c9-0f5a-d286-c7c1-629d66c922fe/23UM1IM12107.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "J-Pop",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "極私的極彩色アンサー - Single",
+                                "playParams": {
+                                    "id": "1710596219",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-10-23",
+                                "trackCount": 1,
+                                "upc": "00602458618068",
+                                "url": "https://music.apple.com/jp/album/answer-to-extreme-single/1710596219"
+                            }
+                        },
+                        {
+                            "id": "1715270003",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1715270003",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "e2e2e2",
+                                    "height": 3000,
+                                    "textColor1": "1e1e20",
+                                    "textColor2": "28282a",
+                                    "textColor3": "454547",
+                                    "textColor4": "4d4d4f",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f4/34/97/f43497d7-f289-9071-335c-e6a20db9d749/23UM1IM17110.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "傷つき傷つけ痛くて辛い - Single",
+                                "playParams": {
+                                    "id": "1715270003",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-11-27",
+                                "trackCount": 1,
+                                "upc": "00602458672473",
+                                "url": "https://music.apple.com/jp/album/hurtful-painful-single/1715270003"
+                            }
+                        },
+                        {
+                            "id": "1718758467",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1718758467",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "d98fbf",
+                                    "height": 3000,
+                                    "textColor1": "050507",
+                                    "textColor2": "0b0307",
+                                    "textColor3": "30202c",
+                                    "textColor4": "341f2c",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6e/92/df/6e92df3d-7913-f3fb-d89b-07ea47956f46/23UM1IM58395.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "運命に賭けたい論理 - Single",
+                                "playParams": {
+                                    "id": "1718758467",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-12-18",
+                                "trackCount": 1,
+                                "upc": "00602458949339",
+                                "url": "https://music.apple.com/jp/album/lonely-fate-to-be-destined-single/1718758467"
+                            }
+                        },
+                        {
+                            "id": "1695507360",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1695507360",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "bfec30",
+                                    "height": 3000,
+                                    "textColor1": "181a1f",
+                                    "textColor2": "1f1e22",
+                                    "textColor3": "394423",
+                                    "textColor4": "3f4725",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/8c/74/518c7499-e60e-9af4-26a7-61d017141e82/23UMGIM73333.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "理想的パラドクスとは - Single",
+                                "playParams": {
+                                    "id": "1695507360",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-07-24",
+                                "trackCount": 1,
+                                "upc": "00602455934666",
+                                "url": "https://music.apple.com/jp/album/ideal-paradox-single/1695507360"
+                            }
+                        },
+                        {
+                            "id": "1724729899",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1724729899",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "d88dbd",
+                                    "height": 3000,
+                                    "textColor1": "050507",
+                                    "textColor2": "0b0307",
+                                    "textColor3": "2f202b",
+                                    "textColor4": "341f2c",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/20/b4/d2/20b4d28d-4d54-7ff0-fbdc-18012316aa01/23UM1IM66215.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2024 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "サヨナラサヨナラサヨナラ - Single",
+                                "playParams": {
+                                    "id": "1724729899",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2024-01-29",
+                                "trackCount": 1,
+                                "upc": "00602465050059",
+                                "url": "https://music.apple.com/jp/album/underneath-single/1724729899"
+                            }
+                        },
+                        {
+                            "id": "1692126266",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1692126266",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "c4f728",
+                                    "height": 3000,
+                                    "textColor1": "181a1f",
+                                    "textColor2": "1f1e22",
+                                    "textColor3": "3b4721",
+                                    "textColor4": "404923",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3f/0d/98/3f0d987c-f54d-f77f-9c81-26ca8623244d/23UMGIM61526.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "気鬱、白濁す - Single",
+                                "playParams": {
+                                    "id": "1692126266",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-06-26",
+                                "trackCount": 1,
+                                "upc": "00602455925022",
+                                "url": "https://music.apple.com/jp/album/white-drizzle-in-gloom-single/1692126266"
+                            }
+                        },
+                        {
+                            "id": "1688636127",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1688636127",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "f8edef",
+                                    "height": 3000,
+                                    "textColor1": "47192d",
+                                    "textColor2": "43202e",
+                                    "textColor3": "6b4354",
+                                    "textColor4": "674954",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/db/40/c2/db40c2f3-456b-b30d-2407-cc2abd1c2dc0/23UMGIM56970.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "A UNIVERSAL SIGMA release; ℗ 2023 UNIVERSAL MUSIC LLC",
+                                "genreNames": [
+                                    "J-Pop",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "偽りの理 - Single",
+                                "playParams": {
+                                    "id": "1688636127",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Universal Music LLC",
+                                "releaseDate": "2023-05-29",
+                                "trackCount": 1,
+                                "upc": "00602455826961",
+                                "url": "https://music.apple.com/jp/album/no-rhyme-nor-reason-single/1688636127"
+                            }
+                        }
+                    ]
+                },
+                "music-videos": {
+                    "href": "/v1/catalog/jp/artists/1688539273/music-videos",
+                    "data": [
+                        {
+                            "id": "1837896852",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1837896852",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "9c343d",
+                                    "height": 1072,
+                                    "textColor1": "ece7e1",
+                                    "textColor2": "eccdd7",
+                                    "textColor3": "dcc3c0",
+                                    "textColor4": "dcaeb8",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/23/e3/70/23e370ec-abc0-794e-460c-5a85d1aae87d/25UM1IM25205.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 158614,
+                                "genreNames": [
+                                    "アニメ"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82503319",
+                                "name": "蜃気楼ニ問フ (Lyric Video)",
+                                "playParams": {
+                                    "id": "1837896852",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "010102",
+                                            "height": 1080,
+                                            "textColor1": "d4c0ca",
+                                            "textColor2": "c8b7bd",
+                                            "textColor3": "aa9aa2",
+                                            "textColor4": "a09398",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/13/1c/b2/131cb290-91c6-aa39-1433-104ad4389714/Jobf1c0e378-6f20-4a24-b5c6-32f3840a347f-202198410-PreviewImage_preview_image_45000_video_sdr-Time1757068953435.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1837896852&id=1178081341&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video211/v4/1a/44/55/1a445590-016e-37b5-9683-e464ec0ba2d6/mzvf_2054610603234255602.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2025-08-25",
+                                "url": "https://music.apple.com/jp/music-video/%E8%9C%83%E6%B0%97%E6%A5%BC%E3%83%8B%E5%95%8F%E3%83%95-lyric-video/1837896852"
+                            }
+                        },
+                        {
+                            "id": "1830946953",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1830946953",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "b6d1c1",
+                                    "height": 816,
+                                    "textColor1": "0d1032",
+                                    "textColor2": "041342",
+                                    "textColor3": "2f374e",
+                                    "textColor4": "28395b",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/65/00/59/6500599d-d700-248b-64dd-1f0cfecf418b/25UMGIM79475.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 188054,
+                                "genreNames": [
+                                    "アニメ"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82502499",
+                                "name": "薄采ディスプレイ (Lyric Video)",
+                                "playParams": {
+                                    "id": "1830946953",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "0b121a",
+                                            "height": 816,
+                                            "textColor1": "08efc8",
+                                            "textColor2": "08efc8",
+                                            "textColor3": "09c2a5",
+                                            "textColor4": "09c2a5",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/6c/0c/87/6c0c8780-26a5-0a68-6625-b6c141341806/Job101c51e4-e2dc-4b6c-ad9e-8459381373a2-199190181-PreviewImage_preview_image_45000_video_sdr-Time1754295290868.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1830946953&id=1162828504&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video211/v4/c8/8b/5f/c88b5fe2-4ec4-57c2-8829-6aea0d59c907/mzvf_12034635175464378967.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2025-06-23",
+                                "url": "https://music.apple.com/jp/music-video/%E8%96%84%E9%87%87%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4-lyric-video/1830946953"
+                            }
+                        },
+                        {
+                            "id": "1814756280",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1814756280",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "f3fdff",
+                                    "height": 808,
+                                    "textColor1": "000408",
+                                    "textColor2": "00121d",
+                                    "textColor3": "313639",
+                                    "textColor4": "30414a",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/2c/27/f1/2c27f1ed-a776-c8f2-3bb9-2b0323fb3455/25UMGIM59638.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 160150,
+                                "genreNames": [
+                                    "アニメ"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82501364",
+                                "name": "飛べない蝶は夢を見る (Lyric Video)",
+                                "playParams": {
+                                    "id": "1814756280",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "000000",
+                                            "height": 1080,
+                                            "textColor1": "ecf2f3",
+                                            "textColor2": "b5c9d3",
+                                            "textColor3": "bdc1c2",
+                                            "textColor4": "91a1a9",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/19/c2/46/19c246f5-b775-5cc1-bc00-9824bfa0e84e/Job868015bf-4daf-4f6d-82a1-342e6fa823cb-192634832-PreviewImage_preview_image_45000_video_sdr-Time1747373687103.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1814756280&id=1126930182&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video221/v4/9e/ea/24/9eea2411-0e61-c20b-8273-8be49d09c339/mzvf_15881587486449334167.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2025-04-28",
+                                "url": "https://music.apple.com/jp/music-video/%E9%A3%9B%E3%81%B9%E3%81%AA%E3%81%84%E8%9D%B6%E3%81%AF%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B-lyric-video/1814756280"
+                            }
+                        },
+                        {
+                            "id": "1807041998",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1807041998",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "010101",
+                                    "height": 1080,
+                                    "textColor1": "dee4dd",
+                                    "textColor2": "e1cb99",
+                                    "textColor3": "b2b6b1",
+                                    "textColor4": "b4a27a",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/25/be/28/25be28f6-ffd2-8076-1cca-ae5247d2bd80/25UMGIM45704.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1920
+                                },
+                                "durationInMillis": 189142,
+                                "genreNames": [
+                                    "アニメ"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82500999",
+                                "name": "ダレモ (Lyric Video)",
+                                "playParams": {
+                                    "id": "1807041998",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "6785a7",
+                                            "height": 1080,
+                                            "textColor1": "020509",
+                                            "textColor2": "161616",
+                                            "textColor3": "161f28",
+                                            "textColor4": "262c33",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/73/8f/cf/738fcfba-5abe-4b58-1d3d-efba7c67a97f/Jobce63a5ce-c6c8-4582-baf1-2fcc38a72cd1-189713125-PreviewImage_preview_image_45000_video_sdr-Time1744019676166.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1807041998&id=1056825131&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video221/v4/90/b4/7e/90b47e73-64e0-4812-5900-469e68751d3f/mzvf_9633522581018985245.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2025-03-12",
+                                "url": "https://music.apple.com/jp/music-video/%E3%83%80%E3%83%AC%E3%83%A2-lyric-video/1807041998"
+                            }
+                        },
+                        {
+                            "id": "1729451484",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1729451484",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 963,
+                                    "textColor1": "f3fefa",
+                                    "textColor2": "f3eafb",
+                                    "textColor3": "c2cbc8",
+                                    "textColor4": "c2bbc9",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/9b/3c/5c/9b3c5cf5-a6b5-005d-cf63-24faf5a8adf2/23UM1IM66232.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1816
+                                },
+                                "durationInMillis": 158187,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82306104",
+                                "name": "サヨナラサヨナラサヨナラ (Lyric Video)",
+                                "playParams": {
+                                    "id": "1729451484",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "3d0000",
+                                            "height": 1080,
+                                            "textColor1": "fffefb",
+                                            "textColor2": "d39577",
+                                            "textColor3": "d8cbc8",
+                                            "textColor4": "b5775f",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/5b/65/02/5b65027e-73c1-a9a2-0c67-3db2d207e5c0/Job2df65472-87ef-4c6f-9667-ccb53dc25bb3-162559029-PreviewImage_preview_image_45000_video_sdr-Time1707247854888.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1729451484&id=785557417&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/bb/7e/59/bb7e5912-7bfd-2957-58b5-3d897d54ac37/mzvf_12744684870190790297.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2024-01-29",
+                                "url": "https://music.apple.com/jp/music-video/%E3%82%B5%E3%83%A8%E3%83%8A%E3%83%A9%E3%82%B5%E3%83%A8%E3%83%8A%E3%83%A9%E3%82%B5%E3%83%A8%E3%83%8A%E3%83%A9-lyric-video/1729451484"
+                            }
+                        },
+                        {
+                            "id": "1724720430",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1724720430",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "babec1",
+                                    "height": 1072,
+                                    "textColor1": "212121",
+                                    "textColor2": "262628",
+                                    "textColor3": "404141",
+                                    "textColor4": "444447",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/48/22/c5/4822c58b-9201-77a4-9e4b-12b512934ac0/23UM1IM59706.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 197050,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82305965",
+                                "name": "運命に賭けたい論理 (Lyric Video)",
+                                "playParams": {
+                                    "id": "1724720430",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "dceae8",
+                                            "height": 1080,
+                                            "textColor1": "080715",
+                                            "textColor2": "0b0914",
+                                            "textColor3": "32343f",
+                                            "textColor4": "35363e",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/19/3c/64/193c64cb-98a8-3f25-45d1-8fded1a577d4/Job8a0381c6-66ff-43f4-b042-068e49508d21-161076642-PreviewImage_preview_image_45000_video_sdr-Time1704709042698.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1724720430&id=734808410&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video116/v4/5b/6d/04/5b6d04db-faad-6f65-5355-2398b346d5e7/mzvf_493531447842839351.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-12-18",
+                                "url": "https://music.apple.com/jp/music-video/%E9%81%8B%E5%91%BD%E3%81%AB%E8%B3%AD%E3%81%91%E3%81%9F%E3%81%84%E8%AB%96%E7%90%86-lyric-video/1724720430"
+                            }
+                        },
+                        {
+                            "id": "1718892420",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1718892420",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "bacadb",
+                                    "height": 1072,
+                                    "textColor1": "1e1d22",
+                                    "textColor2": "20222a",
+                                    "textColor3": "3d4047",
+                                    "textColor4": "3f434e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/a3/6d/6d/a36d6d5a-0104-ae74-7a8d-308ed6c583ef/23UM1IM17112.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 195383,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82305046",
+                                "name": "傷つき傷つけ痛くて辛い",
+                                "playParams": {
+                                    "id": "1718892420",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "282624",
+                                            "height": 1080,
+                                            "textColor1": "f6f0ec",
+                                            "textColor2": "c7cbc3",
+                                            "textColor3": "ccc8c4",
+                                            "textColor4": "a7aaa3",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/2d/96/f2/2d96f210-789a-4647-ded5-6eed56118f25/Job44ae878a-d119-4220-a527-0f25fd6991c7-159285332-PreviewImage_preview_image_45000_video_sdr-Time1701248604449.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1718892420&id=667074178&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/03/0e/15/030e1574-2cbf-6e1d-074d-08e6a2b501f5/mzvf_17837000507740369789.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-11-27",
+                                "url": "https://music.apple.com/jp/music-video/%E5%82%B7%E3%81%A4%E3%81%8D%E5%82%B7%E3%81%A4%E3%81%91%E7%97%9B%E3%81%8F%E3%81%A6%E8%BE%9B%E3%81%84/1718892420"
+                            }
+                        },
+                        {
+                            "id": "1715771341",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1715771341",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a6c634",
+                                    "height": 1014,
+                                    "textColor1": "121324",
+                                    "textColor2": "262836",
+                                    "textColor3": "2f3727",
+                                    "textColor4": "404835",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/a1/40/4a/a1404a4b-ebe8-9f52-d9ee-af1ba810b4e4/23UM1IM12112.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 166758,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82304929",
+                                "name": "極私的極彩色アンサー (Lyric Video)",
+                                "playParams": {
+                                    "id": "1715771341",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "000000",
+                                            "height": 1080,
+                                            "textColor1": "96bcd0",
+                                            "textColor2": "acb0d2",
+                                            "textColor3": "7896a6",
+                                            "textColor4": "8a8da8",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/3d/63/97/3d63973a-1f22-6718-cc05-fcf40d8c3bef/Job30d5f56c-1086-4c14-92e6-7b7d1c65c557-158376047-PreviewImage_preview_image_45000_video_sdr-Time1699498767448.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1715771341&id=642645869&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video116/v4/8f/2b/0a/8f2b0a79-7913-61e7-446e-5f43fdc59183/mzvf_2646792580350526961.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-10-23",
+                                "url": "https://music.apple.com/jp/music-video/%E6%A5%B5%E7%A7%81%E7%9A%84%E6%A5%B5%E5%BD%A9%E8%89%B2%E3%82%A2%E3%83%B3%E3%82%B5%E3%83%BC-lyric-video/1715771341"
+                            }
+                        },
+                        {
+                            "id": "1709924289",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1709924289",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "f3961f",
+                                    "height": 868,
+                                    "textColor1": "141513",
+                                    "textColor2": "131714",
+                                    "textColor3": "412f15",
+                                    "textColor4": "403116",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/9b/5d/40/9b5d40f4-e422-1617-fa51-3d58cd20039e/23UMGIM91267.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 192200,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82303745",
+                                "name": "黎明を穿つ (Lyric Video)",
+                                "playParams": {
+                                    "id": "1709924289",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "020000",
+                                            "height": 1080,
+                                            "textColor1": "e7cfa8",
+                                            "textColor2": "dbc19f",
+                                            "textColor3": "b9a586",
+                                            "textColor4": "b09b7f",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/5a/c8/f4/5ac8f44a-00d4-5148-b11b-4d6721c06939/Job8478234b-9cff-4876-bb32-46a247244b22-156509828-PreviewImage_preview_image_45000_video_sdr-Time1696235206899.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1709924289&id=629309651&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/92/eb/71/92eb710a-2f93-b31c-9ecb-696570a3b8f1/mzvf_8363471009180863976.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-09-25",
+                                "url": "https://music.apple.com/jp/music-video/%E9%BB%8E%E6%98%8E%E3%82%92%E7%A9%BF%E3%81%A4-lyric-video/1709924289"
+                            }
+                        },
+                        {
+                            "id": "1706089340",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1706089340",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "ea7549",
+                                    "height": 952,
+                                    "textColor1": "0f0910",
+                                    "textColor2": "1d1d29",
+                                    "textColor3": "3b1f1b",
+                                    "textColor4": "462e30",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/38/9e/63/389e6378-b5c6-f6bb-a15e-11643d398036/23UMGIM91266.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 254970,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82303744",
+                                "name": "爆ぜて咲く",
+                                "playParams": {
+                                    "id": "1706089340",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "d4b790",
+                                            "height": 960,
+                                            "textColor1": "2b1a19",
+                                            "textColor2": "3b2818",
+                                            "textColor3": "4d3930",
+                                            "textColor4": "594530",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/42/3d/75/423d7590-cf81-2aa5-680b-0479be6fab5c/Job82128f5d-6fe0-4d25-93dd-d5ad9b700670-155307668-PreviewImage_preview_image_45000_video_sdr-Time1694025653381.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1706089340&id=620011808&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/7f/b5/80/7fb58033-2d73-9cca-7592-8bdc84f54808/mzvf_3451629456731939640.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-08-28",
+                                "url": "https://music.apple.com/jp/music-video/%E7%88%86%E3%81%9C%E3%81%A6%E5%92%B2%E3%81%8F/1706089340"
+                            }
+                        },
+                        {
+                            "id": "1701761335",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1701761335",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "000d47",
+                                    "height": 796,
+                                    "textColor1": "eae4ec",
+                                    "textColor2": "e8cfec",
+                                    "textColor3": "bbb9cb",
+                                    "textColor4": "baa8cb",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/c7/41/d8/c741d8b4-9307-f80c-3fca-b5a9400cdb9d/23UMGIM84969.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 227527,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82303562",
+                                "name": "理想的パラドクスとは",
+                                "playParams": {
+                                    "id": "1701761335",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "000007",
+                                            "height": 804,
+                                            "textColor1": "d7a89a",
+                                            "textColor2": "a79dd3",
+                                            "textColor3": "ac867c",
+                                            "textColor4": "867daa",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/b6/af/ed/b6afed94-76a4-416e-acc6-d2a99a8f7175/Jobcf923e1c-ccf6-43de-9756-2deb960d5755-154024893-PreviewImage_preview_image_45000_video_sdr-Time1691567617666.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1701761335&id=611028295&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video116/v4/98/4c/33/984c33aa-62a0-97d4-d00f-2031e8849579/mzvf_13176907356530933352.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-07-24",
+                                "url": "https://music.apple.com/jp/music-video/%E7%90%86%E6%83%B3%E7%9A%84%E3%83%91%E3%83%A9%E3%83%89%E3%82%AF%E3%82%B9%E3%81%A8%E3%81%AF/1701761335"
+                            }
+                        },
+                        {
+                            "id": "1695532953",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1695532953",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "0d1125",
+                                    "height": 1072,
+                                    "textColor1": "edf1de",
+                                    "textColor2": "d5d9c3",
+                                    "textColor3": "c0c4b9",
+                                    "textColor4": "adb1a3",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/8e/47/46/8e474653-513c-a527-2875-4ada3fadf694/23UMGIM73300.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 187870,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82303022",
+                                "name": "気鬱、白濁す",
+                                "playParams": {
+                                    "id": "1695532953",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "201f2f",
+                                            "height": 1080,
+                                            "textColor1": "f4f5e3",
+                                            "textColor2": "deebd1",
+                                            "textColor3": "cacabf",
+                                            "textColor4": "b8c2b1",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/4e/9b/93/4e9b93d4-653e-ae8c-4eb9-41a9fe97e01b/Jobbf4e1f2b-4588-4db2-a31b-a8dc2842fcc6-152263517-PreviewImage_preview_image_45000_video_sdr-Time1688375230549.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1695532953&id=597864042&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/64/05/44/6405442a-c382-106d-77b5-8088b26e1cf1/mzvf_7677754040215865413.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-07-24",
+                                "url": "https://music.apple.com/jp/music-video/%E6%B0%97%E9%AC%B1-%E7%99%BD%E6%BF%81%E3%81%99/1695532953"
+                            }
+                        },
+                        {
+                            "id": "1692321727",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1692321727",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "182977",
+                                    "height": 1072,
+                                    "textColor1": "8bb5f9",
+                                    "textColor2": "6c7dfa",
+                                    "textColor3": "7499df",
+                                    "textColor4": "5b6cdf",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/dd/55/bc/dd55bc85-0a1e-abea-ff5f-f5bd67c756c8/23UMGIM61033.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 242333,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82302483",
+                                "name": "名もなき何もかも",
+                                "playParams": {
+                                    "id": "1692321727",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "151a3a",
+                                            "height": 1080,
+                                            "textColor1": "60a3fd",
+                                            "textColor2": "5282e9",
+                                            "textColor3": "5187d6",
+                                            "textColor4": "466dc6",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/15/91/c1/1591c150-6bfd-ee4a-9efd-8893c7ea5c5c/Jobd88f5a36-babb-436a-8b0c-2d8b43cbf1dd-151371821-PreviewImage_preview_image_45000_video_sdr-Time1686654948218.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1692321727&id=590007858&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/fa/9a/81/fa9a8195-2c05-2172-0c99-c2d681c9e794/mzvf_18372727502080366136.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-05-29",
+                                "url": "https://music.apple.com/jp/music-video/%E5%90%8D%E3%82%82%E3%81%AA%E3%81%8D%E4%BD%95%E3%82%82%E3%81%8B%E3%82%82/1692321727"
+                            }
+                        },
+                        {
+                            "id": "1692321933",
+                            "type": "music-videos",
+                            "href": "/v1/catalog/jp/music-videos/1692321933",
+                            "attributes": {
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "06121b",
+                                    "height": 1072,
+                                    "textColor1": "d4c0c4",
+                                    "textColor2": "fb6263",
+                                    "textColor3": "ab9ea2",
+                                    "textColor4": "ca5255",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/02/b4/7e/02b47e5e-e63f-d026-109a-079aec7bd6e7/23UMGIM61034.crop.jpg/{w}x{h}mv.jpg",
+                                    "width": 1912
+                                },
+                                "durationInMillis": 194017,
+                                "genreNames": [
+                                    "J-Pop"
+                                ],
+                                "has4K": false,
+                                "hasHDR": false,
+                                "isrc": "JPPO82302484",
+                                "name": "偽りの理",
+                                "playParams": {
+                                    "id": "1692321933",
+                                    "kind": "musicVideo"
+                                },
+                                "previews": [
+                                    {
+                                        "artwork": {
+                                            "bgColor": "06070c",
+                                            "height": 1080,
+                                            "textColor1": "f1f2f1",
+                                            "textColor2": "c8c5ca",
+                                            "textColor3": "c2c3c3",
+                                            "textColor4": "a19fa4",
+                                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/18/00/aa/1800aa62-7ade-f3ea-18a6-d42adda9861f/Jobb54cb382-6ae9-42b9-b0b9-033193a15925-151372078-PreviewImage_preview_image_45000_video_sdr-Time1686655045400.png/{w}x{h}bb.jpg",
+                                            "width": 1920
+                                        },
+                                        "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=JP&a=1692321933&id=590006430&aec=HD&l=ja",
+                                        "url": "https://video-ssl.itunes.apple.com/itunes-assets/Video126/v4/42/4b/d1/424bd17f-6580-7a2f-ab92-2b891579e365/mzvf_12984287870710988245.720w.h264lc.U.p.m4v"
+                                    }
+                                ],
+                                "releaseDate": "2023-05-29",
+                                "url": "https://music.apple.com/jp/music-video/%E5%81%BD%E3%82%8A%E3%81%AE%E7%90%86/1692321933"
+                            }
+                        }
+                    ]
+                },
+                "station": {
+                    "href": "/v1/catalog/jp/artists/1688539273/station",
+                    "data": [
+                        {
+                            "id": "ra.1688539273",
+                            "type": "stations",
+                            "href": "/v1/catalog/jp/stations/ra.1688539273",
+                            "attributes": {
+                                "artwork": {
+                                    "bgColor": "fff100",
+                                    "height": 3000,
+                                    "textColor1": "232224",
+                                    "textColor2": "313031",
+                                    "textColor3": "4f4b1d",
+                                    "textColor4": "5a5727",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/8a/c8/0c/8ac80c48-008b-bd2d-6461-25b443b56e9f/mzl.omlhztph.jpg/{w}x{h}AM.RSMA03.jpg?imgLeftAlbum=Music211%2Fv4%2Fba%2Fc2%2F02%2Fbac202d3-147d-b09f-c360-2528ea636e26%2F24UMGIM49119.rgb.jpg&imgRight=AMCArtistImages221%2Fv4%2F8f%2F88%2F7b%2F8f887b4b-d1c8-f669-30f9-b2e7c77e68ef%2Fami-identity-f3d4628cd746c32012c5ebf8c8d59cc9-2025-02-03T08-56-31.320Z_cropped.png",
+                                    "width": 3000
+                                },
+                                "isLive": false,
+                                "mediaKind": "audio",
+                                "name": "トゲナシトゲアリなどのステーション",
+                                "playParams": {
+                                    "format": "tracks",
+                                    "hasDrm": false,
+                                    "id": "ra.1688539273",
+                                    "kind": "radioStation",
+                                    "mediaType": 0,
+                                    "stationHash": "CgkIARoFiaGUpQYQAQ"
+                                },
+                                "url": "https://music.apple.com/jp/station/%E3%83%88%E3%82%B2%E3%83%8A%E3%82%B7%E3%83%88%E3%82%B2%E3%82%A2%E3%83%AA%E3%81%AA%E3%81%A9%E3%81%AE%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/ra.1688539273"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
