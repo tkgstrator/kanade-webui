@@ -113,7 +113,7 @@ app.openapi(
     description: 'Retrieves detailed information about a specific album by its ID.',
     method: 'get',
     middleware: [],
-    path: '/api/albums/:album_id',
+    path: '/api/albums/:id',
     request: {
       params: GetCatalogAlbum.ParamSchema,
       query: GetCatalogAlbum.QuerySchema,

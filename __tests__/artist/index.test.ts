@@ -15,7 +15,7 @@ describe('Artist', () => {
         console.error(`Parse error in ${file}:`, result.error.message)
       }
       expect(result.success).toBe(true)
-      console.log(JSON.stringify(result.data, null, 2))
+      // console.log(JSON.stringify(result.data, null, 2))
     })
   })
 })
