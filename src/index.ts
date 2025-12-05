@@ -1,3 +1,4 @@
+import { Response } from '@cloudflare/workers-types/experimental'
 import { createRoute, OpenAPIHono as Hono } from '@hono/zod-openapi'
 import type { Context } from 'hono'
 import { contextStorage } from 'hono/context-storage'
@@ -8,15 +9,9 @@ import type { ContentfulStatusCode } from 'hono/utils/http-status'
 import { isTokenExpired, signToken } from './lib/token'
 import { CatalogSchema, GetCatalogAlbum, GetCatalogArtist, SearchCatalogResources } from './schemas/schema/common.dto'
 import type { Env } from './utils/binding'
+import { createClient } from './utils/client'
 
-const app = new Hono<Env>({
-  defaultHook: (result) => {
-    if (!result.success) {
-      console.error(result.error)
-      throw result.error
-    }
-  },
-})
+const app = new Hono<Env>()
 
 app.onError(async (error, c) => {
   console.error(error)
@@ -33,14 +28,13 @@ app.use(timeout(5 * 1000)) // 5 seconds
 app.use(contextStorage())
 app.use(async (c: Context<Env>, next) => {
   const token = c.get('MUSIC_TOKEN')
-  if (token === undefined) {
-    c.set('MUSIC_TOKEN', await signToken(c.env))
-    await next()
-    return
+
+  if (token === undefined || isTokenExpired(token)) {
+    const token = await signToken(c.env)
+    c.set('MUSIC_TOKEN', token)
+    c.set('CLIENT', createClient(token))
   }
-  if (isTokenExpired(token)) {
-    c.set('MUSIC_TOKEN', await signToken(c.env))
-  }
+
   await next()
 })
 app.openapi(
@@ -132,27 +126,11 @@ app.openapi(
     tags: ['Albums'],
   }),
   async (c) => {
-    const { id } = c.req.valid('param')
-    const url: URL = new URL(`https://api.music.apple.com/v1/catalog/jp/albums/${id}`)
-    url.searchParams.append('include', 'tracks')
-    const response = await fetch(url.href, {
-      headers: {
-        Authorization: `Bearer ${c.get('MUSIC_TOKEN')}`,
-      },
+    const { id, storefront } = c.req.valid('param')
+    const response = await c.var.CLIENT.get('/v1/catalog/:storefront/albums/:id', {
+      params: { id, storefront },
     })
-    if (!response.ok) {
-      throw new HTTPException(response.status as ContentfulStatusCode, {
-        message: response.statusText,
-      })
-    }
-    const object = await response.json()
-    // return c.json(object)
-    const result = CatalogSchema.safeParse(object)
-    if (!result.success) {
-      console.error(object, result.error)
-      throw new HTTPException(502, { message: result.error.message })
-    }
-    return c.json(result.data)
+    return c.json(response)
   },
 )
 app.openapi(
@@ -179,27 +157,11 @@ app.openapi(
     tags: ['Albums'],
   }),
   async (c) => {
-    const { id } = c.req.valid('param')
-    const url: URL = new URL(`https://api.music.apple.com/v1/catalog/jp/artists/${id}`)
-    url.searchParams.append('include', 'albums,music-videos,station')
-    const response = await fetch(url.href, {
-      headers: {
-        Authorization: `Bearer ${c.get('MUSIC_TOKEN')}`,
-      },
+    const { id, storefront } = c.req.valid('param')
+    const response = await c.var.CLIENT.get('/v1/catalog/:storefront/artists/:id', {
+      params: { id, storefront },
     })
-    if (!response.ok) {
-      throw new HTTPException(response.status as ContentfulStatusCode, {
-        message: response.statusText,
-      })
-    }
-    const object = await response.json()
-    // return c.json(object)
-    const result = CatalogSchema.safeParse(object)
-    if (!result.success) {
-      console.error(object, result.error)
-      throw new HTTPException(502, { message: result.error.message })
-    }
-    return c.json(result.data)
+    return c.json(response)
   },
 )
 // app.openapi(
