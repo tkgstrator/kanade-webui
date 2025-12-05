@@ -1,5 +1,4 @@
 import { z } from '@hono/zod-openapi'
-import { release } from 'os'
 
 export const TypeSchema = z.enum([
   'activities',
@@ -214,7 +213,7 @@ export namespace GetCatalogArtist {
 
   export const ParamSchema = z.object({
     id: z.coerce.number().int().positive(),
-    storefront: z.enum(['jp']),
+    storefront: z.enum(['jp']).optional().default('jp'),
   })
 
   export const QuerySchema = z.object({
@@ -250,15 +249,13 @@ export const CatalogSchema = z.object({
     .discriminatedUnion('type', [
       DatumSchema.extend({
         attributes: Attribute.AlbumSchema,
+        id: z.coerce.number().int().positive(),
         type: z.literal('albums'),
       }),
       DatumSchema.extend({
         attributes: Attribute.ArtistSchema,
+        id: z.coerce.number().int().positive(),
         type: z.literal('artists'),
-      }),
-      DatumSchema.extend({
-        attributes: Attribute.MusicVideoSchema,
-        type: z.literal('music-videos'),
       }),
     ])
     .array()

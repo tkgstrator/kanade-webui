@@ -1,13 +1,13 @@
-"use client"
+'use client'
 
-import { useSuspenseQuery } from "@tanstack/react-query"
-import { createFileRoute } from "@tanstack/react-router"
-import { type JSX, Suspense } from "react"
-import { z } from "zod"
-import { AlbumSection, ArtistHeader, ArtistSkeleton } from "@/components/artist"
-import { client } from "@/lib/client"
+import { useSuspenseQuery } from '@tanstack/react-query'
+import { createFileRoute } from '@tanstack/react-router'
+import { type JSX, Suspense } from 'react'
+import { z } from 'zod'
+import { AlbumSection, ArtistHeader, ArtistSkeleton } from '@/components/artist'
+import { client } from '@/lib/client'
 
-export const Route = createFileRoute("/artists/$artist_id")({
+export const Route = createFileRoute('/artists/$artist_id')({
   component: Page,
   params: {
     parse: (params) =>
@@ -24,11 +24,11 @@ const Content = (): JSX.Element => {
   const { artist_id } = Route.useParams()
   const { data } = useSuspenseQuery({
     queryFn: async () => {
-      return await client.get("/api/artists/:artist_id", {
-        params: { artist_id: artist_id },
+      return await client.get('/api/artists/:id', {
+        params: { id: artist_id },
       })
     },
-    queryKey: ["artist", artist_id],
+    queryKey: ['artist', artist_id],
   })
 
   const artist = data.data[0]
