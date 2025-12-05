@@ -1,12 +1,12 @@
-"use client"
+'use client'
 
-import type { client } from "@/lib/client"
+import type { client } from '@/lib/client'
 
-type ArtistResponse = Awaited<ReturnType<typeof client.get<"/api/artists/:artist_id">>>
-export type Artist = ArtistResponse["data"][number]
+type ArtistResponse = Awaited<ReturnType<typeof client.get<'/api/artists/:artist_id'>>>
+export type Artist = ArtistResponse['data'][number]
 
 function getArtworkUrl(url: string, size: number): string {
-  return url.replace("{w}", size.toString()).replace("{h}", size.toString())
+  return url.replace('{w}', size.toString()).replace('{h}', size.toString())
 }
 
 export function ArtistHeader({ artist }: { artist: Artist }) {
@@ -26,12 +26,12 @@ export function ArtistHeader({ artist }: { artist: Artist }) {
       <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 pb-6 md:flex-row md:items-end md:gap-8 md:px-8 md:pt-12">
         <img
           alt={attributes.name}
-          className="size-40 rounded-full object-cover shadow-2xl ring-4 ring-background/50 md:size-52"
+          className="size-40 rounded-full object-cover shadow-2xl ring-4 ring-background/50"
           draggable={false}
           src={getArtworkUrl(attributes.artwork.url, 400)}
         />
         <div className="flex flex-col items-center gap-3 md:items-start md:pb-2">
-          <h1 className="text-3xl font-bold text-foreground md:text-5xl">{attributes.name}</h1>
+          <h1 className="text-3xl font-bold text-foreground">{attributes.name}</h1>
           <div className="flex flex-wrap justify-center gap-2 md:justify-start">
             {attributes.genreNames.slice(0, 3).map((genre) => (
               <span
