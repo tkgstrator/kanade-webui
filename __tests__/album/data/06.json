@@ -1,0 +1,352 @@
+{
+    "data": [
+        {
+            "id": "1842282674",
+            "type": "albums",
+            "href": "/v1/catalog/jp/albums/1842282674",
+            "attributes": {
+                "artistName": "トゲナシトゲアリ",
+                "artwork": {
+                    "bgColor": "8fcdf8",
+                    "height": 3000,
+                    "textColor1": "1c1a1d",
+                    "textColor2": "262723",
+                    "textColor3": "333e49",
+                    "textColor4": "3b484e",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                    "width": 3000
+                },
+                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                "genreNames": [
+                    "アニメ",
+                    "ミュージック"
+                ],
+                "isCompilation": false,
+                "isComplete": true,
+                "isMasteredForItunes": true,
+                "isSingle": false,
+                "name": "小指立てませんか",
+                "playParams": {
+                    "id": "1842282674",
+                    "kind": "album"
+                },
+                "recordLabel": "Universal Music LLC",
+                "releaseDate": "2025-11-14",
+                "trackCount": 7,
+                "upc": "00602488072670",
+                "url": "https://music.apple.com/jp/album/lets-give-them-the-pinky-finger/1842282674"
+            },
+            "relationships": {
+                "artists": {
+                    "href": "/v1/catalog/jp/albums/1842282674/artists",
+                    "data": [
+                        {
+                            "id": "1688539273",
+                            "type": "artists",
+                            "href": "/v1/catalog/jp/artists/1688539273"
+                        }
+                    ]
+                },
+                "tracks": {
+                    "href": "/v1/catalog/jp/albums/1842282674/tracks",
+                    "data": [
+                        {
+                            "id": "1842282676",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1842282676",
+                            "attributes": {
+                                "albumName": "小指立てませんか",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "秋浦智裕",
+                                "discNumber": 1,
+                                "durationInMillis": 159219,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "isrc": "JPPO02503305",
+                                "name": "碧いif",
+                                "playParams": {
+                                    "id": "1842282676",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/28/87/39288766-5213-de22-27a3-67fe55bce13b/mzaf_14919495192750793835.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-03",
+                                "trackNumber": 1,
+                                "url": "https://music.apple.com/jp/album/%E7%A2%A7%E3%81%84if/1842282674?i=1842282676"
+                            }
+                        },
+                        {
+                            "id": "1842282677",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1842282677",
+                            "attributes": {
+                                "albumName": "小指立てませんか",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "カイザー恵理菜",
+                                "discNumber": 1,
+                                "durationInMillis": 181303,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "isrc": "JPPO02503306",
+                                "name": "無知のち私",
+                                "playParams": {
+                                    "id": "1842282677",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/47/48/12474861-4c71-d3d7-2090-d892ece433d9/mzaf_11260353765277568444.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-10",
+                                "trackNumber": 2,
+                                "url": "https://music.apple.com/jp/album/%E7%84%A1%E7%9F%A5%E3%81%AE%E3%81%A1%E7%A7%81/1842282674?i=1842282677"
+                            }
+                        },
+                        {
+                            "id": "1842282679",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1842282679",
+                            "attributes": {
+                                "albumName": "小指立てませんか",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "rontaro",
+                                "discNumber": 1,
+                                "durationInMillis": 159764,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "isrc": "JPPO02503307",
+                                "name": "渇く、憂う",
+                                "playParams": {
+                                    "id": "1842282679",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/e7/55/cce755cf-4091-47e1-078f-0e93623a751e/mzaf_6224476927402509187.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-17",
+                                "trackNumber": 3,
+                                "url": "https://music.apple.com/jp/album/%E6%B8%87%E3%81%8F-%E6%86%82%E3%81%86/1842282674?i=1842282679"
+                            }
+                        },
+                        {
+                            "id": "1842282681",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1842282681",
+                            "attributes": {
+                                "albumName": "小指立てませんか",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "小林拓斗",
+                                "discNumber": 1,
+                                "durationInMillis": 233189,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "isrc": "JPPO02503308",
+                                "name": "吹き消した灯火",
+                                "playParams": {
+                                    "id": "1842282681",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/e8/4f/b1e84fac-f986-23dc-94b2-48468b0199fe/mzaf_15454241654245410039.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-24",
+                                "trackNumber": 4,
+                                "url": "https://music.apple.com/jp/album/%E5%90%B9%E3%81%8D%E6%B6%88%E3%81%97%E3%81%9F%E7%81%AF%E7%81%AB/1842282674?i=1842282681"
+                            }
+                        },
+                        {
+                            "id": "1842282682",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1842282682",
+                            "attributes": {
+                                "albumName": "小指立てませんか",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "南田 健吾",
+                                "discNumber": 1,
+                                "durationInMillis": 202680,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "isrc": "JPPO02503309",
+                                "name": "生きて生きてゆく",
+                                "playParams": {
+                                    "id": "1842282682",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/6a/9e/686a9e2f-63e9-e4bb-83ec-58509342fec7/mzaf_2661303297591002685.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-31",
+                                "trackNumber": 5,
+                                "url": "https://music.apple.com/jp/album/%E7%94%9F%E3%81%8D%E3%81%A6%E7%94%9F%E3%81%8D%E3%81%A6%E3%82%86%E3%81%8F/1842282674?i=1842282682"
+                            }
+                        },
+                        {
+                            "id": "1842282683",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1842282683",
+                            "attributes": {
+                                "albumName": "小指立てませんか",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "福島章嗣",
+                                "discNumber": 1,
+                                "durationInMillis": 214952,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "isrc": "JPPO02503310",
+                                "name": "臆病な白夜",
+                                "playParams": {
+                                    "id": "1842282683",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/a2/ee/b9a2ee75-4f82-2282-77d6-f6e73164965a/mzaf_7237375635252246880.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-07",
+                                "trackNumber": 6,
+                                "url": "https://music.apple.com/jp/album/%E8%87%86%E7%97%85%E3%81%AA%E7%99%BD%E5%A4%9C/1842282674?i=1842282683"
+                            }
+                        },
+                        {
+                            "id": "1842282684",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1842282684",
+                            "attributes": {
+                                "albumName": "小指立てませんか",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "8fcdf8",
+                                    "height": 3000,
+                                    "textColor1": "1c1a1d",
+                                    "textColor2": "262723",
+                                    "textColor3": "333e49",
+                                    "textColor4": "3b484e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/9d/45/629d45c5-3293-85fb-373b-7cfd01156a69/25UM1IM40591.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "大濱健悟",
+                                "discNumber": 1,
+                                "durationInMillis": 186853,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "isrc": "JPPO02503311",
+                                "name": "最期の禱り",
+                                "playParams": {
+                                    "id": "1842282684",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/b1/20/6db1206f-8104-1842-193f-2fe4cd5844b9/mzaf_18273856623235577422.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-14",
+                                "trackNumber": 7,
+                                "url": "https://music.apple.com/jp/album/%E6%9C%80%E6%9C%9F%E3%81%AE%E7%A6%B1%E3%82%8A/1842282674?i=1842282684"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

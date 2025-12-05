@@ -1,7 +1,5 @@
 import { z } from '@hono/zod-openapi'
 import { release } from 'os'
-import { ZodLazy } from 'zod'
-import { bg, is } from 'zod/v4/locales'
 
 export const TypeSchema = z.enum([
   'activities',
@@ -98,6 +96,26 @@ export const DatumSchema = z.object({
   id: z.string().nonempty(),
 })
 
+export const RelationshipSchema = z.record(
+  z.enum(['artists', 'tracks']),
+  z.object({
+    data: z
+      .discriminatedUnion('type', [
+        DatumSchema.extend({ type: z.literal('artists') }),
+        DatumSchema.extend({
+          // 未発表の曲があるため一部オプショナルにする必要がある
+          attributes: Attribute.SongSchema.extend({
+            durationInMillis: z.number().int().positive().optional(),
+            releaseDate: z.coerce.date().optional(),
+          }),
+          type: z.literal('songs'),
+        }),
+      ])
+      .array(),
+    href: z.string().nonempty(),
+  }),
+)
+
 export const MetaSchema = z.object({})
 
 export const ViewSchema = z.object({
@@ -168,7 +186,15 @@ export namespace GetCatalogAlbum {
     views: z.array(ViewType).nonempty().optional(),
   })
 
-  export const ResponseSchema = z.object({})
+  export const ResponseSchema = z.object({
+    data: DatumSchema.extend({
+      attributes: Attribute.AlbumSchema,
+      id: z.coerce.number().int().positive(),
+      relationships: RelationshipSchema,
+    })
+      .array()
+      .nonempty(),
+  })
 }
 
 export namespace GetCatalogArtist {

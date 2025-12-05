@@ -1,0 +1,403 @@
+{
+    "data": [
+        {
+            "id": "1849595242",
+            "type": "albums",
+            "href": "/v1/catalog/jp/albums/1849595242",
+            "attributes": {
+                "artistName": "Ruri&To & PRINCEε>ε>",
+                "artwork": {
+                    "bgColor": "f3e6cd",
+                    "height": 3000,
+                    "textColor1": "282837",
+                    "textColor2": "323435",
+                    "textColor3": "514e55",
+                    "textColor4": "585753",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                    "width": 3000
+                },
+                "copyright": "℗ 2025 Lantis",
+                "editorialNotes": {
+                    "short": "2組のシャッフルユニットによる、個性が際立つコンセプチュアルな新曲を収録。",
+                    "tagline": "おすすめEP"
+                },
+                "genreNames": [
+                    "アニメ",
+                    "ミュージック"
+                ],
+                "isCompilation": false,
+                "isComplete": true,
+                "isMasteredForItunes": false,
+                "isSingle": false,
+                "name": "ちょ、尊いLOVE / Nεw Black",
+                "playParams": {
+                    "id": "1849595242",
+                    "kind": "album"
+                },
+                "recordLabel": "Lantis",
+                "releaseDate": "2025-12-03",
+                "trackCount": 8,
+                "upc": "4540774247806",
+                "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87-%E5%B0%8A%E3%81%84love-n%CE%B5w-black/1849595242"
+            },
+            "relationships": {
+                "artists": {
+                    "href": "/v1/catalog/jp/albums/1849595242/artists",
+                    "data": [
+                        {
+                            "id": "1841778496",
+                            "type": "artists",
+                            "href": "/v1/catalog/jp/artists/1841778496"
+                        },
+                        {
+                            "id": "1844543384",
+                            "type": "artists",
+                            "href": "/v1/catalog/jp/artists/1844543384"
+                        }
+                    ]
+                },
+                "tracks": {
+                    "href": "/v1/catalog/jp/albums/1849595242/tracks",
+                    "data": [
+                        {
+                            "id": "1849595243",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595243",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "Ruri&To",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "めんま",
+                                "discNumber": 1,
+                                "durationInMillis": 226005,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502808",
+                                "name": "ちょ、尊いLOVE",
+                                "playParams": {
+                                    "id": "1849595243",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/a0/d7/f9a0d7ed-7124-2707-673e-9a3dc817eb02/mzaf_10151366799223115636.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-12-03",
+                                "trackNumber": 1,
+                                "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87-%E5%B0%8A%E3%81%84love/1849595242?i=1849595243"
+                            }
+                        },
+                        {
+                            "id": "1849595244",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595244",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "Ruri&To",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "Skipjack",
+                                "discNumber": 1,
+                                "durationInMillis": 247847,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502494",
+                                "name": "平成ギャルズ!!!!",
+                                "playParams": {
+                                    "id": "1849595244",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/0e/9e/7b0e9e83-0bf7-afc3-d35d-a8b6a513653f/mzaf_15149157371185254716.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-27",
+                                "trackNumber": 2,
+                                "url": "https://music.apple.com/jp/album/%E5%B9%B3%E6%88%90%E3%82%AE%E3%83%A3%E3%83%AB%E3%82%BA/1849595242?i=1849595244"
+                            }
+                        },
+                        {
+                            "id": "1849595245",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595245",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "PRINCEε>ε>",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "小久保祐希, Eunsol(1008) & YHEL",
+                                "discNumber": 1,
+                                "durationInMillis": 184222,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502810",
+                                "name": "Nεw Black",
+                                "playParams": {
+                                    "id": "1849595245",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/cd/aa/2dcdaaf3-16d2-abfb-f1b6-2d936d490956/mzaf_8089673525044616190.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-12-03",
+                                "trackNumber": 3,
+                                "url": "https://music.apple.com/jp/album/n%CE%B5w-black/1849595242?i=1849595245"
+                            }
+                        },
+                        {
+                            "id": "1849595246",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595246",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "PRINCEε>ε>",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "たんしょそら, 玉谷 友輝 & KUSHITA",
+                                "discNumber": 1,
+                                "durationInMillis": 231490,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502496",
+                                "name": "IcHiGo milK love",
+                                "playParams": {
+                                    "id": "1849595246",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/58/20/f658204a-ab05-5652-f087-e97d3dc526c7/mzaf_13045093900061541279.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-10",
+                                "trackNumber": 4,
+                                "url": "https://music.apple.com/jp/album/ichigo-milk-love/1849595242?i=1849595246"
+                            }
+                        },
+                        {
+                            "id": "1849595247",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595247",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "Ruri&To",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "めんま",
+                                "discNumber": 1,
+                                "durationInMillis": 226006,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502809",
+                                "name": "ちょ、尊いLOVE (Off Vocal)",
+                                "playParams": {
+                                    "id": "1849595247",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/92/80/b2928047-3cc4-091e-58b6-8b8440139c4d/mzaf_150789923230973323.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-12-03",
+                                "trackNumber": 5,
+                                "url": "https://music.apple.com/jp/album/%E3%81%A1%E3%82%87-%E5%B0%8A%E3%81%84love-off-vocal/1849595242?i=1849595247"
+                            }
+                        },
+                        {
+                            "id": "1849595248",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595248",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "Ruri&To",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "Skipjack",
+                                "discNumber": 1,
+                                "durationInMillis": 247847,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502495",
+                                "name": "平成ギャルズ!!!! (Off Vocal)",
+                                "playParams": {
+                                    "id": "1849595248",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5e/4d/35/5e4d3558-aa1b-e686-43a6-7e61a5b0c8d4/mzaf_1405180005778617157.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-12-03",
+                                "trackNumber": 6,
+                                "url": "https://music.apple.com/jp/album/%E5%B9%B3%E6%88%90%E3%82%AE%E3%83%A3%E3%83%AB%E3%82%BA-off-vocal/1849595242?i=1849595248"
+                            }
+                        },
+                        {
+                            "id": "1849595249",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595249",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "PRINCEε>ε>",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "小久保祐希, Eunsol(1008) & YHEL",
+                                "discNumber": 1,
+                                "durationInMillis": 184222,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502811",
+                                "name": "Nεw Black (Off Vocal)",
+                                "playParams": {
+                                    "id": "1849595249",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/1a/e6/391ae668-7ba5-8eba-3cce-166f865ffc47/mzaf_16167927182887164962.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-12-03",
+                                "trackNumber": 7,
+                                "url": "https://music.apple.com/jp/album/n%CE%B5w-black-off-vocal/1849595242?i=1849595249"
+                            }
+                        },
+                        {
+                            "id": "1849595250",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1849595250",
+                            "attributes": {
+                                "albumName": "ちょ、尊いLOVE / Nεw Black",
+                                "artistName": "PRINCEε>ε>",
+                                "artwork": {
+                                    "bgColor": "f3e6cd",
+                                    "height": 3000,
+                                    "textColor1": "282837",
+                                    "textColor2": "323435",
+                                    "textColor3": "514e55",
+                                    "textColor4": "585753",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/01/cc/c801cc4f-cb8b-33e7-f23e-652c2469f350/4540774247806.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "たんしょそら, 玉谷 友輝 & KUSHITA",
+                                "discNumber": 1,
+                                "durationInMillis": 231490,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502497",
+                                "name": "IcHiGo milK love (Off Vocal)",
+                                "playParams": {
+                                    "id": "1849595250",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/60/3e/19603ef0-819a-e0a1-8fbf-d7c398631126/mzaf_17219731972255562244.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-12-03",
+                                "trackNumber": 8,
+                                "url": "https://music.apple.com/jp/album/ichigo-milk-love-off-vocal/1849595242?i=1849595250"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

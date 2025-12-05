@@ -1,0 +1,1024 @@
+{
+    "data": [
+        {
+            "id": "1837117739",
+            "type": "albums",
+            "href": "/v1/catalog/jp/albums/1837117739",
+            "attributes": {
+                "artistName": "結束バンド",
+                "artwork": {
+                    "bgColor": "000000",
+                    "height": 4000,
+                    "textColor1": "ecdcc8",
+                    "textColor2": "cecfcf",
+                    "textColor3": "bcb0a0",
+                    "textColor4": "a5a6a6",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                    "width": 4000
+                },
+                "copyright": "℗ 2025 Aniplex Inc.",
+                "genreNames": [
+                    "アニメ",
+                    "ミュージック"
+                ],
+                "isCompilation": false,
+                "isComplete": true,
+                "isMasteredForItunes": false,
+                "isSingle": false,
+                "name": "結束バンド TOUR “We will B”",
+                "playParams": {
+                    "id": "1837117739",
+                    "kind": "album"
+                },
+                "recordLabel": "Aniplex Inc.",
+                "releaseDate": "2025-10-08",
+                "trackCount": 23,
+                "upc": "4534530160928",
+                "url": "https://music.apple.com/jp/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89-tour-we-will-b/1837117739"
+            },
+            "relationships": {
+                "artists": {
+                    "href": "/v1/catalog/jp/albums/1837117739/artists",
+                    "data": [
+                        {
+                            "id": "1646020674",
+                            "type": "artists",
+                            "href": "/v1/catalog/jp/artists/1646020674"
+                        }
+                    ]
+                },
+                "tracks": {
+                    "href": "/v1/catalog/jp/albums/1837117739/tracks",
+                    "data": [
+                        {
+                            "id": "1837117743",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837117743",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "菊谷知樹",
+                                "discNumber": 1,
+                                "durationInMillis": 162507,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501145",
+                                "name": "私なんか -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837117743",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/21/05/2e21051a-1d3a-1599-4872-5c4ec0a94666/mzaf_9834929793941803567.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 1,
+                                "url": "https://music.apple.com/jp/album/%E7%A7%81%E3%81%AA%E3%82%93%E3%81%8B-we-will-b-live-ver/1837117739?i=1837117743"
+                            }
+                        },
+                        {
+                            "id": "1837117744",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837117744",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "音羽-otoha-",
+                                "discNumber": 1,
+                                "durationInMillis": 207573,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501146",
+                                "name": "青春コンプレックス -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837117744",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/63/56/e7635634-fd0d-a43c-ed8b-132ce963cfc4/mzaf_18344233327050689928.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 2,
+                                "url": "https://music.apple.com/jp/album/%E9%9D%92%E6%98%A5%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9-we-will-b-live-ver/1837117739?i=1837117744"
+                            }
+                        },
+                        {
+                            "id": "1837117745",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837117745",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "音羽-otoha-",
+                                "discNumber": 1,
+                                "durationInMillis": 236333,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501147",
+                                "name": "ギターと孤独と蒼い惑星 -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837117745",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/01/84/e10184d8-8a58-3ae4-259d-dbe5c69e85a9/mzaf_9051072360273675553.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 3,
+                                "url": "https://music.apple.com/jp/album/%E3%82%AE%E3%82%BF%E3%83%BC%E3%81%A8%E5%AD%A4%E7%8B%AC%E3%81%A8%E8%92%BC%E3%81%84%E6%83%91%E6%98%9F-we-will-b-live-ver/1837117739?i=1837117745"
+                            }
+                        },
+                        {
+                            "id": "1837117746",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837117746",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "永井正道",
+                                "discNumber": 1,
+                                "durationInMillis": 237333,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501148",
+                                "name": "ひとりぼっち東京 -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837117746",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/78/ff/3078ff2a-1d88-fd4f-4f57-1ec4d97b500c/mzaf_4676684042893639202.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 4,
+                                "url": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%BC%E3%81%A3%E3%81%A1%E6%9D%B1%E4%BA%AC-we-will-b-live-ver/1837117739?i=1837117746"
+                            }
+                        },
+                        {
+                            "id": "1837118047",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118047",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "中嶋イッキュウ",
+                                "discNumber": 1,
+                                "durationInMillis": 273320,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501149",
+                                "name": "カラカラ -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118047",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/5f/28/545f2829-6c98-2577-f24c-1446faae5f28/mzaf_16506788679325588023.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 5,
+                                "url": "https://music.apple.com/jp/album/%E3%82%AB%E3%83%A9%E3%82%AB%E3%83%A9-we-will-b-live-ver/1837117739?i=1837118047"
+                            }
+                        },
+                        {
+                            "id": "1837118048",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118048",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "大木伸夫",
+                                "discNumber": 1,
+                                "durationInMillis": 288653,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501150",
+                                "name": "惑う星 -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118048",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/37/4f/c3374f42-999c-823b-9d6a-5e32d9d5fff4/mzaf_2532220387213631279.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 6,
+                                "url": "https://music.apple.com/jp/album/%E6%83%91%E3%81%86%E6%98%9F-we-will-b-live-ver/1837117739?i=1837118048"
+                            }
+                        },
+                        {
+                            "id": "1837118049",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118049",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "谷口鮪",
+                                "discNumber": 1,
+                                "durationInMillis": 217493,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501151",
+                                "name": "Distortion!! -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118049",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/26/a7/1a26a71c-edcf-b548-2fb8-d6922c11ed5f/mzaf_14886128061089119988.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 7,
+                                "url": "https://music.apple.com/jp/album/distortion-we-will-b-live-ver/1837117739?i=1837118049"
+                            }
+                        },
+                        {
+                            "id": "1837118050",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118050",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "飛内将大",
+                                "discNumber": 1,
+                                "durationInMillis": 221293,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501152",
+                                "name": "僕と三原色 -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118050",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/36/ca/d236cafd-ad30-29a1-0133-16a6bbb923ec/mzaf_532110858873920202.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 8,
+                                "url": "https://music.apple.com/jp/album/%E5%83%95%E3%81%A8%E4%B8%89%E5%8E%9F%E8%89%B2-we-will-b-live-ver/1837117739?i=1837118050"
+                            }
+                        },
+                        {
+                            "id": "1837118051",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118051",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "石原慎也",
+                                "discNumber": 1,
+                                "durationInMillis": 217960,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501153",
+                                "name": "milky way -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118051",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/ac/c2/36acc24a-f9b5-d1d9-960a-8752c37f603e/mzaf_14895879808441049738.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 9,
+                                "url": "https://music.apple.com/jp/album/milky-way-we-will-b-live-ver/1837117739?i=1837118051"
+                            }
+                        },
+                        {
+                            "id": "1837118053",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118053",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "佐藤千亜妃",
+                                "discNumber": 1,
+                                "durationInMillis": 311507,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501154",
+                                "name": "夢を束ねて -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118053",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/0a/94/e90a949f-be62-ebb9-c5ef-a566667c3be3/mzaf_17010760998414288892.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 10,
+                                "url": "https://music.apple.com/jp/album/%E5%A4%A2%E3%82%92%E6%9D%9F%E3%81%AD%E3%81%A6-we-will-b-live-ver/1837117739?i=1837118053"
+                            }
+                        },
+                        {
+                            "id": "1837118055",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118055",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "音羽-otoha-",
+                                "discNumber": 1,
+                                "durationInMillis": 327827,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501132",
+                                "name": "秒針少女 -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118055",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/24/63/eb2463e9-4099-d0e9-b0cd-8ed2a8dcdcf2/mzaf_16290955838511844195.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 11,
+                                "url": "https://music.apple.com/jp/album/%E7%A7%92%E9%87%9D%E5%B0%91%E5%A5%B3-we-will-b-live-ver/1837117739?i=1837118055"
+                            }
+                        },
+                        {
+                            "id": "1837118056",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118056",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "草野華余子",
+                                "discNumber": 1,
+                                "durationInMillis": 244600,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501133",
+                                "name": "あのバンド -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118056",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/9a/0d/549a0d26-f207-2c75-5fd1-71a7b822137e/mzaf_4883051676549400012.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 12,
+                                "url": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AE%E3%83%90%E3%83%B3%E3%83%89-we-will-b-live-ver/1837117739?i=1837118056"
+                            }
+                        },
+                        {
+                            "id": "1837118057",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118057",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "飛内将大",
+                                "discNumber": 1,
+                                "durationInMillis": 227133,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501134",
+                                "name": "ドッペルゲンガー -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118057",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/18/88/481888db-01a3-ea5f-6a50-0b0fa99753b5/mzaf_5361629576216708603.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 13,
+                                "url": "https://music.apple.com/jp/album/%E3%83%89%E3%83%83%E3%83%9A%E3%83%AB%E3%82%B2%E3%83%B3%E3%82%AC%E3%83%BC-we-will-b-live-ver/1837117739?i=1837118057"
+                            }
+                        },
+                        {
+                            "id": "1837118059",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118059",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "北澤ゆうほ",
+                                "discNumber": 1,
+                                "durationInMillis": 279880,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501135",
+                                "name": "なにが悪い -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118059",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/96/f4/5896f4bb-b294-0c74-999f-31d27fcce42a/mzaf_12467076216473404441.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 14,
+                                "url": "https://music.apple.com/jp/album/%E3%81%AA%E3%81%AB%E3%81%8C%E6%82%AA%E3%81%84-we-will-b-live-ver/1837117739?i=1837118059"
+                            }
+                        },
+                        {
+                            "id": "1837118062",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118062",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "04 Limited Sazabys",
+                                "discNumber": 1,
+                                "durationInMillis": 229347,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501136",
+                                "name": "UNITE -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118062",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/c3/4a/b5c34aca-b717-d99f-1162-e3b0f9ef8d3a/mzaf_2393216668600524437.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 15,
+                                "url": "https://music.apple.com/jp/album/unite-we-will-b-live-ver/1837117739?i=1837118062"
+                            }
+                        },
+                        {
+                            "id": "1837118063",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118063",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "吉岡大地",
+                                "discNumber": 1,
+                                "durationInMillis": 253987,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501137",
+                                "name": "忘れてやらない -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118063",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/79/eb/a779eb00-1ea2-d7b9-70bc-50e3a71eae47/mzaf_5435109852455929781.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 16,
+                                "url": "https://music.apple.com/jp/album/%E5%BF%98%E3%82%8C%E3%81%A6%E3%82%84%E3%82%89%E3%81%AA%E3%81%84-we-will-b-live-ver/1837117739?i=1837118063"
+                            }
+                        },
+                        {
+                            "id": "1837118064",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118064",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "内藤英雅",
+                                "discNumber": 1,
+                                "durationInMillis": 274053,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501138",
+                                "name": "星座になれたら -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118064",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/cf/47/e1cf473e-eef3-d8e7-634f-0deb1e3cff93/mzaf_10676633356525554786.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 17,
+                                "url": "https://music.apple.com/jp/album/%E6%98%9F%E5%BA%A7%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%9F%E3%82%89-we-will-b-live-ver/1837117739?i=1837118064"
+                            }
+                        },
+                        {
+                            "id": "1837118065",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118065",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "音羽-otoha-",
+                                "discNumber": 1,
+                                "durationInMillis": 328533,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501139",
+                                "name": "月並みに輝け -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118065",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/3f/a8/2f3fa86f-8152-48e1-897b-faa9f25dc784/mzaf_11483764398956328447.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 18,
+                                "url": "https://music.apple.com/jp/album/%E6%9C%88%E4%B8%A6%E3%81%BF%E3%81%AB%E8%BC%9D%E3%81%91-we-will-b-live-ver/1837117739?i=1837118065"
+                            }
+                        },
+                        {
+                            "id": "1837118066",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118066",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "後藤正文 & 山田貴洋",
+                                "discNumber": 1,
+                                "durationInMillis": 306613,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501140",
+                                "name": "Re:Re: -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118066",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/f7/be/94f7bed3-b7ee-c4b1-a685-355cf47761ee/mzaf_5913457351211484657.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 19,
+                                "url": "https://music.apple.com/jp/album/re-re-we-will-b-live-ver/1837117739?i=1837118066"
+                            }
+                        },
+                        {
+                            "id": "1837118067",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118067",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "後藤正文",
+                                "discNumber": 1,
+                                "durationInMillis": 313920,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501141",
+                                "name": "転がる岩、君に朝が降る -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118067",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/9b/90/9f9b90fc-235e-93de-97f3-b70cca80c1d2/mzaf_12303226595537270569.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 20,
+                                "url": "https://music.apple.com/jp/album/%E8%BB%A2%E3%81%8C%E3%82%8B%E5%B2%A9-%E5%90%9B%E3%81%AB%E6%9C%9D%E3%81%8C%E9%99%8D%E3%82%8B-we-will-b-live-ver/1837117739?i=1837118067"
+                            }
+                        },
+                        {
+                            "id": "1837118068",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118068",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "音羽-otoha-",
+                                "discNumber": 1,
+                                "durationInMillis": 323853,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501142",
+                                "name": "フラッシュバッカー -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118068",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/b7/81/3bb7817a-6ee4-1dd6-2f81-009b9b29c9dc/mzaf_16976320476497329613.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 21,
+                                "url": "https://music.apple.com/jp/album/%E3%83%95%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%90%E3%83%83%E3%82%AB%E3%83%BC-we-will-b-live-ver/1837117739?i=1837118068"
+                            }
+                        },
+                        {
+                            "id": "1837118069",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118069",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "北澤ゆうほ",
+                                "discNumber": 1,
+                                "durationInMillis": 257907,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501143",
+                                "name": "今、僕、アンダーグラウンドから -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118069",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/a7/4c/a9a74cd6-9f28-9a5f-6a64-d8fcea1b4772/mzaf_9130917066384818591.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 22,
+                                "url": "https://music.apple.com/jp/album/%E4%BB%8A-%E5%83%95-%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%81%8B%E3%82%89-we-will-b-live-ver/1837117739?i=1837118069"
+                            }
+                        },
+                        {
+                            "id": "1837118070",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1837118070",
+                            "attributes": {
+                                "albumName": "結束バンド TOUR “We will B”",
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "composerName": "藤森元生",
+                                "discNumber": 1,
+                                "durationInMillis": 368747,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPE302501144",
+                                "name": "光の中へ -We will B- Live ver.",
+                                "playParams": {
+                                    "id": "1837118070",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/26/0f/ff260fda-591e-09db-3084-15cf3511b0a4/mzaf_3811394112663155648.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-10-08",
+                                "trackNumber": 23,
+                                "url": "https://music.apple.com/jp/album/%E5%85%89%E3%81%AE%E4%B8%AD%E3%81%B8-we-will-b-live-ver/1837117739?i=1837118070"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
