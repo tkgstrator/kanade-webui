@@ -1,25 +1,25 @@
-"use client"
+'use client'
 
-import { createFileRoute, Link } from "@tanstack/react-router"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { client } from "@/lib/client"
-import { cn } from "@/lib/utils"
+import { createFileRoute, Link } from '@tanstack/react-router'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { client } from '@/lib/client'
+import { cn } from '@/lib/utils'
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute('/')({
   component: Page,
-  loader: async () => {
-    return await client.get("/api/charts", {
-      queries: {
-        genre: 29,
-        limit: 100,
-        types: "albums",
-      },
-    })
-  },
+  // loader: async () => {
+  //   return await client.get("/api/charts", {
+  //     queries: {
+  //       genre: 29,
+  //       limit: 100,
+  //       types: "albums",
+  //     },
+  //   })
+  // },
 })
 
 function getArtworkUrl(url: string, size: number): string {
-  return url.replace("{w}", size.toString()).replace("{h}", size.toString())
+  return url.replace('{w}', size.toString()).replace('{h}', size.toString())
 }
 
 type ChartAlbum = {
@@ -73,7 +73,7 @@ function ChartSection({ title, albums }: { title: string; albums: ChartAlbum[] }
       <Carousel
         className="w-full"
         opts={{
-          align: "start",
+          align: 'start',
           dragFree: true,
           loop: true,
         }}
@@ -81,7 +81,7 @@ function ChartSection({ title, albums }: { title: string; albums: ChartAlbum[] }
         <CarouselContent className="-ml-3">
           {albums.map((album, index) => (
             <CarouselItem
-              className={cn("basis-1/2 pl-3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6", "max-w-[220px]")}
+              className={cn('basis-1/2 pl-3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6', 'max-w-[220px]')}
               key={album.id}
             >
               <AlbumCard album={album} rank={index + 1} />
@@ -139,26 +139,26 @@ function HeroSection({ album }: { album: ChartAlbum }) {
 }
 
 function Page() {
-  const data = Route.useLoaderData()
-  const albums = data.results.albums[0]?.data ?? []
+  // const data = Route.useLoaderData()
+  // const albums = data.results.albums[0]?.data ?? []
 
-  if (albums.length === 0) {
-    return (
-      <div className="flex h-[50vh] items-center justify-center">
-        <p className="text-muted-foreground">アルバムが見つかりませんでした</p>
-      </div>
-    )
-  }
+  // if (albums.length === 0) {
+  //   return (
+  //     <div className="flex h-[50vh] items-center justify-center">
+  //       <p className="text-muted-foreground">アルバムが見つかりませんでした</p>
+  //     </div>
+  //   )
+  // }
 
-  const topAlbum = albums[0]
-  const topChartAlbums = albums.slice(0, 10)
-  const newReleases = albums.slice(10, 20)
+  // const topAlbum = albums[0]
+  // const topChartAlbums = albums.slice(0, 10)
+  // const newReleases = albums.slice(10, 20)
 
   return (
     <div className="flex flex-col gap-8 p-4 md:p-6 lg:p-8">
       {/* <HeroSection album={topAlbum} /> */}
-      <ChartSection albums={topChartAlbums} title="トップチャート" />
-      {newReleases.length > 0 && <ChartSection albums={newReleases} title="注目のアルバム" />}
+      {/* <ChartSection albums={topChartAlbums} title="トップチャート" /> */}
+      {/* {newReleases.length > 0 && <ChartSection albums={newReleases} title="注目のアルバム" />} */}
     </div>
   )
 }

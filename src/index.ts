@@ -7,7 +7,13 @@ import { logger } from 'hono/logger'
 import { timeout } from 'hono/timeout'
 import type { ContentfulStatusCode } from 'hono/utils/http-status'
 import { isTokenExpired, signToken } from './lib/token'
-import { CatalogSchema, GetCatalogAlbum, GetCatalogArtist, SearchCatalogResources } from './schemas/schema/common.dto'
+import {
+  CatalogSchema,
+  GetCatalogAlbum,
+  GetCatalogArtist,
+  SearchCatalogResources,
+  TypeSchema,
+} from './schemas/schema/common.dto'
 import type { Env } from './utils/binding'
 import { createClient } from './utils/client'
 
@@ -45,7 +51,6 @@ app.openapi(
     middleware: [],
     path: '/api/search',
     request: {
-      params: SearchCatalogResources.ParamSchema,
       query: SearchCatalogResources.QuerySchema,
     },
     responses: {
@@ -65,41 +70,15 @@ app.openapi(
     tags: ['Search'],
   }),
   async (c) => {
-    const { q } = c.req.valid('query')
-    const url: URL = new URL('https://api.music.apple.com/v1/catalog/jp/search')
-    url.searchParams.append('term', q)
-    url.searchParams.append(
-      'types',
-      [
-        'activities',
-        'albums',
-        'apple-curators',
-        'artists',
-        'curators',
-        'music-videos',
-        'playlists',
-        'songs',
-        'stations',
-      ].join(','),
-    )
-    url.searchParams.append('limit', '25')
-    const response = await fetch(url.href, {
-      headers: {
-        Authorization: `Bearer ${c.get('MUSIC_TOKEN')}`,
+    const { term } = c.req.valid('query')
+    const response = await c.var.CLIENT.get('/v1/catalog/jp/search', {
+      queries: {
+        limit: 25,
+        term: term,
+        types: TypeSchema.options,
       },
     })
-    if (!response.ok) {
-      throw new HTTPException(response.status as ContentfulStatusCode, {
-        message: response.statusText,
-      })
-    }
-    const object = await response.json()
-    const result = SearchCatalogResources.ResponseSchema.safeParse(object)
-    if (!result.success) {
-      console.error(object, result.error)
-      throw new HTTPException(501, { message: result.error.message })
-    }
-    return c.json(result.data)
+    return c.json(response)
   },
 )
 app.openapi(
