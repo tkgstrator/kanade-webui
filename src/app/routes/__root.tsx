@@ -1,8 +1,8 @@
-import { createRootRoute, Outlet } from "@tanstack/react-router"
-import { TanStackRouterDevtools } from "@tanstack/react-router-devtools"
-import { Header } from "@/components/header"
-import { MusicSidebar } from "@/components/music-sidebar"
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
+import { createRootRoute, Outlet } from '@tanstack/react-router'
+import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import { Header } from '@/components/header'
+import { MusicSidebar } from '@/components/music-sidebar'
+import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
 
 export const Route = createRootRoute({
   component: () => (
@@ -10,7 +10,7 @@ export const Route = createRootRoute({
       <MusicSidebar />
       <Header />
       <SidebarInset>
-        <main>
+        <main className="pt-12 md:pt-0">
           <Outlet />
         </main>
       </SidebarInset>
