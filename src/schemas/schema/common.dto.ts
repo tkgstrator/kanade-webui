@@ -96,23 +96,28 @@ export const DatumSchema = z.object({
 })
 
 export const RelationshipSchema = z.record(
-  z.enum(['artists', 'tracks']),
-  z.object({
-    data: z
-      .discriminatedUnion('type', [
-        DatumSchema.extend({ type: z.literal('artists') }),
-        DatumSchema.extend({
-          // 未発表の曲があるため一部オプショナルにする必要がある
-          attributes: Attribute.SongSchema.extend({
-            durationInMillis: z.number().int().positive().optional(),
-            releaseDate: z.coerce.date().optional(),
+  z.enum(['artists', 'tracks', 'music-videos', 'albums', 'station']),
+  z
+    .object({
+      data: z
+        .discriminatedUnion('type', [
+          DatumSchema.extend({ type: z.literal('artists') }),
+          DatumSchema.extend({
+            // 未発表の曲があるため一部オプショナルにする必要がある
+            attributes: Attribute.SongSchema.extend({
+              durationInMillis: z.number().int().positive().optional(),
+              releaseDate: z.coerce.date().optional(),
+            }),
+            type: z.literal('songs'),
           }),
-          type: z.literal('songs'),
-        }),
-      ])
-      .array(),
-    href: z.string().nonempty(),
-  }),
+          DatumSchema.extend({ id: z.coerce.number().int().positive(), type: z.literal('albums') }),
+          DatumSchema.extend({ type: z.literal('stations') }),
+          DatumSchema.extend({ id: z.coerce.number().int().positive(), type: z.literal('music-videos') }),
+        ])
+        .array(),
+      href: z.string().nonempty(),
+    })
+    .optional(),
 )
 
 export const MetaSchema = z.object({})
@@ -255,6 +260,7 @@ export const CatalogSchema = z.object({
       DatumSchema.extend({
         attributes: Attribute.ArtistSchema,
         id: z.coerce.number().int().positive(),
+        relationships: RelationshipSchema,
         type: z.literal('artists'),
       }),
     ])

@@ -6522,6 +6522,1231 @@
                                   "url"
                                 ]
                               },
+                              "relationships": {
+                                "type": "object",
+                                "properties": {
+                                  "artists": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "tracks": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "music-videos": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "albums": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "station": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  }
+                                }
+                              },
                               "type": {
                                 "type": "string",
                                 "enum": [
@@ -6533,6 +7758,7 @@
                               "href",
                               "id",
                               "attributes",
+                              "relationships",
                               "type"
                             ]
                           }
@@ -6871,6 +8097,1231 @@
                                   "url"
                                 ]
                               },
+                              "relationships": {
+                                "type": "object",
+                                "properties": {
+                                  "artists": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "tracks": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "music-videos": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "albums": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  },
+                                  "station": {
+                                    "type": "object",
+                                    "properties": {
+                                      "data": {
+                                        "type": "array",
+                                        "items": {
+                                          "oneOf": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "artists"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "attributes": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "albumName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artistName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "artwork": {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "bgColor": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "height": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        },
+                                                        "textColor1": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor2": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor3": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "textColor4": {
+                                                          "type": "string",
+                                                          "minLength": 1
+                                                        },
+                                                        "url": {
+                                                          "type": "string",
+                                                          "format": "uri"
+                                                        },
+                                                        "width": {
+                                                          "type": "integer",
+                                                          "exclusiveMinimum": 0
+                                                        }
+                                                      },
+                                                      "required": [
+                                                        "bgColor",
+                                                        "height",
+                                                        "textColor1",
+                                                        "textColor2",
+                                                        "textColor3",
+                                                        "textColor4",
+                                                        "url",
+                                                        "width"
+                                                      ]
+                                                    },
+                                                    "composerName": {
+                                                      "type": "string",
+                                                      "minLength": 1
+                                                    },
+                                                    "discNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "durationInMillis": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "hasLyrics": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "isAppleDigitalMaster": {
+                                                      "type": "boolean"
+                                                    },
+                                                    "releaseDate": {
+                                                      "type": [
+                                                        "string",
+                                                        "null"
+                                                      ],
+                                                      "format": "date"
+                                                    },
+                                                    "trackNumber": {
+                                                      "type": "integer",
+                                                      "exclusiveMinimum": 0
+                                                    },
+                                                    "url": {
+                                                      "type": "string",
+                                                      "format": "uri"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "albumName",
+                                                    "artistName",
+                                                    "artwork",
+                                                    "discNumber",
+                                                    "hasLyrics",
+                                                    "isAppleDigitalMaster",
+                                                    "trackNumber",
+                                                    "url"
+                                                  ]
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "songs"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "attributes",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "albums"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "stations"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "href": {
+                                                  "type": "string",
+                                                  "minLength": 1
+                                                },
+                                                "id": {
+                                                  "type": "integer",
+                                                  "exclusiveMinimum": 0
+                                                },
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "music-videos"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "href",
+                                                "id",
+                                                "type"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "data",
+                                      "href"
+                                    ]
+                                  }
+                                }
+                              },
                               "type": {
                                 "type": "string",
                                 "enum": [
@@ -6882,6 +9333,7 @@
                               "href",
                               "id",
                               "attributes",
+                              "relationships",
                               "type"
                             ]
                           }
