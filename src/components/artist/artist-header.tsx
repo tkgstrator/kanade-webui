@@ -23,7 +23,7 @@ export function ArtistHeader({ artist }: { artist: Artist }) {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
       </div>
-      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 pb-6 md:flex-row md:items-end md:gap-8 md:px-8 md:pt-12">
+      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 md:flex-row md:items-end md:gap-8 md:px-8 md:pt-12">
         <img
           alt={attributes.name}
           className="size-40 rounded-full object-cover shadow-2xl ring-4 ring-background/50"
@@ -42,7 +42,6 @@ export function ArtistHeader({ artist }: { artist: Artist }) {
               </span>
             ))}
           </div>
-          <div className="h-9" />
         </div>
       </div>
     </div>
