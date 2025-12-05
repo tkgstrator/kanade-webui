@@ -1,0 +1,726 @@
+{
+    "data": [
+        {
+            "id": "1646020674",
+            "type": "artists",
+            "href": "/v1/catalog/jp/artists/1646020674",
+            "attributes": {
+                "artwork": {
+                    "bgColor": "1b1a1b",
+                    "height": 2400,
+                    "textColor1": "fff7ef",
+                    "textColor2": "f3e9e0",
+                    "textColor3": "d1cac4",
+                    "textColor4": "c8bfb9",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/3c/3a/99/3c3a9966-b38e-bfb6-0d73-e3a14caff892/mzl.wjcdefnh.jpg/{w}x{h}bb.jpg",
+                    "width": 2400
+                },
+                "genreNames": [
+                    "アニメ"
+                ],
+                "name": "結束バンド",
+                "url": "https://music.apple.com/jp/artist/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89/1646020674"
+            },
+            "relationships": {
+                "albums": {
+                    "href": "/v1/catalog/jp/artists/1646020674/albums",
+                    "data": [
+                        {
+                            "id": "1657318546",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1657318546",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 3000,
+                                    "textColor1": "202223",
+                                    "textColor2": "362a29",
+                                    "textColor3": "4c4e4f",
+                                    "textColor4": "5e5454",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "editorialNotes": {
+                                    "short": "人気アニメの作中で主人公が所属するバンドによる、主題歌や劇中曲中心の楽曲集。",
+                                    "standard": "テレビアニメ『ぼっち・ざ・ろっく！』の劇中バンドである“結束バンド”による、既発曲に加えて新規楽曲も4曲収録したフルアルバム。アニメ放送開始時点ではさほど大きな注目が集まっていたわけではなかった『ぼっち・ざ・ろっく！』だが、回を重ねるごとに加速度的に人気を集めていく。その原動力の一つとなったのが、本作に収録された主題歌や劇中歌だ。オープニングテーマ「青春コンプレックス」などの歌詞を手掛けたヒグチアイをはじめ、谷口鮪（KANA-BOON）らJ-Popの分野でも活躍する話題のアーティストに加え、ZAQや草野華余子といったアニソンシーンの第一線を走り続けるクリエイターが提供した楽曲が、アニメファンのみならず、老若男女を問わず浸透。多くの曲でボーカルを担当する喜多郁代役、長谷川育美の高い歌唱力や演奏シーンのクオリティの高さ、最終回を飾った主人公、後藤ひとり（青山吉能）が歌うASIAN KUNG-FU GENERATIONの「転がる岩、君に朝が降る」のカバーも話題を呼び、本作がリリースされるやいなや、共に大ヒットを記録した。作品のファンはもちろん、アニメ未視聴でも満足できるであろうサウンドと歌声がアルバム全体に詰め込まれている。本作を入り口に結束バンドや『ぼっち・ざ・ろっく！』の世界を堪能してほしい。"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "結束バンド",
+                                "playParams": {
+                                    "id": "1657318546",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-12-25",
+                                "trackCount": 14,
+                                "upc": "4534530141828",
+                                "url": "https://music.apple.com/jp/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89/1657318546"
+                            }
+                        },
+                        {
+                            "id": "1650726162",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1650726162",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "f0719c",
+                                    "height": 3000,
+                                    "textColor1": "030816",
+                                    "textColor2": "161b35",
+                                    "textColor3": "321d31",
+                                    "textColor4": "422c49",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5b/d3/ea/5bd3ea64-95f4-3fe2-4489-81c21e6ad58a/4534530141101.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "ギターと孤独と蒼い惑星 - Single",
+                                "playParams": {
+                                    "id": "1650726162",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-11-06",
+                                "trackCount": 1,
+                                "upc": "4534530141101",
+                                "url": "https://music.apple.com/jp/album/%E3%82%AE%E3%82%BF%E3%83%BC%E3%81%A8%E5%AD%A4%E7%8B%AC%E3%81%A8%E8%92%BC%E3%81%84%E6%83%91%E6%98%9F-single/1650726162"
+                            }
+                        },
+                        {
+                            "id": "1747836023",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1747836023",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 3000,
+                                    "textColor1": "e3b2a8",
+                                    "textColor2": "e2a783",
+                                    "textColor3": "b68e87",
+                                    "textColor4": "b58668",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/b0/fa/f5b0fa94-77e7-34a7-2930-daa0a78b1322/4534530152299.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2024 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "月並みに輝け / 今、僕、アンダーグラウンドから - Single",
+                                "playParams": {
+                                    "id": "1747836023",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2024-06-09",
+                                "trackCount": 2,
+                                "upc": "4534530152299",
+                                "url": "https://music.apple.com/jp/album/%E6%9C%88%E4%B8%A6%E3%81%BF%E3%81%AB%E8%BC%9D%E3%81%91-%E4%BB%8A-%E5%83%95-%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%81%8B%E3%82%89-single/1747836023"
+                            }
+                        },
+                        {
+                            "id": "1652476608",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1652476608",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "055c9c",
+                                    "height": 3000,
+                                    "textColor1": "e5efd8",
+                                    "textColor2": "d8e8e4",
+                                    "textColor3": "b8d1cc",
+                                    "textColor4": "aeccd6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6d/03/4f/6d034fd0-e05f-89a3-ed78-73670304340e/4534530141118.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "あのバンド - Single",
+                                "playParams": {
+                                    "id": "1652476608",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-11-27",
+                                "trackCount": 1,
+                                "upc": "4534530141118",
+                                "url": "https://music.apple.com/jp/album/%E3%81%82%E3%81%AE%E3%83%90%E3%83%B3%E3%83%89-single/1652476608"
+                            }
+                        },
+                        {
+                            "id": "1649508046",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1649508046",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "0c0f18",
+                                    "height": 3000,
+                                    "textColor1": "aec4d0",
+                                    "textColor2": "cebaac",
+                                    "textColor3": "8da0ab",
+                                    "textColor4": "a7988e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/61/61/f8/6161f8f6-9e39-b761-8aa3-037fa61879c5/4534530141088.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "カラカラ - Single",
+                                "playParams": {
+                                    "id": "1649508046",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-10-30",
+                                "trackCount": 1,
+                                "upc": "4534530141088",
+                                "url": "https://music.apple.com/jp/album/%E3%82%AB%E3%83%A9%E3%82%AB%E3%83%A9-single/1649508046"
+                            }
+                        },
+                        {
+                            "id": "1759525321",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1759525321",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "e8dad2",
+                                    "height": 3000,
+                                    "textColor1": "1b1a21",
+                                    "textColor2": "29252d",
+                                    "textColor3": "444144",
+                                    "textColor4": "4f494e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/45/a1/b745a1d0-0a0a-f90b-da14-f03d6c61fbb8/4534530153616.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2024 Aniplex Inc.",
+                                "editorialNotes": {
+                                    "short": "劇場総集編の主題歌や初タイアップ曲など、疾走感あるロックナンバーを収録。",
+                                    "tagline": "おすすめEP"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "Re:結束バンド - EP",
+                                "playParams": {
+                                    "id": "1759525321",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2024-08-14",
+                                "trackCount": 6,
+                                "upc": "4534530153616",
+                                "url": "https://music.apple.com/jp/album/re-%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89-ep/1759525321"
+                            }
+                        },
+                        {
+                            "id": "1657316197",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1657316197",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "e91859",
+                                    "height": 3000,
+                                    "textColor1": "030105",
+                                    "textColor2": "030205",
+                                    "textColor3": "310616",
+                                    "textColor4": "310616",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/9a/4b/de/9a4bdeae-1c70-4538-c3cd-89121e234f2f/4534530141811.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "星座になれたら - Single",
+                                "playParams": {
+                                    "id": "1657316197",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-12-25",
+                                "trackCount": 1,
+                                "upc": "4534530141811",
+                                "url": "https://music.apple.com/jp/album/%E6%98%9F%E5%BA%A7%E3%81%AB%E3%81%AA%E3%82%8C%E3%81%9F%E3%82%89-single/1657316197"
+                            }
+                        },
+                        {
+                            "id": "1652476671",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1652476671",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "a0d8d9",
+                                    "height": 3000,
+                                    "textColor1": "0c0707",
+                                    "textColor2": "0b0805",
+                                    "textColor3": "293131",
+                                    "textColor4": "29322f",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c3/3d/62/c33d626c-877e-a397-3b9c-96de7980aa06/4534530141125.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "editorialNotes": {
+                                    "short": "アニメの作中バンドによる、青春の衝動をストレートに詰め込んだロックナンバー。",
+                                    "standard": "アニメの作中バンドによる、青春の衝動をストレートに詰め込んだロックナンバー。",
+                                    "tagline": "おすすめシングル"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "なにが悪い - Single",
+                                "playParams": {
+                                    "id": "1652476671",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-11-27",
+                                "trackCount": 1,
+                                "upc": "4534530141125",
+                                "url": "https://music.apple.com/jp/album/%E3%81%AA%E3%81%AB%E3%81%8C%E6%82%AA%E3%81%84-single/1652476671"
+                            }
+                        },
+                        {
+                            "id": "1646030812",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1646030812",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "e2e8e6",
+                                    "height": 3000,
+                                    "textColor1": "040408",
+                                    "textColor2": "3c0c15",
+                                    "textColor3": "303235",
+                                    "textColor4": "5d383e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6b/5f/15/6b5f1562-fbbd-614a-1fe4-0377e2c127df/4534530140630.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "Distortion!! - Single",
+                                "playParams": {
+                                    "id": "1646030812",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-10-09",
+                                "trackCount": 1,
+                                "upc": "4534530140630",
+                                "url": "https://music.apple.com/jp/album/distortion-single/1646030812"
+                            }
+                        },
+                        {
+                            "id": "1765078455",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1765078455",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "b4cae8",
+                                    "height": 3000,
+                                    "textColor1": "3d1414",
+                                    "textColor2": "432623",
+                                    "textColor3": "54393e",
+                                    "textColor4": "59474b",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c2/83/d1/c283d15c-9e1b-3ba7-e6a1-2e95b3e9b2a4/4534530153821.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2024 Aniplex Inc.",
+                                "editorialNotes": {
+                                    "short": "同名ツアーに向けてメンバーがデモを持ち寄り制作したコンセプトEP。",
+                                    "tagline": "おすすめEP"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "We will - EP",
+                                "playParams": {
+                                    "id": "1765078455",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2024-09-06",
+                                "trackCount": 4,
+                                "upc": "4534530153821",
+                                "url": "https://music.apple.com/jp/album/we-will-ep/1765078455"
+                            }
+                        },
+                        {
+                            "id": "1723006556",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1723006556",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "0e1839",
+                                    "height": 3000,
+                                    "textColor1": "dab8b2",
+                                    "textColor2": "caa6a3",
+                                    "textColor3": "b1989a",
+                                    "textColor4": "a5898e",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dc/b0/dc/dcb0dc04-cdf2-0f32-6346-e16ecb6023e8/4534530150165.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2024 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "結束バンドLIVE-恒星- at Zepp Haneda(TOKYO)",
+                                "playParams": {
+                                    "id": "1723006556",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2024-01-18",
+                                "trackCount": 16,
+                                "upc": "4534530150165",
+                                "url": "https://music.apple.com/jp/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89live-%E6%81%92%E6%98%9F-at-zepp-haneda-tokyo/1723006556"
+                            }
+                        },
+                        {
+                            "id": "1657316799",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1657316799",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "1c1b19",
+                                    "height": 3000,
+                                    "textColor1": "f775a0",
+                                    "textColor2": "e26e94",
+                                    "textColor3": "cb6385",
+                                    "textColor4": "ba5e7b",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e4/9e/a9/e49ea9f4-05f1-f0d2-a5ef-e5e30732ecef/4534530141804.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "転がる岩、君に朝が降る - Single",
+                                "playParams": {
+                                    "id": "1657316799",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-12-25",
+                                "trackCount": 1,
+                                "upc": "4534530141804",
+                                "url": "https://music.apple.com/jp/album/%E8%BB%A2%E3%81%8C%E3%82%8B%E5%B2%A9-%E5%90%9B%E3%81%AB%E6%9C%9D%E3%81%8C%E9%99%8D%E3%82%8B-single/1657316799"
+                            }
+                        },
+                        {
+                            "id": "1759548227",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1759548227",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 3000,
+                                    "textColor1": "fae9da",
+                                    "textColor2": "e0d1ca",
+                                    "textColor3": "c8baaf",
+                                    "textColor4": "b3a7a1",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e3/5c/86/e35c8696-6119-a724-f9e4-572166bf2d83/4534530153623.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2024 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "ドッペルゲンガー / Re:Re: - Single",
+                                "playParams": {
+                                    "id": "1759548227",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2024-08-11",
+                                "trackCount": 2,
+                                "upc": "4534530153623",
+                                "url": "https://music.apple.com/jp/album/%E3%83%89%E3%83%83%E3%83%9A%E3%83%AB%E3%82%B2%E3%83%B3%E3%82%AC%E3%83%BC-re-re-single/1759548227"
+                            }
+                        },
+                        {
+                            "id": "1685194936",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1685194936",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "fffffe",
+                                    "height": 3000,
+                                    "textColor1": "241f1b",
+                                    "textColor2": "37312f",
+                                    "textColor3": "504c48",
+                                    "textColor4": "5f5a58",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/80/4a/7c/804a7cbf-92b6-249e-1461-bfb4cc8f7eed/4534530145130.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2023 Aniplex Inc.",
+                                "editorialNotes": {
+                                    "short": "楽器を奏で、音楽を届ける喜びを描いたソリッドなロックの表題曲ほか。",
+                                    "standard": "楽器を奏で、音楽を届ける喜びを描いたソリッドなロックの表題曲ほか。",
+                                    "tagline": "話題のEP"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "光の中へ - EP",
+                                "playParams": {
+                                    "id": "1685194936",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2023-05-22",
+                                "trackCount": 4,
+                                "upc": "4534530145130",
+                                "url": "https://music.apple.com/jp/album/%E5%85%89%E3%81%AE%E4%B8%AD%E3%81%B8-ep/1685194936"
+                            }
+                        },
+                        {
+                            "id": "1657316798",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1657316798",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "8be5ff",
+                                    "height": 3000,
+                                    "textColor1": "050e24",
+                                    "textColor2": "253140",
+                                    "textColor3": "203950",
+                                    "textColor4": "3a5566",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/20/de/18/20de1841-447f-b3de-3306-21c7f0d37d2f/4534530141798.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": true,
+                                "name": "忘れてやらない - Single",
+                                "playParams": {
+                                    "id": "1657316798",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-12-25",
+                                "trackCount": 1,
+                                "upc": "4534530141798",
+                                "url": "https://music.apple.com/jp/album/%E5%BF%98%E3%82%8C%E3%81%A6%E3%82%84%E3%82%89%E3%81%AA%E3%81%84-single/1657316798"
+                            }
+                        },
+                        {
+                            "id": "1646020667",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1646020667",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "140625",
+                                    "height": 3000,
+                                    "textColor1": "f0ddce",
+                                    "textColor2": "f4a8b5",
+                                    "textColor3": "c4b2ac",
+                                    "textColor4": "c78898",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/10/38/b1/1038b1be-83d4-c006-b612-e6156498da35/4534530140661.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "copyright": "℗ 2022 Aniplex Inc.",
+                                "editorialNotes": {
+                                    "short": "劇中バンドが放つアニメOP。葛藤やネガティブな思いをぶつけるロックチューン。",
+                                    "standard": "劇中バンドが放つアニメOP。葛藤やネガティブな思いをぶつけるロックチューン。"
+                                },
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "青春コンプレックス - EP",
+                                "playParams": {
+                                    "id": "1646020667",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2022-10-13",
+                                "trackCount": 4,
+                                "upc": "4534530140661",
+                                "url": "https://music.apple.com/jp/album/%E9%9D%92%E6%98%A5%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9-ep/1646020667"
+                            }
+                        },
+                        {
+                            "id": "1837117739",
+                            "type": "albums",
+                            "href": "/v1/catalog/jp/albums/1837117739",
+                            "attributes": {
+                                "artistName": "結束バンド",
+                                "artwork": {
+                                    "bgColor": "000000",
+                                    "height": 4000,
+                                    "textColor1": "ecdcc8",
+                                    "textColor2": "cecfcf",
+                                    "textColor3": "bcb0a0",
+                                    "textColor4": "a5a6a6",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/aa/5c/6faa5c3f-b095-cf9a-93c1-3ae6556faf09/4534530160928.jpg/{w}x{h}bb.jpg",
+                                    "width": 4000
+                                },
+                                "copyright": "℗ 2025 Aniplex Inc.",
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "isCompilation": false,
+                                "isComplete": true,
+                                "isMasteredForItunes": false,
+                                "isSingle": false,
+                                "name": "結束バンド TOUR “We will B”",
+                                "playParams": {
+                                    "id": "1837117739",
+                                    "kind": "album"
+                                },
+                                "recordLabel": "Aniplex Inc.",
+                                "releaseDate": "2025-10-08",
+                                "trackCount": 23,
+                                "upc": "4534530160928",
+                                "url": "https://music.apple.com/jp/album/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89-tour-we-will-b/1837117739"
+                            }
+                        }
+                    ]
+                },
+                "music-videos": {
+                    "href": "/v1/catalog/jp/artists/1646020674/music-videos",
+                    "data": []
+                },
+                "station": {
+                    "href": "/v1/catalog/jp/artists/1646020674/station",
+                    "data": [
+                        {
+                            "id": "ra.1646020674",
+                            "type": "stations",
+                            "href": "/v1/catalog/jp/stations/ra.1646020674",
+                            "attributes": {
+                                "artwork": {
+                                    "bgColor": "1b1a1b",
+                                    "height": 2400,
+                                    "textColor1": "fff7ef",
+                                    "textColor2": "f3e9e0",
+                                    "textColor3": "d1cac4",
+                                    "textColor4": "c8bfb9",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/3c/3a/99/3c3a9966-b38e-bfb6-0d73-e3a14caff892/mzl.wjcdefnh.jpg/{w}x{h}AM.RSMA03.jpg?imgLeft=Features211%2Fv4%2F8a%2Fc8%2F0c%2F8ac80c48-008b-bd2d-6461-25b443b56e9f%2Fmzl.omlhztph.jpg&imgRightAlbum=Music211%2Fv4%2F8f%2Fbc%2Fc8%2F8fbcc8bb-9333-987f-a62e-faf050a95a5d%2F4534530153609.jpg",
+                                    "width": 2400
+                                },
+                                "isLive": false,
+                                "mediaKind": "audio",
+                                "name": "結束バンドなどのステーション",
+                                "playParams": {
+                                    "format": "tracks",
+                                    "hasDrm": false,
+                                    "id": "ra.1646020674",
+                                    "kind": "radioStation",
+                                    "mediaType": 0,
+                                    "stationHash": "CgkIARoFwpDxkAYQAQ"
+                                },
+                                "url": "https://music.apple.com/jp/station/%E7%B5%90%E6%9D%9F%E3%83%90%E3%83%B3%E3%83%89%E3%81%AA%E3%81%A9%E3%81%AE%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3/ra.1646020674"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

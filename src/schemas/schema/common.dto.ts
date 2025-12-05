@@ -224,5 +224,43 @@ export namespace GetCatalogArtist {
     views: z.array(ViewType).nonempty().optional(),
   })
 
-  export const ResponseSchema = z.object({})
+  export const ResponseSchema = z.object({
+    data: z
+      .discriminatedUnion('type', [
+        DatumSchema.extend({
+          attributes: Attribute.AlbumSchema,
+          type: z.literal('albums'),
+        }),
+        DatumSchema.extend({
+          attributes: Attribute.ArtistSchema,
+          type: z.literal('artists'),
+        }),
+        DatumSchema.extend({
+          attributes: Attribute.MusicVideoSchema,
+          type: z.literal('music-videos'),
+        }),
+      ])
+      .array()
+      .nonempty(),
+  })
 }
+
+export const CatalogSchema = z.object({
+  data: z
+    .discriminatedUnion('type', [
+      DatumSchema.extend({
+        attributes: Attribute.AlbumSchema,
+        type: z.literal('albums'),
+      }),
+      DatumSchema.extend({
+        attributes: Attribute.ArtistSchema,
+        type: z.literal('artists'),
+      }),
+      DatumSchema.extend({
+        attributes: Attribute.MusicVideoSchema,
+        type: z.literal('music-videos'),
+      }),
+    ])
+    .array()
+    .nonempty(),
+})
