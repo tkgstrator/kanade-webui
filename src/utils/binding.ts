@@ -1,3 +1,6 @@
+import type { ZodiosInstance } from '@zodios/core'
+import type { ZodiosDefinition } from './client'
+
 export type Env = {
   Bindings: {
     APPLE_MUSIC_TEAM_ID: string
@@ -9,5 +12,6 @@ export type Env = {
   }
   Variables: {
     MUSIC_TOKEN: string | undefined
+    CLIENT: ZodiosInstance<ZodiosDefinition>
   }
 }

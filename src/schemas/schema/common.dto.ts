@@ -1,6 +1,6 @@
 import { z } from '@hono/zod-openapi'
 
-export const TypeSchema = z.enum([
+const TypeSchema = z.enum([
   'activities',
   'albums',
   'apple-curators',
@@ -12,7 +12,7 @@ export const TypeSchema = z.enum([
   'stations',
 ])
 
-export const ArtworkSchema = z.object({
+const ArtworkSchema = z.object({
   bgColor: z.string().nonempty(),
   height: z.number().int().positive(),
   textColor1: z.string().nonempty(),
@@ -23,7 +23,7 @@ export const ArtworkSchema = z.object({
   width: z.number().int().positive(),
 })
 
-export namespace Attribute {
+namespace Attribute {
   export const AlbumSchema = z.object({
     artistName: z.string().nonempty(),
     artwork: ArtworkSchema,
@@ -92,12 +92,12 @@ export namespace Attribute {
   })
 }
 
-export const DatumSchema = z.object({
+const DatumSchema = z.object({
   href: z.string().nonempty(),
   id: z.string().nonempty(),
 })
 
-export const RelationshipSchema = z.record(
+const RelationshipSchema = z.record(
   z.enum(['artists', 'tracks', 'music-videos', 'albums', 'station']),
   z
     .object({
@@ -127,7 +127,7 @@ export const RelationshipSchema = z.record(
 
 export const MetaSchema = z.object({})
 
-export const ViewSchema = z.object({
+const ViewSchema = z.object({
   data: z
     .discriminatedUnion('type', [
       DatumSchema.extend({
@@ -207,7 +207,7 @@ export namespace GetCatalogAlbum {
 }
 
 export namespace GetCatalogArtist {
-  export const ViewType = z.enum([
+  const ViewType = z.enum([
     'appears-on-albums',
     'compilation-albums',
     'featured-albums',
@@ -229,30 +229,31 @@ export namespace GetCatalogArtist {
   export const QuerySchema = z.object({
     extend: z.array(z.string()).optional(),
     include: z.array(z.string()).nonempty().optional(),
-    l: z.enum(['ja']).optional(),
+    l: z.enum(['ja']).optional().default('ja'),
     views: z.array(ViewType).nonempty().optional(),
   })
-
-  export const ResponseSchema = z.object({
-    data: z
-      .discriminatedUnion('type', [
-        DatumSchema.extend({
-          attributes: Attribute.AlbumSchema,
-          type: z.literal('albums'),
-        }),
-        DatumSchema.extend({
-          attributes: Attribute.ArtistSchema,
-          type: z.literal('artists'),
-        }),
-        DatumSchema.extend({
-          attributes: Attribute.MusicVideoSchema,
-          type: z.literal('music-videos'),
-        }),
-      ])
-      .array()
-      .nonempty(),
-  })
 }
+
+//   export const ResponseSchema = z.object({
+//     data: z
+//       .discriminatedUnion('type', [
+//         DatumSchema.extend({
+//           attributes: Attribute.AlbumSchema,
+//           type: z.literal('albums'),
+//         }),
+//         DatumSchema.extend({
+//           attributes: Attribute.ArtistSchema,
+//           type: z.literal('artists'),
+//         }),
+//         DatumSchema.extend({
+//           attributes: Attribute.MusicVideoSchema,
+//           type: z.literal('music-videos'),
+//         }),
+//       ])
+//       .array()
+//       .nonempty(),
+//   })
+// }
 
 export const CatalogSchema = z.object({
   data: z
