@@ -1,19 +1,19 @@
-"use client"
+'use client'
 
-import { useSuspenseQuery } from "@tanstack/react-query"
-import { Link } from "@tanstack/react-router"
-import { type JSX, Suspense } from "react"
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
-import { type AlbumsDatum, client } from "@/lib/client"
+import { useSuspenseQuery } from '@tanstack/react-query'
+import { Link } from '@tanstack/react-router'
+import { type JSX, Suspense } from 'react'
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
+import { type AlbumsDatum, client } from '@/lib/client'
 
 function formatDuration(ms: number): string {
   const minutes = Math.floor(ms / 60000)
   const seconds = Math.floor((ms % 60000) / 1000)
-  return `${minutes}:${seconds.toString().padStart(2, "0")}`
+  return `${minutes}:${seconds.toString().padStart(2, '0')}`
 }
 
 function getArtworkUrl(url: string, size: number): string {
-  return url.replace("{w}", size.toString()).replace("{h}", size.toString())
+  return url.replace('{w}', size.toString()).replace('{h}', size.toString())
 }
 
 function SongListItem({ song }: { song: AlbumsDatum }) {
@@ -30,7 +30,7 @@ function SongListItem({ song }: { song: AlbumsDatum }) {
         <p className="truncate font-medium text-foreground">{attributes.name}</p>
         <p className="truncate text-sm text-muted-foreground">
           <span className="hover:underline cursor-pointer">{attributes.artistName}</span>
-          {" • "}
+          {' • '}
           <span className="hover:underline cursor-pointer">{attributes.albumName}</span>
         </p>
       </div>
@@ -74,15 +74,9 @@ function AlbumListItem({ album }: { album: AlbumsDatum }) {
         >
           {attributes.name}
         </Link>
-        <Link
-          className="block truncate text-xs text-muted-foreground hover:underline"
-          params={{ artist_id: album.id }}
-          to="/artists/$artist_id"
-        >
-          {attributes.artistName}
-        </Link>
+        <div className="block truncate text-xs text-muted-foreground">{attributes.artistName}</div>
         <p className="text-xs text-muted-foreground tabular-nums">
-          {attributes.releaseDate.split("-")[0]} • {attributes.trackCount}曲
+          {attributes.releaseDate.split('-')[0]} • {attributes.trackCount}曲
         </p>
       </div>
     </div>
@@ -96,8 +90,8 @@ function AlbumList({ albums }: { albums: AlbumsDatum[] }) {
       <div className="md:hidden -mx-6">
         <Carousel
           opts={{
-            align: "start",
-            containScroll: "trimSnaps",
+            align: 'start',
+            containScroll: 'trimSnaps',
             loop: true,
             // dragFree: true,
             skipSnaps: true,
@@ -116,7 +110,7 @@ function AlbumList({ albums }: { albums: AlbumsDatum[] }) {
       <div
         className="hidden md:grid gap-3"
         style={{
-          gridTemplateColumns: "repeat(auto-fit, minmax(max(144px, calc((100% - 5 * 0.75rem) / 6)), 1fr))",
+          gridTemplateColumns: 'repeat(auto-fit, minmax(max(144px, calc((100% - 5 * 0.75rem) / 6)), 1fr))',
         }}
       >
         {albums.map((album) => (
@@ -138,10 +132,10 @@ const Content = ({ term }: SearchResultsProps): JSX.Element => {
     },
   } = useSuspenseQuery({
     queryFn: async () =>
-      client.get("/api/search", {
-        queries: { q: term },
+      client.get('/api/search', {
+        queries: { term: term },
       }),
-    queryKey: ["search", term],
+    queryKey: ['search', term],
   })
   return (
     <div className="flex flex-col gap-8 p-6 select-none">
@@ -149,7 +143,7 @@ const Content = ({ term }: SearchResultsProps): JSX.Element => {
 
       {/* アルバム */}
       <section>
-        {" "}
+        {' '}
         <h2 className="mb-4 text-lg font-semibold text-foreground">アルバム</h2>
         <AlbumList albums={albums?.data ?? []} />
       </section>

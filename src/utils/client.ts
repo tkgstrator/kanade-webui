@@ -1,9 +1,32 @@
 import { makeApi, Zodios } from '@zodios/core'
 import { HTTPException } from 'hono/http-exception'
 import { z } from 'zod'
-import { CatalogSchema } from '@/schemas/schema/common.dto'
+import { CatalogSchema, SearchCatalogResources, TypeSchema } from '@/schemas/schema/common.dto'
 
 const definition = makeApi([
+  {
+    description: 'Search the Apple Music catalog',
+    method: 'get',
+    parameters: [
+      {
+        name: 'term',
+        schema: z.string().nonempty(),
+        type: 'Query',
+      },
+      {
+        name: 'types',
+        schema: TypeSchema.array().nonempty().optional(),
+        type: 'Query',
+      },
+      {
+        name: 'limit',
+        schema: z.number().int().positive().max(25).optional().default(25),
+        type: 'Query',
+      },
+    ],
+    path: '/v1/catalog/jp/search',
+    response: SearchCatalogResources.ResponseSchema,
+  },
   {
     description: 'Get album details by ID',
     method: 'get',
@@ -64,7 +87,7 @@ export const createClient = (token: string) => {
   })
   client.use({
     error: (api, config, error) => {
-      console.error(JSON.parse(error.message))
+      console.error(error.message)
       throw new HTTPException(400, { message: error.message })
     },
     name: 'OnError',

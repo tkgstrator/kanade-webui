@@ -1,6 +1,6 @@
 import { z } from '@hono/zod-openapi'
 
-const TypeSchema = z.enum([
+export const TypeSchema = z.enum([
   'activities',
   'albums',
   'apple-curators',
@@ -80,7 +80,7 @@ namespace Attribute {
     hasLyrics: z.boolean(),
     isAppleDigitalMaster: z.boolean(),
     name: z.string().nonempty(),
-    releaseDate: z.coerce.date(),
+    releaseDate: z.coerce.date().optional(),
     trackNumber: z.number().int().positive(),
     url: z.url(),
   })
@@ -170,8 +170,8 @@ export namespace SearchCatalogResources {
     l: z.enum(['ja']).optional(),
     limit: z.number().int().positive().max(25).optional().default(5),
     offset: z.number().int().min(0).optional().default(0),
-    term: z.string().nonempty().optional(),
-    types: z.array(TypeSchema).nonempty(),
+    term: z.string().nonempty(),
+    types: z.array(TypeSchema).nonempty().optional(),
     with: z.array(z.enum(['topResults'])).optional(),
   })
 

@@ -22,17 +22,6 @@
             "schema": {
               "type": "string",
               "enum": [
-                "jp"
-              ]
-            },
-            "required": true,
-            "name": "storefront",
-            "in": "path"
-          },
-          {
-            "schema": {
-              "type": "string",
-              "enum": [
                 "ja"
               ]
             },
@@ -66,7 +55,7 @@
               "type": "string",
               "minLength": 1
             },
-            "required": false,
+            "required": true,
             "name": "term",
             "in": "query"
           },
@@ -89,7 +78,7 @@
               },
               "minItems": 1
             },
-            "required": true,
+            "required": false,
             "name": "types",
             "in": "query"
           },
@@ -678,7 +667,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -1366,7 +1354,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -2054,7 +2041,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -2742,7 +2728,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -3430,7 +3415,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -4118,7 +4102,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -4806,7 +4789,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -5494,7 +5476,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
@@ -6182,7 +6163,6 @@
                                           "hasLyrics",
                                           "isAppleDigitalMaster",
                                           "name",
-                                          "releaseDate",
                                           "trackNumber",
                                           "url"
                                         ]
