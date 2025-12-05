@@ -10436,7 +10436,8 @@
               "type": "string",
               "enum": [
                 "ja"
-              ]
+              ],
+              "default": "ja"
             },
             "required": false,
             "name": "l",
