@@ -37,14 +37,15 @@ export function AlbumHeader({ album }: { album: AlbumsDatum }) {
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
-      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 lg:flex-row lg:items-center lg:gap-8 lg:px-8 lg:pt-12">
+      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 lg:flex-row lg:items-end lg:gap-8 lg:px-8 lg:pt-12">
         <img
           alt={attributes.name}
           className="aspect-square w-full max-w-[270px] rounded-lg object-cover shadow-lg"
           draggable={false}
           src={getArtworkUrl(attributes.artwork.url, 600)}
         />
-        <div className="flex flex-col items-center lg:items-start gap-4">
+        <div className="flex flex-col items-center lg:items-start lg:justify-between lg:h-[270px]">
+          <div />
           <div className="flex flex-col items-center lg:items-start">
             <h1 className="text-3xl text-foreground text-center lg:text-left font-semibold">{attributes.name}</h1>
             <Link
@@ -56,7 +57,7 @@ export function AlbumHeader({ album }: { album: AlbumsDatum }) {
             </Link>
             <span className="text-sm text-muted-foreground">{dayjs(attributes.releaseDate).format('LL')}</span>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 mt-4 lg:mt-0">
             <Button
               className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-[127px] text-sm rounded-sm gap-2"
               onClick={() => mutate()}
