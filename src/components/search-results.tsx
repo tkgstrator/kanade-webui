@@ -139,7 +139,7 @@ const Content = ({ term }: SearchResultsProps): JSX.Element => {
   })
   return (
     <div className="flex flex-col gap-8 p-6 select-none">
-      <div>{/* <h1 className="text-2xl font-bold text-foreground">「{keyword}」の検索結果</h1> */}</div>
+      <h1 className="text-2xl font-bold text-foreground">「{term}」の検索結果</h1>
 
       {/* アルバム */}
       <section>
