@@ -37,7 +37,7 @@ export function AlbumHeader({ album }: { album: AlbumsDatum }) {
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
-      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 md:flex-row md:items-end md:gap-8 md:px-8 md:pt-12">
+      <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 lg:flex-row lg:items-end lg:gap-8 lg:px-8 lg:pt-12">
         <img
           alt={attributes.name}
           className="aspect-square w-full max-w-[270px] rounded-lg object-cover shadow-lg"
