@@ -35,9 +35,9 @@ const Content = (): JSX.Element => {
   })
 
   return (
-    <div className="flex flex-col gap-8 p-6 select-none w-full">
+    <div className="flex flex-col gap-8 pb-8 select-none">
       <AlbumHeader album={albums[0]} />
-      <section className="w-full">
+      <section className="w-full px-6">
         <h2 className="mb-4 text-lg font-semibold text-foreground">収録曲</h2>
         <TrackList tracks={albums[0].relationships.tracks.data} />
       </section>
