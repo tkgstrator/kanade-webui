@@ -1,0 +1,650 @@
+{
+    "data": [
+        {
+            "id": "1844544771",
+            "type": "albums",
+            "href": "/v1/catalog/jp/albums/1844544771",
+            "attributes": {
+                "artistName": "虹ヶ咲学園スクールアイドル同好会",
+                "artwork": {
+                    "bgColor": "b2d4f7",
+                    "height": 3000,
+                    "textColor1": "191b1e",
+                    "textColor2": "2e2e30",
+                    "textColor3": "384049",
+                    "textColor4": "494f57",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                    "width": 3000
+                },
+                "copyright": "℗ 2025 Lantis",
+                "editorialNotes": {
+                    "short": "ファンの胸を熱くする劇場アニメ主題歌や、ソロ劇中歌を収録。",
+                    "tagline": "おすすめEP"
+                },
+                "genreNames": [
+                    "アニメ",
+                    "ミュージック"
+                ],
+                "isCompilation": true,
+                "isComplete": true,
+                "isMasteredForItunes": false,
+                "isSingle": false,
+                "name": "約束になれ僕らの歌",
+                "playParams": {
+                    "id": "1844544771",
+                    "kind": "album"
+                },
+                "recordLabel": "Lantis",
+                "releaseDate": "2025-11-08",
+                "trackCount": 14,
+                "upc": "4540774252459",
+                "url": "https://music.apple.com/jp/album/%E7%B4%84%E6%9D%9F%E3%81%AB%E3%81%AA%E3%82%8C%E5%83%95%E3%82%89%E3%81%AE%E6%AD%8C/1844544771"
+            },
+            "relationships": {
+                "artists": {
+                    "href": "/v1/catalog/jp/albums/1844544771/artists",
+                    "data": [
+                        {
+                            "id": "1441287579",
+                            "type": "artists",
+                            "href": "/v1/catalog/jp/artists/1441287579"
+                        }
+                    ]
+                },
+                "tracks": {
+                    "href": "/v1/catalog/jp/albums/1844544771/tracks",
+                    "data": [
+                        {
+                            "id": "1844544772",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544772",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "三船栞子 (CV.小泉萌香)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "TAKU INOUE",
+                                "discNumber": 1,
+                                "durationInMillis": 213067,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502473",
+                                "name": "いとしき夢よ いざないて",
+                                "playParams": {
+                                    "id": "1844544772",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/b8/cf/0db8cfa5-4385-4f6f-aab7-82c1023d9b61/mzaf_18136928450849867621.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 1,
+                                "url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A8%E3%81%97%E3%81%8D%E5%A4%A2%E3%82%88-%E3%81%84%E3%81%96%E3%81%AA%E3%81%84%E3%81%A6/1844544771?i=1844544772"
+                            }
+                        },
+                        {
+                            "id": "1844544774",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544774",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "A.L.A.N",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "チバニャン",
+                                "discNumber": 1,
+                                "durationInMillis": 170667,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102501852",
+                                "name": "Cheer Mode",
+                                "playParams": {
+                                    "id": "1844544774",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/6c/64/1c6c64dc-61fb-12b7-7a4b-6db3f5c886ad/mzaf_16137974859370849949.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-08-27",
+                                "trackNumber": 2,
+                                "url": "https://music.apple.com/jp/album/cheer-mode/1844544771?i=1844544774"
+                            }
+                        },
+                        {
+                            "id": "1844544775",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544775",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "ミア・テイラー (CV.内田 秀)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "TeddyLoid",
+                                "discNumber": 1,
+                                "durationInMillis": 196947,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502474",
+                                "name": "Like a Treasure",
+                                "playParams": {
+                                    "id": "1844544775",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/30/1c/35301c8b-329b-502c-b498-77938b52166e/mzaf_1150379323584048860.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 3,
+                                "url": "https://music.apple.com/jp/album/like-a-treasure/1844544771?i=1844544775"
+                            }
+                        },
+                        {
+                            "id": "1844544776",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544776",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "天王寺璃奈 (CV.田中ちえ美)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "鈴木エレカ & oni",
+                                "discNumber": 1,
+                                "durationInMillis": 228653,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502475",
+                                "name": "Stay",
+                                "playParams": {
+                                    "id": "1844544776",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/5d/c4/cd5dc43e-29a6-c85e-6b8f-f11605aa1f1c/mzaf_4694421315691350622.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 4,
+                                "url": "https://music.apple.com/jp/album/stay/1844544771?i=1844544776"
+                            }
+                        },
+                        {
+                            "id": "1844544778",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544778",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "優木せつ菜 (CV.林 鼓子)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "Em.me",
+                                "discNumber": 1,
+                                "durationInMillis": 208040,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502476",
+                                "name": "Burn!!",
+                                "playParams": {
+                                    "id": "1844544778",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/03/d3/1403d36a-2fbd-a600-8099-65eb43a92b8b/mzaf_2217141877669570564.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 5,
+                                "url": "https://music.apple.com/jp/album/burn/1844544771?i=1844544778"
+                            }
+                        },
+                        {
+                            "id": "1844544780",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544780",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "宮下 愛 (CV.村上奈津実)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "じん",
+                                "discNumber": 1,
+                                "durationInMillis": 202360,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502477",
+                                "name": "Circle of Love",
+                                "playParams": {
+                                    "id": "1844544780",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/cc/10/d5cc1016-8fe7-a613-db5d-fe451cfe08bd/mzaf_3408209694272373232.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 6,
+                                "url": "https://music.apple.com/jp/album/circle-of-love/1844544771?i=1844544780"
+                            }
+                        },
+                        {
+                            "id": "1844544781",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544781",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "虹ヶ咲学園スクールアイドル同好会",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "にゃんぞぬデシ, 米澤森人 & 藤原彩豊",
+                                "discNumber": 1,
+                                "durationInMillis": 270133,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502478",
+                                "name": "約束になれ僕らの歌",
+                                "playParams": {
+                                    "id": "1844544781",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/cd/e5/83cde5b1-0f69-9410-6451-bf07862e4a0a/mzaf_16622112077922520725.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 7,
+                                "url": "https://music.apple.com/jp/album/%E7%B4%84%E6%9D%9F%E3%81%AB%E3%81%AA%E3%82%8C%E5%83%95%E3%82%89%E3%81%AE%E6%AD%8C/1844544771?i=1844544781"
+                            }
+                        },
+                        {
+                            "id": "1844544783",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544783",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "三船栞子 (CV.小泉萌香)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "TAKU INOUE",
+                                "discNumber": 1,
+                                "durationInMillis": 214613,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502479",
+                                "name": "いとしき夢よ いざないて (Off Vocal)",
+                                "playParams": {
+                                    "id": "1844544783",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/bc/4c/68bc4c6a-85d5-2807-d475-497c98317e30/mzaf_1310146526342277362.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 8,
+                                "url": "https://music.apple.com/jp/album/%E3%81%84%E3%81%A8%E3%81%97%E3%81%8D%E5%A4%A2%E3%82%88-%E3%81%84%E3%81%96%E3%81%AA%E3%81%84%E3%81%A6-off-vocal/1844544771?i=1844544783"
+                            }
+                        },
+                        {
+                            "id": "1844544784",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544784",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "A.L.A.N",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "チバニャン",
+                                "discNumber": 1,
+                                "durationInMillis": 172107,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502480",
+                                "name": "Cheer Mode (Off Vocal)",
+                                "playParams": {
+                                    "id": "1844544784",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/fa/ec/16faecd1-a408-54ad-440c-3a8e9f1781fa/mzaf_18359576744731189280.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 9,
+                                "url": "https://music.apple.com/jp/album/cheer-mode-off-vocal/1844544771?i=1844544784"
+                            }
+                        },
+                        {
+                            "id": "1844544785",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544785",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "ミア・テイラー (CV.内田 秀)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "TeddyLoid",
+                                "discNumber": 1,
+                                "durationInMillis": 197347,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502481",
+                                "name": "Like a Treasure (Off Vocal)",
+                                "playParams": {
+                                    "id": "1844544785",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/05/9b/f3059be2-2e5a-195d-0d51-517b701bfceb/mzaf_7809438919388804851.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 10,
+                                "url": "https://music.apple.com/jp/album/like-a-treasure-off-vocal/1844544771?i=1844544785"
+                            }
+                        },
+                        {
+                            "id": "1844544786",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544786",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "天王寺璃奈 (CV.田中ちえ美)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "鈴木エレカ & oni",
+                                "discNumber": 1,
+                                "durationInMillis": 229707,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502482",
+                                "name": "Stay (Off Vocal)",
+                                "playParams": {
+                                    "id": "1844544786",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/20/85/d3208513-86c0-bf27-3bf9-1e63f6675375/mzaf_14320367009321448038.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 11,
+                                "url": "https://music.apple.com/jp/album/stay-off-vocal/1844544771?i=1844544786"
+                            }
+                        },
+                        {
+                            "id": "1844544787",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544787",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "優木せつ菜 (CV.林 鼓子)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "Em.me",
+                                "discNumber": 1,
+                                "durationInMillis": 209240,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502483",
+                                "name": "Burn!! (Off Vocal)",
+                                "playParams": {
+                                    "id": "1844544787",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/7d/28/777d2884-8ba7-2207-9611-e1b0a7f5656d/mzaf_1941454469727867510.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 12,
+                                "url": "https://music.apple.com/jp/album/burn-off-vocal/1844544771?i=1844544787"
+                            }
+                        },
+                        {
+                            "id": "1844544788",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544788",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "宮下 愛 (CV.村上奈津実)",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "じん",
+                                "discNumber": 1,
+                                "durationInMillis": 203400,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502484",
+                                "name": "Circle of Love (Off Vocal)",
+                                "playParams": {
+                                    "id": "1844544788",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/1d/1e/cf1d1e3e-22de-90f0-29d9-5e63accfbb74/mzaf_14482543916025041628.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 13,
+                                "url": "https://music.apple.com/jp/album/circle-of-love-off-vocal/1844544771?i=1844544788"
+                            }
+                        },
+                        {
+                            "id": "1844544789",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1844544789",
+                            "attributes": {
+                                "albumName": "約束になれ僕らの歌",
+                                "artistName": "虹ヶ咲学園スクールアイドル同好会",
+                                "artwork": {
+                                    "bgColor": "b2d4f7",
+                                    "height": 3000,
+                                    "textColor1": "191b1e",
+                                    "textColor2": "2e2e30",
+                                    "textColor3": "384049",
+                                    "textColor4": "494f57",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/4c/de/db4cde85-c4ce-00db-89cf-28f888e4f6ff/4540774252459.png/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "にゃんぞぬデシ, 米澤森人 & 藤原彩豊",
+                                "discNumber": 1,
+                                "durationInMillis": 268160,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPI102502485",
+                                "name": "約束になれ僕らの歌 (Off Vocal)",
+                                "playParams": {
+                                    "id": "1844544789",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/37/34/b337343d-0619-d853-7d56-dfc6eccdffb7/mzaf_1067883601231180368.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2025-11-08",
+                                "trackNumber": 14,
+                                "url": "https://music.apple.com/jp/album/%E7%B4%84%E6%9D%9F%E3%81%AB%E3%81%AA%E3%82%8C%E5%83%95%E3%82%89%E3%81%AE%E6%AD%8C-off-vocal/1844544771?i=1844544789"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

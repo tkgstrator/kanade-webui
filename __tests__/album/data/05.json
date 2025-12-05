@@ -1,0 +1,730 @@
+{
+    "data": [
+        {
+            "id": "1751243365",
+            "type": "albums",
+            "href": "/v1/catalog/jp/albums/1751243365",
+            "attributes": {
+                "artistName": "haruka nakamura",
+                "artwork": {
+                    "bgColor": "35403d",
+                    "height": 2400,
+                    "textColor1": "e1e3c5",
+                    "textColor2": "cfc8bf",
+                    "textColor3": "bec2a9",
+                    "textColor4": "b0ada5",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                    "width": 2400
+                },
+                "copyright": "℗ 2024 AVEX PICTURES INC.",
+                "genreNames": [
+                    "アニメ",
+                    "ミュージック"
+                ],
+                "isCompilation": false,
+                "isComplete": true,
+                "isMasteredForItunes": false,
+                "isSingle": false,
+                "name": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                "playParams": {
+                    "id": "1751243365",
+                    "kind": "album"
+                },
+                "recordLabel": "avex pictures",
+                "releaseDate": "2024-06-28",
+                "trackCount": 16,
+                "upc": "4582635793046",
+                "url": "https://music.apple.com/jp/album/%E5%8A%87%E5%A0%B4%E3%82%A2%E3%83%8B%E3%83%A1-%E3%83%AB%E3%83%83%E3%82%AF%E3%83%90%E3%83%83%E3%82%AF-%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF/1751243365"
+            },
+            "relationships": {
+                "artists": {
+                    "href": "/v1/catalog/jp/albums/1751243365/artists",
+                    "data": [
+                        {
+                            "id": "216327245",
+                            "type": "artists",
+                            "href": "/v1/catalog/jp/artists/216327245"
+                        }
+                    ]
+                },
+                "tracks": {
+                    "href": "/v1/catalog/jp/albums/1751243365/tracks",
+                    "data": [
+                        {
+                            "id": "1751243366",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243366",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "181d20",
+                                    "height": 2400,
+                                    "textColor1": "dbe2db",
+                                    "textColor2": "7295d9",
+                                    "textColor3": "b4bbb6",
+                                    "textColor4": "607db4",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 141560,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400471",
+                                "name": "流れゆく季節",
+                                "playParams": {
+                                    "id": "1751243366",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/d4/a3/20d4a304-4d8a-db18-13b6-4169c2819974/mzaf_14726147508209189304.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 1,
+                                "url": "https://music.apple.com/jp/album/%E6%B5%81%E3%82%8C%E3%82%86%E3%81%8F%E5%AD%A3%E7%AF%80/1751243365?i=1751243366"
+                            }
+                        },
+                        {
+                            "id": "1751243367",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243367",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "181d20",
+                                    "height": 2400,
+                                    "textColor1": "dbe2db",
+                                    "textColor2": "7295d9",
+                                    "textColor3": "b4bbb6",
+                                    "textColor4": "607db4",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 72120,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400472",
+                                "name": "空想の彼方で",
+                                "playParams": {
+                                    "id": "1751243367",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/8b/56/268b5602-7de9-e7b6-afac-bac8dd6bd95f/mzaf_8360557244600038128.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 2,
+                                "url": "https://music.apple.com/jp/album/%E7%A9%BA%E6%83%B3%E3%81%AE%E5%BD%BC%E6%96%B9%E3%81%A7/1751243365?i=1751243367"
+                            }
+                        },
+                        {
+                            "id": "1751243368",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243368",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 103907,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400473",
+                                "name": "8の季節",
+                                "playParams": {
+                                    "id": "1751243368",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/b0/af/0bb0af4d-b304-0485-be75-d5b73c11e3c5/mzaf_9723476912064326308.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 3,
+                                "url": "https://music.apple.com/jp/album/8%E3%81%AE%E5%AD%A3%E7%AF%80/1751243365?i=1751243368"
+                            }
+                        },
+                        {
+                            "id": "1751243369",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243369",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 45093,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400474",
+                                "name": "日々に帰る",
+                                "playParams": {
+                                    "id": "1751243369",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/d3/48/bbd348a0-d79f-df2b-b0fe-14b10674c518/mzaf_13186541557084866744.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 4,
+                                "url": "https://music.apple.com/jp/album/%E6%97%A5%E3%80%85%E3%81%AB%E5%B8%B0%E3%82%8B/1751243365?i=1751243369"
+                            }
+                        },
+                        {
+                            "id": "1751243370",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243370",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 53307,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400475",
+                                "name": "スケッチブック",
+                                "playParams": {
+                                    "id": "1751243370",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/16/6e/14166e6e-c7c1-0aa3-9682-edfc2be0a6dc/mzaf_11881995107245222132.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 5,
+                                "url": "https://music.apple.com/jp/album/%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E3%83%96%E3%83%83%E3%82%AF/1751243365?i=1751243370"
+                            }
+                        },
+                        {
+                            "id": "1751243371",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243371",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 90053,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400476",
+                                "name": "Rainy Dance",
+                                "playParams": {
+                                    "id": "1751243371",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/34/1d/97341d08-5117-0a64-b216-bfb051b2c4aa/mzaf_7023448726707834835.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 6,
+                                "url": "https://music.apple.com/jp/album/rainy-dance/1751243365?i=1751243371"
+                            }
+                        },
+                        {
+                            "id": "1751243372",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243372",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 30427,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400477",
+                                "name": "ふたりの背中",
+                                "playParams": {
+                                    "id": "1751243372",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/f2/50/cef25038-621c-5488-34e0-86fdeaeb7a95/mzaf_12786005105458843331.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 7,
+                                "url": "https://music.apple.com/jp/album/%E3%81%B5%E3%81%9F%E3%82%8A%E3%81%AE%E8%83%8C%E4%B8%AD/1751243365?i=1751243372"
+                            }
+                        },
+                        {
+                            "id": "1751243373",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243373",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "181d20",
+                                    "height": 2400,
+                                    "textColor1": "dbe2db",
+                                    "textColor2": "7295d9",
+                                    "textColor3": "b4bbb6",
+                                    "textColor4": "607db4",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 101267,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400478",
+                                "name": "輝いた季節",
+                                "playParams": {
+                                    "id": "1751243373",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/d8/c9/7ed8c90b-a2f9-37d8-4b2f-46ca00ddbefa/mzaf_603045595007146479.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 8,
+                                "url": "https://music.apple.com/jp/album/%E8%BC%9D%E3%81%84%E3%81%9F%E5%AD%A3%E7%AF%80/1751243365?i=1751243373"
+                            }
+                        },
+                        {
+                            "id": "1751243374",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243374",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "181d20",
+                                    "height": 2400,
+                                    "textColor1": "dbe2db",
+                                    "textColor2": "7295d9",
+                                    "textColor3": "b4bbb6",
+                                    "textColor4": "607db4",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 85947,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400479",
+                                "name": "beautiful days",
+                                "playParams": {
+                                    "id": "1751243374",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/51/dc/0551dcec-d11f-e79a-b482-d60006b2399f/mzaf_16857729932311279909.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 9,
+                                "url": "https://music.apple.com/jp/album/beautiful-days/1751243365?i=1751243374"
+                            }
+                        },
+                        {
+                            "id": "1751243375",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243375",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "181d20",
+                                    "height": 2400,
+                                    "textColor1": "dbe2db",
+                                    "textColor2": "7295d9",
+                                    "textColor3": "b4bbb6",
+                                    "textColor4": "607db4",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 85907,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400480",
+                                "name": "solitude",
+                                "playParams": {
+                                    "id": "1751243375",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/ed/64/4ced647a-9257-61a1-368e-d8eed4c1fad7/mzaf_11450282869445767955.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 10,
+                                "url": "https://music.apple.com/jp/album/solitude/1751243365?i=1751243375"
+                            }
+                        },
+                        {
+                            "id": "1751243376",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243376",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 112267,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400481",
+                                "name": "RE : SIN",
+                                "playParams": {
+                                    "id": "1751243376",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/30/30/9b303095-07c3-3971-2a97-2536b9b1a4f3/mzaf_17003431180337045718.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 11,
+                                "url": "https://music.apple.com/jp/album/re-sin/1751243365?i=1751243376"
+                            }
+                        },
+                        {
+                            "id": "1751243377",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243377",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 45440,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400482",
+                                "name": "ひとりの君へ",
+                                "playParams": {
+                                    "id": "1751243377",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/36/88/3536884c-264d-dd3b-416b-b608e2566864/mzaf_7339416192479307024.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 12,
+                                "url": "https://music.apple.com/jp/album/%E3%81%B2%E3%81%A8%E3%82%8A%E3%81%AE%E5%90%9B%E3%81%B8/1751243365?i=1751243377"
+                            }
+                        },
+                        {
+                            "id": "1751243378",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243378",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 22867,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400484",
+                                "name": "エンカウンター",
+                                "playParams": {
+                                    "id": "1751243378",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/20/aa/9720aa0e-a492-c8d4-c445-2c59c32d9320/mzaf_1908777282964196018.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 13,
+                                "url": "https://music.apple.com/jp/album/%E3%82%A8%E3%83%B3%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC/1751243365?i=1751243378"
+                            }
+                        },
+                        {
+                            "id": "1751243379",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243379",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 73627,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400485",
+                                "name": "君のための歌",
+                                "playParams": {
+                                    "id": "1751243379",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/31/f9/d6/31f9d6e2-5d4b-d18f-0cec-17c075f7e8b9/mzaf_6856926632968108916.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 14,
+                                "url": "https://music.apple.com/jp/album/%E5%90%9B%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%AD%8C/1751243365?i=1751243379"
+                            }
+                        },
+                        {
+                            "id": "1751243380",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243380",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura",
+                                "artwork": {
+                                    "bgColor": "35403d",
+                                    "height": 2400,
+                                    "textColor1": "e1e3c5",
+                                    "textColor2": "cfc8bf",
+                                    "textColor3": "bec2a9",
+                                    "textColor4": "b0ada5",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 216680,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400486",
+                                "name": "FINAL ONE",
+                                "playParams": {
+                                    "id": "1751243380",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/bf/71/0fbf7152-5172-a3c0-bb18-ccb2ad3fc591/mzaf_2662945507578055350.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 15,
+                                "url": "https://music.apple.com/jp/album/final-one/1751243365?i=1751243380"
+                            }
+                        },
+                        {
+                            "id": "1751243381",
+                            "type": "songs",
+                            "href": "/v1/catalog/jp/songs/1751243381",
+                            "attributes": {
+                                "albumName": "劇場アニメ ルックバック オリジナルサウンドトラック",
+                                "artistName": "haruka nakamura & urara",
+                                "artwork": {
+                                    "bgColor": "181d20",
+                                    "height": 2400,
+                                    "textColor1": "dbe2db",
+                                    "textColor2": "7295d9",
+                                    "textColor3": "b4bbb6",
+                                    "textColor4": "607db4",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/25/ed/2825ed4e-108b-6c25-62de-41710a95f4a0/ANTCD-A0000013639.jpg/{w}x{h}bb.jpg",
+                                    "width": 2400
+                                },
+                                "composerName": "haruka nakamura",
+                                "discNumber": 1,
+                                "durationInMillis": 249533,
+                                "genreNames": [
+                                    "アニメ",
+                                    "ミュージック"
+                                ],
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": false,
+                                "isrc": "JPT552400434",
+                                "name": "Light song",
+                                "playParams": {
+                                    "id": "1751243381",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/07/c1/0a07c141-5aae-b080-ffb6-eeab72faeb61/mzaf_9097458136532746541.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "2024-06-28",
+                                "trackNumber": 16,
+                                "url": "https://music.apple.com/jp/album/light-song/1751243365?i=1751243381"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
