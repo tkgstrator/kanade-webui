@@ -1,5 +1,7 @@
 import { z } from '@hono/zod-openapi'
-import { ArtistAttributes } from '@/lib/client'
+import { release } from 'os'
+import { ZodLazy } from 'zod'
+import { bg, is } from 'zod/v4/locales'
 
 export const TypeSchema = z.enum([
   'activities',
@@ -13,53 +15,123 @@ export const TypeSchema = z.enum([
   'stations',
 ])
 
+export const ArtworkSchema = z.object({
+  bgColor: z.string().nonempty(),
+  height: z.number().int().positive(),
+  textColor1: z.string().nonempty(),
+  textColor2: z.string().nonempty(),
+  textColor3: z.string().nonempty(),
+  textColor4: z.string().nonempty(),
+  url: z.url(),
+  width: z.number().int().positive(),
+})
+
+export namespace Attribute {
+  export const AlbumSchema = z.object({
+    artistName: z.string().nonempty(),
+    artwork: ArtworkSchema,
+    copyright: z.string().nonempty(),
+    isCompilation: z.boolean(),
+    isComplete: z.boolean(),
+    isMasteredForItunes: z.boolean(),
+    isSingle: z.boolean(),
+    name: z.string().nonempty(),
+    playParams: z.object({}),
+    recordLabel: z.string().nonempty(),
+    releaseDate: z.coerce.date(),
+    trackCount: z.number().int().positive(),
+    upc: z.string().nonempty(),
+    url: z.string().nonempty(),
+  })
+
+  export const ArtistSchema = z.object({
+    artwork: ArtworkSchema.optional(),
+    name: z.string().nonempty(),
+    url: z.url(),
+  })
+
+  export const MusicVideoSchema = z.object({
+    artistName: z.string().nonempty(),
+    artwork: ArtworkSchema,
+    has4K: z.boolean(),
+    hasHDR: z.boolean(),
+    name: z.string().nonempty(),
+    releaseDate: z.coerce.date(),
+  })
+
+  export const PlaylistSchema = z.object({
+    artwork: ArtworkSchema.partial({
+      bgColor: true,
+      textColor1: true,
+      textColor2: true,
+      textColor3: true,
+      textColor4: true,
+    }),
+    isChart: z.boolean(),
+    name: z.string().nonempty(),
+    url: z.url(),
+  })
+
+  export const SongSchema = z.object({
+    albumName: z.string().nonempty(),
+    artistName: z.string().nonempty(),
+    artwork: ArtworkSchema,
+    composerName: z.string().nonempty().optional(),
+    discNumber: z.number().int().positive(),
+    durationInMillis: z.number().int().positive(),
+    hasLyrics: z.boolean(),
+    isAppleDigitalMaster: z.boolean(),
+    releaseDate: z.coerce.date(),
+    trackNumber: z.number().int().positive(),
+    url: z.url(),
+  })
+
+  export const StationSchema = z.object({
+    artwork: ArtworkSchema,
+    isLive: z.boolean(),
+    url: z.url(),
+  })
+}
+
+export const DatumSchema = z.object({
+  href: z.string().nonempty(),
+  id: z.string().nonempty(),
+})
+
 export const MetaSchema = z.object({})
 
-export const RelationshipSchema = z.object({
-  data: z.array(z.any()),
+export const ViewSchema = z.object({
+  data: z
+    .discriminatedUnion('type', [
+      DatumSchema.extend({
+        attributes: Attribute.AlbumSchema,
+        type: z.literal('albums'),
+      }),
+      DatumSchema.extend({
+        attributes: Attribute.ArtistSchema,
+        type: z.literal('artists'),
+      }),
+      DatumSchema.extend({
+        attributes: Attribute.MusicVideoSchema,
+        type: z.literal('music-videos'),
+      }),
+      DatumSchema.extend({
+        attributes: Attribute.PlaylistSchema,
+        type: z.literal('playlists'),
+      }),
+      DatumSchema.extend({
+        attributes: Attribute.SongSchema,
+        type: z.literal('songs'),
+      }),
+      DatumSchema.extend({
+        attributes: Attribute.StationSchema,
+        type: z.literal('stations'),
+      }),
+    ])
+    .array(),
   href: z.string().nonempty(),
   meta: MetaSchema.optional(),
   next: z.string().nonempty().optional(),
-})
-
-type View = {
-  // biome-ignore lint/suspicious/noExplicitAny: reason
-  // attributes: any[]
-  data: Resource[]
-  href: string
-  meta?: z.infer<typeof MetaSchema>
-  next?: string
-}
-
-type Resource = {
-  // biome-ignore lint/suspicious/noExplicitAny: reason
-  // attributes: any[]
-  href: string
-  id: number
-  meta: z.infer<typeof MetaSchema>
-  relationships: z.infer<typeof RelationshipSchema>[]
-  type: string
-  views: View[]
-}
-
-export const ViewSchema: z.ZodType<View> = z.object({
-  // biome-ignore lint/suspicious/noExplicitAny: reason
-  // attributes: z.array(z.any()),
-  data: z.lazy(() => z.array(ResourceSchema)),
-  href: z.string().nonempty(),
-  meta: MetaSchema.optional(),
-  next: z.string().nonempty().optional(),
-})
-
-export const ResourceSchema: z.ZodType<Resource> = z.object({
-  // biome-ignore lint/suspicious/noExplicitAny: reason
-  // attributes: z.array(z.any()),
-  href: z.string().nonempty().optional(),
-  // id: z.coerce.number().int().positive(),
-  meta: MetaSchema.optional(),
-  relationships: z.record(TypeSchema, RelationshipSchema.optional()).optional(),
-  type: z.string().nonempty(),
-  views: z.lazy(() => z.array(ViewSchema)).optional(),
 })
 
 export namespace SearchCatalogResources {
@@ -79,7 +151,6 @@ export namespace SearchCatalogResources {
   export const ResponseSchema = z.object({
     results: z.record(TypeSchema, ViewSchema.optional()),
   })
-  // .strict()
 }
 
 export namespace GetCatalogAlbum {
