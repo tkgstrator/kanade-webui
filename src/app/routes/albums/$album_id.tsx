@@ -1,13 +1,13 @@
-"use client"
+'use client'
 
-import { useSuspenseQuery } from "@tanstack/react-query"
-import { createFileRoute } from "@tanstack/react-router"
-import { type JSX, Suspense } from "react"
-import { z } from "zod"
-import { AlbumHeader, AlbumSkeleton, TrackList } from "@/components/album"
-import { client } from "@/lib/client"
+import { useSuspenseQuery } from '@tanstack/react-query'
+import { createFileRoute } from '@tanstack/react-router'
+import { type JSX, Suspense } from 'react'
+import { z } from 'zod'
+import { AlbumHeader, AlbumSkeleton, TrackList } from '@/components/album'
+import { client } from '@/lib/client'
 
-export const Route = createFileRoute("/albums/$album_id")({
+export const Route = createFileRoute('/albums/$album_id')({
   component: Page,
   params: {
     parse: (params) =>
@@ -26,12 +26,12 @@ const Content = (): JSX.Element => {
     data: { data: albums },
   } = useSuspenseQuery({
     queryFn: async () =>
-      client.get("/api/albums/:album_id", {
+      client.get('/api/albums/:id', {
         params: {
-          album_id,
+          id: album_id,
         },
       }),
-    queryKey: ["album", album_id],
+    queryKey: ['album', album_id],
   })
 
   return (

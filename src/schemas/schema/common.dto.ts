@@ -43,6 +43,7 @@ export namespace Attribute {
 
   export const ArtistSchema = z.object({
     artwork: ArtworkSchema.optional(),
+    genreNames: z.array(z.string().nonempty()),
     name: z.string().nonempty(),
     url: z.url(),
   })
@@ -78,6 +79,7 @@ export namespace Attribute {
     durationInMillis: z.number().int().positive(),
     hasLyrics: z.boolean(),
     isAppleDigitalMaster: z.boolean(),
+    name: z.string().nonempty(),
     releaseDate: z.coerce.date(),
     trackNumber: z.number().int().positive(),
     url: z.url(),
@@ -103,14 +105,17 @@ export const RelationshipSchema = z.record(
         .discriminatedUnion('type', [
           DatumSchema.extend({ type: z.literal('artists') }),
           DatumSchema.extend({
-            // 未発表の曲があるため一部オプショナルにする必要がある
             attributes: Attribute.SongSchema.extend({
               durationInMillis: z.number().int().positive().optional(),
               releaseDate: z.coerce.date().optional(),
             }),
             type: z.literal('songs'),
           }),
-          DatumSchema.extend({ id: z.coerce.number().int().positive(), type: z.literal('albums') }),
+          DatumSchema.extend({
+            attributes: Attribute.AlbumSchema,
+            id: z.coerce.number().int().positive(),
+            type: z.literal('albums'),
+          }),
           DatumSchema.extend({ type: z.literal('stations') }),
           DatumSchema.extend({ id: z.coerce.number().int().positive(), type: z.literal('music-videos') }),
         ])
@@ -180,7 +185,7 @@ export namespace GetCatalogAlbum {
 
   export const ParamSchema = z.object({
     id: z.coerce.number().int().positive(),
-    storefront: z.enum(['jp']),
+    storefront: z.enum(['jp']).optional().default('jp'),
   })
 
   export const QuerySchema = z.object({
@@ -255,6 +260,7 @@ export const CatalogSchema = z.object({
       DatumSchema.extend({
         attributes: Attribute.AlbumSchema,
         id: z.coerce.number().int().positive(),
+        relationships: RelationshipSchema,
         type: z.literal('albums'),
       }),
       DatumSchema.extend({
