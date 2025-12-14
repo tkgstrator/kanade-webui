@@ -1,5 +1,6 @@
 import asyncio
 import os
+import re
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from bullmq import Queue
@@ -27,13 +28,32 @@ def enqueue(name: str, data: dict):
 
 @app.route('/api/queues', methods=['POST'])
 def create_job():
-    data = request.get_json()
-    url = data.get('url')
+    data = request.get_json() or {}
 
-    if not url:
-        return jsonify({"error": "url is required"}), 400
+    album_id = data.get('album_id')
+    options = data.get('options')
 
-    job_info = enqueue("process", {"url": url})
+    if album_id is None:
+        return jsonify({"error": "album_id is required"}), 400
+
+    try:
+        album_id = int(album_id)
+    except (TypeError, ValueError):
+        return jsonify({"error": "album_id must be an integer"}), 400
+
+    if options is None:
+        overwrite = True
+    elif isinstance(options, dict):
+        overwrite = options.get('overwrite', False)
+    else:
+        return jsonify({"error": "options must be an object"}), 400
+
+    if isinstance(overwrite, str):
+        overwrite = overwrite.lower() in ['true', '1', 'yes', 'on']
+    else:
+        overwrite = bool(overwrite)
+
+    job_info = enqueue("process", {"url": f"https://music.apple.com/jp/album/{album_id}" })
     return jsonify(job_info)
 
 @app.route('/health')

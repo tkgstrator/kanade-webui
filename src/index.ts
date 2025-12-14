@@ -1,4 +1,3 @@
-import { Response } from '@cloudflare/workers-types/experimental'
 import { createRoute, OpenAPIHono as Hono } from '@hono/zod-openapi'
 import type { Context } from 'hono'
 import { contextStorage } from 'hono/context-storage'
@@ -14,6 +13,7 @@ import {
   SearchCatalogResources,
   TypeSchema,
 } from './schemas/schema/common.dto'
+import { QueueBodySchema, QueueParamSchema, QueueQuerySchema, QueueResponseSchema } from './schemas/schema/queue.dto'
 import type { Env } from './utils/binding'
 import { createClient } from './utils/client'
 
@@ -22,7 +22,9 @@ const app = new Hono<Env>()
 app.onError(async (error, c) => {
   console.error(error)
   if (error instanceof HTTPException) {
-    return c.json({ message: JSON.parse(error.message) }, error.status)
+    console.error(error)
+    return c.json({ message: error.message }, error.status)
+    // return c.json({ message: JSON.parse(error.message) }, error.status)
   }
   if (error.name === 'ZodError') {
     return c.json({ description: error.cause, message: JSON.parse(error.message) }, 400)
@@ -148,107 +150,53 @@ app.openapi(
     return c.json(response)
   },
 )
-// app.openapi(
-//   createRoute({
-//     description: '',
-//     method: 'get',
-//     middleware: [],
-//     path: '/api/charts',
-//     request: {
-//       query: ChartQuerySchema,
-//     },
-//     responses: {
-//       200: {
-//         content: {
-//           'application/json': {
-//             schema: ChartSchema,
-//           },
-//         },
-//         description: 'Successful response with album details',
-//       },
-//     },
-//     summary: '',
-//     tags: ['Charts'],
-//   }),
-//   async (c) => {
-//     const { types, genre, limit } = c.req.valid('query')
-//     const url: URL = new URL('https://api.music.apple.com/v1/catalog/jp/charts')
-//     url.searchParams.append('types', types)
-//     url.searchParams.append('genre', genre.toString())
-//     url.searchParams.append('limit', limit.toString())
-//     const response = await fetch(url.href, {
-//       headers: {
-//         Authorization: `Bearer ${c.get('MUSIC_TOKEN')}`,
-//       },
-//     })
-//     if (!response.ok) {
-//       throw new HTTPException(response.status as ContentfulStatusCode, {
-//         message: response.statusText,
-//       })
-//     }
-//     const object = await response.json()
-//     return c.json(object)
-//     const result = ChartSchema.safeParse(object)
-//     if (!result.success) {
-//       console.error(object, result.error)
-//       throw new HTTPException(502, { message: result.error.message })
-//     }
-//     return c.json(result.data)
-//   },
-// )
-// app.openapi(
-//   createRoute({
-//     description: 'Retrieves detailed information about a specific album by its ID.',
-//     method: 'get',
-//     middleware: [],
-//     path: '/api/queues/:album_id',
-//     request: {
-//       params: AlbumSearchParamSchema,
-//     },
-//     responses: {
-//       201: {
-//         content: {
-//           'application/json': {
-//             schema: QueueSchema,
-//           },
-//         },
-//         description: 'Successful response with album details',
-//       },
-//       404: {
-//         description: 'Not Found',
-//       },
-//     },
-//     summary: 'Add A Download Album Queue to Redis',
-//     tags: ['Albums'],
-//   }),
-//   async (c) => {
-//     const { album_id } = c.req.valid('param')
-//     const url: URL = new URL('/api/queues', c.env.PROXY_URL)
-//     // キューに保存するデータのために今後はURL以外も保存しておきたい所存
-//     const response = await fetch(url.href, {
-//       body: JSON.stringify({
-//         url: `https://music.apple.com/jp/album/${album_id}`,
-//       }),
-//       headers: {
-//         'CF-Access-Client-Id': c.env.CF_ACCESS_CLIENT_ID,
-//         'CF-Access-Client-Secret': c.env.CF_ACCESS_CLIENT_SECRET,
-//         'Content-Type': 'application/json',
-//       },
-//       method: 'POST',
-//     })
-//     if (!response.ok) {
-//       throw new HTTPException(response.status as ContentfulStatusCode, {
-//         message: response.statusText,
-//       })
-//     }
-//     const object = await response.json()
-//     const result = QueueSchema.safeParse(object)
-//     if (!result.success) {
-//       console.error(object, result.error)
-//       throw new HTTPException(502, { message: result.error.message })
-//     }
-//     return c.json(result.data, 201)
-//   },
-// )
+app.openapi(
+  createRoute({
+    description: 'Retrieves detailed information about a specific album by its ID.',
+    method: 'post',
+    middleware: [],
+    path: '/api/queues',
+    request: {
+      body: {
+        content: {
+          'application/json': {
+            schema: QueueBodySchema,
+          },
+        },
+      },
+    },
+    responses: {
+      200: {
+        content: {
+          'application/json': {
+            schema: QueueResponseSchema,
+          },
+        },
+        description: 'Successful response with album details',
+      },
+    },
+    summary: 'Get album details by ID',
+    tags: ['Queues'],
+  }),
+  async (c) => {
+    const body = c.req.valid('json')
+    const url: URL = new URL('/api/queues', c.env.PROXY_URL)
+    const response = await fetch(url.href, {
+      body: JSON.stringify(body),
+      headers: {
+        'CF-Access-Client-Id': c.env.CF_ACCESS_CLIENT_ID,
+        'CF-Access-Client-Secret': c.env.CF_ACCESS_CLIENT_SECRET,
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    })
+    if (!response.ok) {
+      throw new HTTPException(response.status as ContentfulStatusCode, {
+        message: response.statusText,
+      })
+    }
+    return c.json(response)
+  },
+)
 
 export default app
