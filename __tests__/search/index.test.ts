@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'bun:test'
 import { readdirSync } from 'node:fs'
 import { join } from 'node:path'
-import { SearchCatalogResources } from '../../src/schemas/schema/common.dto'
+import { SearchCatalogResources } from '../../src/schemas/common.dto'
 
 const dir = join(import.meta.dir, 'data')
 const files = readdirSync(dir).filter((file) => file.endsWith('.json'))
