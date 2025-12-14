@@ -1078,6 +1078,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -1099,6 +1103,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -1227,6 +1235,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -1248,6 +1260,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -1376,6 +1392,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -1397,6 +1417,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -1525,6 +1549,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -1546,6 +1574,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -1674,6 +1706,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -1695,6 +1731,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -1858,6 +1898,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -1879,6 +1923,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -2007,6 +2055,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -2028,6 +2080,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -2156,6 +2212,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -2177,6 +2237,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -2305,6 +2369,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -2326,6 +2394,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {
@@ -2454,6 +2526,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "type": {
                                       "type": "string",
                                       "enum": [
@@ -2475,6 +2551,10 @@
                                 {
                                   "type": "object",
                                   "properties": {
+                                    "id": {
+                                      "type": "integer",
+                                      "exclusiveMinimum": 0
+                                    },
                                     "attributes": {
                                       "allOf": [
                                         {

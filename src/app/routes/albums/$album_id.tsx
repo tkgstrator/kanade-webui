@@ -22,9 +22,7 @@ export const Route = createFileRoute('/albums/$album_id')({
 
 const Content = (): JSX.Element => {
   const { album_id } = Route.useParams()
-  const {
-    data: { data: albums },
-  } = useSuspenseQuery({
+  const { data } = useSuspenseQuery({
     queryFn: async () =>
       client.get('/api/albums/:id', {
         params: {
@@ -34,16 +32,18 @@ const Content = (): JSX.Element => {
     queryKey: ['album', album_id],
   })
 
-  const album = albums[0] as CatalogAlbumDatum
-  const tracks = album.relationships?.tracks?.data?.filter((t) => t.type === 'songs') ?? []
+  // console.log(albums)
+
+  // const album = albums[0] as CatalogAlbumDatum
+  // const tracks = album.relationships?.tracks?.data?.filter((t) => t.type === 'songs') ?? []
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
-      <AlbumHeader album={album} />
+      {/* <AlbumHeader album={album} />
       <section className="w-full px-6">
         <h2 className="mb-4 text-lg font-semibold text-foreground">収録曲</h2>
         <TrackList tracks={tracks} />
-      </section>
+      </section> */}
     </div>
   )
 }
