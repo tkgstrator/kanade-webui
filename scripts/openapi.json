@@ -14418,6 +14418,60 @@
           }
         }
       }
+    },
+    "/api/queues": {
+      "post": {
+        "description": "Retrieves detailed information about a specific album by its ID.",
+        "summary": "Get album details by ID",
+        "tags": [
+          "Queues"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "album_id": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ]
+                  },
+                  "options": {
+                    "type": "object",
+                    "properties": {
+                      "overwrite": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ],
+                        "default": false
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "album_id"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response with album details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "webhooks": {}

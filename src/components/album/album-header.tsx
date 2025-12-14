@@ -8,7 +8,7 @@ import 'dayjs/locale/ja'
 import { Download, Shuffle } from 'lucide-react'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
-import { type AlbumsDatum, client } from '@/lib/client'
+import { client } from '@/lib/client'
 
 dayjs.extend(localizedFormat)
 dayjs.locale('ja')
@@ -22,8 +22,8 @@ export function AlbumHeader({ album }: { album: AlbumsDatum }) {
 
   const { mutate } = useMutation({
     mutationFn: async () =>
-      client.get('/api/queues/:album_id', {
-        params: { album_id: album.id },
+      client.post('/api/queues', {
+        album_id: album.id,
       }),
     mutationKey: ['queues', album.id],
     onError: (error) => {
