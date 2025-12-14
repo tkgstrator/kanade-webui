@@ -8,7 +8,8 @@ import 'dayjs/locale/ja'
 import { Download, Shuffle } from 'lucide-react'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
-import { type CatalogAlbumDatum, client } from '@/lib/client'
+import { client } from '@/lib/client'
+import type { CatalogAlbumDatum } from '@/schemas/common.dto'
 
 dayjs.extend(localizedFormat)
 dayjs.locale('ja')

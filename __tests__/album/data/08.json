@@ -1,0 +1,275 @@
+{
+    "data": [
+        {
+            "href": "/v1/catalog/jp/albums/1855824537",
+            "id": 1855824537,
+            "attributes": {
+                "artistName": "トゲナシトゲアリ",
+                "artwork": {
+                    "bgColor": "a9aaa3",
+                    "height": 3000,
+                    "textColor1": "10110a",
+                    "textColor2": "14171a",
+                    "textColor3": "2e3029",
+                    "textColor4": "323535",
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                    "width": 3000
+                },
+                "copyright": "A UNIVERSAL SIGMA release; ℗ 2025 UNIVERSAL MUSIC LLC",
+                "isCompilation": false,
+                "isComplete": true,
+                "isMasteredForItunes": true,
+                "isSingle": false,
+                "name": "全部をさらして生きてやる",
+                "playParams": {},
+                "recordLabel": "Universal Music LLC",
+                "releaseDate": "2025-12-12T00:00:00.000Z",
+                "trackCount": 8,
+                "upc": "00602488212984",
+                "url": "https://music.apple.com/jp/album/ill-live-with-my-heart-on-my-sleeve/1855824537"
+            },
+            "relationships": {
+                "artists": {
+                    "data": [
+                        {
+                            "href": "/v1/catalog/jp/artists/1688539273",
+                            "id": 1688539273,
+                            "type": "artists"
+                        }
+                    ],
+                    "href": "/v1/catalog/jp/albums/1855824537/artists"
+                },
+                "tracks": {
+                    "data": [
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824539",
+                            "id": 1855824539,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "大濱健悟",
+                                "discNumber": 1,
+                                "durationInMillis": 219270,
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "name": "もう何もいらない未来",
+                                "releaseDate": "2025-11-28T00:00:00.000Z",
+                                "trackNumber": 1,
+                                "url": "https://music.apple.com/jp/album/%E3%82%82%E3%81%86%E4%BD%95%E3%82%82%E3%81%84%E3%82%89%E3%81%AA%E3%81%84%E6%9C%AA%E6%9D%A5/1855824537?i=1855824539"
+                            },
+                            "type": "songs"
+                        },
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824540",
+                            "id": 1855824540,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "Night to Lie",
+                                "discNumber": 1,
+                                "durationInMillis": 200527,
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "name": "命をくれよ",
+                                "releaseDate": "2025-11-28T00:00:00.000Z",
+                                "trackNumber": 2,
+                                "url": "https://music.apple.com/jp/album/%E5%91%BD%E3%82%92%E3%81%8F%E3%82%8C%E3%82%88/1855824537?i=1855824540"
+                            },
+                            "type": "songs"
+                        },
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824542",
+                            "id": 1855824542,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "富田拓志",
+                                "discNumber": 1,
+                                "durationInMillis": 188739,
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "name": "arrow",
+                                "releaseDate": "2025-12-05T00:00:00.000Z",
+                                "trackNumber": 3,
+                                "url": "https://music.apple.com/jp/album/arrow/1855824537?i=1855824542"
+                            },
+                            "type": "songs"
+                        },
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824543",
+                            "id": 1855824543,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "大濱健悟",
+                                "discNumber": 1,
+                                "durationInMillis": 216598,
+                                "hasLyrics": true,
+                                "isAppleDigitalMaster": true,
+                                "name": "荊の薔薇",
+                                "releaseDate": "2025-12-12T00:00:00.000Z",
+                                "trackNumber": 4,
+                                "url": "https://music.apple.com/jp/album/%E8%8D%8A%E3%81%AE%E8%96%94%E8%96%87/1855824537?i=1855824543"
+                            },
+                            "type": "songs"
+                        },
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824545",
+                            "id": 1855824545,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "大濱健悟",
+                                "discNumber": 1,
+                                "durationInMillis": 219270,
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": true,
+                                "name": "もう何もいらない未来 (Instrumental)",
+                                "releaseDate": "2025-12-12T00:00:00.000Z",
+                                "trackNumber": 5,
+                                "url": "https://music.apple.com/jp/album/%E3%82%82%E3%81%86%E4%BD%95%E3%82%82%E3%81%84%E3%82%89%E3%81%AA%E3%81%84%E6%9C%AA%E6%9D%A5-instrumental/1855824537?i=1855824545"
+                            },
+                            "type": "songs"
+                        },
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824546",
+                            "id": 1855824546,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "Night to Lie",
+                                "discNumber": 1,
+                                "durationInMillis": 200527,
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": true,
+                                "name": "命をくれよ (Instrumental)",
+                                "releaseDate": "2025-12-12T00:00:00.000Z",
+                                "trackNumber": 6,
+                                "url": "https://music.apple.com/jp/album/%E5%91%BD%E3%82%92%E3%81%8F%E3%82%8C%E3%82%88-instrumental/1855824537?i=1855824546"
+                            },
+                            "type": "songs"
+                        },
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824548",
+                            "id": 1855824548,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "富田拓志",
+                                "discNumber": 1,
+                                "durationInMillis": 188739,
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": true,
+                                "name": "arrow (Instrumental)",
+                                "releaseDate": "2025-12-12T00:00:00.000Z",
+                                "trackNumber": 7,
+                                "url": "https://music.apple.com/jp/album/arrow-instrumental/1855824537?i=1855824548"
+                            },
+                            "type": "songs"
+                        },
+                        {
+                            "href": "/v1/catalog/jp/songs/1855824549",
+                            "id": 1855824549,
+                            "attributes": {
+                                "albumName": "全部をさらして生きてやる",
+                                "artistName": "トゲナシトゲアリ",
+                                "artwork": {
+                                    "bgColor": "a9aaa3",
+                                    "height": 3000,
+                                    "textColor1": "10110a",
+                                    "textColor2": "14171a",
+                                    "textColor3": "2e3029",
+                                    "textColor4": "323535",
+                                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/1c/77/8b1c776c-c84e-4135-1498-b2da5142e10f/25UM1IM62237.rgb.jpg/{w}x{h}bb.jpg",
+                                    "width": 3000
+                                },
+                                "composerName": "大濱健悟",
+                                "discNumber": 1,
+                                "durationInMillis": 212264,
+                                "hasLyrics": false,
+                                "isAppleDigitalMaster": true,
+                                "name": "荊の薔薇 (Instrumental)",
+                                "releaseDate": "2025-12-12T00:00:00.000Z",
+                                "trackNumber": 8,
+                                "url": "https://music.apple.com/jp/album/%E8%8D%8A%E3%81%AE%E8%96%94%E8%96%87-instrumental/1855824537?i=1855824549"
+                            },
+                            "type": "songs"
+                        }
+                    ],
+                    "href": "/v1/catalog/jp/albums/1855824537/tracks"
+                }
+            },
+            "type": "albums"
+        }
+    ]
+}

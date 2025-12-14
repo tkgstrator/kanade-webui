@@ -9,7 +9,7 @@ type Track = {
   attributes?: {
     name: string
     artistName: string
-    durationInMillis: number
+    durationInMillis?: number
     trackNumber: number
     discNumber: number
   }
