@@ -4,7 +4,7 @@ import { useSuspenseQuery } from '@tanstack/react-query'
 import { Link } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
-import { type AlbumsDatum, client } from '@/lib/client'
+import { type AlbumDatum, client, type SongDatum } from '@/lib/client'
 
 function formatDuration(ms: number): string {
   const minutes = Math.floor(ms / 60000)
@@ -16,7 +16,7 @@ function getArtworkUrl(url: string, size: number): string {
   return url.replace('{w}', size.toString()).replace('{h}', size.toString())
 }
 
-function SongListItem({ song }: { song: AlbumsDatum }) {
+function SongListItem({ song }: { song: SongDatum }) {
   const { attributes } = song
   return (
     <div className="flex items-center gap-3 rounded-md p-2">
@@ -39,7 +39,7 @@ function SongListItem({ song }: { song: AlbumsDatum }) {
   )
 }
 
-function SongList({ songs }: { songs: AlbumsDatum[] }) {
+function SongList({ songs }: { songs: SongDatum[] }) {
   return (
     <div className="flex flex-col">
       {songs.map((song) => (
@@ -49,13 +49,13 @@ function SongList({ songs }: { songs: AlbumsDatum[] }) {
   )
 }
 
-function AlbumListItem({ album }: { album: AlbumsDatum }) {
+function AlbumListItem({ album }: { album: AlbumDatum }) {
   const { attributes } = album
   return (
     <div className="flex flex-col gap-2 rounded-lg">
       <Link
         className="group relative block overflow-hidden rounded-md"
-        params={{ album_id: album.id }}
+        params={{ album_id: Number(album.id) }}
         to="/albums/$album_id"
       >
         <img
@@ -69,21 +69,21 @@ function AlbumListItem({ album }: { album: AlbumsDatum }) {
       <div className="min-w-0">
         <Link
           className="block truncate text-xs md:text-sm text-foreground hover:underline"
-          params={{ album_id: album.id }}
+          params={{ album_id: Number(album.id) }}
           to="/albums/$album_id"
         >
           {attributes.name}
         </Link>
         <div className="block truncate text-xs text-muted-foreground">{attributes.artistName}</div>
         <p className="text-xs text-muted-foreground tabular-nums">
-          {attributes.releaseDate.split('-')[0]} • {attributes.trackCount}曲
+          {attributes.releaseDate?.split('-')[0] ?? ''} • {attributes.trackCount}曲
         </p>
       </div>
     </div>
   )
 }
 
-function AlbumList({ albums }: { albums: AlbumsDatum[] }) {
+function AlbumList({ albums }: { albums: AlbumDatum[] }) {
   return (
     <>
       {/* モバイル: カルーセル */}
@@ -145,12 +145,12 @@ const Content = ({ term }: SearchResultsProps): JSX.Element => {
       <section>
         {' '}
         <h2 className="mb-4 text-lg font-semibold text-foreground">アルバム</h2>
-        <AlbumList albums={albums?.data ?? []} />
+        <AlbumList albums={(albums?.data?.filter((a) => a.type === 'albums') as AlbumDatum[]) ?? []} />
       </section>
       {/* 曲 */}
       <section>
         <h2 className="mb-4 text-lg font-semibold text-foreground">曲</h2>
-        <SongList songs={songs?.data ?? []} />
+        <SongList songs={(songs?.data?.filter((s) => s.type === 'songs') as SongDatum[]) ?? []} />
       </section>
     </div>
   )

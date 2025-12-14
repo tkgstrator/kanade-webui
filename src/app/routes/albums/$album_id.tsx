@@ -5,7 +5,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
 import { z } from 'zod'
 import { AlbumHeader, AlbumSkeleton, TrackList } from '@/components/album'
-import { client } from '@/lib/client'
+import { type CatalogAlbumDatum, client } from '@/lib/client'
 
 export const Route = createFileRoute('/albums/$album_id')({
   component: Page,
@@ -34,12 +34,15 @@ const Content = (): JSX.Element => {
     queryKey: ['album', album_id],
   })
 
+  const album = albums[0] as CatalogAlbumDatum
+  const tracks = album.relationships?.tracks?.data?.filter((t) => t.type === 'songs') ?? []
+
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
-      <AlbumHeader album={albums[0]} />
+      <AlbumHeader album={album} />
       <section className="w-full px-6">
         <h2 className="mb-4 text-lg font-semibold text-foreground">収録曲</h2>
-        <TrackList tracks={albums[0].relationships.tracks.data} />
+        <TrackList tracks={tracks} />
       </section>
     </div>
   )
