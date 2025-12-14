@@ -151,27 +151,27 @@ const ViewSchema = z.object({
       DatumSchema.extend({
         attributes: Attribute.AlbumSchema,
         type: z.literal('albums'),
-      }),
+      }).openapi('AlbumDatum'),
       DatumSchema.extend({
         attributes: Attribute.ArtistSchema,
         type: z.literal('artists'),
-      }),
+      }).openapi('ArtistDatum'),
       DatumSchema.extend({
         attributes: Attribute.MusicVideoSchema,
         type: z.literal('music-videos'),
-      }),
+      }).openapi('MusicVideoDatum'),
       DatumSchema.extend({
         attributes: Attribute.PlaylistSchema,
         type: z.literal('playlists'),
-      }),
+      }).openapi('PlaylistDatum'),
       DatumSchema.extend({
         attributes: Attribute.SongSchema,
         type: z.literal('songs'),
-      }),
+      }).openapi('SongDatum'),
       DatumSchema.extend({
         attributes: Attribute.StationSchema,
         type: z.literal('stations'),
-      }),
+      }).openapi('StationDatum'),
     ])
     .array(),
   href: z.string().nonempty(),
@@ -302,13 +302,13 @@ export const CatalogSchema = z
           id: z.coerce.number().int().positive(),
           relationships: RelationshipSchema,
           type: z.literal('albums'),
-        }),
+        }).openapi('CatalogAlbumDatum'),
         DatumSchema.extend({
           attributes: Attribute.ArtistSchema,
           id: z.coerce.number().int().positive(),
           relationships: RelationshipSchema,
           type: z.literal('artists'),
-        }),
+        }).openapi('CatalogArtistDatum'),
       ])
       .array()
       .nonempty(),

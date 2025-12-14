@@ -1,7 +1,7 @@
 import { makeApi, Zodios } from '@zodios/core'
 import { HTTPException } from 'hono/http-exception'
 import { z } from 'zod'
-import { CatalogSchema, SearchCatalogResources, TypeSchema } from '@/schemas/schema/common.dto'
+import { CatalogSchema, SearchCatalogResources, TypeSchema } from '@/schemas/common.dto'
 
 const definition = makeApi([
   {

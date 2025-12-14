@@ -14,3 +14,6 @@ This repository uses the following technologies:
 - TypeScript
 - Shadcn
 - Next.js
+
+Editing source code:
+- Do not edit `src/lib/client.ts`.

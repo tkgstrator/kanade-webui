@@ -12,8 +12,8 @@ import {
   GetCatalogArtist,
   SearchCatalogResources,
   TypeSchema,
-} from './schemas/schema/common.dto'
-import { QueueBodySchema, QueueParamSchema, QueueQuerySchema, QueueResponseSchema } from './schemas/schema/queue.dto'
+} from './schemas/common.dto'
+import { QueueBodySchema, QueueParamSchema, QueueQuerySchema, QueueResponseSchema } from './schemas/queue.dto'
 import type { Env } from './utils/binding'
 import { createClient } from './utils/client'
 

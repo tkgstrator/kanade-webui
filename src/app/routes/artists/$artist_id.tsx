@@ -5,7 +5,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
 import { z } from 'zod'
 import { AlbumSection, ArtistHeader, ArtistSkeleton } from '@/components/artist'
-import { client } from '@/lib/client'
+import { type CatalogArtistDatum, client } from '@/lib/client'
 
 export const Route = createFileRoute('/artists/$artist_id')({
   component: Page,
@@ -32,11 +32,12 @@ const Content = (): JSX.Element => {
     queryKey: ['artist', artist_id],
   })
 
-  const artist = data.data[0]
-  const albums = artist.relationships.albums.data
+  const artist = data.data[0] as CatalogArtistDatum
+  const albumsData = artist.relationships?.albums?.data ?? []
+  const albums = albumsData.filter((a) => a.type === 'albums')
 
-  const fullAlbums = albums.filter((album) => !album.attributes.isSingle)
-  const singles = albums.filter((album) => album.attributes.isSingle)
+  const fullAlbums = albums.filter((album) => album.attributes?.isSingle === false)
+  const singles = albums.filter((album) => album.attributes?.isSingle === true)
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">

@@ -1,9 +1,29 @@
-import { z } from "@hono/zod-openapi"
+import z from 'zod'
 
-export const QueueSchema = z.object({
-  data: z.object({
-    url: z.url(),
-  }),
-  id: z.coerce.number().int().positive(),
-  timestamp: z.number().int().positive(),
-})
+export const QueueParamSchema = z
+  .object({
+    album_id: z.coerce.number().int(),
+  })
+  .openapi('QueueParam')
+
+export const QueueQuerySchema = z
+  .object({
+    overwrite: z.coerce.boolean().optional().default(false),
+  })
+  .openapi('QueueQuery')
+
+export const QueueResponseSchema = z.object({}).openapi('QueueResponse')
+
+export const QueueBodySchema = z
+  .object({
+    album_id: z.coerce.number().int(),
+    options: z
+      .object({
+        overwrite: z.coerce.boolean().optional().default(false),
+      })
+      .optional()
+      .default({
+        overwrite: true,
+      }),
+  })
+  .openapi('QueueBody')
