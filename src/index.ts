@@ -13,7 +13,7 @@ import {
   SearchCatalogResources,
   TypeSchema,
 } from './schemas/common.dto'
-import { QueueBodySchema, QueueParamSchema, QueueQuerySchema, QueueResponseSchema } from './schemas/queue.dto'
+import { QueueBodySchema, QueueResponseSchema } from './schemas/queue.dto'
 import type { Env } from './utils/binding'
 import { createClient } from './utils/client'
 
@@ -45,6 +45,7 @@ app.use(async (c: Context<Env>, next) => {
 
   await next()
 })
+
 app.openapi(
   createRoute({
     description:
@@ -83,6 +84,7 @@ app.openapi(
     return c.json(response)
   },
 )
+
 app.openapi(
   createRoute({
     description: 'Retrieves detailed information about a specific album by its ID.',
@@ -114,6 +116,7 @@ app.openapi(
     return c.json(response)
   },
 )
+
 app.openapi(
   createRoute({
     description: 'Retrieves detailed information about a specific album by its ID.',
@@ -150,6 +153,7 @@ app.openapi(
     return c.json(response)
   },
 )
+
 app.openapi(
   createRoute({
     description: 'Retrieves detailed information about a specific album by its ID.',

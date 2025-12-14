@@ -121,12 +121,16 @@ const RelationshipSchema = z.record(
     .object({
       data: z
         .discriminatedUnion('type', [
-          DatumSchema.extend({ type: z.literal('artists') }),
+          DatumSchema.extend({
+            id: z.coerce.number().int().positive(),
+            type: z.literal('artists'),
+          }),
           DatumSchema.extend({
             attributes: Attribute.SongSchema.extend({
               durationInMillis: z.number().int().positive().optional(),
               releaseDate: z.coerce.date().optional(),
             }),
+            id: z.coerce.number().int().positive(),
             type: z.literal('songs'),
           }),
           DatumSchema.extend({
