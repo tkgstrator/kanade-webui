@@ -204,12 +204,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -344,12 +339,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -445,12 +435,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -644,12 +629,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -770,12 +750,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -805,6 +780,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -891,12 +890,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -1031,12 +1025,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -1132,12 +1121,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -1331,12 +1315,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -1457,12 +1436,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -1492,6 +1466,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -1578,12 +1576,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -1718,12 +1711,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -1819,12 +1807,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2018,12 +2001,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2144,12 +2122,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2179,6 +2152,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -2265,12 +2262,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2405,12 +2397,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2506,12 +2493,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2705,12 +2687,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2831,12 +2808,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -2866,6 +2838,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -2952,12 +2948,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -3092,12 +3083,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -3193,12 +3179,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -3392,12 +3373,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -3518,12 +3494,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -3553,6 +3524,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -3639,12 +3634,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -3779,12 +3769,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -3880,12 +3865,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4079,12 +4059,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4205,12 +4180,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4240,6 +4210,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -4326,12 +4320,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4466,12 +4455,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4567,12 +4551,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4766,12 +4745,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4892,12 +4866,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -4927,6 +4896,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -5013,12 +5006,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -5153,12 +5141,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -5254,12 +5237,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -5453,12 +5431,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -5579,12 +5552,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -5614,6 +5582,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -5700,12 +5692,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -5840,12 +5827,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -5941,12 +5923,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -6140,12 +6117,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -6266,12 +6238,7 @@
                                               }
                                             },
                                             "required": [
-                                              "bgColor",
                                               "height",
-                                              "textColor1",
-                                              "textColor2",
-                                              "textColor3",
-                                              "textColor4",
                                               "url",
                                               "width"
                                             ]
@@ -6301,6 +6268,30 @@
                                       "href",
                                       "id",
                                       "attributes",
+                                      "type"
+                                    ]
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "id": {
+                                        "type": "string",
+                                        "minLength": 1
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "apple-curators"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "href",
+                                      "id",
                                       "type"
                                     ]
                                   }
@@ -6490,12 +6481,7 @@
                                       }
                                     },
                                     "required": [
-                                      "bgColor",
                                       "height",
-                                      "textColor1",
-                                      "textColor2",
-                                      "textColor3",
-                                      "textColor4",
                                       "url",
                                       "width"
                                     ]
@@ -6658,12 +6644,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -6787,12 +6768,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -7027,12 +7003,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -7156,12 +7127,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -7396,12 +7362,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -7525,12 +7486,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -7765,12 +7721,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -7894,12 +7845,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -8134,12 +8080,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -8263,12 +8204,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -8481,12 +8417,7 @@
                                       }
                                     },
                                     "required": [
-                                      "bgColor",
                                       "height",
-                                      "textColor1",
-                                      "textColor2",
-                                      "textColor3",
-                                      "textColor4",
                                       "url",
                                       "width"
                                     ]
@@ -8606,12 +8537,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -8735,12 +8661,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -8975,12 +8896,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -9104,12 +9020,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -9344,12 +9255,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -9473,12 +9379,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -9713,12 +9614,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -9842,12 +9738,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -10082,12 +9973,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -10211,12 +10097,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -10550,12 +10431,7 @@
                                       }
                                     },
                                     "required": [
-                                      "bgColor",
                                       "height",
-                                      "textColor1",
-                                      "textColor2",
-                                      "textColor3",
-                                      "textColor4",
                                       "url",
                                       "width"
                                     ]
@@ -10718,12 +10594,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -10847,12 +10718,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -11087,12 +10953,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -11216,12 +11077,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -11456,12 +11312,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -11585,12 +11436,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -11825,12 +11671,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -11954,12 +11795,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -12194,12 +12030,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -12323,12 +12154,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -12541,12 +12367,7 @@
                                       }
                                     },
                                     "required": [
-                                      "bgColor",
                                       "height",
-                                      "textColor1",
-                                      "textColor2",
-                                      "textColor3",
-                                      "textColor4",
                                       "url",
                                       "width"
                                     ]
@@ -12666,12 +12487,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -12795,12 +12611,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -13035,12 +12846,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -13164,12 +12970,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -13404,12 +13205,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -13533,12 +13329,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -13773,12 +13564,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -13902,12 +13688,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -14142,12 +13923,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
@@ -14271,12 +14047,7 @@
                                                         }
                                                       },
                                                       "required": [
-                                                        "bgColor",
                                                         "height",
-                                                        "textColor1",
-                                                        "textColor2",
-                                                        "textColor3",
-                                                        "textColor4",
                                                         "url",
                                                         "width"
                                                       ]
