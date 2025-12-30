@@ -5,6 +5,7 @@ import { HTTPException } from 'hono/http-exception'
 import { logger } from 'hono/logger'
 import { timeout } from 'hono/timeout'
 import type { ContentfulStatusCode } from 'hono/utils/http-status'
+import { ZodError } from 'zod'
 import { isTokenExpired, signToken } from './lib/token'
 import {
   CatalogSchema,
@@ -19,18 +20,6 @@ import { createClient } from './utils/client'
 
 const app = new Hono<Env>()
 
-app.onError(async (error, c) => {
-  console.error(error)
-  if (error instanceof HTTPException) {
-    console.error(error)
-    return c.json({ message: error.message }, error.status)
-    // return c.json({ message: JSON.parse(error.message) }, error.status)
-  }
-  if (error.name === 'ZodError') {
-    return c.json({ description: error.cause, message: JSON.parse(error.message) }, 400)
-  }
-  return c.json({ message: error.message }, 500)
-})
 app.use(logger())
 app.use(timeout(5 * 1000)) // 5 seconds
 app.use(contextStorage())
@@ -202,5 +191,20 @@ app.openapi(
     return c.json(response)
   },
 )
+
+app.onError(async (error, c) => {
+  if (error instanceof HTTPException) {
+    console.error('HTTPException')
+    return c.json({ message: error.message }, error.status)
+    // return c.json({ message: JSON.parse(error.message) }, error.status)
+  }
+  if (error.name === 'ZodError') {
+    console.error('ZodError')
+    return c.json({ description: error.cause, message: JSON.parse(error.message) }, 400)
+  }
+  console.error(error.name, error instanceof ZodError)
+  // console.error(JSON.stringify(Object.keys(error), null, 2))
+  return c.json({ data: error.data, message: JSON.parse(error.cause.message) }, 500)
+})
 
 export default app

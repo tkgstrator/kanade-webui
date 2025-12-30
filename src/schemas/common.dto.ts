@@ -13,12 +13,12 @@ export const TypeSchema = z.enum([
 ])
 
 const ArtworkSchema = z.object({
-  bgColor: z.string().nonempty(),
+  bgColor: z.string().nonempty().optional(),
   height: z.number().int().positive(),
-  textColor1: z.string().nonempty(),
-  textColor2: z.string().nonempty(),
-  textColor3: z.string().nonempty(),
-  textColor4: z.string().nonempty(),
+  textColor1: z.string().nonempty().optional(),
+  textColor2: z.string().nonempty().optional(),
+  textColor3: z.string().nonempty().optional(),
+  textColor4: z.string().nonempty().optional(),
   url: z.url(),
   width: z.number().int().positive(),
 })
@@ -157,6 +157,9 @@ const ViewSchema = z.object({
       DatumSchema.extend({
         attributes: Attribute.StationSchema,
         type: z.literal('stations'),
+      }),
+      DatumSchema.extend({
+        type: z.literal('apple-curators'),
       }),
     ])
     .array(),

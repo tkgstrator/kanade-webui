@@ -8,6 +8,8 @@ services:
       - ../:/home/vscode/app:cached
     environment:
       REDIS_URL: redis://redis:6379
+    ports:
+      - 15173:5173
     depends_on:
       redis:
         condition: service_healthy
