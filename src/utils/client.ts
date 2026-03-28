@@ -86,7 +86,7 @@ export const createClient = (token: string) => {
     },
   })
   client.use({
-    error: (api, config, error) => {
+    error: (_api, _config, error) => {
       console.error(error.message)
       throw new HTTPException(400, { message: error.message })
     },

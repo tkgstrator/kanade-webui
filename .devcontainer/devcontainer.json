@@ -67,6 +67,7 @@
     "ghcr.io/devcontainers/features/git:1": {
       "version": "2.52.0"
     },
+    "ghcr.io/duduribeiro/devcontainer-features/tmux:1": {},
     "ghcr.io/devcontainers/features/node:1.5.0": {
       "version": "22.14.0"
     },

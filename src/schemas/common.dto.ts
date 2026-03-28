@@ -33,9 +33,9 @@ namespace Attribute {
     isMasteredForItunes: z.boolean(),
     isSingle: z.boolean(),
     name: z.string().nonempty(),
-    playParams: z.object({}),
+    playParams: z.record(z.string(), z.unknown()),
     recordLabel: z.string().nonempty(),
-    releaseDate: z.coerce.date(),
+    releaseDate: z.string().nonempty(),
     trackCount: z.number().int().positive(),
     upc: z.string().nonempty(),
     url: z.string().nonempty(),
@@ -54,7 +54,7 @@ namespace Attribute {
     has4K: z.boolean(),
     hasHDR: z.boolean(),
     name: z.string().nonempty(),
-    releaseDate: z.coerce.date(),
+    releaseDate: z.string().nonempty(),
   })
 
   export const PlaylistSchema = z.object({
@@ -80,7 +80,7 @@ namespace Attribute {
     hasLyrics: z.boolean(),
     isAppleDigitalMaster: z.boolean(),
     name: z.string().nonempty(),
-    releaseDate: z.coerce.date().optional(),
+    releaseDate: z.string().nonempty().optional(),
     trackNumber: z.number().int().positive(),
     url: z.url(),
   })
@@ -110,7 +110,7 @@ const RelationshipSchema = z.record(
           DatumSchema.extend({
             attributes: Attribute.SongSchema.extend({
               durationInMillis: z.number().int().positive().optional(),
-              releaseDate: z.coerce.date().optional(),
+              releaseDate: z.string().nonempty().optional(),
             }),
             id: z.coerce.number().int().positive(),
             type: z.literal('songs'),
@@ -264,3 +264,8 @@ export const CatalogSchema = z.object({
 export type Catalog = z.infer<typeof CatalogSchema>
 export type CatalogAlbumDatum = Extract<Catalog['data'][number], { type: 'albums' }>
 export type CatalogArtistDatum = Extract<Catalog['data'][number], { type: 'artists' }>
+
+type SearchResults = z.infer<typeof SearchCatalogResources.ResponseSchema>['results']
+type ViewData = NonNullable<SearchResults[keyof SearchResults]>['data']
+export type AlbumDatum = Extract<ViewData[number], { type: 'albums' }>
+export type SongDatum = Extract<ViewData[number], { type: 'songs' }>

@@ -1,22 +1,17 @@
-'use client'
-
 import { useMutation } from '@tanstack/react-query'
 import { Link } from '@tanstack/react-router'
 import dayjs from 'dayjs'
-import localizedFormat from 'dayjs/plugin/localizedFormat'
 import 'dayjs/locale/ja'
+import localizedFormat from 'dayjs/plugin/localizedFormat'
 import { Download, Shuffle } from 'lucide-react'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { client } from '@/lib/client'
+import { getArtworkUrl } from '@/lib/utils'
 import type { CatalogAlbumDatum } from '@/schemas/common.dto'
 
 dayjs.extend(localizedFormat)
 dayjs.locale('ja')
-
-function getArtworkUrl(url: string, size: number): string {
-  return url.replace('{w}', size.toString()).replace('{h}', size.toString())
-}
 
 export function AlbumHeader({ album }: { album: CatalogAlbumDatum }) {
   const { attributes, relationships } = album
@@ -45,12 +40,12 @@ export function AlbumHeader({ album }: { album: CatalogAlbumDatum }) {
           draggable={false}
           src={getArtworkUrl(attributes.artwork.url, 600)}
         />
-        <div className="flex flex-col items-center lg:items-start lg:justify-between lg:h-67.5">
+        <div className="flex flex-col items-center lg:h-67.5 lg:items-start lg:justify-between">
           <div />
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="text-3xl text-foreground text-center lg:text-left font-semibold">{attributes.name}</h1>
+            <h1 className="text-center text-3xl font-semibold text-foreground lg:text-left">{attributes.name}</h1>
             <Link
-              className="font-medium text-foreground hover:underline text-2xl"
+              className="text-2xl font-medium text-foreground hover:underline"
               params={{ artist_id: Number(relationships?.artists?.data?.[0]?.id) }}
               to="/artists/$artist_id"
             >
@@ -58,15 +53,15 @@ export function AlbumHeader({ album }: { album: CatalogAlbumDatum }) {
             </Link>
             <span className="text-sm text-muted-foreground">{dayjs(attributes.releaseDate).format('LL')}</span>
           </div>
-          <div className="flex gap-4 mt-4 lg:mt-0">
+          <div className="mt-4 flex gap-4 lg:mt-0">
             <Button
-              className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-31.75 text-sm rounded-sm gap-2"
+              className="h-7 w-31.75 gap-2 rounded-sm bg-red-600 px-4 text-sm text-white hover:bg-red-700"
               onClick={() => mutate()}
             >
               <Download className="size-4" />
               ダウンロード
             </Button>
-            <Button className="bg-red-600 hover:bg-red-700 text-white px-4 h-7 w-31.75 text-sm rounded-sm gap-2">
+            <Button className="h-7 w-31.75 gap-2 rounded-sm bg-red-600 px-4 text-sm text-white hover:bg-red-700">
               <Shuffle className="size-4" />
               シャッフル
             </Button>

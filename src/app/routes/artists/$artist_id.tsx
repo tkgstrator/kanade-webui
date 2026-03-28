@@ -1,11 +1,10 @@
-'use client'
-
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
 import { z } from 'zod'
 import { AlbumSection, ArtistHeader, ArtistSkeleton } from '@/components/artist'
-import { type CatalogArtistDatum, client } from '@/lib/client'
+import { client } from '@/lib/client'
+import type { CatalogArtistDatum } from '@/schemas/common.dto'
 
 export const Route = createFileRoute('/artists/$artist_id')({
   component: Page,
@@ -33,11 +32,12 @@ const Content = (): JSX.Element => {
   })
 
   const artist = data.data[0] as CatalogArtistDatum
-  const albumsData = artist.relationships?.albums?.data ?? []
-  const albums = albumsData.filter((a) => a.type === 'albums')
+  const albumsData = (artist.relationships?.albums?.data ?? []).filter(
+    (a): a is Extract<typeof a, { type: 'albums' }> => a.type === 'albums',
+  )
 
-  const fullAlbums = albums.filter((album) => album.attributes?.isSingle === false)
-  const singles = albums.filter((album) => album.attributes?.isSingle === true)
+  const fullAlbums = albumsData.filter((album) => album.attributes?.isSingle === false)
+  const singles = albumsData.filter((album) => album.attributes?.isSingle === true)
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
