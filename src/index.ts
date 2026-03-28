@@ -204,7 +204,8 @@ app.onError(async (error, c) => {
   }
   console.error(error.name, error instanceof ZodError)
   // console.error(JSON.stringify(Object.keys(error), null, 2))
-  return c.json({ data: error.data, message: JSON.parse(error.cause.message) }, 500)
+  const cause = error.cause instanceof Error ? error.cause : undefined
+  return c.json({ message: cause ? JSON.parse(cause.message) : error.message }, 500)
 })
 
 export default app

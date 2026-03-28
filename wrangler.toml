@@ -3,44 +3,10 @@ compatibility_date = "2025-07-12"
 compatibility_flags = ["nodejs_compat_v2"]
 main = "src/index.ts"
 
-[assets]
-directory = "dist"
-not_found_handling = "single-page-application"
-binding = "assets"
-
-# [vars]
-# PROXY_URL = "http://backend:5000"
-
-[env.prod.vars]
-APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"
-APPLE_MUSIC_KEY_ID = "68B6NWM78Z"
-CF_ACCESS_CLIENT_ID = "cfdfd7d6e420692d0d5a04db0872e875.access"
-PROXY_URL = "https://music-backend.tkgstrator.work"
-
-# [env.dev.vars]
-# PROXY_URL = "http://backend:5000"
-
-[env.prod]
-name = "musickit-app-prod"
-workers_dev = false
-preview_urls = false
-routes = [{ pattern = "music.tkgstrator.work", custom_domain = true }]
-
-[env.dev]
-name = "musickit-app-dev"
-workers_dev = true
-preview_urls = true
-routes = [{ pattern = "music-dev.tkgstrator.work", custom_domain = true }]
-
-[env.prod.assets]
-directory = "dist"
-not_found_handling = "single-page-application"
-binding = "assets"
-
-[env.dev.assets]
-directory = "dist"
-not_found_handling = "single-page-application"
-binding = "assets"
+[dev]
+ip = "0.0.0.0"
+port = 8787
+inspector_port = 9229
 
 [observability]
 enabled = false
@@ -57,7 +23,36 @@ enabled = false
 persist = true
 head_sampling_rate = 1
 
-[dev]
-ip = "0.0.0.0"
-port = 8787
-inspector_port = 9229
+# -------------------------------------------------------------------
+# prod environment
+# -------------------------------------------------------------------
+[env.prod]
+name = "musickit-app-prod"
+workers_dev = false
+preview_urls = false
+routes = [{ pattern = "music.tkgstrator.work", custom_domain = true }]
+
+[env.prod.assets]
+directory = "dist"
+not_found_handling = "single-page-application"
+binding = "assets"
+
+[env.prod.vars]
+APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"
+APPLE_MUSIC_KEY_ID = "68B6NWM78Z"
+CF_ACCESS_CLIENT_ID = "cfdfd7d6e420692d0d5a04db0872e875.access"
+PROXY_URL = "https://kanade-backend.tkgstrator.work"
+
+# -------------------------------------------------------------------
+# dev environment
+# -------------------------------------------------------------------
+[env.dev]
+name = "musickit-app-dev"
+workers_dev = true
+preview_urls = true
+routes = [{ pattern = "music-dev.tkgstrator.work", custom_domain = true }]
+
+[env.dev.assets]
+directory = "dist"
+not_found_handling = "single-page-application"
+binding = "assets"

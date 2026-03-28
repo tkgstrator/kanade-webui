@@ -14,13 +14,22 @@ const hash = execSync("git rev-parse --short HEAD").toString().trim()
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
+    server: {
+      port: 15175
+    },
     define: {
       __APP_VERSION__: JSON.stringify(version),
       __GIT_HASH__: JSON.stringify(hash),
     },
     envPrefix: "VITE_", // VITE_で始まる環境変数を自動で読み込む
-    esbuild: {
-      // drop: mode === "production" ? ["console", "debugger"] : [],
+    build: {
+      rolldownOptions: {
+        output: {
+          minify: mode === "production"
+            ? { compress: { dropConsole: true, dropDebugger: true } }
+            : false,
+        },
+      },
     },
     plugins: [
       tanstackRouter({

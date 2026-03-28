@@ -1,10 +1,5 @@
-'use client'
-
-import type { CatalogArtistDatum } from '@/lib/client'
-
-function getArtworkUrl(url: string, size: number): string {
-  return url.replace('{w}', size.toString()).replace('{h}', size.toString())
-}
+import { getArtworkUrl } from '@/lib/utils'
+import type { CatalogArtistDatum } from '@/schemas/common.dto'
 
 export function ArtistHeader({ artist }: { artist: CatalogArtistDatum }) {
   const { attributes } = artist
@@ -14,7 +9,7 @@ export function ArtistHeader({ artist }: { artist: CatalogArtistDatum }) {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           alt={attributes.name}
-          className="h-full w-full object-cover opacity-40 blur-2xl scale-110"
+          className="h-full w-full scale-110 object-cover opacity-40 blur-2xl"
           draggable={false}
           src={getArtworkUrl(attributes.artwork?.url ?? '', 800)}
         />
