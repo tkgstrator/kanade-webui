@@ -10,6 +10,13 @@
     "files.watcherExclude": {
         ".venv": true
     },
+    "files.exclude": {
+        "dev-dist": true,
+        "dist": true,
+        "node_modules": true,
+        ".wrangler": true,
+        ".tanstack": true
+    },
     "scm.defaultViewMode": "tree",
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
