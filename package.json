@@ -58,6 +58,7 @@
   },
   "description": "MusicKit App",
   "devDependencies": {
+    "@anthropic-ai/claude-code": "^2.1.86",
     "@biomejs/biome": "^2.4.9",
     "@hono/vite-dev-server": "^0.25.1",
     "@tanstack/router-devtools": "^1.166.11",
