@@ -20,39 +20,18 @@ bun run generate   # OpenAPI スキーマから Zodios クライアント生成
 
 ## コーディング規約
 
-### フォーマット (Biome)
-- インデント: スペース 2 つ
-- クォート: シングルクォート (`'`)
-- セミコロン: 不要 (`asNeeded`)
-- 行幅: 120 文字
-- インポート: 自動整列 (Biome assist)
+共通の技術スタック規約は `~/.claude/skills/` のスキルで管理:
+- **typescript** — TypeScript 規約 (strict, z.infer, as 禁止, dayjs)
+- **hono** — Hono API 規約 (OpenAPIHono, zod-openapi, hono-pino)
+- **react-pwa** — React + PWA 規約 (TanStack Router, Service Worker)
+- **biome** — Biome フォーマット規約
+- **bun** — Bun ランタイム規約 (bunx, bun add)
 
-### TypeScript
-- `strict: true` + `strictNullChecks: true`
-- `noUnusedLocals` / `noUnusedParameters` で未使用変数禁止
-- `verbatimModuleSyntax`: 型インポートは `import type` を使う
+### プロジェクト固有
 - パスエイリアス: `@/*` → `src/*`
-- **型定義は独自に `type` / `interface` を書かず、Zod スキーマから `z.infer<>` で導出する**
-- **`as` による型アサーションは禁止。`tsc` を通すためだけの `as` は使わない**
-  - 型エラーが出る場合はスキーマ定義やロジックを修正して型安全に解決する
-  - `as const` は許可
-
-### Zod スキーマ
-- スキーマは `src/schemas/common.dto.ts` に集約
-- 新しいエンドポイントを追加するときは必ずここにスキーマを定義してから実装する
-- `@hono/zod-openapi` の `z` を使う (標準の `zod` ではなく)
-
-### Hono API
-- エンドポイントは `OpenAPIHono` + `createRoute` で定義する
-- バリデーション済みデータは `c.req.valid('query')` / `c.req.valid('param')` / `c.req.valid('json')` で取得する
-- エラーは `HTTPException` を throw する
-
-### React / フロントエンド
-- ルートは `src/app/routes/` 配下にファイルベースで作成 (TanStack Router)
-- `routeTree.gen.ts` は自動生成なので編集しない
-- `src/components/ui/` 配下の UI プリミティブは Biome 対象外
+- Zod スキーマは `src/schemas/common.dto.ts` に集約し、エンドポイント実装前に定義する
+- `src/components/ui/` 配下の UI プリミティブは編集対象外
 - 日本語 UI テキストを使う (検索、アルバム、アーティスト 等)
-- タイムゾーン: Asia/Tokyo (dayjs)
 
 ## ディレクトリ構成
 
@@ -108,13 +87,6 @@ PROXY_URL                  # バックエンドプロキシ URL
 - **dev**: `music-dev.tkgstrator.work` (Cloudflare Workers `env.dev`)
 - デプロイコマンド: `wrangler deploy --env prod`
 
-<!-- ## エージェントチーム
-
-コードの実装・改修タスクを受けた場合は、常に `orchestrator` エージェント (Agent Teams) を使って作業を進めること。
-直接コードを編集するのではなく、orchestrator にタスクを委譲し、orchestrator が frontend-implementer / backend-implementer / test-runner / doc-updater を適切に呼び出して作業を完了させる。
-
-- **対象**: 機能追加、バグ修正、リファクタリングなど、コード変更を伴うすべてのタスク
-- **例外**: 単純な質問への回答、コードの説明、CLAUDE.md 自体の編集など、コード変更を伴わないタスクは直接対応して良い -->
 
 ## PWA バージョン管理と更新システム
 
@@ -176,16 +148,3 @@ localStorage の保存ハッシュと比較
 - `src/app/routeTree.gen.ts` は TanStack Router が自動生成。手動編集不可
 - Apple Music API のストアフロントは現在 `jp` 固定
 - Cloudflare Workers の制約: Node.js API は `nodejs_compat_v2` フラグで一部利用可能
-- **`npx` は使わない。必ず `bunx` を使うこと**
-- **`new Date()` は使わない。日付操作には必ず `dayjs` を使うこと**
-
-```typescript
-// NG
-const now = new Date()
-const date = new Date('2024-01-01')
-
-// OK
-import dayjs from 'dayjs'
-const now = dayjs()
-const date = dayjs('2024-01-01')
-```
