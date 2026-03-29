@@ -130,7 +130,7 @@ function AlbumList({ albums }: { albums: AlbumDatum[] }) {
   return (
     <>
       {/* モバイル: カルーセル */}
-      <div className="-mx-6 md:hidden">
+      <div className="-mx-4 md:-mx-6 lg:-mx-8 md:hidden">
         <Carousel
           opts={{
             align: 'start',
@@ -139,7 +139,7 @@ function AlbumList({ albums }: { albums: AlbumDatum[] }) {
             skipSnaps: true,
           }}
         >
-          <CarouselContent className="ml-6">
+          <CarouselContent className="ml-4 md:ml-6 lg:ml-8">
             {albums.map((album) => (
               <CarouselItem className="basis-36 pl-3" key={album.id}>
                 <AlbumListItem album={album} />
@@ -165,7 +165,7 @@ function AlbumList({ albums }: { albums: AlbumDatum[] }) {
 
 function SearchSkeleton() {
   return (
-    <div className="flex flex-col gap-8 p-6">
+    <div className="flex flex-col gap-8 p-4 pb-16 md:gap-10 md:p-6 lg:p-8">
       <Skeleton className="h-8 w-64" />
       <div className="flex flex-col gap-2">
         <Skeleton className="h-6 w-24" />
@@ -212,7 +212,7 @@ const Content = ({ term }: { term: string }): JSX.Element => {
   })
 
   return (
-    <div className="flex flex-col gap-8 p-6 select-none">
+    <div className="flex flex-col gap-8 p-4 pb-16 md:gap-10 md:p-6 lg:p-8 select-none">
       <motion.h1
         className="text-2xl font-bold text-foreground"
         initial={{ opacity: 0, y: -10 }}
