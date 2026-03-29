@@ -2,9 +2,9 @@ import { createRoute, OpenAPIHono as Hono } from '@hono/zod-openapi'
 import type { Context } from 'hono'
 import { contextStorage } from 'hono/context-storage'
 import { HTTPException } from 'hono/http-exception'
-import { logger } from 'hono/logger'
 import { timeout } from 'hono/timeout'
-import { ZodError } from 'zod'
+import { pinoLogger } from 'hono-pino'
+import pino from 'pino'
 import { isTokenExpired, signToken } from './lib/token'
 import {
   CatalogSchema,
@@ -13,6 +13,7 @@ import {
   GetCatalogCharts,
   SearchCatalogResources,
   TypeSchema,
+  VersionResponseSchema,
 } from './schemas/common.dto'
 import { QueueBodySchema, QueueResponseSchema } from './schemas/queue.dto'
 import type { Env } from './utils/binding'
@@ -20,7 +21,44 @@ import { createClient } from './utils/client'
 
 const app = new Hono<Env>()
 
-app.use(logger())
+app.use(pinoLogger({
+  http: {
+    onResLevel: (c) => {
+      if (c.res.status >= 500) return 'error'
+      if (c.res.status >= 400) return 'warn'
+      return 'info'
+    },
+  },
+  pino: pino({ level: 'info' }),
+}))
+app.openapi(
+  createRoute({
+    description: 'Returns the current application version, git hash, and build timestamp.',
+    method: 'get',
+    middleware: [],
+    path: '/api/version',
+    responses: {
+      200: {
+        content: {
+          'application/json': {
+            schema: VersionResponseSchema,
+          },
+        },
+        description: 'Current version info',
+      },
+    },
+    summary: 'Get app version',
+    tags: ['System'],
+  }),
+  (c) => {
+    return c.json({
+      buildAt: __BUILD_AT__,
+      hash: __GIT_HASH__,
+      version: __APP_VERSION__,
+    })
+  },
+)
+
 app.use(timeout(5 * 1000)) // 5 seconds
 app.use(contextStorage())
 app.use(async (c: Context<Env>, next) => {
@@ -228,17 +266,16 @@ app.openapi(
 )
 
 app.onError(async (error, c) => {
+  const logger = c.var.logger
   if (error instanceof HTTPException) {
-    console.error('HTTPException')
+    logger.error({ status: error.status }, 'HTTPException')
     return c.json({ message: error.message }, error.status)
-    // return c.json({ message: JSON.parse(error.message) }, error.status)
   }
   if (error.name === 'ZodError') {
-    console.error('ZodError')
+    logger.warn({ cause: error.cause }, 'ZodError')
     return c.json({ description: error.cause, message: JSON.parse(error.message) }, 400)
   }
-  console.error(error.name, error instanceof ZodError)
-  // console.error(JSON.stringify(Object.keys(error), null, 2))
+  logger.error({ err: error }, 'UnhandledError')
   const cause = error.cause instanceof Error ? error.cause : undefined
   return c.json({ message: cause ? JSON.parse(cause.message) : error.message }, 500)
 })

@@ -14,5 +14,6 @@ export const Route = createFileRoute('/search/')({
 
 function Page() {
   const { term } = Route.useSearch()
+  console.log('[Search] page', { term })
   return <SearchResults term={term} />
 }

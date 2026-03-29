@@ -76,6 +76,7 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   const play = useCallback((track: TrackInfo) => {
+    console.log('[AudioPlayer] play', { artist: track.artistName, name: track.name, url: track.previewUrl })
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current.removeAttribute('src')
@@ -85,6 +86,7 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
     audioRef.current = audio
 
     audio.addEventListener('loadedmetadata', () => {
+      console.debug('[AudioPlayer] loadedmetadata', { duration: audio.duration })
       dispatch({ type: 'SET_DURATION', duration: audio.duration })
     })
 
@@ -93,7 +95,12 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
     })
 
     audio.addEventListener('ended', () => {
+      console.debug('[AudioPlayer] ended', { name: track.name })
       dispatch({ type: 'STOP' })
+    })
+
+    audio.addEventListener('error', () => {
+      console.error('[AudioPlayer] error', { code: audio.error?.code, message: audio.error?.message, name: track.name })
     })
 
     audio.play()
@@ -101,11 +108,13 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const pause = useCallback(() => {
+    console.debug('[AudioPlayer] pause')
     audioRef.current?.pause()
     dispatch({ type: 'PAUSE' })
   }, [])
 
   const resume = useCallback(() => {
+    console.debug('[AudioPlayer] resume')
     audioRef.current?.play()
     dispatch({ type: 'RESUME' })
   }, [])
@@ -119,6 +128,7 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
   }, [state.isPlaying, state.currentTrack, pause, resume])
 
   const seek = useCallback((time: number) => {
+    console.debug('[AudioPlayer] seek', { time })
     if (audioRef.current) {
       audioRef.current.currentTime = time
       dispatch({ type: 'SET_PROGRESS', progress: time })
@@ -127,6 +137,7 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     return () => {
+      console.debug('[AudioPlayer] cleanup')
       if (audioRef.current) {
         audioRef.current.pause()
         audioRef.current.removeAttribute('src')

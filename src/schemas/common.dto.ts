@@ -271,6 +271,12 @@ type ViewData = NonNullable<SearchResults[keyof SearchResults]>['data']
 export type AlbumDatum = Extract<ViewData[number], { type: 'albums' }>
 export type SongDatum = Extract<ViewData[number], { type: 'songs' }>
 
+export const VersionResponseSchema = z.object({
+  buildAt: z.string(),
+  hash: z.string(),
+  version: z.string(),
+})
+
 export const ChartTypeSchema = z.enum(['albums', 'music-videos', 'playlists', 'songs'])
 type ChartResults = z.infer<typeof GetCatalogCharts.ResponseSchema>['results']
 export type ChartAlbumDatum = NonNullable<ChartResults['albums']>[number]['data'][number]

@@ -19,6 +19,7 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       __APP_VERSION__: JSON.stringify(version),
+      __BUILD_AT__: JSON.stringify(new Date().toISOString()),
       __GIT_HASH__: JSON.stringify(hash),
     },
     envPrefix: "VITE_", // VITE_で始まる環境変数を自動で読み込む
@@ -48,8 +49,10 @@ export default defineConfig(({ mode }) => {
         },
         filename: "sw.ts",
         includeAssets: ["favicon.ico", "apple-touch-icon.png"],
-        injectRegister: "auto",
-        // injectManifest: {},
+        injectRegister: false,
+        injectManifest: {
+          swDest: 'dist/client/sw.js',
+        },
         manifest: {
           background_color: "#34A5A8",
           description: "MusicKitを使ったApple Musicライクなアプリケーション",
