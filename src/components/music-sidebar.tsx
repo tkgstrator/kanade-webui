@@ -52,7 +52,7 @@ export function MusicSidebar() {
               <InputGroupInput onKeyDown={handleKeyDown} placeholder="検索" />
             </InputGroup>
           </div>
-          <SidebarMenu>
+          <SidebarMenu className="px-2">
             <SidebarMenuItem>
               <SidebarMenuButton
                 asChild

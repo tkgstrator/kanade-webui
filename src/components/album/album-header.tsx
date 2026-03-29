@@ -57,13 +57,20 @@ export function AlbumHeader({ album }: { album: CatalogAlbumDatum }) {
           <div />
           <div className="flex flex-col items-center lg:items-start">
             <h1 className="text-center text-3xl font-semibold text-foreground lg:text-left">{attributes.name}</h1>
-            <Link
-              className="text-2xl font-medium text-foreground hover:underline"
-              params={{ artist_id: Number(relationships?.artists?.data?.[0]?.id) }}
-              to="/artists/$artist_id"
-            >
-              {attributes.artistName}
-            </Link>
+            {(() => {
+              const artist = relationships?.artists?.data?.find((d) => d.type === 'artists')
+              return artist != null ? (
+                <Link
+                  className="text-2xl font-medium text-foreground hover:underline"
+                  params={{ artist_id: artist.id }}
+                  to="/artists/$artist_id"
+                >
+                  {attributes.artistName}
+                </Link>
+              ) : (
+                <span className="text-2xl font-medium text-foreground">{attributes.artistName}</span>
+              )
+            })()}
             <span className="text-sm text-muted-foreground">{dayjs(attributes.releaseDate).format('LL')}</span>
           </div>
           <motion.div

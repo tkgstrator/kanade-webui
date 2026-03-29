@@ -85,6 +85,7 @@ src/
 
 | Method | Path | 説明 |
 |--------|------|------|
+| GET | /api/version | アプリバージョン情報 (version, hash, buildAt) |
 | GET | /api/search | Apple Music カタログ検索 (`?term=`) |
 | GET | /api/albums/:id | アルバム詳細 |
 | GET | /api/artists/:id | アーティスト詳細 (albums を include) |
@@ -114,6 +115,60 @@ PROXY_URL                  # バックエンドプロキシ URL
 
 - **対象**: 機能追加、バグ修正、リファクタリングなど、コード変更を伴うすべてのタスク
 - **例外**: 単純な質問への回答、コードの説明、CLAUDE.md 自体の編集など、コード変更を伴わないタスクは直接対応して良い -->
+
+## PWA バージョン管理と更新システム
+
+### ビルド時定数
+
+`vite.config.ts` の `define` で以下の値がビルド時に埋め込まれる:
+
+| 定数 | 内容 | ソース |
+|------|------|--------|
+| `__APP_VERSION__` | パッケージバージョン | `package.json` の `version` |
+| `__GIT_HASH__` | Git コミットハッシュ (短縮) | `git rev-parse --short HEAD` |
+| `__BUILD_AT__` | ビルド日時 (ISO 8601) | ビルド実行時の `new Date().toISOString()` |
+
+これらはフロントエンド・バックエンド両方で参照可能。型定義は `src/env.d.ts` にある。
+
+### Service Worker (PWA)
+
+- **戦略**: `injectManifest` (Workbox) + 手動登録 (`injectRegister: false`)
+- **キャッシュ**: 静的アセットは `precacheAndRoute` でプリキャッシュ、ナビゲーションリクエスト (HTML) は `NetworkFirst` (3 秒タイムアウト)
+- **即時反映**: `skipWaiting()` + `clientsClaim()` で新しい SW が即座にアクティブ化
+- **更新チェック**: `useServiceWorker` フック (`src/hooks/use-service-worker.ts`) が 5 分間隔で `registration.update()` を呼ぶ
+- **自動リロード**: SW の `controllerchange` イベント検知で `window.location.reload()`
+
+### API バージョンチェック
+
+SW のキャッシュ更新に依存しない確実な更新検知として、`GET /api/version` を利用する。
+
+- **エンドポイント**: `GET /api/version` → `{ version, hash, buildAt }` (トークン認証不要)
+- **チェックタイミング**: トップページ (`/`) アクセス時のみ (`useVersionCheck` フック)
+- **比較方法**: `localStorage` (`app-version-hash`) に前回のハッシュを保存し、サーバーのハッシュと比較
+- **通知**: ハッシュ不一致時にトースト通知で「今すぐ更新」ボタンを表示
+- **初回アクセス**: ストレージに保存するだけで通知しない
+
+```
+デプロイ → サーバーの __GIT_HASH__ が更新される
+    ↓
+ユーザーがトップページにアクセス
+    ↓
+fetch('/api/version') で最新ハッシュ取得
+    ↓
+localStorage の保存ハッシュと比較
+    ↓
+不一致 → トースト通知 → ユーザーが「今すぐ更新」クリック → リロード
+```
+
+### 関連ファイル
+
+| ファイル | 役割 |
+|---------|------|
+| `src/sw.ts` | Service Worker 本体 (precache + NetworkFirst navigation) |
+| `src/hooks/use-service-worker.ts` | SW 登録・更新チェック・自動リロード |
+| `src/hooks/use-version-check.ts` | API バージョンチェック・トースト通知 |
+| `src/schemas/common.dto.ts` | `VersionResponseSchema` 定義 |
+| `src/index.ts` | `/api/version` エンドポイント |
 
 ## 注意事項
 
