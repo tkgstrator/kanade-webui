@@ -1,5 +1,9 @@
-import { useState } from 'react'
-import { cn, formatDuration } from '@/lib/utils'
+import { Play } from 'lucide-react'
+import { motion } from 'motion/react'
+import { Equalizer } from '@/components/equalizer'
+
+import { useAudioPlayer } from '@/hooks/use-audio-player'
+import { cn, formatDuration, getArtworkUrl } from '@/lib/utils'
 import type { CatalogAlbumDatum } from '@/schemas/common.dto'
 
 type SongDatum = Extract<
@@ -8,42 +12,71 @@ type SongDatum = Extract<
 >
 
 function TrackListItem({
-  track,
+  albumArtworkUrl,
+  albumArtistName,
   index,
-  isSelected,
-  onSelect,
+  track,
 }: {
-  track: SongDatum
+  albumArtworkUrl?: string
+  albumArtistName?: string
   index: number
-  isSelected: boolean
-  onSelect: () => void
+  track: SongDatum
 }) {
   const { attributes } = track
+  const { currentTrack, isPlaying, play, toggle } = useAudioPlayer()
+  const previewUrl = attributes.previews?.[0]?.url
+  const isCurrentTrack = currentTrack?.previewUrl === previewUrl && previewUrl !== undefined
+  const isCurrentlyPlaying = isCurrentTrack && isPlaying
+
+  const handlePlay = () => {
+    if (!previewUrl) return
+    if (isCurrentTrack) {
+      toggle()
+    } else {
+      play({
+        artistName: attributes.artistName ?? albumArtistName ?? '',
+        artworkUrl: albumArtworkUrl
+          ? getArtworkUrl(albumArtworkUrl, 256)
+          : getArtworkUrl(attributes.artwork.url, 256),
+        name: attributes.name,
+        previewUrl,
+      })
+    }
+  }
 
   return (
     <button
       className={cn(
         'group flex h-12 w-full items-center gap-4 rounded-md px-4 py-2 text-left transition-colors',
-        isSelected
-          ? 'bg-blue-500 text-white dark:bg-blue-600'
-          : cn(index % 2 === 0 ? 'bg-transparent' : 'bg-muted/40', 'hover:bg-muted'),
+        index % 2 === 0 ? 'bg-transparent' : 'bg-muted/40',
+        previewUrl ? 'cursor-pointer' : 'cursor-default',
+        'hover:bg-muted',
       )}
-      onClick={onSelect}
+      onClick={handlePlay}
       type="button"
     >
-      <span
-        className={cn(
-          'mt-1 w-6 self-start text-center text-sm tabular-nums',
-          isSelected ? 'text-white' : 'text-muted-foreground',
+      <span className={cn(
+        'w-6 text-center text-sm tabular-nums',
+        isCurrentTrack ? 'text-red-500' : 'text-muted-foreground',
+      )}>
+        {isCurrentlyPlaying ? (
+          <Equalizer className="mx-auto size-4" />
+        ) : previewUrl ? (
+          <>
+            <span className="group-hover:hidden">{attributes.trackNumber ?? index + 1}</span>
+            <Play className="mx-auto hidden size-4 group-hover:block" fill="currentColor" />
+          </>
+        ) : (
+          attributes.trackNumber ?? index + 1
         )}
-      >
-        {attributes.trackNumber ?? index + 1}
       </span>
       <div className="min-w-0 flex-1">
-        <p className={cn('truncate text-md', isSelected ? 'text-white' : 'text-foreground')}>{attributes.name}</p>
+        <p className={cn('truncate text-md', isCurrentTrack ? 'text-red-500' : 'text-foreground')}>
+          {attributes.name}
+        </p>
       </div>
       {attributes.durationInMillis && (
-        <span className={cn('tabular-nums text-sm', isSelected ? 'text-white/80' : 'text-muted-foreground')}>
+        <span className="tabular-nums text-sm text-muted-foreground">
           {formatDuration(attributes.durationInMillis)}
         </span>
       )}
@@ -51,19 +84,31 @@ function TrackListItem({
   )
 }
 
-export function TrackList({ tracks }: { tracks: SongDatum[] }) {
-  const [selectedId, setSelectedId] = useState<number | null>(null)
-
+export function TrackList({
+  albumArtistName,
+  albumArtworkUrl,
+  tracks,
+}: {
+  albumArtistName?: string
+  albumArtworkUrl?: string
+  tracks: SongDatum[]
+}) {
   return (
     <div className="flex w-full flex-col">
       {tracks.map((track, index) => (
-        <TrackListItem
-          index={index}
-          isSelected={selectedId === track.id}
+        <motion.div
+          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -16 }}
           key={track.id}
-          onSelect={() => setSelectedId(track.id)}
-          track={track}
-        />
+          transition={{ delay: index * 0.03, duration: 0.25 }}
+        >
+          <TrackListItem
+            albumArtistName={albumArtistName}
+            albumArtworkUrl={albumArtworkUrl}
+            index={index}
+            track={track}
+          />
+        </motion.div>
       ))}
     </div>
   )

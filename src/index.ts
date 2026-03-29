@@ -4,13 +4,13 @@ import { contextStorage } from 'hono/context-storage'
 import { HTTPException } from 'hono/http-exception'
 import { logger } from 'hono/logger'
 import { timeout } from 'hono/timeout'
-import type { ContentfulStatusCode } from 'hono/utils/http-status'
 import { ZodError } from 'zod'
 import { isTokenExpired, signToken } from './lib/token'
 import {
   CatalogSchema,
   GetCatalogAlbum,
   GetCatalogArtist,
+  GetCatalogCharts,
   SearchCatalogResources,
   TypeSchema,
 } from './schemas/common.dto'
@@ -34,6 +34,42 @@ app.use(async (c: Context<Env>, next) => {
 
   await next()
 })
+
+app.openapi(
+  createRoute({
+    description: 'Retrieves chart data (top albums, top songs) from the Apple Music catalog.',
+    method: 'get',
+    middleware: [],
+    path: '/api/charts',
+    request: {
+      query: GetCatalogCharts.QuerySchema,
+    },
+    responses: {
+      200: {
+        content: {
+          'application/json': {
+            schema: GetCatalogCharts.ResponseSchema,
+          },
+        },
+        description: 'Successful response with chart data',
+      },
+    },
+    summary: 'Get catalog charts',
+    tags: ['Charts'],
+  }),
+  async (c) => {
+    const { chart, limit, types } = c.req.valid('query')
+    const response = await c.var.CLIENT.get('/v1/catalog/:storefront/charts', {
+      params: { storefront: 'jp' },
+      queries: {
+        limit: limit ?? 25,
+        types,
+        ...(chart ? { chart } : {}),
+      },
+    })
+    return c.json(response)
+  },
+)
 
 app.openapi(
   createRoute({
@@ -131,8 +167,7 @@ app.openapi(
   }),
   async (c) => {
     const { id, storefront } = c.req.valid('param')
-    const { include } = c.req.valid('query')
-    console.log(include)
+    c.req.valid('query')
     const response = await c.var.CLIENT.get('/v1/catalog/:storefront/artists/:id', {
       params: { id, storefront },
       queries: {
@@ -184,7 +219,7 @@ app.openapi(
       method: 'POST',
     })
     if (!response.ok) {
-      throw new HTTPException(response.status as ContentfulStatusCode, {
+      throw new HTTPException(500, {
         message: response.statusText,
       })
     }

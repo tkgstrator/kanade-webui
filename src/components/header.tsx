@@ -36,7 +36,7 @@ export function Header() {
 
       {/* ロゴ */}
       <Link className="flex items-center" to="/">
-        <span className="text-[21px] font-semibold tracking-tight text-foreground">Music Kit</span>
+        <span className="text-[21px] font-semibold tracking-tight text-foreground">Kanade</span>
       </Link>
     </header>
   )

@@ -1,6 +1,8 @@
-import { createContext, useContext, useEffect, useState } from "react"
+import { z } from '@hono/zod-openapi'
+import { createContext, useContext, useEffect, useState } from 'react'
 
-type Theme = "dark" | "light" | "system"
+const ThemeSchema = z.enum(['dark', 'light', 'system'])
+type Theme = z.infer<typeof ThemeSchema>
 
 type ThemeProviderProps = {
   children: React.ReactNode
@@ -15,26 +17,30 @@ type ThemeProviderState = {
 
 const initialState: ThemeProviderState = {
   setTheme: () => null,
-  theme: "system",
+  theme: 'system',
 }
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 
 export function ThemeProvider({
   children,
-  defaultTheme = "system",
-  storageKey = "vite-ui-theme",
+  defaultTheme = 'system',
+  storageKey = 'vite-ui-theme',
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(() => (localStorage.getItem(storageKey) as Theme) || defaultTheme)
+  const [theme, setTheme] = useState<Theme>(() => {
+    const stored = localStorage.getItem(storageKey)
+    const parsed = ThemeSchema.safeParse(stored)
+    return parsed.success ? parsed.data : defaultTheme
+  })
 
   useEffect(() => {
     const root = window.document.documentElement
 
-    root.classList.remove("light", "dark")
+    root.classList.remove('light', 'dark')
 
-    if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+    if (theme === 'system') {
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 
       root.classList.add(systemTheme)
       return
@@ -61,7 +67,7 @@ export function ThemeProvider({
 export const useTheme = () => {
   const context = useContext(ThemeProviderContext)
 
-  if (context === undefined) throw new Error("useTheme must be used within a ThemeProvider")
+  if (context === undefined) throw new Error('useTheme must be used within a ThemeProvider')
 
   return context
 }

@@ -1,7 +1,7 @@
+import { z } from '@hono/zod-openapi'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
-import { z } from 'zod'
 import { AlbumHeader, AlbumSkeleton, TrackList } from '@/components/album'
 import { client } from '@/lib/client'
 import { type CatalogAlbumDatum, CatalogSchema } from '@/schemas/common.dto'
@@ -42,7 +42,11 @@ const Content = (): JSX.Element => {
       <AlbumHeader album={album} />
       <section className="w-full px-6">
         <h2 className="mb-4 text-lg font-semibold text-foreground">収録曲</h2>
-        <TrackList tracks={tracks} />
+        <TrackList
+          albumArtistName={album.attributes.artistName}
+          albumArtworkUrl={album.attributes.artwork.url}
+          tracks={tracks}
+        />
       </section>
     </div>
   )
