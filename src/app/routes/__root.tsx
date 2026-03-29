@@ -13,8 +13,12 @@ function RootComponent() {
       <MusicSidebar />
       <SidebarInset className="min-w-0 overflow-hidden">
         <Header />
-        <div className="pt-12 pb-20 md:pt-0">
+        <div className="pt-12 md:pt-0">
           <Outlet />
+          <footer className="px-6 py-4 text-center text-xs text-muted-foreground">
+            <p>v{__APP_VERSION__} ({__GIT_HASH__})</p>
+            <p>&copy;2026 NEVER KNOWS BEST</p>
+          </footer>
         </div>
       </SidebarInset>
       <MiniPlayer />
