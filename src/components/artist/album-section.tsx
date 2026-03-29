@@ -26,10 +26,14 @@ function DownloadButton({ albumId }: { albumId: number }) {
       }),
     mutationKey: ['queues', String(albumId)],
     onError: (error) => {
-      console.error(error)
+      console.error('[Queue] error', { albumId, error })
       toast.error('キューへの追加に失敗しました')
     },
+    onMutate: () => {
+      console.log('[Queue] adding album', { albumId })
+    },
     onSuccess: () => {
+      console.log('[Queue] success', { albumId })
       toast.success('キューに追加されました')
     },
   })

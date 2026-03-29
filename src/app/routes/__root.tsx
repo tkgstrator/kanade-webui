@@ -3,9 +3,12 @@ import { Header } from '@/components/header'
 import { MiniPlayer } from '@/components/mini-player'
 import { MusicSidebar } from '@/components/music-sidebar'
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
+import { useServiceWorker } from '@/hooks/use-service-worker'
 
-export const Route = createRootRoute({
-  component: () => (
+function RootComponent() {
+  useServiceWorker()
+
+  return (
     <SidebarProvider>
       <MusicSidebar />
       <SidebarInset className="min-w-0 overflow-hidden">
@@ -16,5 +19,9 @@ export const Route = createRootRoute({
       </SidebarInset>
       <MiniPlayer />
     </SidebarProvider>
-  ),
+  )
+}
+
+export const Route = createRootRoute({
+  component: RootComponent,
 })

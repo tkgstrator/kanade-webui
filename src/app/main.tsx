@@ -51,10 +51,13 @@ const persister = createAsyncStoragePersister({
   throttleTime: 1000,
 })
 
+console.log('[App] init', { hash: __GIT_HASH__, version: __APP_VERSION__ })
+
 // biome-ignore lint/style/noNonNullAssertion: reason
 const rootElement = document.getElementById("root")!
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
+  console.log('[App] mounting')
   root.render(
     <StrictMode>
       <PersistQueryClientProvider

@@ -24,10 +24,14 @@ export function AlbumHeader({ album }: { album: CatalogAlbumDatum }) {
       }),
     mutationKey: ['queues', album.id],
     onError: (error) => {
-      console.error(error)
+      console.error('[Queue] error', { albumId: album.id, error })
       toast.error('キューへの追加に失敗しました')
     },
+    onMutate: () => {
+      console.log('[Queue] adding album', { albumId: album.id, name: attributes.name })
+    },
     onSuccess: () => {
+      console.log('[Queue] success', { albumId: album.id })
       toast.success('キューに追加されました')
     },
   })

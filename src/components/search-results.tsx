@@ -196,10 +196,18 @@ const Content = ({ term }: { term: string }): JSX.Element => {
       results: { albums, songs },
     },
   } = useSuspenseQuery({
-    queryFn: async () =>
-      client.get('/api/search', {
+    queryFn: async () => {
+      console.log('[Search] fetching', { term })
+      const data = await client.get('/api/search', {
         queries: { term },
-      }),
+      })
+      console.log('[Search] fetched', {
+        albums: data.results.albums?.data.length ?? 0,
+        songs: data.results.songs?.data.length ?? 0,
+        term,
+      })
+      return data
+    },
     queryKey: ['search', term],
   })
 

@@ -23,10 +23,13 @@ const Content = (): JSX.Element => {
   const { album_id } = Route.useParams()
   const { data } = useSuspenseQuery({
     queryFn: async () => {
+      console.log('[Album] fetching', { album_id })
       const response = await client.get('/api/albums/:id', {
         params: { id: album_id },
       })
-      return CatalogSchema.parse(response)
+      const parsed = CatalogSchema.parse(response)
+      console.log('[Album] fetched', { album_id, tracks: parsed.data[0]?.relationships?.tracks?.data.length ?? 0 })
+      return parsed
     },
     queryKey: ['album', album_id],
   })

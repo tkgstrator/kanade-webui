@@ -7,6 +7,7 @@ import { Equalizer } from '@/components/equalizer'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useAudioPlayer } from '@/hooks/use-audio-player'
+import { useVersionCheck } from '@/hooks/use-version-check'
 import { client } from '@/lib/client'
 import { cn, extractAlbumIdFromUrl, getArtworkUrl } from '@/lib/utils'
 import type { ChartAlbumDatum, ChartMusicVideoDatum, ChartPlaylistDatum, ChartSongDatum } from '@/schemas/common.dto'
@@ -33,10 +34,18 @@ export const Route = createFileRoute('/')({
 })
 
 const chartsQueryOptions = {
-  queryFn: async () =>
-    client.get('/api/charts', {
+  queryFn: async () => {
+    console.log('[Charts] fetching')
+    const data = await client.get('/api/charts', {
       queries: { limit: 25, types: ['albums', 'music-videos', 'playlists', 'songs'] as const },
-    }),
+    })
+    console.log('[Charts] fetched', {
+      albums: data.results.albums?.[0]?.data.length ?? 0,
+      playlists: data.results.playlists?.[0]?.data.length ?? 0,
+      songs: data.results.songs?.[0]?.data.length ?? 0,
+    })
+    return data
+  },
   queryKey: ['charts'] as const,
   staleTime: 1000 * 60 * 30,
 }
@@ -463,12 +472,14 @@ function ChartsContent() {
 }
 
 function Page() {
+  useVersionCheck()
   const navigate = useNavigate({ from: '/' })
   const [searchValue, setSearchValue] = useState('')
 
   const handleSearch = (term?: string) => {
     const value = (term ?? searchValue).trim()
     if (value) {
+      console.log('[Search] navigate', { term: value })
       navigate({ search: { term: value }, to: '/search' })
     }
   }

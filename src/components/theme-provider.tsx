@@ -31,7 +31,9 @@ export function ThemeProvider({
   const [theme, setTheme] = useState<Theme>(() => {
     const stored = localStorage.getItem(storageKey)
     const parsed = ThemeSchema.safeParse(stored)
-    return parsed.success ? parsed.data : defaultTheme
+    const resolved = parsed.success ? parsed.data : defaultTheme
+    console.log('[Theme] init', { defaultTheme, resolved, stored })
+    return resolved
   })
 
   useEffect(() => {
@@ -51,6 +53,7 @@ export function ThemeProvider({
 
   const value = {
     setTheme: (theme: Theme) => {
+      console.log('[Theme] change', { theme })
       localStorage.setItem(storageKey, theme)
       setTheme(theme)
     },

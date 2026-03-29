@@ -1,7 +1,8 @@
 import type { ZodiosInstance } from '@zodios/core'
+import type { Env as HonoPinoEnv } from 'hono-pino'
 import type { ZodiosDefinition } from './client'
 
-export type Env = {
+export type Env = HonoPinoEnv & {
   Bindings: {
     APPLE_MUSIC_TEAM_ID: string
     APPLE_MUSIC_KEY_ID: string

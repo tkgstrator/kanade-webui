@@ -23,10 +23,13 @@ const Content = (): JSX.Element => {
   const { artist_id } = Route.useParams()
   const { data } = useSuspenseQuery({
     queryFn: async () => {
-      return await client.get('/api/artists/:id', {
+      console.log('[Artist] fetching', { artist_id })
+      const data = await client.get('/api/artists/:id', {
         params: { id: artist_id },
         queries: { include: ['albums', 'music-videos'] },
       })
+      console.log('[Artist] fetched', { albums: data.data[0]?.relationships?.albums?.data.length ?? 0, artist_id })
+      return data
     },
     queryKey: ['artist', artist_id],
   })

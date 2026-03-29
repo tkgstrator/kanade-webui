@@ -117,10 +117,18 @@ export const createClient = (token: string) => {
   })
   client.use({
     error: (_api, _config, error) => {
-      console.error(error.message)
+      console.error('[AppleMusicAPI] error', { message: error.message })
       throw new HTTPException(400, { message: error.message })
     },
     name: 'OnError',
+    request: async (_api, config) => {
+      console.debug('[AppleMusicAPI] request', { method: config.method, url: config.url })
+      return config
+    },
+    response: async (_api, _config, response) => {
+      console.debug('[AppleMusicAPI] response', { status: response.status, url: response.config.url })
+      return response
+    },
   })
   return client
 }
