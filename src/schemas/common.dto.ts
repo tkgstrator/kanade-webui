@@ -19,7 +19,7 @@ const ArtworkSchema = z.object({
   textColor2: z.string().nonempty().optional(),
   textColor3: z.string().nonempty().optional(),
   textColor4: z.string().nonempty().optional(),
-  url: z.url(),
+  url: z.string().url(),
   width: z.number().int().positive(),
 })
 
@@ -45,7 +45,7 @@ namespace Attribute {
     artwork: ArtworkSchema.optional(),
     genreNames: z.array(z.string().nonempty()),
     name: z.string().nonempty(),
-    url: z.url(),
+    url: z.string().url(),
   })
 
   export const MusicVideoSchema = z.object({
@@ -67,7 +67,7 @@ namespace Attribute {
     }),
     isChart: z.boolean(),
     name: z.string().nonempty(),
-    url: z.url(),
+    url: z.string().url(),
   })
 
   export const SongSchema = z.object({
@@ -80,15 +80,16 @@ namespace Attribute {
     hasLyrics: z.boolean(),
     isAppleDigitalMaster: z.boolean(),
     name: z.string().nonempty(),
+    previews: z.array(z.object({ url: z.string().url() })).optional(),
     releaseDate: z.string().nonempty().optional(),
     trackNumber: z.number().int().positive(),
-    url: z.url(),
+    url: z.string().url(),
   })
 
   export const StationSchema = z.object({
     artwork: ArtworkSchema,
     isLive: z.boolean(),
-    url: z.url(),
+    url: z.string().url(),
   })
 }
 
@@ -175,8 +176,8 @@ export namespace SearchCatalogResources {
 
   export const QuerySchema = z.object({
     l: z.enum(['ja']).optional(),
-    limit: z.number().int().positive().max(25).optional().default(5),
-    offset: z.number().int().min(0).optional().default(0),
+    limit: z.coerce.number().int().positive().max(25).optional().default(5),
+    offset: z.coerce.number().int().min(0).optional().default(0),
     term: z.string().nonempty(),
     types: z.array(TypeSchema).nonempty().optional(),
     with: z.array(z.enum(['topResults'])).optional(),
@@ -269,3 +270,81 @@ type SearchResults = z.infer<typeof SearchCatalogResources.ResponseSchema>['resu
 type ViewData = NonNullable<SearchResults[keyof SearchResults]>['data']
 export type AlbumDatum = Extract<ViewData[number], { type: 'albums' }>
 export type SongDatum = Extract<ViewData[number], { type: 'songs' }>
+
+export const ChartTypeSchema = z.enum(['albums', 'music-videos', 'playlists', 'songs'])
+type ChartResults = z.infer<typeof GetCatalogCharts.ResponseSchema>['results']
+export type ChartAlbumDatum = NonNullable<ChartResults['albums']>[number]['data'][number]
+export type ChartMusicVideoDatum = NonNullable<ChartResults['music-videos']>[number]['data'][number]
+export type ChartPlaylistDatum = NonNullable<ChartResults['playlists']>[number]['data'][number]
+export type ChartSongDatum = NonNullable<ChartResults['songs']>[number]['data'][number]
+
+export namespace GetCatalogCharts {
+  export const QuerySchema = z
+    .object({
+      chart: z.string().nonempty().optional(),
+      l: z.enum(['ja']).optional(),
+      limit: z.coerce.number().int().positive().max(200).optional().default(25),
+      types: z.preprocess(
+        (v) => (typeof v === 'string' ? v.split(',') : v),
+        z.array(ChartTypeSchema).nonempty(),
+      ).optional(),
+      'types[]': z.array(ChartTypeSchema).nonempty().optional(),
+    })
+    .transform((v) => ({
+      chart: v.chart,
+      l: v.l,
+      limit: v.limit,
+      types: v.types ?? v['types[]'] ?? [],
+    }))
+
+  const ChartEntrySchema = z.object({
+    chart: z.string().nonempty(),
+    href: z.string().nonempty(),
+    name: z.string().nonempty(),
+    next: z.string().nonempty().optional(),
+  })
+
+  export const ResponseSchema = z.object({
+    results: z.object({
+      albums: z.array(ChartEntrySchema.extend({
+        data: DatumSchema.extend({
+          attributes: Attribute.AlbumSchema.partial({
+            copyright: true,
+            isCompilation: true,
+            isComplete: true,
+            isMasteredForItunes: true,
+            isSingle: true,
+            playParams: true,
+            recordLabel: true,
+            upc: true,
+          }),
+          type: z.literal('albums'),
+        }).array(),
+      })).optional(),
+      'music-videos': z.array(ChartEntrySchema.extend({
+        data: DatumSchema.extend({
+          attributes: Attribute.MusicVideoSchema.partial({
+            has4K: true,
+            hasHDR: true,
+            releaseDate: true,
+          }),
+          type: z.literal('music-videos'),
+        }).array(),
+      })).optional(),
+      playlists: z.array(ChartEntrySchema.extend({
+        data: DatumSchema.extend({
+          attributes: Attribute.PlaylistSchema.partial({
+            isChart: true,
+          }),
+          type: z.literal('playlists'),
+        }).array(),
+      })).optional(),
+      songs: z.array(ChartEntrySchema.extend({
+        data: DatumSchema.extend({
+          attributes: Attribute.SongSchema,
+          type: z.literal('songs'),
+        }).array(),
+      })).optional(),
+    }),
+  })
+}

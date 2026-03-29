@@ -9,6 +9,7 @@ import { StrictMode } from "react"
 import ReactDOM from "react-dom/client"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/sonner"
+import { AudioPlayerProvider } from "@/hooks/use-audio-player"
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -69,8 +70,10 @@ if (!rootElement.innerHTML) {
         }}
       >
         <ThemeProvider>
-          <RouterProvider router={router} />
-          <Toaster />
+          <AudioPlayerProvider>
+            <RouterProvider router={router} />
+            <Toaster />
+          </AudioPlayerProvider>
         </ThemeProvider>
       </PersistQueryClientProvider>
     </StrictMode>,

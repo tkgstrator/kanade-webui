@@ -44,6 +44,675 @@
     "parameters": {}
   },
   "paths": {
+    "/api/charts": {
+      "get": {
+        "description": "Retrieves chart data (top albums, top songs) from the Apple Music catalog.",
+        "summary": "Get catalog charts",
+        "tags": [
+          "Charts"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            },
+            "required": false,
+            "name": "chart",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ja"
+              ]
+            },
+            "required": false,
+            "name": "l",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 200,
+              "default": 25
+            },
+            "required": false,
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "albums",
+                  "music-videos",
+                  "playlists",
+                  "songs"
+                ]
+              },
+              "minItems": 1
+            },
+            "required": false,
+            "name": "types",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "albums",
+                  "music-videos",
+                  "playlists",
+                  "songs"
+                ]
+              },
+              "minItems": 1
+            },
+            "required": false,
+            "name": "types[]",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with chart data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "results": {
+                      "type": "object",
+                      "properties": {
+                        "albums": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "chart": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "href": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "name": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "next": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "href": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "id": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "attributes": {
+                                      "type": "object",
+                                      "properties": {
+                                        "artistName": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "artwork": {
+                                          "type": "object",
+                                          "properties": {
+                                            "bgColor": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "height": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            },
+                                            "textColor1": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor2": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor3": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor4": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "url": {
+                                              "type": "string",
+                                              "format": "uri"
+                                            },
+                                            "width": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            }
+                                          },
+                                          "required": [
+                                            "height",
+                                            "url",
+                                            "width"
+                                          ]
+                                        },
+                                        "copyright": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "isCompilation": {
+                                          "type": "boolean"
+                                        },
+                                        "isComplete": {
+                                          "type": "boolean"
+                                        },
+                                        "isMasteredForItunes": {
+                                          "type": "boolean"
+                                        },
+                                        "isSingle": {
+                                          "type": "boolean"
+                                        },
+                                        "name": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "playParams": {
+                                          "type": "object",
+                                          "additionalProperties": {}
+                                        },
+                                        "recordLabel": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "releaseDate": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "trackCount": {
+                                          "type": "integer",
+                                          "exclusiveMinimum": 0
+                                        },
+                                        "upc": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "url": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        }
+                                      },
+                                      "required": [
+                                        "artistName",
+                                        "artwork",
+                                        "name",
+                                        "releaseDate",
+                                        "trackCount",
+                                        "url"
+                                      ]
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "albums"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "href",
+                                    "id",
+                                    "attributes",
+                                    "type"
+                                  ]
+                                }
+                              }
+                            },
+                            "required": [
+                              "chart",
+                              "href",
+                              "name",
+                              "data"
+                            ]
+                          }
+                        },
+                        "music-videos": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "chart": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "href": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "name": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "next": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "href": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "id": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "attributes": {
+                                      "type": "object",
+                                      "properties": {
+                                        "artistName": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "artwork": {
+                                          "type": "object",
+                                          "properties": {
+                                            "bgColor": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "height": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            },
+                                            "textColor1": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor2": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor3": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor4": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "url": {
+                                              "type": "string",
+                                              "format": "uri"
+                                            },
+                                            "width": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            }
+                                          },
+                                          "required": [
+                                            "height",
+                                            "url",
+                                            "width"
+                                          ]
+                                        },
+                                        "has4K": {
+                                          "type": "boolean"
+                                        },
+                                        "hasHDR": {
+                                          "type": "boolean"
+                                        },
+                                        "name": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "releaseDate": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        }
+                                      },
+                                      "required": [
+                                        "artistName",
+                                        "artwork",
+                                        "name"
+                                      ]
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "music-videos"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "href",
+                                    "id",
+                                    "attributes",
+                                    "type"
+                                  ]
+                                }
+                              }
+                            },
+                            "required": [
+                              "chart",
+                              "href",
+                              "name",
+                              "data"
+                            ]
+                          }
+                        },
+                        "playlists": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "chart": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "href": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "name": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "next": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "href": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "id": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "attributes": {
+                                      "type": "object",
+                                      "properties": {
+                                        "artwork": {
+                                          "type": "object",
+                                          "properties": {
+                                            "bgColor": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "height": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            },
+                                            "textColor1": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor2": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor3": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor4": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "url": {
+                                              "type": "string",
+                                              "format": "uri"
+                                            },
+                                            "width": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            }
+                                          },
+                                          "required": [
+                                            "height",
+                                            "url",
+                                            "width"
+                                          ]
+                                        },
+                                        "isChart": {
+                                          "type": "boolean"
+                                        },
+                                        "name": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "url": {
+                                          "type": "string",
+                                          "format": "uri"
+                                        }
+                                      },
+                                      "required": [
+                                        "artwork",
+                                        "name",
+                                        "url"
+                                      ]
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "playlists"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "href",
+                                    "id",
+                                    "attributes",
+                                    "type"
+                                  ]
+                                }
+                              }
+                            },
+                            "required": [
+                              "chart",
+                              "href",
+                              "name",
+                              "data"
+                            ]
+                          }
+                        },
+                        "songs": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "chart": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "href": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "name": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "next": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "href": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "id": {
+                                      "type": "string",
+                                      "minLength": 1
+                                    },
+                                    "attributes": {
+                                      "type": "object",
+                                      "properties": {
+                                        "albumName": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "artistName": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "artwork": {
+                                          "type": "object",
+                                          "properties": {
+                                            "bgColor": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "height": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            },
+                                            "textColor1": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor2": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor3": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "textColor4": {
+                                              "type": "string",
+                                              "minLength": 1
+                                            },
+                                            "url": {
+                                              "type": "string",
+                                              "format": "uri"
+                                            },
+                                            "width": {
+                                              "type": "integer",
+                                              "exclusiveMinimum": 0
+                                            }
+                                          },
+                                          "required": [
+                                            "height",
+                                            "url",
+                                            "width"
+                                          ]
+                                        },
+                                        "composerName": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "discNumber": {
+                                          "type": "integer",
+                                          "exclusiveMinimum": 0
+                                        },
+                                        "durationInMillis": {
+                                          "type": "integer",
+                                          "exclusiveMinimum": 0
+                                        },
+                                        "hasLyrics": {
+                                          "type": "boolean"
+                                        },
+                                        "isAppleDigitalMaster": {
+                                          "type": "boolean"
+                                        },
+                                        "name": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "releaseDate": {
+                                          "type": "string",
+                                          "minLength": 1
+                                        },
+                                        "trackNumber": {
+                                          "type": "integer",
+                                          "exclusiveMinimum": 0
+                                        },
+                                        "url": {
+                                          "type": "string",
+                                          "format": "uri"
+                                        }
+                                      },
+                                      "required": [
+                                        "albumName",
+                                        "artistName",
+                                        "artwork",
+                                        "discNumber",
+                                        "durationInMillis",
+                                        "hasLyrics",
+                                        "isAppleDigitalMaster",
+                                        "name",
+                                        "trackNumber",
+                                        "url"
+                                      ]
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "songs"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "href",
+                                    "id",
+                                    "attributes",
+                                    "type"
+                                  ]
+                                }
+                              }
+                            },
+                            "required": [
+                              "chart",
+                              "href",
+                              "name",
+                              "data"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "results"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/search": {
       "get": {
         "description": "Searches the Apple Music catalog for songs, albums, artists, and playlists matching the query parameter 'q'.",
@@ -76,7 +745,10 @@
           },
           {
             "schema": {
-              "type": "integer",
+              "type": [
+                "integer",
+                "null"
+              ],
               "minimum": 0,
               "default": 0
             },
@@ -231,18 +903,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -451,11 +1120,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -657,11 +1323,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -917,18 +1580,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -1137,11 +1797,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -1343,11 +2000,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -1603,18 +2257,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -1823,11 +2474,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -2029,11 +2677,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -2289,18 +2934,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -2509,11 +3151,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -2715,11 +3354,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -2975,18 +3611,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -3195,11 +3828,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -3401,11 +4031,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -3661,18 +4288,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -3881,11 +4505,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -4087,11 +4708,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -4347,18 +4965,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -4567,11 +5182,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -4773,11 +5385,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -5033,18 +5642,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -5253,11 +5859,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -5459,11 +6062,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -5719,18 +6319,15 @@
                                           },
                                           "playParams": {
                                             "type": "object",
-                                            "properties": {}
+                                            "additionalProperties": {}
                                           },
                                           "recordLabel": {
                                             "type": "string",
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackCount": {
                                             "type": "integer",
@@ -5939,11 +6536,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           }
                                         },
                                         "required": [
@@ -6145,11 +6739,8 @@
                                             "minLength": 1
                                           },
                                           "releaseDate": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ],
-                                            "format": "date"
+                                            "type": "string",
+                                            "minLength": 1
                                           },
                                           "trackNumber": {
                                             "type": "integer",
@@ -6508,18 +7099,15 @@
                                   },
                                   "playParams": {
                                     "type": "object",
-                                    "properties": {}
+                                    "additionalProperties": {}
                                   },
                                   "recordLabel": {
                                     "type": "string",
                                     "minLength": 1
                                   },
                                   "releaseDate": {
-                                    "type": [
-                                      "string",
-                                      "null"
-                                    ],
-                                    "format": "date"
+                                    "type": "string",
+                                    "minLength": 1
                                   },
                                   "trackCount": {
                                     "type": "integer",
@@ -6672,11 +7260,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -6795,18 +7380,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -7031,11 +7613,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -7154,18 +7733,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -7390,11 +7966,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -7513,18 +8086,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -7749,11 +8319,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -7872,18 +8439,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -8108,11 +8672,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -8231,18 +8792,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -8565,11 +9123,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -8688,18 +9243,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -8924,11 +9476,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -9047,18 +9596,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -9283,11 +9829,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -9406,18 +9949,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -9642,11 +10182,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -9765,18 +10302,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -10001,11 +10535,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -10124,18 +10655,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -10458,18 +10986,15 @@
                                   },
                                   "playParams": {
                                     "type": "object",
-                                    "properties": {}
+                                    "additionalProperties": {}
                                   },
                                   "recordLabel": {
                                     "type": "string",
                                     "minLength": 1
                                   },
                                   "releaseDate": {
-                                    "type": [
-                                      "string",
-                                      "null"
-                                    ],
-                                    "format": "date"
+                                    "type": "string",
+                                    "minLength": 1
                                   },
                                   "trackCount": {
                                     "type": "integer",
@@ -10622,11 +11147,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -10745,18 +11267,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -10981,11 +11500,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -11104,18 +11620,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -11340,11 +11853,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -11463,18 +11973,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -11699,11 +12206,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -11822,18 +12326,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -12058,11 +12559,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -12181,18 +12679,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -12515,11 +13010,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -12638,18 +13130,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -12874,11 +13363,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -12997,18 +13483,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -13233,11 +13716,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -13356,18 +13836,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -13592,11 +14069,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -13715,18 +14189,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",
@@ -13951,11 +14422,8 @@
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackNumber": {
                                                       "type": "integer",
@@ -14074,18 +14542,15 @@
                                                     },
                                                     "playParams": {
                                                       "type": "object",
-                                                      "properties": {}
+                                                      "additionalProperties": {}
                                                     },
                                                     "recordLabel": {
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
                                                     "releaseDate": {
-                                                      "type": [
-                                                        "string",
-                                                        "null"
-                                                      ],
-                                                      "format": "date"
+                                                      "type": "string",
+                                                      "minLength": 1
                                                     },
                                                     "trackCount": {
                                                       "type": "integer",

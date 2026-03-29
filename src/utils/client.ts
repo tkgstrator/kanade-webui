@@ -1,7 +1,7 @@
+import { z } from '@hono/zod-openapi'
 import { makeApi, Zodios } from '@zodios/core'
 import { HTTPException } from 'hono/http-exception'
-import { z } from 'zod'
-import { CatalogSchema, SearchCatalogResources, TypeSchema } from '@/schemas/common.dto'
+import { CatalogSchema, ChartTypeSchema, GetCatalogCharts, SearchCatalogResources, TypeSchema } from '@/schemas/common.dto'
 
 const definition = makeApi([
   {
@@ -72,6 +72,36 @@ const definition = makeApi([
     ],
     path: '/v1/catalog/:storefront/artists/:id',
     response: CatalogSchema,
+  },
+  {
+    description: 'Get catalog charts',
+    method: 'get',
+    parameters: [
+      {
+        name: 'storefront',
+        schema: z.enum(['jp', 'us']).optional().default('jp'),
+        type: 'Path',
+      },
+      {
+        name: 'types',
+        schema: ChartTypeSchema.array().nonempty()
+          .transform((v) => v.join(','))
+          .pipe(z.string()),
+        type: 'Query',
+      },
+      {
+        name: 'limit',
+        schema: z.number().int().positive().max(200).optional().default(25),
+        type: 'Query',
+      },
+      {
+        name: 'chart',
+        schema: z.string().nonempty().optional(),
+        type: 'Query',
+      },
+    ],
+    path: '/v1/catalog/:storefront/charts',
+    response: GetCatalogCharts.ResponseSchema,
   },
 ])
 

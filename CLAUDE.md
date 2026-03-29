@@ -32,6 +32,10 @@ bun run generate   # OpenAPI スキーマから Zodios クライアント生成
 - `noUnusedLocals` / `noUnusedParameters` で未使用変数禁止
 - `verbatimModuleSyntax`: 型インポートは `import type` を使う
 - パスエイリアス: `@/*` → `src/*`
+- **型定義は独自に `type` / `interface` を書かず、Zod スキーマから `z.infer<>` で導出する**
+- **`as` による型アサーションは禁止。`tsc` を通すためだけの `as` は使わない**
+  - 型エラーが出る場合はスキーマ定義やロジックを修正して型安全に解決する
+  - `as const` は許可
 
 ### Zod スキーマ
 - スキーマは `src/schemas/common.dto.ts` に集約
@@ -102,6 +106,14 @@ PROXY_URL                  # バックエンドプロキシ URL
 - **prod**: `music.tkgstrator.work` (Cloudflare Workers `env.prod`)
 - **dev**: `music-dev.tkgstrator.work` (Cloudflare Workers `env.dev`)
 - デプロイコマンド: `wrangler deploy --env prod`
+
+<!-- ## エージェントチーム
+
+コードの実装・改修タスクを受けた場合は、常に `orchestrator` エージェント (Agent Teams) を使って作業を進めること。
+直接コードを編集するのではなく、orchestrator にタスクを委譲し、orchestrator が frontend-implementer / backend-implementer / test-runner / doc-updater を適切に呼び出して作業を完了させる。
+
+- **対象**: 機能追加、バグ修正、リファクタリングなど、コード変更を伴うすべてのタスク
+- **例外**: 単純な質問への回答、コードの説明、CLAUDE.md 自体の編集など、コード変更を伴わないタスクは直接対応して良い -->
 
 ## 注意事項
 

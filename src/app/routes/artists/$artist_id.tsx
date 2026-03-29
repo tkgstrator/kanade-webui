@@ -1,7 +1,7 @@
+import { z } from '@hono/zod-openapi'
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
-import { z } from 'zod'
 import { AlbumSection, ArtistHeader, ArtistSkeleton } from '@/components/artist'
 import { client } from '@/lib/client'
 import type { CatalogArtistDatum } from '@/schemas/common.dto'
@@ -31,7 +31,8 @@ const Content = (): JSX.Element => {
     queryKey: ['artist', artist_id],
   })
 
-  const artist = data.data[0] as CatalogArtistDatum
+  const artist = data.data.find((d): d is CatalogArtistDatum => d.type === 'artists')
+  if (!artist) throw new Error('Artist not found')
   const albumsData = (artist.relationships?.albums?.data ?? []).filter(
     (a): a is Extract<typeof a, { type: 'albums' }> => a.type === 'albums',
   )
