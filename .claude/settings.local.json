@@ -1,5 +1,22 @@
 {
   "permissions": {
+    "allow": [
+      "Bash",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "Agent",
+      "Skill",
+      "WebFetch",
+      "WebSearch",
+      "NotebookEdit",
+      "TaskCreate",
+      "TaskUpdate",
+      "mcp__github__get_file_contents",
+      "mcp__github__search_repositories"
+    ],
     "deny": [
       "Bash(bun run dev:*)",
       "Bash(bun run preview:*)",
@@ -11,7 +28,9 @@
       "Bash(git push -f:*)",
       "Bash(git reset --hard:*)",
       "Bash(rm -rf /:*)"
-    ]
+    ],
+    "defaultMode": "bypassPermissions",
+    "bypassPermissionsMode": "allow"
   },
   "enabledMcpjsonServers": [
     "docker",
@@ -65,5 +84,9 @@
         ]
       }
     ]
-  }
+  },
+  "outputStyle": "default",
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "xhigh",
+  "prefersReducedMotion": true
 }
