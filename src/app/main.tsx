@@ -1,28 +1,28 @@
-"use client"
-import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister"
-import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client"
-import { createRouter, RouterProvider } from "@tanstack/react-router"
-import dayjs from "dayjs"
-import timezone from "dayjs/plugin/timezone"
-import utc from "dayjs/plugin/utc"
-import { StrictMode } from "react"
-import ReactDOM from "react-dom/client"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Toaster } from "@/components/ui/sonner"
-import { AudioPlayerProvider } from "@/hooks/use-audio-player"
+'use client'
+import { createAsyncStoragePersister } from '@tanstack/query-async-storage-persister'
+import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client'
+import { createRouter, RouterProvider } from '@tanstack/react-router'
+import dayjs from 'dayjs'
+import timezone from 'dayjs/plugin/timezone'
+import utc from 'dayjs/plugin/utc'
+import { StrictMode } from 'react'
+import ReactDOM from 'react-dom/client'
+import { ThemeProvider } from '@/components/theme-provider'
+import { Toaster } from '@/components/ui/sonner'
+import { AudioPlayerProvider } from '@/hooks/use-audio-player'
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
-dayjs.tz.setDefault("Asia/Tokyo")
+dayjs.tz.setDefault('Asia/Tokyo')
 
-import { routeTree } from "./routeTree.gen"
+import { routeTree } from './routeTree.gen'
 
-import "./styles.css"
-import { QueryClient } from "@tanstack/react-query"
+import './styles.css'
+import { QueryClient } from '@tanstack/react-query'
 
 const router = createRouter({ routeTree })
 
-declare module "@tanstack/react-router" {
+declare module '@tanstack/react-router' {
   interface Register {
     router: typeof router
   }
@@ -32,7 +32,7 @@ const client = new QueryClient({
   defaultOptions: {
     queries: {
       gcTime: 1000 * 60 * 60 * 24,
-      networkMode: "offlineFirst",
+      networkMode: 'offlineFirst',
       refetchInterval: false,
       refetchOnMount: false,
       refetchOnReconnect: false,
@@ -45,7 +45,7 @@ const client = new QueryClient({
 
 const persister = createAsyncStoragePersister({
   deserialize: JSON.parse,
-  key: "REACT_QUERY_OFFLINE_CACHE",
+  key: 'REACT_QUERY_OFFLINE_CACHE',
   serialize: JSON.stringify,
   storage: window.localStorage,
   throttleTime: 1000,
@@ -54,7 +54,7 @@ const persister = createAsyncStoragePersister({
 console.log('[App] init', { hash: __GIT_HASH__, version: __APP_VERSION__ })
 
 // biome-ignore lint/style/noNonNullAssertion: reason
-const rootElement = document.getElementById("root")!
+const rootElement = document.getElementById('root')!
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
   console.log('[App] mounting')
@@ -65,7 +65,7 @@ if (!rootElement.innerHTML) {
         persistOptions={{
           dehydrateOptions: {
             shouldDehydrateQuery: (query) => {
-              return query.state.status === "success"
+              return query.state.status === 'success'
             },
           },
           maxAge: 1000 * 60 * 60 * 24,

@@ -1,5 +1,5 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
-import { Link, createFileRoute, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { AlertCircle, Pause, Play, RefreshCw, Search } from 'lucide-react'
 import { motion } from 'motion/react'
 import { Suspense, useState } from 'react'
@@ -53,7 +53,6 @@ const chartsQueryOptions = {
 function useCharts() {
   return useSuspenseQuery(chartsQueryOptions)
 }
-
 
 function HeroAlbumCard({ album }: { album: ChartAlbumDatum }) {
   const { attributes } = album
@@ -205,8 +204,8 @@ function SongCard({ index, song }: { index: number; song: ChartSongDatum }) {
       toggle()
     } else {
       play({
-        artworkUrl: getArtworkUrl(attributes.artwork.url, 256),
         artistName: attributes.artistName,
+        artworkUrl: getArtworkUrl(attributes.artwork.url, 256),
         name: attributes.name,
         previewUrl,
       })
@@ -227,19 +226,32 @@ function SongCard({ index, song }: { index: number; song: ChartSongDatum }) {
           draggable={false}
           src={getArtworkUrl(attributes.artwork.url, 256)}
         />
-        <div className={cn(
-          'absolute inset-0 flex items-center justify-center rounded-lg transition-colors',
-          isCurrentlyPlaying ? 'bg-black/30' : 'bg-black/0 group-hover:bg-black/30',
-        )}>
+        <div
+          className={cn(
+            'absolute inset-0 flex items-center justify-center rounded-lg transition-colors',
+            isCurrentlyPlaying ? 'bg-black/30' : 'bg-black/0 group-hover:bg-black/30',
+          )}
+        >
           {isCurrentlyPlaying ? (
             <Pause className="size-5 text-white" fill="white" />
           ) : (
-            <Play className={cn('size-5 text-white transition-opacity', isCurrentTrack ? 'opacity-100' : 'opacity-0 group-hover:opacity-100')} fill="white" />
+            <Play
+              className={cn(
+                'size-5 text-white transition-opacity',
+                isCurrentTrack ? 'opacity-100' : 'opacity-0 group-hover:opacity-100',
+              )}
+              fill="white"
+            />
           )}
         </div>
       </button>
       <div className="min-w-0 flex-1">
-        <p className={cn('flex items-center gap-1.5 truncate text-sm font-medium', isCurrentTrack ? 'text-red-500' : 'text-foreground')}>
+        <p
+          className={cn(
+            'flex items-center gap-1.5 truncate text-sm font-medium',
+            isCurrentTrack ? 'text-red-500' : 'text-foreground',
+          )}
+        >
           {isCurrentlyPlaying && <Equalizer className="size-3.5 shrink-0" />}
           <span className="truncate">{attributes.name}</span>
         </p>

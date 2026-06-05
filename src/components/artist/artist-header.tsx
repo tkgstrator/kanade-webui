@@ -27,18 +27,18 @@ export function ArtistHeader({ artist }: { artist: CatalogArtistDatum }) {
           transition={{ duration: 0.5, ease: 'easeOut' }}
         />
         <motion.div
+          animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center gap-3 md:items-start md:pb-2"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.4 }}
         >
           <h1 className="text-3xl font-bold text-foreground">{attributes.name}</h1>
           <div className="flex flex-wrap justify-center gap-2 md:justify-start">
             {attributes.genreNames.slice(0, 3).map((genre: string, index: number) => (
               <motion.span
+                animate={{ opacity: 1, scale: 1 }}
                 className="rounded-full bg-muted/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur-sm"
                 initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
                 key={genre}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.3 }}
               >

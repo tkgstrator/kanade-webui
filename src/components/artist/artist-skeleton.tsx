@@ -1,6 +1,8 @@
-"use client"
+'use client'
 
-import { Skeleton } from "@/components/ui/skeleton"
+import { Skeleton } from '@/components/ui/skeleton'
+
+const ARTIST_SKELETON_KEYS = Array.from({ length: 6 }, (_, index) => `artist-skeleton-card-${index}`)
 
 export function ArtistSkeleton() {
   return (
@@ -19,8 +21,8 @@ export function ArtistSkeleton() {
       <div className="px-6 md:px-8">
         <Skeleton className="h-7 w-32 mb-4" />
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-          {[...Array(6)].map((_, i) => (
-            <div className="flex flex-col gap-2" key={i}>
+          {ARTIST_SKELETON_KEYS.map((key) => (
+            <div className="flex flex-col gap-2" key={key}>
               <Skeleton className="aspect-square w-full rounded-lg" />
               <Skeleton className="h-4 w-3/4" />
               <Skeleton className="h-3 w-1/2" />

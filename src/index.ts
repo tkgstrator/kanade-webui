@@ -21,16 +21,18 @@ import { createClient } from './utils/client'
 
 const app = new Hono<Env>()
 
-app.use(pinoLogger({
-  http: {
-    onResLevel: (c) => {
-      if (c.res.status >= 500) return 'error'
-      if (c.res.status >= 400) return 'warn'
-      return 'info'
+app.use(
+  pinoLogger({
+    http: {
+      onResLevel: (c) => {
+        if (c.res.status >= 500) return 'error'
+        if (c.res.status >= 400) return 'warn'
+        return 'info'
+      },
     },
-  },
-  pino: pino({ level: 'info' }),
-}))
+    pino: pino({ level: 'info' }),
+  }),
+)
 app.openapi(
   createRoute({
     description: 'Returns the current application version, git hash, and build timestamp.',

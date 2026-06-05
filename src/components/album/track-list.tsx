@@ -35,9 +35,7 @@ function TrackListItem({
     } else {
       play({
         artistName: attributes.artistName ?? albumArtistName ?? '',
-        artworkUrl: albumArtworkUrl
-          ? getArtworkUrl(albumArtworkUrl, 256)
-          : getArtworkUrl(attributes.artwork.url, 256),
+        artworkUrl: albumArtworkUrl ? getArtworkUrl(albumArtworkUrl, 256) : getArtworkUrl(attributes.artwork.url, 256),
         name: attributes.name,
         previewUrl,
       })
@@ -55,10 +53,12 @@ function TrackListItem({
       onClick={handlePlay}
       type="button"
     >
-      <span className={cn(
-        'w-6 text-center text-sm tabular-nums',
-        isCurrentTrack ? 'text-red-500' : 'text-muted-foreground',
-      )}>
+      <span
+        className={cn(
+          'w-6 text-center text-sm tabular-nums',
+          isCurrentTrack ? 'text-red-500' : 'text-muted-foreground',
+        )}
+      >
         {isCurrentlyPlaying ? (
           <Equalizer className="mx-auto size-4" />
         ) : previewUrl ? (
@@ -67,13 +67,11 @@ function TrackListItem({
             <Play className="mx-auto hidden size-4 group-hover:block" fill="currentColor" />
           </>
         ) : (
-          attributes.trackNumber ?? index + 1
+          (attributes.trackNumber ?? index + 1)
         )}
       </span>
       <div className="min-w-0 flex-1">
-        <p className={cn('truncate text-md', isCurrentTrack ? 'text-red-500' : 'text-foreground')}>
-          {attributes.name}
-        </p>
+        <p className={cn('truncate text-md', isCurrentTrack ? 'text-red-500' : 'text-foreground')}>{attributes.name}</p>
       </div>
       {attributes.durationInMillis && (
         <span className="tabular-nums text-sm text-muted-foreground">

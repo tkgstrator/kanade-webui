@@ -16,7 +16,9 @@ function RootComponent() {
         <div className="pt-12 md:pt-0">
           <Outlet />
           <footer className="px-6 py-4 text-center text-xs text-muted-foreground">
-            <p>v{__APP_VERSION__} ({__GIT_HASH__})</p>
+            <p>
+              v{__APP_VERSION__} ({__GIT_HASH__})
+            </p>
             <p>&copy;2026 NEVER KNOWS BEST</p>
           </footer>
         </div>
