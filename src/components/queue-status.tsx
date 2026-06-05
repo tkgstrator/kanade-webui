@@ -33,7 +33,10 @@ export function QueueHistory() {
     }),
   })
 
-  const recentMutations = mutations.filter((m) => m.albumId != null).slice(-10).reverse()
+  const recentMutations = mutations
+    .filter((m) => m.albumId != null)
+    .slice(-10)
+    .reverse()
 
   if (recentMutations.length === 0) return null
 
@@ -55,12 +58,8 @@ export function QueueHistory() {
                 ) : (
                   <Clock className="size-4 shrink-0 animate-spin text-muted-foreground" />
                 )}
-                <span className="min-w-0 flex-1 truncate text-foreground">
-                  ID: {mutation.albumId}
-                </span>
-                <span className="shrink-0 text-xs text-muted-foreground">
-                  {dayjs(mutation.submittedAt).fromNow()}
-                </span>
+                <span className="min-w-0 flex-1 truncate text-foreground">ID: {mutation.albumId}</span>
+                <span className="shrink-0 text-xs text-muted-foreground">{dayjs(mutation.submittedAt).fromNow()}</span>
               </div>
             </SidebarMenuItem>
           ))}

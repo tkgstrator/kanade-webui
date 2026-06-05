@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
-import { Link, useNavigate } from "@tanstack/react-router"
-import { Home, Search } from "lucide-react"
-import { QueueHistory } from "@/components/queue-status"
-import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group"
+import { Link, useNavigate } from '@tanstack/react-router'
+import { Home, Search } from 'lucide-react'
+import { QueueHistory } from '@/components/queue-status'
+import { InputGroup, InputGroupAddon, InputGroupInput } from '@/components/ui/input-group'
 import {
   Sidebar,
   SidebarContent,
@@ -14,17 +14,17 @@ import {
   SidebarMenuItem,
   SidebarSeparator,
   useSidebar,
-} from "@/components/ui/sidebar"
+} from '@/components/ui/sidebar'
 
 export function MusicSidebar() {
-  const navigate = useNavigate({ from: "/" })
+  const navigate = useNavigate({ from: '/' })
   const { isMobile, setOpenMobile } = useSidebar()
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter" && !e.nativeEvent.isComposing) {
+    if (e.key === 'Enter' && !e.nativeEvent.isComposing) {
       const value = e.currentTarget.value
       if (value.trim()) {
-        navigate({ search: { term: value.trim() }, to: "/search" })
+        navigate({ search: { term: value.trim() }, to: '/search' })
         if (isMobile) {
           setOpenMobile(false)
         }

@@ -38,7 +38,9 @@ const Content = (): JSX.Element => {
   if (!album) {
     throw new Error('Album not found')
   }
-  const tracks = (album.relationships?.tracks?.data ?? []).filter((t): t is Extract<typeof t, { type: 'songs' }> => t.type === 'songs')
+  const tracks = (album.relationships?.tracks?.data ?? []).filter(
+    (t): t is Extract<typeof t, { type: 'songs' }> => t.type === 'songs',
+  )
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
