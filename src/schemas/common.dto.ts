@@ -290,10 +290,9 @@ export namespace GetCatalogCharts {
       chart: z.string().nonempty().optional(),
       l: z.enum(['ja']).optional(),
       limit: z.coerce.number().int().positive().max(200).optional().default(25),
-      types: z.preprocess(
-        (v) => (typeof v === 'string' ? v.split(',') : v),
-        z.array(ChartTypeSchema).nonempty(),
-      ).optional(),
+      types: z
+        .preprocess((v) => (typeof v === 'string' ? v.split(',') : v), z.array(ChartTypeSchema).nonempty())
+        .optional(),
       'types[]': z.array(ChartTypeSchema).nonempty().optional(),
     })
     .transform((v) => ({
@@ -312,45 +311,61 @@ export namespace GetCatalogCharts {
 
   export const ResponseSchema = z.object({
     results: z.object({
-      albums: z.array(ChartEntrySchema.extend({
-        data: DatumSchema.extend({
-          attributes: Attribute.AlbumSchema.partial({
-            copyright: true,
-            isCompilation: true,
-            isComplete: true,
-            isMasteredForItunes: true,
-            isSingle: true,
-            playParams: true,
-            recordLabel: true,
-            upc: true,
+      albums: z
+        .array(
+          ChartEntrySchema.extend({
+            data: DatumSchema.extend({
+              attributes: Attribute.AlbumSchema.partial({
+                copyright: true,
+                isCompilation: true,
+                isComplete: true,
+                isMasteredForItunes: true,
+                isSingle: true,
+                playParams: true,
+                recordLabel: true,
+                upc: true,
+              }),
+              type: z.literal('albums'),
+            }).array(),
           }),
-          type: z.literal('albums'),
-        }).array(),
-      })).optional(),
-      'music-videos': z.array(ChartEntrySchema.extend({
-        data: DatumSchema.extend({
-          attributes: Attribute.MusicVideoSchema.partial({
-            has4K: true,
-            hasHDR: true,
-            releaseDate: true,
+        )
+        .optional(),
+      'music-videos': z
+        .array(
+          ChartEntrySchema.extend({
+            data: DatumSchema.extend({
+              attributes: Attribute.MusicVideoSchema.partial({
+                has4K: true,
+                hasHDR: true,
+                releaseDate: true,
+              }),
+              type: z.literal('music-videos'),
+            }).array(),
           }),
-          type: z.literal('music-videos'),
-        }).array(),
-      })).optional(),
-      playlists: z.array(ChartEntrySchema.extend({
-        data: DatumSchema.extend({
-          attributes: Attribute.PlaylistSchema.partial({
-            isChart: true,
+        )
+        .optional(),
+      playlists: z
+        .array(
+          ChartEntrySchema.extend({
+            data: DatumSchema.extend({
+              attributes: Attribute.PlaylistSchema.partial({
+                isChart: true,
+              }),
+              type: z.literal('playlists'),
+            }).array(),
           }),
-          type: z.literal('playlists'),
-        }).array(),
-      })).optional(),
-      songs: z.array(ChartEntrySchema.extend({
-        data: DatumSchema.extend({
-          attributes: Attribute.SongSchema,
-          type: z.literal('songs'),
-        }).array(),
-      })).optional(),
+        )
+        .optional(),
+      songs: z
+        .array(
+          ChartEntrySchema.extend({
+            data: DatumSchema.extend({
+              attributes: Attribute.SongSchema,
+              type: z.literal('songs'),
+            }).array(),
+          }),
+        )
+        .optional(),
     }),
   })
 }

@@ -1,7 +1,13 @@
 import { z } from '@hono/zod-openapi'
 import { makeApi, Zodios } from '@zodios/core'
 import { HTTPException } from 'hono/http-exception'
-import { CatalogSchema, ChartTypeSchema, GetCatalogCharts, SearchCatalogResources, TypeSchema } from '@/schemas/common.dto'
+import {
+  CatalogSchema,
+  ChartTypeSchema,
+  GetCatalogCharts,
+  SearchCatalogResources,
+  TypeSchema,
+} from '@/schemas/common.dto'
 
 const definition = makeApi([
   {
@@ -84,7 +90,8 @@ const definition = makeApi([
       },
       {
         name: 'types',
-        schema: ChartTypeSchema.array().nonempty()
+        schema: ChartTypeSchema.array()
+          .nonempty()
           .transform((v) => v.join(','))
           .pipe(z.string()),
         type: 'Query',
