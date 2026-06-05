@@ -14,9 +14,7 @@ import type { CatalogArtistDatum } from '@/schemas/common.dto'
 dayjs.extend(localizedFormat)
 dayjs.locale('ja')
 
-type AlbumRelationDatum = NonNullable<
-  NonNullable<CatalogArtistDatum['relationships']>['albums']
->['data'][number]
+type AlbumRelationDatum = NonNullable<NonNullable<CatalogArtistDatum['relationships']>['albums']>['data'][number]
 
 function DownloadButton({ albumId }: { albumId: number }) {
   const { mutate, isPending } = useMutation({
@@ -62,9 +60,9 @@ function AlbumCard({ album }: { album: AlbumRelationDatum }) {
     <Link className="group flex flex-col gap-2" params={{ album_id: Number(album.id) }} to="/albums/$album_id">
       <motion.div
         className="relative overflow-hidden rounded-lg shadow-md"
+        transition={{ damping: 20, stiffness: 300, type: 'spring' }}
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.98 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       >
         <img
           alt={attributes.name}

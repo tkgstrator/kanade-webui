@@ -1,6 +1,6 @@
+import { useRegisterSW } from 'virtual:pwa-register/react'
 import { useEffect } from 'react'
 import { toast } from 'sonner'
-import { useRegisterSW } from 'virtual:pwa-register/react'
 
 export function useServiceWorker() {
   const { updateServiceWorker } = useRegisterSW({
@@ -22,10 +22,13 @@ export function useServiceWorker() {
     onRegisteredSW(swUrl, registration) {
       console.log('[SW] registered', { swUrl })
       if (!registration) return
-      setInterval(() => {
-        console.debug('[SW] checking for updates')
-        registration.update()
-      }, 1000 * 60 * 5)
+      setInterval(
+        () => {
+          console.debug('[SW] checking for updates')
+          registration.update()
+        },
+        1000 * 60 * 5,
+      )
     },
   })
 

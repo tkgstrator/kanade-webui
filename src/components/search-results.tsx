@@ -50,19 +50,32 @@ function SongListItem({ index, song }: { index: number; song: SongDatum }) {
           draggable={false}
           src={getArtworkUrl(attributes.artwork.url, 256)}
         />
-        <div className={cn(
-          'absolute inset-0 flex items-center justify-center rounded-md transition-colors',
-          isCurrentlyPlaying ? 'bg-black/30' : 'bg-black/0 hover:bg-black/30',
-        )}>
+        <div
+          className={cn(
+            'absolute inset-0 flex items-center justify-center rounded-md transition-colors',
+            isCurrentlyPlaying ? 'bg-black/30' : 'bg-black/0 hover:bg-black/30',
+          )}
+        >
           {isCurrentlyPlaying ? (
             <Pause className="size-5 text-white" fill="white" />
           ) : (
-            <Play className={cn('size-5 text-white transition-opacity', isCurrentTrack ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 hover:opacity-100')} fill="white" />
+            <Play
+              className={cn(
+                'size-5 text-white transition-opacity',
+                isCurrentTrack ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 hover:opacity-100',
+              )}
+              fill="white"
+            />
           )}
         </div>
       </button>
       <div className="min-w-0 flex-1">
-        <p className={cn('flex items-center gap-1.5 truncate font-medium', isCurrentTrack ? 'text-red-500' : 'text-foreground')}>
+        <p
+          className={cn(
+            'flex items-center gap-1.5 truncate font-medium',
+            isCurrentTrack ? 'text-red-500' : 'text-foreground',
+          )}
+        >
           {isCurrentlyPlaying && <Equalizer className="size-3.5 shrink-0" />}
           <span className="truncate">{attributes.name}</span>
         </p>
@@ -100,12 +113,16 @@ function SongList({ songs }: { songs: SongDatum[] }) {
 function AlbumListItem({ album }: { album: AlbumDatum }) {
   const { attributes } = album
   return (
-    <Link className="group flex flex-col gap-2 rounded-lg" params={{ album_id: Number(album.id) }} to="/albums/$album_id">
+    <Link
+      className="group flex flex-col gap-2 rounded-lg"
+      params={{ album_id: Number(album.id) }}
+      to="/albums/$album_id"
+    >
       <motion.div
         className="relative overflow-hidden rounded-md"
+        transition={{ damping: 20, stiffness: 300, type: 'spring' }}
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.98 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       >
         <img
           alt={attributes.name}
@@ -214,30 +231,22 @@ const Content = ({ term }: { term: string }): JSX.Element => {
   return (
     <div className="flex flex-col gap-8 p-4 pb-16 md:gap-10 md:p-6 lg:p-8 select-none">
       <motion.h1
+        animate={{ opacity: 1, y: 0 }}
         className="text-2xl font-bold text-foreground"
         initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
       >
         「{term}」の検索結果
       </motion.h1>
 
       {/* アルバム */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.15, duration: 0.4 }}
-      >
+      <motion.section animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.15, duration: 0.4 }}>
         <h2 className="mb-4 text-lg font-semibold text-foreground">アルバム</h2>
         <AlbumList albums={albums?.data?.filter((a): a is AlbumDatum => a.type === 'albums') ?? []} />
       </motion.section>
 
       {/* 曲 */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.4 }}
-      >
+      <motion.section animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.3, duration: 0.4 }}>
         <h2 className="mb-4 text-lg font-semibold text-foreground">曲</h2>
         <SongList songs={songs?.data?.filter((s): s is SongDatum => s.type === 'songs') ?? []} />
       </motion.section>

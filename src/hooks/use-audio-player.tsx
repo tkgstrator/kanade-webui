@@ -1,13 +1,6 @@
 import { z } from '@hono/zod-openapi'
 import type { ReactNode } from 'react'
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useReducer,
-  useRef,
-} from 'react'
+import { createContext, useCallback, useContext, useEffect, useReducer, useRef } from 'react'
 
 const TrackInfoSchema = z.object({
   artistName: z.string(),
@@ -37,15 +30,15 @@ type AudioPlayerAction =
 
 const initialState: AudioPlayerState = {
   currentTrack: null,
+  duration: 0,
   isPlaying: false,
   progress: 0,
-  duration: 0,
 }
 
 function reducer(state: AudioPlayerState, action: AudioPlayerAction): AudioPlayerState {
   switch (action.type) {
     case 'PLAY':
-      return { ...state, currentTrack: action.track, isPlaying: true, progress: 0, duration: 0 }
+      return { ...state, currentTrack: action.track, duration: 0, isPlaying: true, progress: 0 }
     case 'PAUSE':
       return { ...state, isPlaying: false }
     case 'RESUME':
@@ -87,11 +80,11 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
 
     audio.addEventListener('loadedmetadata', () => {
       console.debug('[AudioPlayer] loadedmetadata', { duration: audio.duration })
-      dispatch({ type: 'SET_DURATION', duration: audio.duration })
+      dispatch({ duration: audio.duration, type: 'SET_DURATION' })
     })
 
     audio.addEventListener('timeupdate', () => {
-      dispatch({ type: 'SET_PROGRESS', progress: audio.currentTime })
+      dispatch({ progress: audio.currentTime, type: 'SET_PROGRESS' })
     })
 
     audio.addEventListener('ended', () => {
@@ -104,7 +97,7 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
     })
 
     audio.play()
-    dispatch({ type: 'PLAY', track })
+    dispatch({ track, type: 'PLAY' })
   }, [])
 
   const pause = useCallback(() => {
@@ -131,7 +124,7 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
     console.debug('[AudioPlayer] seek', { time })
     if (audioRef.current) {
       audioRef.current.currentTime = time
-      dispatch({ type: 'SET_PROGRESS', progress: time })
+      dispatch({ progress: time, type: 'SET_PROGRESS' })
     }
   }, [])
 
@@ -147,7 +140,7 @@ export function AudioPlayerProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <AudioPlayerContext.Provider value={{ ...state, play, pause, resume, toggle, seek }}>
+    <AudioPlayerContext.Provider value={{ ...state, pause, play, resume, seek, toggle }}>
       {children}
     </AudioPlayerContext.Provider>
   )
