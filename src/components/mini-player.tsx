@@ -19,6 +19,27 @@ export function MiniPlayer() {
     [duration, seek],
   )
 
+  const handleProgressKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLDivElement>) => {
+      if (duration <= 0) return
+      const step = 5
+      if (e.key === 'ArrowRight') {
+        e.preventDefault()
+        seek(Math.min(progress + step, duration))
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault()
+        seek(Math.max(progress - step, 0))
+      } else if (e.key === 'Home') {
+        e.preventDefault()
+        seek(0)
+      } else if (e.key === 'End') {
+        e.preventDefault()
+        seek(duration)
+      }
+    },
+    [duration, progress, seek],
+  )
+
   return (
     <AnimatePresence>
       {currentTrack && (
@@ -31,8 +52,15 @@ export function MiniPlayer() {
         >
           {/* プログレスバー */}
           <div
+            aria-label="シーク"
+            aria-valuemax={duration}
+            aria-valuemin={0}
+            aria-valuenow={progress}
             className="group h-1 w-full cursor-pointer bg-muted/60 transition-[height] hover:h-2"
             onClick={handleProgressClick}
+            onKeyDown={handleProgressKeyDown}
+            role="slider"
+            tabIndex={0}
           >
             <motion.div
               className="h-full bg-red-500"
@@ -62,12 +90,7 @@ export function MiniPlayer() {
             </span>
 
             {/* 再生/停止ボタン */}
-            <Button
-              className="size-9 rounded-full"
-              onClick={toggle}
-              size="icon"
-              variant="ghost"
-            >
+            <Button className="size-9 rounded-full" onClick={toggle} size="icon" variant="ghost">
               {isPlaying ? (
                 <Pause className="size-5" fill="currentColor" />
               ) : (
