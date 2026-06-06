@@ -16,7 +16,8 @@ export const QueueResponseSchema = z.object({}).openapi('QueueResponse')
 
 export const QueueBodySchema = z
   .object({
-    album_id: z.coerce.number().int(),
+    album_id: z.coerce.number().int().optional(),
+    artist_id: z.coerce.number().int().optional(),
     options: z
       .object({
         overwrite: z.coerce.boolean().optional().default(false),
@@ -25,5 +26,8 @@ export const QueueBodySchema = z
       .default({
         overwrite: true,
       }),
+  })
+  .refine((body) => (body.album_id === undefined) !== (body.artist_id === undefined), {
+    message: 'exactly one of album_id or artist_id is required',
   })
   .openapi('QueueBody')
