@@ -28,10 +28,8 @@ jobs:
           CLOUDFLARE_ENV: ${{ env.ENVIRONMENT }}
       - name: Wrangler deploy
         uses: cloudflare/wrangler-action@v3
-        env:
-          ENVIRONMENT: ${{ github.event.pull_request.base.ref == 'master' && 'production' || 'staging' }}
         with:
           wranglerVersion: latest
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --env ${{ env.ENVIRONMENT }} --minify src/index.ts
+          command: deploy
