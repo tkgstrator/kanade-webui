@@ -206,8 +206,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -422,3 +422,6 @@ dev-dist
 
 # Credentials
 cookies.txt
+
+# Generated API client (produced by `bun run generate`)
+src/lib/client.ts
