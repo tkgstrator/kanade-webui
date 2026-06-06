@@ -1,10 +1,10 @@
-"use client"
+'use client'
 
-import { Link } from "@tanstack/react-router"
-import { Menu } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useSidebar } from "@/components/ui/sidebar"
-import { cn } from "@/lib/utils"
+import { Link } from '@tanstack/react-router'
+import { Menu } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { useSidebar } from '@/components/ui/sidebar'
+import { cn } from '@/lib/utils'
 
 export function Header() {
   const { toggleSidebar } = useSidebar()
@@ -12,13 +12,13 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50",
-        "h-12 px-4",
-        "flex items-center gap-3",
-        "bg-background/80",
-        "backdrop-blur-xl",
-        "border-b border-border/50",
-        "md:hidden",
+        'fixed top-0 left-0 right-0 z-50',
+        'h-12 px-4',
+        'flex items-center gap-3',
+        'bg-background/80',
+        'backdrop-blur-xl',
+        'border-b border-border/50',
+        'md:hidden',
       )}
     >
       {/* ハンバーガーメニュー */}

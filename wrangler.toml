@@ -24,35 +24,35 @@ persist = true
 head_sampling_rate = 1
 
 # -------------------------------------------------------------------
-# prod environment
+# production environment
 # -------------------------------------------------------------------
-[env.prod]
-name = "musickit-app-prod"
+[env.production]
+name = "musickit-app-production"
 workers_dev = false
 preview_urls = false
 routes = [{ pattern = "music.tkgstrator.work", custom_domain = true }]
 
-[env.prod.assets]
+[env.production.assets]
 directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"
 
-[env.prod.vars]
+[env.production.vars]
 APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"
 APPLE_MUSIC_KEY_ID = "68B6NWM78Z"
 CF_ACCESS_CLIENT_ID = "cfdfd7d6e420692d0d5a04db0872e875.access"
 PROXY_URL = "https://kanade-backend.tkgstrator.work"
 
 # -------------------------------------------------------------------
-# dev environment
+# staging environment
 # -------------------------------------------------------------------
-[env.dev]
-name = "musickit-app-dev"
+[env.staging]
+name = "musickit-app-staging"
 workers_dev = true
 preview_urls = true
 routes = [{ pattern = "music-dev.tkgstrator.work", custom_domain = true }]
 
-[env.dev.assets]
+[env.staging.assets]
 directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"

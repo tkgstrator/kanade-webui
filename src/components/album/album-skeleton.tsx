@@ -1,6 +1,8 @@
-"use client"
+'use client'
 
-import { Skeleton } from "@/components/ui/skeleton"
+import { Skeleton } from '@/components/ui/skeleton'
+
+const ALBUM_SKELETON_KEYS = Array.from({ length: 8 }, (_, index) => `album-skeleton-row-${index}`)
 
 export function AlbumSkeleton() {
   return (
@@ -14,8 +16,8 @@ export function AlbumSkeleton() {
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        {[...Array(8)].map((_, i) => (
-          <Skeleton className="h-14 w-full rounded-md" key={i} />
+        {ALBUM_SKELETON_KEYS.map((key) => (
+          <Skeleton className="h-14 w-full rounded-md" key={key} />
         ))}
       </div>
     </div>

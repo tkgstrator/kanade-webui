@@ -41,17 +41,17 @@ export function AlbumHeader({ album }: { album: CatalogAlbumDatum }) {
       <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 lg:flex-row lg:items-end lg:gap-8 lg:px-8 lg:pt-12">
         <motion.img
           alt={attributes.name}
+          animate={{ opacity: 1, scale: 1 }}
           className="aspect-square w-full max-w-67.5 rounded-lg object-cover shadow-lg"
           draggable={false}
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
           src={getArtworkUrl(attributes.artwork.url, 600)}
           transition={{ duration: 0.4, ease: 'easeOut' }}
         />
         <motion.div
+          animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center lg:h-67.5 lg:items-start lg:justify-between"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.4 }}
         >
           <div />
@@ -74,9 +74,9 @@ export function AlbumHeader({ album }: { album: CatalogAlbumDatum }) {
             <span className="text-sm text-muted-foreground">{dayjs(attributes.releaseDate).format('LL')}</span>
           </div>
           <motion.div
+            animate={{ opacity: 1, y: 0 }}
             className="mt-4 flex gap-4 lg:mt-0"
             initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.3 }}
           >
             <Button
