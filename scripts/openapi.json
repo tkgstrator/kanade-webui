@@ -44,6 +44,43 @@
     "parameters": {}
   },
   "paths": {
+    "/api/version": {
+      "get": {
+        "description": "Returns the current application version, git hash, and build timestamp.",
+        "summary": "Get app version",
+        "tags": [
+          "System"
+        ],
+        "responses": {
+          "200": {
+            "description": "Current version info",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "buildAt": {
+                      "type": "string"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "buildAt",
+                    "hash",
+                    "version"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/charts": {
       "get": {
         "description": "Retrieves chart data (top albums, top songs) from the Apple Music catalog.",
@@ -649,6 +686,21 @@
                                         "name": {
                                           "type": "string",
                                           "minLength": 1
+                                        },
+                                        "previews": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "object",
+                                            "properties": {
+                                              "url": {
+                                                "type": "string",
+                                                "format": "uri"
+                                              }
+                                            },
+                                            "required": [
+                                              "url"
+                                            ]
+                                          }
                                         },
                                         "releaseDate": {
                                           "type": "string",
@@ -1321,6 +1373,21 @@
                                           "name": {
                                             "type": "string",
                                             "minLength": 1
+                                          },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
                                           },
                                           "releaseDate": {
                                             "type": "string",
@@ -1998,6 +2065,21 @@
                                           "name": {
                                             "type": "string",
                                             "minLength": 1
+                                          },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
                                           },
                                           "releaseDate": {
                                             "type": "string",
@@ -2676,6 +2758,21 @@
                                             "type": "string",
                                             "minLength": 1
                                           },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
+                                          },
                                           "releaseDate": {
                                             "type": "string",
                                             "minLength": 1
@@ -3352,6 +3449,21 @@
                                           "name": {
                                             "type": "string",
                                             "minLength": 1
+                                          },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
                                           },
                                           "releaseDate": {
                                             "type": "string",
@@ -4030,6 +4142,21 @@
                                             "type": "string",
                                             "minLength": 1
                                           },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
+                                          },
                                           "releaseDate": {
                                             "type": "string",
                                             "minLength": 1
@@ -4706,6 +4833,21 @@
                                           "name": {
                                             "type": "string",
                                             "minLength": 1
+                                          },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
                                           },
                                           "releaseDate": {
                                             "type": "string",
@@ -5384,6 +5526,21 @@
                                             "type": "string",
                                             "minLength": 1
                                           },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
+                                          },
                                           "releaseDate": {
                                             "type": "string",
                                             "minLength": 1
@@ -6060,6 +6217,21 @@
                                           "name": {
                                             "type": "string",
                                             "minLength": 1
+                                          },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
                                           },
                                           "releaseDate": {
                                             "type": "string",
@@ -6738,6 +6910,21 @@
                                             "type": "string",
                                             "minLength": 1
                                           },
+                                          "previews": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "object",
+                                              "properties": {
+                                                "url": {
+                                                  "type": "string",
+                                                  "format": "uri"
+                                                }
+                                              },
+                                              "required": [
+                                                "url"
+                                              ]
+                                            }
+                                          },
                                           "releaseDate": {
                                             "type": "string",
                                             "minLength": 1
@@ -7259,6 +7446,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -7611,6 +7813,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
@@ -7965,6 +8182,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -8318,6 +8550,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -8670,6 +8917,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
@@ -9122,6 +9384,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -9474,6 +9751,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
@@ -9828,6 +10120,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -10181,6 +10488,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -10533,6 +10855,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
@@ -11146,6 +11483,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -11498,6 +11850,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
@@ -11852,6 +12219,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -12205,6 +12587,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -12557,6 +12954,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
@@ -13009,6 +13421,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -13361,6 +13788,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
@@ -13715,6 +14157,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -14068,6 +14525,21 @@
                                                       "type": "string",
                                                       "minLength": 1
                                                     },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
+                                                    },
                                                     "releaseDate": {
                                                       "type": "string",
                                                       "minLength": 1
@@ -14420,6 +14892,21 @@
                                                     "name": {
                                                       "type": "string",
                                                       "minLength": 1
+                                                    },
+                                                    "previews": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "url": {
+                                                            "type": "string",
+                                                            "format": "uri"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "url"
+                                                        ]
+                                                      }
                                                     },
                                                     "releaseDate": {
                                                       "type": "string",
