@@ -1,9 +1,10 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
-import { AlertCircle, Pause, Play, RefreshCw, Search } from 'lucide-react'
+import { Pause, Play, Search } from 'lucide-react'
 import { motion } from 'motion/react'
 import { Suspense, useState } from 'react'
 import { Equalizer } from '@/components/equalizer'
+import { RouteError } from '@/components/route-error'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useAudioPlayer } from '@/hooks/use-audio-player'
@@ -14,23 +15,7 @@ import type { ChartAlbumDatum, ChartMusicVideoDatum, ChartPlaylistDatum, ChartSo
 
 export const Route = createFileRoute('/')({
   component: Page,
-  errorComponent: ({ error, reset }) => (
-    <div className="flex flex-col items-center justify-center gap-4 p-8 text-center">
-      <AlertCircle className="size-12 text-destructive" />
-      <h2 className="text-xl font-bold text-foreground">エラーが発生しました</h2>
-      <pre className="max-w-lg overflow-auto rounded-lg bg-muted p-4 text-left text-sm text-muted-foreground">
-        {error instanceof Error ? error.message : JSON.stringify(error, null, 2)}
-      </pre>
-      <button
-        className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-        onClick={reset}
-        type="button"
-      >
-        <RefreshCw className="size-4" />
-        再試行
-      </button>
-    </div>
-  ),
+  errorComponent: RouteError,
 })
 
 const chartsQueryOptions = {

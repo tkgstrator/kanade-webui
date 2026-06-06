@@ -2,6 +2,7 @@ import { createRootRoute, Outlet } from '@tanstack/react-router'
 import { Header } from '@/components/header'
 import { MiniPlayer } from '@/components/mini-player'
 import { MusicSidebar } from '@/components/music-sidebar'
+import { RouteNotFound } from '@/components/route-not-found'
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
 import { useServiceWorker } from '@/hooks/use-service-worker'
 
@@ -30,4 +31,5 @@ function RootComponent() {
 
 export const Route = createRootRoute({
   component: RootComponent,
+  notFoundComponent: RouteNotFound,
 })

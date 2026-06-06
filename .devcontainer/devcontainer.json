@@ -57,6 +57,9 @@
   "dockerComposeFile": ["compose.yaml"],
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/stu-bell/devcontainer-features/claude-code:0": {
+      "version": "latest"
+    },
     "ghcr.io/devcontainers/features/common-utils:2": {
       "configureZshAsDefaultShell": true
     },
@@ -78,6 +81,8 @@
   "postAttachCommand": "/bin/sh .devcontainer/postAttachCommand.sh",
   "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
   "remoteEnv": {
+    "ANTHROPIC_BASE_URL": "${localEnv:ANTHROPIC_BASE_URL}",
+    "ANTHROPIC_AUTH_TOKEN": "${localEnv:ANTHROPIC_AUTH_TOKEN}",
     "CLOUDFLARE_API_TOKEN": "${localEnv:CLOUDFLARE_API_TOKEN}",
     "CLOUDFLARE_ACCOUNT_ID": "${localEnv:CLOUDFLARE_ACCOUNT_ID}",
     "WAKATIME_API_KEY": "${localEnv:WAKATIME_API_KEY}"
