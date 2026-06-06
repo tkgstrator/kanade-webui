@@ -90,11 +90,11 @@
   "name": "@musickit/app",
   "private": true,
   "scripts": {
-    "build": "bun run generate && tsc -b && vite build --mode ${CLOUDFLARE_ENV:-dev}",
-    "deploy": "wrangler deploy --env ${CLOUDFLARE_ENV:-dev} --keep-vars",
+    "build": "bun run generate && tsc -b && vite build --mode ${CLOUDFLARE_ENV:-staging}",
+    "deploy": "wrangler deploy --env ${CLOUDFLARE_ENV:-staging} --keep-vars",
     "dev": "bun --bunx vite --host",
     "generate": "bun run scripts/index.ts && bunx openapi-zod-client@1.18.3 scripts/openapi.json --template default.hbs --strict-objects --no-with-alias --with-docs --api-client-name client --output src/lib/client.ts",
-    "predeploy": "bun run generate && vite build --mode ${CLOUDFLARE_ENV:-dev}"
+    "predeploy": "bun run generate && vite build --mode ${CLOUDFLARE_ENV:-staging}"
   },
   "type": "module",
   "version": "1.0.0"
