@@ -1,6 +1,6 @@
 name = "musickit-app"
-compatibility_date = "2025-07-12"
-compatibility_flags = ["nodejs_compat_v2"]
+compatibility_date = "2025-09-01"
+compatibility_flags = ["nodejs_compat_v2", "enable_nodejs_fs_module"]
 main = "src/index.ts"
 
 [dev]
