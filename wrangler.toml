@@ -1,6 +1,6 @@
 name = "musickit-app"
 compatibility_date = "2025-09-01"
-compatibility_flags = ["nodejs_compat_v2", "enable_nodejs_fs_module"]
+compatibility_flags = ["nodejs_compat"]
 main = "src/index.ts"
 
 [dev]
@@ -64,3 +64,9 @@ directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"
 run_worker_first = ["/api/*"]
+
+[env.staging.vars]
+APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"
+APPLE_MUSIC_KEY_ID = "68B6NWM78Z"
+CF_ACCESS_CLIENT_ID = "cfdfd7d6e420692d0d5a04db0872e875.access"
+PROXY_URL = "https://kanade-backend.tkgstrator.work"
