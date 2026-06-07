@@ -1,5 +1,5 @@
 import { useMutation } from '@tanstack/react-query'
-import { Download } from 'lucide-react'
+import { Download, UserRound } from 'lucide-react'
 import { motion } from 'motion/react'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
@@ -9,6 +9,7 @@ import type { CatalogArtistDatum } from '@/schemas/common.dto'
 
 export function ArtistHeader({ artist }: { artist: CatalogArtistDatum }) {
   const { attributes } = artist
+  const artworkUrl = attributes.artwork ? attributes.artwork.url : undefined
 
   const { mutate, isPending } = useMutation({
     mutationFn: async () =>
@@ -33,24 +34,40 @@ export function ArtistHeader({ artist }: { artist: CatalogArtistDatum }) {
   return (
     <div className="relative w-full">
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <img
-          alt={attributes.name}
-          className="h-full w-full scale-110 object-cover opacity-40 blur-2xl"
-          draggable={false}
-          src={getArtworkUrl(attributes.artwork?.url ?? '', 800)}
-        />
+        {artworkUrl ? (
+          <img
+            alt={attributes.name}
+            className="h-full w-full scale-110 object-cover opacity-40 blur-2xl"
+            draggable={false}
+            src={getArtworkUrl(artworkUrl, 800)}
+          />
+        ) : (
+          <div className="h-full w-full bg-linear-to-br from-muted/40 via-muted/20 to-background" />
+        )}
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-background/50 to-background" />
       </div>
       <div className="relative z-10 flex flex-col items-center gap-6 px-6 pt-8 md:flex-row md:items-end md:gap-8 md:px-8 md:pt-12">
-        <motion.img
-          alt={attributes.name}
-          animate={{ opacity: 1, scale: 1 }}
-          className="size-40 rounded-full object-cover shadow-2xl ring-4 ring-background/50"
-          draggable={false}
-          initial={{ opacity: 0, scale: 0.8 }}
-          src={getArtworkUrl(attributes.artwork?.url ?? '', 400)}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-        />
+        {artworkUrl ? (
+          <motion.img
+            alt={attributes.name}
+            animate={{ opacity: 1, scale: 1 }}
+            className="size-40 rounded-full object-cover shadow-2xl ring-4 ring-background/50"
+            draggable={false}
+            initial={{ opacity: 0, scale: 0.8 }}
+            src={getArtworkUrl(artworkUrl, 400)}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          />
+        ) : (
+          <motion.div
+            animate={{ opacity: 1, scale: 1 }}
+            aria-label={attributes.name}
+            className="flex size-40 items-center justify-center rounded-full bg-muted shadow-2xl ring-4 ring-background/50"
+            initial={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
+            <UserRound className="size-20 text-muted-foreground" strokeWidth={1.5} />
+          </motion.div>
+        )}
         <motion.div
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center gap-3 md:items-start md:pb-2"
