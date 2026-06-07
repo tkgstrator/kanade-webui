@@ -12,7 +12,7 @@ inspector_port = 9229
 directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"
-run_worker_first = ["/api/*"]
+run_worker_first = ["/api/*", "/albums/*", "/artists/*"]
 
 [observability]
 enabled = false
@@ -42,7 +42,7 @@ routes = [{ pattern = "music.tkgstrator.work", custom_domain = true }]
 directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"
-run_worker_first = ["/api/*"]
+run_worker_first = ["/api/*", "/albums/*", "/artists/*"]
 
 [env.production.vars]
 APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"
@@ -63,7 +63,7 @@ routes = [{ pattern = "music-dev.tkgstrator.work", custom_domain = true }]
 directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"
-run_worker_first = ["/api/*"]
+run_worker_first = ["/api/*", "/albums/*", "/artists/*"]
 
 [env.staging.vars]
 APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"

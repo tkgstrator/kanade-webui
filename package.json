@@ -96,5 +96,5 @@
     "predeploy": "bun run generate && vite build --mode ${CLOUDFLARE_ENV:-staging}"
   },
   "type": "module",
-  "version": "1.1.2"
+  "version": "1.2.0"
 }
