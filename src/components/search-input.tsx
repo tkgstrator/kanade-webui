@@ -11,7 +11,15 @@ import { cn } from '@/lib/utils'
 const SUGGESTION_DEBOUNCE_MS = 200
 const MIN_QUERY_LENGTH = 1
 
-export function SearchInput() {
+type Variant = 'sidebar' | 'hero'
+
+type SearchInputProps = {
+  variant?: Variant
+  placeholder?: string
+  className?: string
+}
+
+export function SearchInput({ variant = 'sidebar', placeholder = '検索', className }: SearchInputProps) {
   const navigate = useNavigate()
   const { isMobile, setOpenMobile } = useSidebar()
 
@@ -94,40 +102,51 @@ export function SearchInput() {
     }
   }
 
+  const commonInputProps = {
+    'aria-activedescendant': highlight >= 0 ? `${listboxId}-option-${highlight}` : undefined,
+    'aria-autocomplete': 'list' as const,
+    'aria-controls': open ? listboxId : undefined,
+    'aria-expanded': open,
+    autoComplete: 'off',
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
+      setValue(e.target.value)
+      setHighlight(-1)
+    },
+    onCompositionEnd: () => setIsComposing(false),
+    onCompositionStart: () => setIsComposing(true),
+    onFocus: () => setIsFocused(true),
+    onKeyDown: handleKeyDown,
+    placeholder,
+    role: 'combobox' as const,
+    value,
+  }
+
   return (
-    <div className="relative" ref={containerRef}>
-      <InputGroup>
-        <InputGroupAddon>
-          <Search className="size-5" />
-        </InputGroupAddon>
-        <InputGroupInput
-          aria-activedescendant={highlight >= 0 ? `${listboxId}-option-${highlight}` : undefined}
-          aria-autocomplete="list"
-          aria-controls={open ? listboxId : undefined}
-          aria-expanded={open}
-          autoComplete="off"
-          onBlur={() => {
-            /* dropdown clicks handled via outside click; blur kept for a11y */
-          }}
-          onChange={(e) => {
-            setValue(e.target.value)
-            setHighlight(-1)
-          }}
-          onCompositionEnd={() => setIsComposing(false)}
-          onCompositionStart={() => setIsComposing(true)}
-          onFocus={() => setIsFocused(true)}
-          onKeyDown={handleKeyDown}
-          placeholder="検索"
-          ref={inputRef}
-          role="combobox"
-          value={value}
-        />
-      </InputGroup>
+    <div className={cn('relative', className)} ref={containerRef}>
+      {variant === 'sidebar' ? (
+        <InputGroup>
+          <InputGroupAddon>
+            <Search className="size-5" />
+          </InputGroupAddon>
+          <InputGroupInput {...commonInputProps} ref={inputRef} />
+        </InputGroup>
+      ) : (
+        <div className="relative">
+          <Search className="absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
+          <input
+            className="h-10 w-full rounded-xl border border-input bg-muted/50 pl-10 pr-4 text-sm text-foreground outline-none ring-offset-background placeholder:text-muted-foreground focus:ring-2 focus:ring-red-500/40 focus:ring-offset-2 md:max-w-md"
+            ref={inputRef}
+            type="text"
+            {...commonInputProps}
+          />
+        </div>
+      )}
       {open && (
         <div
           className={cn(
             'absolute top-full left-0 right-0 z-50 mt-1',
             'overflow-hidden rounded-md border border-border bg-popover shadow-lg',
+            variant === 'hero' && 'md:max-w-md',
           )}
           id={listboxId}
           role="listbox"
