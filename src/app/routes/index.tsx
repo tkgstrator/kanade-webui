@@ -1,10 +1,11 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
-import { Pause, Play, Search } from 'lucide-react'
+import { Pause, Play } from 'lucide-react'
 import { motion } from 'motion/react'
-import { Suspense, useState } from 'react'
+import { Suspense } from 'react'
 import { Equalizer } from '@/components/equalizer'
 import { RouteError } from '@/components/route-error'
+import { SearchInput } from '@/components/search-input'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useAudioPlayer } from '@/hooks/use-audio-player'
@@ -471,19 +472,12 @@ function ChartsContent() {
 function Page() {
   useVersionCheck()
   const navigate = useNavigate({ from: '/' })
-  const [searchValue, setSearchValue] = useState('')
 
-  const handleSearch = (term?: string) => {
-    const value = (term ?? searchValue).trim()
+  const handleSearch = (term: string) => {
+    const value = term.trim()
     if (value) {
       console.log('[Search] navigate', { term: value })
       navigate({ search: { term: value }, to: '/search' })
-    }
-  }
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter' && !e.nativeEvent.isComposing) {
-      handleSearch()
     }
   }
 
@@ -498,17 +492,7 @@ function Page() {
         initial={{ opacity: 0, y: -12 }}
         transition={{ duration: 0.4 }}
       >
-        <div className="relative">
-          <Search className="absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
-          <input
-            className="h-10 w-full rounded-xl border border-input bg-muted/50 pl-10 pr-4 text-sm text-foreground outline-none ring-offset-background placeholder:text-muted-foreground focus:ring-2 focus:ring-red-500/40 focus:ring-offset-2 md:max-w-md"
-            onChange={(e) => setSearchValue(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="アーティスト、アルバム、曲を検索..."
-            type="text"
-            value={searchValue}
-          />
-        </div>
+        <SearchInput placeholder="アーティスト、アルバム、曲を検索..." variant="hero" />
         <div className="flex gap-2 overflow-x-auto scrollbar-none">
           {quickSearches.map((label) => (
             <QuickSearchPill key={label} label={label} onClick={() => handleSearch(label)} />

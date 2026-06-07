@@ -14,8 +14,10 @@ function RootComponent() {
       <MusicSidebar />
       <SidebarInset className="min-w-0 overflow-hidden">
         <Header />
-        <div className="pt-12 md:pt-0">
-          <Outlet />
+        <div className="flex flex-1 flex-col pt-12 md:pt-0">
+          <div className="flex-1">
+            <Outlet />
+          </div>
           <footer className="px-6 py-4 text-center text-xs text-muted-foreground">
             <p>
               v{__APP_VERSION__} ({__GIT_HASH__})
