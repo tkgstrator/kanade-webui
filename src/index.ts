@@ -1,4 +1,4 @@
-import { createRoute, OpenAPIHono as Hono } from '@hono/zod-openapi'
+import { createRoute, OpenAPIHono as Hono, z } from '@hono/zod-openapi'
 import type { Context } from 'hono'
 import { contextStorage } from 'hono/context-storage'
 import { HTTPException } from 'hono/http-exception'
@@ -18,6 +18,7 @@ import {
 import { QueueBodySchema, QueueResponseSchema } from './schemas/queue.dto'
 import type { Env } from './utils/binding'
 import { createClient } from './utils/client'
+import { isCrawler, renderAlbumOg, renderArtistOg } from './utils/og'
 
 const app = new Hono<Env>()
 
@@ -286,6 +287,36 @@ app.openapi(
     return c.json(response)
   },
 )
+
+const ogParamSchema = z.object({
+  id: z.coerce.number().int().positive(),
+})
+
+const handleOgRoute = async (
+  c: Context<Env>,
+  render: (client: ReturnType<typeof createClient>, id: number, req: Request) => Promise<string | null>,
+) => {
+  if (!isCrawler(c.req.header('user-agent') ?? null)) {
+    return c.env.assets.fetch(c.req.raw)
+  }
+  const parsed = ogParamSchema.safeParse({ id: c.req.param('id') })
+  if (!parsed.success) {
+    return c.env.assets.fetch(c.req.raw)
+  }
+  try {
+    const html = await render(c.var.CLIENT, parsed.data.id, c.req.raw)
+    if (html === null) {
+      return c.env.assets.fetch(c.req.raw)
+    }
+    return c.html(html)
+  } catch (error) {
+    console.warn('[OG] render failed, falling back to SPA', { err: error })
+    return c.env.assets.fetch(c.req.raw)
+  }
+}
+
+app.get('/albums/:id', (c) => handleOgRoute(c, renderAlbumOg))
+app.get('/artists/:id', (c) => handleOgRoute(c, renderArtistOg))
 
 app.onError(async (error, c) => {
   if (error instanceof HTTPException) {
