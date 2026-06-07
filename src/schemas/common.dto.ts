@@ -188,6 +188,19 @@ export namespace SearchCatalogResources {
   })
 }
 
+export namespace SearchHints {
+  export const QuerySchema = z.object({
+    limit: z.coerce.number().int().positive().max(10).optional().default(10),
+    term: z.string().nonempty(),
+  })
+
+  export const ResponseSchema = z.object({
+    results: z.object({
+      terms: z.array(z.string()),
+    }),
+  })
+}
+
 export namespace GetCatalogAlbum {
   export const ViewType = z.enum(['appears-on', 'other-versions', 'related-albums', 'related-videos'])
 

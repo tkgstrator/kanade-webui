@@ -12,6 +12,7 @@ import {
   GetCatalogArtist,
   GetCatalogCharts,
   SearchCatalogResources,
+  SearchHints,
   TypeSchema,
   VersionResponseSchema,
 } from './schemas/common.dto'
@@ -145,6 +146,37 @@ app.openapi(
         term: term,
         types: TypeSchema.options,
       },
+    })
+    return c.json(response)
+  },
+)
+
+app.openapi(
+  createRoute({
+    description: 'Retrieves search term hints from the Apple Music catalog as the user types.',
+    method: 'get',
+    middleware: [],
+    path: '/api/search/hints',
+    request: {
+      query: SearchHints.QuerySchema,
+    },
+    responses: {
+      200: {
+        content: {
+          'application/json': {
+            schema: SearchHints.ResponseSchema,
+          },
+        },
+        description: 'Successful response with search hints',
+      },
+    },
+    summary: 'Get search hints',
+    tags: ['Search'],
+  }),
+  async (c) => {
+    const { limit, term } = c.req.valid('query')
+    const response = await c.var.CLIENT.get('/v1/catalog/jp/search/hints', {
+      queries: { limit, term },
     })
     return c.json(response)
   },

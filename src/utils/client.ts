@@ -6,6 +6,7 @@ import {
   ChartTypeSchema,
   GetCatalogCharts,
   SearchCatalogResources,
+  SearchHints,
   TypeSchema,
 } from '@/schemas/common.dto'
 
@@ -32,6 +33,24 @@ const definition = makeApi([
     ],
     path: '/v1/catalog/jp/search',
     response: SearchCatalogResources.ResponseSchema,
+  },
+  {
+    description: 'Get search hints from the Apple Music catalog',
+    method: 'get',
+    parameters: [
+      {
+        name: 'term',
+        schema: z.string().nonempty(),
+        type: 'Query',
+      },
+      {
+        name: 'limit',
+        schema: z.number().int().positive().max(10).optional().default(10),
+        type: 'Query',
+      },
+    ],
+    path: '/v1/catalog/jp/search/hints',
+    response: SearchHints.ResponseSchema,
   },
   {
     description: 'Get album details by ID',
