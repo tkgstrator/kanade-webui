@@ -37,7 +37,6 @@
     "dayjs": "^1.11.21",
     "embla-carousel-react": "^8.6.0",
     "hono": "^4.12.23",
-    "hono-pino": "^0.10.3",
     "jose": "^6.2.3",
     "jotai": "^2.20.0",
     "jotai-tanstack-query": "^0.11.0",
@@ -46,7 +45,6 @@
     "motion": "^12.40.0",
     "next-themes": "^0.4.6",
     "openapi-zod-client": "^1.18.3",
-    "pino": "^10.3.1",
     "radix-ui": "^1.5.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
@@ -98,5 +96,5 @@
     "predeploy": "bun run generate && vite build --mode ${CLOUDFLARE_ENV:-staging}"
   },
   "type": "module",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }

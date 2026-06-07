@@ -2,9 +2,8 @@ import { createRoute, OpenAPIHono as Hono } from '@hono/zod-openapi'
 import type { Context } from 'hono'
 import { contextStorage } from 'hono/context-storage'
 import { HTTPException } from 'hono/http-exception'
+import { logger } from 'hono/logger'
 import { timeout } from 'hono/timeout'
-import { pinoLogger } from 'hono-pino'
-import pino from 'pino'
 import { isTokenExpired, signToken } from './lib/token'
 import {
   CatalogSchema,
@@ -22,18 +21,7 @@ import { createClient } from './utils/client'
 
 const app = new Hono<Env>()
 
-app.use(
-  pinoLogger({
-    http: {
-      onResLevel: (c) => {
-        if (c.res.status >= 500) return 'error'
-        if (c.res.status >= 400) return 'warn'
-        return 'info'
-      },
-    },
-    pino: pino({ level: 'info' }),
-  }),
-)
+app.use(logger())
 app.openapi(
   createRoute({
     description: 'Returns the current application version, git hash, and build timestamp.',
@@ -300,16 +288,15 @@ app.openapi(
 )
 
 app.onError(async (error, c) => {
-  const logger = c.var.logger
   if (error instanceof HTTPException) {
-    logger.error({ status: error.status }, 'HTTPException')
+    console.error('[HTTPException]', { message: error.message, status: error.status })
     return c.json({ message: error.message }, error.status)
   }
   if (error.name === 'ZodError') {
-    logger.warn({ cause: error.cause }, 'ZodError')
+    console.warn('[ZodError]', { cause: error.cause })
     return c.json({ description: error.cause, message: JSON.parse(error.message) }, 400)
   }
-  logger.error({ err: error }, 'UnhandledError')
+  console.error('[UnhandledError]', { err: error })
   const cause = error.cause instanceof Error ? error.cause : undefined
   return c.json({ message: cause ? JSON.parse(cause.message) : error.message }, 500)
 })
