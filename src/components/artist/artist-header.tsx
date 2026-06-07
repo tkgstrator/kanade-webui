@@ -1,9 +1,34 @@
+import { useMutation } from '@tanstack/react-query'
+import { Download } from 'lucide-react'
 import { motion } from 'motion/react'
+import { toast } from 'sonner'
+import { Button } from '@/components/ui/button'
+import { client } from '@/lib/client'
 import { getArtworkUrl } from '@/lib/utils'
 import type { CatalogArtistDatum } from '@/schemas/common.dto'
 
 export function ArtistHeader({ artist }: { artist: CatalogArtistDatum }) {
   const { attributes } = artist
+
+  const { mutate, isPending } = useMutation({
+    mutationFn: async () =>
+      client.post('/api/queues', {
+        artist_id: Number(artist.id),
+        options: { overwrite: false },
+      }),
+    mutationKey: ['queues', 'artist', artist.id],
+    onError: (error) => {
+      console.error('[Queue] error', { artistId: artist.id, error })
+      toast.error('キューへの追加に失敗しました')
+    },
+    onMutate: () => {
+      console.log('[Queue] adding artist', { artistId: artist.id, name: attributes.name })
+    },
+    onSuccess: () => {
+      console.log('[Queue] success', { artistId: artist.id })
+      toast.success('キューに追加されました')
+    },
+  })
 
   return (
     <div className="relative w-full">
@@ -46,6 +71,14 @@ export function ArtistHeader({ artist }: { artist: CatalogArtistDatum }) {
               </motion.span>
             ))}
           </div>
+          <Button
+            className="mt-1 h-7 gap-2 rounded-sm bg-red-600 px-4 text-sm text-white hover:bg-red-700"
+            disabled={isPending}
+            onClick={() => mutate()}
+          >
+            <Download className="size-4" />
+            アーティストをダウンロード
+          </Button>
         </motion.div>
       </div>
     </div>

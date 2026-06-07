@@ -20,6 +20,12 @@
               "null"
             ]
           },
+          "artist_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
           "options": {
             "type": "object",
             "properties": {
@@ -35,10 +41,7 @@
               "overwrite": true
             }
           }
-        },
-        "required": [
-          "album_id"
-        ]
+        }
       }
     },
     "parameters": {}
