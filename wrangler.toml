@@ -8,6 +8,12 @@ ip = "0.0.0.0"
 port = 8787
 inspector_port = 9229
 
+[assets]
+directory = "dist"
+not_found_handling = "single-page-application"
+binding = "assets"
+run_worker_first = ["/api/*"]
+
 [observability]
 enabled = false
 head_sampling_rate = 1
@@ -36,6 +42,7 @@ routes = [{ pattern = "music.tkgstrator.work", custom_domain = true }]
 directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"
+run_worker_first = ["/api/*"]
 
 [env.production.vars]
 APPLE_MUSIC_TEAM_ID = "5Q94QJ7G98"
@@ -56,3 +63,4 @@ routes = [{ pattern = "music-dev.tkgstrator.work", custom_domain = true }]
 directory = "dist"
 not_found_handling = "single-page-application"
 binding = "assets"
+run_worker_first = ["/api/*"]

@@ -3,11 +3,13 @@ import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
 import { AlbumSection, ArtistHeader, ArtistSkeleton } from '@/components/artist'
+import { RouteError } from '@/components/route-error'
 import { client } from '@/lib/client'
 import type { CatalogArtistDatum } from '@/schemas/common.dto'
 
 export const Route = createFileRoute('/artists/$artist_id')({
   component: Page,
+  errorComponent: RouteError,
   params: {
     parse: (params) =>
       z
@@ -45,7 +47,7 @@ const Content = (): JSX.Element => {
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
-      <ArtistHeader artist={artist} />
+      <ArtistHeader albums={albumsData} artist={artist} />
       <AlbumSection albums={fullAlbums} title="アルバム" />
       <AlbumSection albums={singles} title="シングル・EP" />
     </div>

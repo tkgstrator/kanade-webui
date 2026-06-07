@@ -20,6 +20,12 @@
               "null"
             ]
           },
+          "artist_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
           "options": {
             "type": "object",
             "properties": {
@@ -35,10 +41,7 @@
               "overwrite": true
             }
           }
-        },
-        "required": [
-          "album_id"
-        ]
+        }
       }
     },
     "parameters": {}
@@ -7106,6 +7109,68 @@
           },
           "404": {
             "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/search/hints": {
+      "get": {
+        "description": "Retrieves search term hints from the Apple Music catalog as the user types.",
+        "summary": "Get search hints",
+        "tags": [
+          "Search"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 10,
+              "default": 10
+            },
+            "required": false,
+            "name": "limit",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            },
+            "required": true,
+            "name": "term",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response with search hints",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "results": {
+                      "type": "object",
+                      "properties": {
+                        "terms": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "required": [
+                        "terms"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "results"
+                  ]
+                }
+              }
+            }
           }
         }
       }

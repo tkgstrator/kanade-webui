@@ -1,9 +1,9 @@
 'use client'
 
-import { Link, useNavigate } from '@tanstack/react-router'
-import { Home, Search } from 'lucide-react'
+import { Link } from '@tanstack/react-router'
+import { Home } from 'lucide-react'
 import { QueueHistory } from '@/components/queue-status'
-import { InputGroup, InputGroupAddon, InputGroupInput } from '@/components/ui/input-group'
+import { SearchInput } from '@/components/search-input'
 import {
   Sidebar,
   SidebarContent,
@@ -13,25 +13,9 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarSeparator,
-  useSidebar,
 } from '@/components/ui/sidebar'
 
 export function MusicSidebar() {
-  const navigate = useNavigate({ from: '/' })
-  const { isMobile, setOpenMobile } = useSidebar()
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter' && !e.nativeEvent.isComposing) {
-      const value = e.currentTarget.value
-      if (value.trim()) {
-        navigate({ search: { term: value.trim() }, to: '/search' })
-        if (isMobile) {
-          setOpenMobile(false)
-        }
-      }
-    }
-  }
-
   return (
     <Sidebar className="border-r border-sidebar-border select-none" collapsible="icon" variant="sidebar">
       <SidebarHeader className="px-4 py-3">
@@ -45,12 +29,7 @@ export function MusicSidebar() {
       <SidebarContent className="overflow-x-hidden">
         <SidebarGroup>
           <div className="px-2 pb-2 min-w-0">
-            <InputGroup>
-              <InputGroupAddon>
-                <Search className="size-5" />
-              </InputGroupAddon>
-              <InputGroupInput onKeyDown={handleKeyDown} placeholder="検索" />
-            </InputGroup>
+            <SearchInput />
           </div>
           <SidebarMenu className="px-2">
             <SidebarMenuItem>

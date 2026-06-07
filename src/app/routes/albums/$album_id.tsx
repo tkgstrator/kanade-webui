@@ -3,11 +3,13 @@ import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute } from '@tanstack/react-router'
 import { type JSX, Suspense } from 'react'
 import { AlbumHeader, AlbumSkeleton, TrackList } from '@/components/album'
+import { RouteError } from '@/components/route-error'
 import { client } from '@/lib/client'
 import { type CatalogAlbumDatum, CatalogSchema } from '@/schemas/common.dto'
 
 export const Route = createFileRoute('/albums/$album_id')({
   component: Page,
+  errorComponent: RouteError,
   params: {
     parse: (params) =>
       z
