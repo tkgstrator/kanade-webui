@@ -47,7 +47,7 @@ const Content = (): JSX.Element => {
 
   return (
     <div className="flex flex-col gap-8 pb-8 select-none">
-      <ArtistHeader artist={artist} />
+      <ArtistHeader albums={albumsData} artist={artist} />
       <AlbumSection albums={fullAlbums} title="アルバム" />
       <AlbumSection albums={singles} title="シングル・EP" />
     </div>
