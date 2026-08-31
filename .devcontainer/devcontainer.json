@@ -55,7 +55,9 @@
       }
     }
   },
-  "dockerComposeFile": ["compose.yaml"],
+  "dockerComposeFile": [
+    "compose.yaml"
+  ],
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {},
     "ghcr.io/stu-bell/devcontainer-features/claude-code:0": {
@@ -69,11 +71,11 @@
       "moby": false
     },
     "ghcr.io/devcontainers/features/git:1": {
-      "version": "2.52.0"
+      "version": "2.55.0"
     },
     "ghcr.io/duduribeiro/devcontainer-features/tmux:1": {},
     "ghcr.io/devcontainers/features/node:1.5.0": {
-      "version": "22.14.0"
+      "version": "26.8.1"
     },
     "ghcr.io/dhoeric/features/act:1": {},
     "ghcr.io/shyim/devcontainers-features/bun:0": {}
