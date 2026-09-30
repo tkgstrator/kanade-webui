@@ -425,3 +425,6 @@ cookies.txt
 
 # Generated API client (produced by `bun run generate`)
 src/lib/client.ts
+
+# Local Codex configuration, credentials, and session state.
+/.codex/
